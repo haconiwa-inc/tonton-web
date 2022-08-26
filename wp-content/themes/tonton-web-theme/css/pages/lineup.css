@@ -1,0 +1,135 @@
+
+/* TODO: 仮で記載 */
+html {
+  font-size: 62.5%;
+}
+
+.lineUp-contents {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lineUp-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.lineUp-title-area {
+  background: url('/wp-content/themes/tonton-web-theme/img/business/kv_title.png') no-repeat left top;
+  background-size: cover;
+  padding: 70px 0;
+}
+
+.lineUp-title {
+  width: 215px;
+  margin: 0 auto;
+}
+
+.lineUp-block {
+  width: 100%;
+  max-width: 1040px;
+  margin: 115px auto 120px;
+}
+
+.lineUp-tab {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.lineUp-tab li {
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid #4D291F;
+  color: #4D291F;
+}
+.lineUp-list {
+  padding: 0;
+  margin-top: 45px;
+}
+.lineUp-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 35px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 9px -5px #4d291f;
+  border-radius: 5px;
+  color: #333333;
+}
+
+.lineUp-img {
+  width: 30%;
+}
+
+.lineUp-textArea {
+  width: 70%;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.lineUp-textArea p {
+  margin: 0;
+}
+
+.lineUp-access {
+  font-size: 1.8rem;
+}
+
+.lineUp-price {
+  padding: 10px 0;
+  font-size: 2.8rem;
+  color: #FC6408;
+}
+
+.lineUp-accessDetail,
+.lineUp-minutes {
+  font-size: 1.8rem;
+}
+
+.lineUp-detail {
+  font-size: 1.6rem;
+}
+
+.lineUp-buttonArea {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  font-size: 1.8rem;
+}
+
+.lineUp-button {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lineUp-button:last-child {
+  margin-left: 40px;
+}
+
+.lineUp-button a {
+  display: block;
+  padding: 20px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid #009844;
+}
+
+.lineUp-button--white a {
+  color: #009844;
+  background-color: #fff;
+}
+
+.lineUp-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
