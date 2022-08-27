@@ -28,7 +28,7 @@
 		 <div class="business-contents">
 			<div class="business-title-area">
 				<h1 class="business-title">
-					<img src="/wp-content/themes/tonton-web-theme/img/business/business_title.png" alt="事業案内">
+					<img src="/wp-content/themes/tonton-web-theme/images/business/business_title.png" alt="事業案内">
 				</h1>
 			</div>
 				<div class="business-block">
@@ -44,7 +44,7 @@
 						<li>
 							<a href="/business/sell">
 								<div class="business-itemCapture">
-									<img src="/wp-content/themes/tonton-web-theme/img/business/item01.jpg" alt="">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/item01.jpg" alt="">
 								</div>
 								<div>
 									<p class="business-itemTitle">物件売却</p>
@@ -62,7 +62,7 @@
 						<li>
 							<a href="/business/buy">
 								<div class="business-itemCapture">
-									<img src="/wp-content/themes/tonton-web-theme/img/business/item02.jpg" alt="">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/item02.jpg" alt="">
 								</div>
 								<div>
 									<p class="business-itemTitle">物件購入</p>
@@ -80,7 +80,7 @@
 						<li>
 							<a href="/business/reform">
 								<div class="business-itemCapture">
-									<img src="/wp-content/themes/tonton-web-theme/img/business/item03.jpg" alt="">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/item03.jpg" alt="">
 								</div>
 								<div>
 									<p class="business-itemTitle">リフォーム / リノベーション</p>
@@ -134,7 +134,7 @@
 								TOPへ戻る
 							</a>
 							<div class="business-icon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/tonton-boy.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/tonton-boy.png" alt="">
 							</div>
 						</div>
 					</div>

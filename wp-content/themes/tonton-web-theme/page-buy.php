@@ -28,7 +28,7 @@
 		 <div class="buy-contents">
 			<div class="buy-title-area">
 				<h1 class="buy-title">
-					<img src="/wp-content/themes/tonton-web-theme/img/business/buy_title.png" alt="物件購入">
+					<img src="/wp-content/themes/tonton-web-theme/images/business/buy_title.png" alt="物件購入">
 				</h1>
 			</div>
 				<div class="buy-block">
@@ -46,7 +46,7 @@
 						<ul class="buy-pointList">
 							<li>
 								<div class="buy-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/img/business/point01.png" alt="">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/point01.png" alt="">
 								</div>
 								<div class="buy-pointText">
 									<p class="buy-pointTitle">地元に密着した不動産情報多数</p>
@@ -57,7 +57,7 @@
 							</li>
 							<li>
 								<div class="buy-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/img/business/point02.png" alt="">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/point02.png" alt="">
 								</div>
 								<div class="buy-pointText">
 									<p class="buy-pointTitle">実績豊富なため安心して不動産購入を任せることができる</p>
@@ -68,7 +68,7 @@
 							</li>
 							<li>
 								<div class="buy-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/img/business/point03.png" alt="">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/point03.png" alt="">
 								</div>
 								<div class="buy-pointText">
 									<p class="buy-pointTitle">物件購入と併せてご予算・ご希望に合ったリフォーム提案が可能</p>
@@ -94,7 +94,7 @@
 					<ul class="buy-flowList">
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step01.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step01.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -105,7 +105,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step02.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step02.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -119,7 +119,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step03.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step03.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -133,7 +133,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step04.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step04.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -147,7 +147,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step05.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step05.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -158,7 +158,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step06.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step06.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -169,7 +169,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step07.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step07.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -196,7 +196,7 @@
 					<ul class="buy-linkList">
 						<li>
 							<a href="/business/buy/lineup">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/link01.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/link01.png" alt="">
 								<div class="buy-linkTitle">
 									<p>現在取扱中の物件</p>
 								</div>
@@ -209,7 +209,7 @@
 						</li>
 						<li>
 							<a href="/business/sold">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/link02.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/link02.png" alt="">
 								<div class="buy-linkTitle">
 									<p>過去の成約物件</p>
 								</div>
@@ -222,7 +222,7 @@
 						</li>
 						<li>
 							<a href="/business/reform">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/link03.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/link03.png" alt="">
 								<div class="buy-linkTitle">
 									<p>
 										リフォーム/<br />

@@ -28,7 +28,7 @@
 		 <div class="sell-contents">
 			<div class="sell-title-area">
 				<h1 class="sell-title">
-					<img src="/wp-content/themes/tonton-web-theme/img/business/sell_title.png" alt="物件購入">
+					<img src="/wp-content/themes/tonton-web-theme/images/business/sell_title.png" alt="物件購入">
 				</h1>
 			</div>
 				<div class="sell-block">
@@ -46,22 +46,22 @@
 						<ul class="sell-pointList">
 							<li>
 								<div class="sell-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/img/business/point01.png" alt="">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/point01.png" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="sell-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/img/business/point02.png" alt="">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/point02.png" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="sell-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/img/business/point03.png" alt="">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/point03.png" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="sell-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/img/business/point03.png" alt="">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/point03.png" alt="">
 								</div>
 							</li>
 						</ul>
@@ -74,7 +74,7 @@
 					<ul class="sell-flowList">
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step01.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step01.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -85,7 +85,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step02.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step02.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -99,7 +99,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step03.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step03.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -113,7 +113,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step04.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step04.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -124,7 +124,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step05.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step05.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -138,7 +138,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step06.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step06.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -151,7 +151,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/step07.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/step07.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">

@@ -35,7 +35,7 @@
 		<div class="lineUp-contents">
 			<div class="lineUp-title-area">
 				<h1 class="lineUp-title">
-					<img src="/wp-content/themes/tonton-web-theme/img/business/lineup_title.png" alt="売買物件一覧">
+					<img src="/wp-content/themes/tonton-web-theme/images/business/lineup_title.png" alt="売買物件一覧">
 				</h1>
 			</div>
 			<div class="lineUp-block">
@@ -50,7 +50,7 @@
 					<ul class="lineUp-list">
 						<li class="lineUp-item">
 							<div class="lineUp-img">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/lineup_item01.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/lineup_item01.png" alt="">
 							</div>
 							<div class="lineUp-textArea">
 								<div class="lineUp-textBox">
@@ -76,7 +76,7 @@
 						</li>
 						<li class="lineUp-item">
 							<div class="lineUp-img">
-								<img src="/wp-content/themes/tonton-web-theme/img/business/lineup_item01.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/business/lineup_item01.png" alt="">
 							</div>
 							<div class="lineUp-textArea">
 								<div class="lineUp-textBox">
