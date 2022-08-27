@@ -21,7 +21,8 @@
 	<?php wp_head(); ?>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tonton-web-theme/css/pages/business.css" media="screen" >
 </head>
-
+<!-- TODO: パンくずで使う -->
+<?#php single_post_title(); ?>
 
 	<main id="primary" class="site-main">
 		 <div class="business-contents">
@@ -77,7 +78,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/business/reform">
 								<div class="business-itemCapture">
 									<img src="/wp-content/themes/tonton-web-theme/img/business/item03.jpg" alt="">
 								</div>

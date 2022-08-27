@@ -1,0 +1,367 @@
+/* TODO: 仮で記載 */
+html {
+  font-size: 62.5%;
+  color: #333;
+}
+
+.buy-contents {
+  width: 100%;
+  margin: 0 auto 120px;;
+}
+
+.buy-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.buy-title-area {
+  background: url('/wp-content/themes/tonton-web-theme/img/business/kv_bg.png') no-repeat left top;
+  background-size: cover;
+  padding: 70px 0;
+}
+
+.buy-title {
+  width: 215px;
+  margin: 0 auto;
+}
+
+.buy-block {
+  width: 100%;
+  max-width: 1040px;
+  margin: 115px auto 0;
+}
+
+.buy-block--wull {
+  width: 100%;
+  max-width: 100%;
+  padding: 115px 0 120px;
+  background-color: #F7F4EC;
+}
+
+.buy-block--wullGreen {
+  width: 100%;
+  max-width: 100%;
+  padding: 115px 0 120px;
+  background: rgba(0, 152, 68, .1);
+}
+
+.buy-blockInner {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.buy-subTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0 auto 30px;
+  letter-spacing: 5px;
+}
+
+.buy-pointsTitle {
+  font-size: 3.2rem;
+  text-align: left;
+}
+
+.buy-leadText {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.buy-pointList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.buy-pointList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 35px;
+}
+
+.buy-pointCapture {
+  width: 25%;
+}
+
+.buy-pointText {
+  width: 75%;
+  margin-left: 40px;
+}
+
+.buy-pointTitle {
+  margin: 10px auto;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.buy-pointContent {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+}
+
+.buy-flowTitle {
+  font-size: 3.2rem;
+  text-align: left;
+}
+
+.buy-flowList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buy-flowList li {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 25px 30px;
+  border: 2px solid #4D291F;
+  border-radius: 10px;
+}
+
+.buy-flowList li:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 102%;
+  left: 65px;
+  width: 4px;
+  height: 40px;
+  background-color: #4D291F;
+  z-index: -1;
+}
+
+.buy-stepIcon {
+  width: 72px;
+}
+
+.buy-stepText {
+  margin-left: 20px;
+}
+
+.buy-stepTitle {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.buy-stepContent {
+  font-size: 1.6rem;
+}
+
+.buy-contactTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
+.buy-button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.buy-buttonInner {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.buy-buttonInner--left {
+  width: 45%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.buy-buttonInner--small {
+  width: 30%;
+}
+
+.buy-linkList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buy-linkList li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.buy-linkTitle {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.buy-linkArrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.buy-linkList li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.buy-button a {
+  display: block;
+  padding: 20px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.buy-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
+
+.buy-icon {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 60px;
+}
+
+@media screen and (max-width:768px) {
+  .buy-contents {
+    margin: 0 auto 60px;
+  }
+
+  .buy-title-area {
+    background: url('/wp-content/themes/tonton-web-theme/img/buy/kv_bg_sp.png') no-repeat left top;
+    background-size: cover;
+    padding: 35px 0;
+  }
+
+  .buy-title {
+    width: 85px;
+    margin: 0 auto;
+  }
+
+  .buy-block {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 27.5px;
+    margin: 55px auto 0;
+  }
+
+  .buy-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 35px;
+  }
+
+  .buy-leadText {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .buy-itemList {
+    display: block;
+    margin: 30px auto 20px;
+  }
+
+  .buy-itemList li a {
+    height: auto;
+    padding: 27.5px 30px;
+  }
+
+  .buy-itemList li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .buy-itemList li:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .buy-itemCapture {
+    margin-bottom: 20px;
+  }
+
+  .buy-itemTitle {
+    margin: 15px auto;
+    font-size: 1.6rem;
+  }
+
+  .buy-itemContent {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+
+  .buy-arrow {
+    position: absolute;
+    bottom: 27.5px;
+    right: 30px;
+  }
+
+  .buy-realEstateList {
+    display: block;
+    margin: 40px auto;
+  }
+
+  .buy-realEstateList li {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 28px;
+    box-shadow: 0px 0px 9px -5px #4d291f;
+  }
+
+  .buy-realEstateList li:last-child {
+    margin-left: 0;
+  }
+
+  .buy-realEstateTitle {
+    margin: 0 auto 10px;
+    font-size: 1.6rem;
+    color: #009844;
+  }
+
+  .buy-realEstateContent {
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+  }
+
+  .buy-button {
+    width: 100%;
+  }
+
+  .buy-buttonInner {
+    width: 100%;
+  }
+
+  .buy-buttonInner--small {
+    width: 100%;
+    padding: 0 27.5px;
+  }
+
+  .buy-button a {
+    padding: 20px 0;
+    font-size: 1.6rem;
+  }
+
+  .buy-icon {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 48px;
+  }
+}
+
