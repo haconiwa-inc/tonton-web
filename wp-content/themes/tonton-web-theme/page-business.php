@@ -11,10 +11,17 @@
  *
  * @package tonton-web-theme
  */
-
 // TODO: ヘッダーあとから入れる get_header();
 ?>
-<link rel="stylesheet" href="/wp-content/themes/tonton-web-theme/css/pages/business.css" >
+<!-- TODO: ヘッダーあとから入れる -->
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<?php wp_head(); ?>
+	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tonton-web-theme/css/pages/business.css" media="screen" >
+</head>
+
 
 	<main id="primary" class="site-main">
 		 <div class="business-contents">
@@ -119,7 +126,8 @@
 							</div>
 						</li>
 					</ul>
-					<div class="business-button business-button--green">
+				</div>
+				<div class="business-button business-button--green">
 						<div class="business-buttonInner business-buttonInner--small">
 							<a href="/">
 								TOPへ戻る
@@ -129,7 +137,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
 			</div>
 		</div>
 	</main><!-- #main -->

@@ -6,7 +6,7 @@ html {
 
 .business-contents {
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 120px;;
 }
 
 .business-contents img {
@@ -15,7 +15,7 @@ html {
 }
 
 .business-title-area {
-  background: url('/wp-content/themes/tonton-web-theme/img/business/kv_title.png') no-repeat left top;
+  background: url('/wp-content/themes/tonton-web-theme/img/business/kv_bg.png') no-repeat left top;
   background-size: cover;
   padding: 70px 0;
 }
@@ -28,12 +28,13 @@ html {
 .business-block {
   width: 100%;
   max-width: 1040px;
-  margin: 115px auto 120px;
+  margin: 115px auto 0;
 }
 
 .business-subTitle {
   font-size: 3.2rem;
   text-align: center;
+  margin: 0 auto 30px;
 }
 
 .business-leadText {
@@ -70,6 +71,7 @@ html {
 }
 
 .business-itemCapture {
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -103,7 +105,7 @@ html {
   width: calc(100% / 2);
   padding: 25px;
   box-shadow: 0px 0px 9px -5px #4d291f;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .business-realEstateList li:last-child {
@@ -156,3 +158,130 @@ html {
   left: -20px;
   width: 60px;
 }
+
+@media screen and (max-width:768px) {
+  .business-contents {
+    margin: 0 auto 60px;
+  }
+
+  .business-title-area {
+    background: url('/wp-content/themes/tonton-web-theme/img/business/kv_bg_sp.png') no-repeat left top;
+    background-size: cover;
+    padding: 35px 0;
+  }
+
+  .business-title {
+    width: 85px;
+    margin: 0 auto;
+  }
+
+  .business-block {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 27.5px;
+    margin: 55px auto 0;
+  }
+
+  .business-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 35px;
+  }
+
+  .business-leadText {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .business-itemList {
+    display: block;
+    margin: 30px auto 20px;
+  }
+
+  .business-itemList li a {
+    height: auto;
+    padding: 27.5px 30px;
+  }
+
+  .business-itemList li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .business-itemList li:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .business-itemCapture {
+    margin-bottom: 20px;
+  }
+
+  .business-itemTitle {
+    margin: 15px auto;
+    font-size: 1.6rem;
+  }
+
+  .business-itemContent {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+
+  .business-arrow {
+    position: absolute;
+    bottom: 27.5px;
+    right: 30px;
+  }
+
+  .business-realEstateList {
+    display: block;
+    margin: 40px auto;
+  }
+
+  .business-realEstateList li {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 28px;
+    box-shadow: 0px 0px 9px -5px #4d291f;
+  }
+
+  .business-realEstateList li:last-child {
+    margin-left: 0;
+  }
+
+  .business-realEstateTitle {
+    margin: 0 auto 10px;
+    font-size: 1.6rem;
+    color: #009844;
+  }
+
+  .business-realEstateContent {
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+  }
+
+  .business-button {
+    width: 100%;
+  }
+
+  .business-buttonInner {
+    width: 100%;
+  }
+
+  .business-buttonInner--small {
+    width: 100%;
+    padding: 0 27.5px;
+  }
+
+  .business-button a {
+    padding: 20px 0;
+    font-size: 1.6rem;
+  }
+
+  .business-icon {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 48px;
+  }
+}
+
