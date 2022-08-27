@@ -146,7 +146,7 @@ html {
   margin-bottom: 10px;
   font-size: 1.8rem;
   font-weight: bold;
-  margin: 0 0 10px 0;
+  color: #4D291F;
 }
 
 .buy-stepContent {
@@ -239,13 +239,17 @@ html {
   width: 60px;
 }
 
+.buy-disSp {
+  display: none;
+}
+
 @media screen and (max-width:768px) {
   .buy-contents {
     margin: 0 auto 60px;
   }
 
   .buy-title-area {
-    background: url('/wp-content/themes/tonton-web-theme/img/buy/kv_bg_sp.png') no-repeat left top;
+    background: url('/wp-content/themes/tonton-web-theme/img/business/kv_bg_sp.png') no-repeat left top;
     background-size: cover;
     padding: 35px 0;
   }
@@ -262,6 +266,23 @@ html {
     margin: 55px auto 0;
   }
 
+  .buy-block--wull {
+    width: 100%;
+    max-width: 100%;
+    padding: 55px 0 60px;
+  }
+
+  .buy-block--wullGreen {
+    width: 100%;
+    max-width: 100%;
+    padding: 35px 0 40px;
+  }
+
+  .buy-blockInner {
+    max-width: 100%;
+    padding: 0 27.5px;
+  }
+
   .buy-subTitle {
     font-size: 2rem;
     text-align: left;
@@ -273,70 +294,89 @@ html {
     text-align: left;
   }
 
-  .buy-itemList {
+  .buy-pointsTitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .buy-pointList li {
     display: block;
-    margin: 30px auto 20px;
+    margin-bottom: 25px;
   }
 
-  .buy-itemList li a {
-    height: auto;
-    padding: 27.5px 30px;
-  }
-
-  .buy-itemList li {
+  .buy-pointCapture {
     width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .buy-pointText {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .buy-pointTitle {
+    margin: 10px auto;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4D291F;
+  }
+
+  .buy-pointContent {
     margin-bottom: 30px;
-  }
-
-  .buy-itemList li:not(:first-child) {
-    margin-left: 0;
-  }
-
-  .buy-itemCapture {
-    margin-bottom: 20px;
-  }
-
-  .buy-itemTitle {
-    margin: 15px auto;
     font-size: 1.6rem;
   }
 
-  .buy-itemContent {
-    margin-bottom: 10px;
-    font-size: 1.4rem;
+  .buy-flowTitle {
+    font-size: 2rem;
   }
 
-  .buy-arrow {
-    position: absolute;
-    bottom: 27.5px;
-    right: 30px;
+  .buy-flowList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
-  .buy-realEstateList {
+  .buy-flowList li {
+    position: relative;
     display: block;
-    margin: 40px auto;
+    margin-bottom: 26px;
+    padding: 30px 32px;
   }
 
-  .buy-realEstateList li {
-    width: 100%;
-    padding: 25px;
-    margin-bottom: 28px;
-    box-shadow: 0px 0px 9px -5px #4d291f;
+  .buy-flowList li:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 3px;
+    height: 28px;
+    transform: translateX(-50%);
+    background-color: #4D291F;
+    z-index: -1;
   }
 
-  .buy-realEstateList li:last-child {
+  .buy-stepIcon {
+    width: 70px;
+    margin: 0 auto 25px;
+  }
+
+  .buy-stepText {
     margin-left: 0;
   }
 
-  .buy-realEstateTitle {
-    margin: 0 auto 10px;
+  .buy-stepTitle {
+    margin-bottom: 15px;
     font-size: 1.6rem;
-    color: #009844;
   }
 
-  .buy-realEstateContent {
-    margin-bottom: 18px;
+  .buy-stepContent {
     font-size: 1.4rem;
+  }
+
+  .buy-contactTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto 20px;
   }
 
   .buy-button {
@@ -352,6 +392,28 @@ html {
     padding: 0 27.5px;
   }
 
+  .buy-linkList {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .buy-linkList li {
+    margin-bottom: 26px;
+  }
+
+  .buy-linkTitle {
+    font-size: 1.6rem;
+  }
+
+  .buy-linkArrow {
+    right: 10px;
+  }
+
+  .buy-linkList li:not(:first-child) {
+    margin-left: 0;
+  }
+
   .buy-button a {
     padding: 20px 0;
     font-size: 1.6rem;
@@ -362,6 +424,10 @@ html {
     top: -20px;
     left: 10px;
     width: 48px;
+  }
+
+  .buy-disSp {
+    display: block;
   }
 }
 
