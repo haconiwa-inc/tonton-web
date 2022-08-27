@@ -1,0 +1,158 @@
+/* TODO: 仮で記載 */
+html {
+  font-size: 62.5%;
+  color: #333;
+}
+
+.business-contents {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.business-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.business-title-area {
+  background: url('/wp-content/themes/tonton-web-theme/img/business/kv_title.png') no-repeat left top;
+  background-size: cover;
+  padding: 70px 0;
+}
+
+.business-title {
+  width: 215px;
+  margin: 0 auto;
+}
+
+.business-block {
+  width: 100%;
+  max-width: 1040px;
+  margin: 115px auto 120px;
+}
+
+.business-subTitle {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.business-leadText {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.business-itemList {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+  margin: 75px auto 40px;
+}
+
+.business-itemList li a {
+  display: block;
+  height: calc(100% - 40px);
+  padding: 20px 25px;
+  color: #333;
+  text-decoration: none;
+}
+
+.business-itemList li {
+  position: relative;
+  width: calc(100% / 3);
+  border: 2px solid #009844;
+  border-radius: 10px;
+}
+
+.business-itemList li:not(:first-child) {
+  margin-left: 25px;
+}
+
+.business-itemCapture {
+  margin-bottom: 20px;
+}
+
+.business-itemTitle {
+  margin: 10px auto;
+  font-size: 2rem;
+  color: #009844;
+}
+
+.business-itemContent {
+  margin-bottom: 45px;
+  font-size: 1.6rem;
+}
+
+.business-arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.business-realEstateList {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+  margin: 50px auto 80px;
+}
+
+.business-realEstateList li {
+  width: calc(100% / 2);
+  padding: 25px;
+  box-shadow: 0px 0px 9px -5px #4d291f;
+  border-radius: 5px;
+}
+
+.business-realEstateList li:last-child {
+  margin-left: 25px;
+}
+
+.business-realEstateTitle {
+  margin: 0 auto 10px;
+  font-size: 2rem;
+  color: #009844;
+}
+
+.business-realEstateContent {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.business-button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.business-buttonInner {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.business-buttonInner--small {
+  position: relative;
+  width: 30%;
+}
+
+.business-button a {
+  display: block;
+  padding: 20px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.business-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
+
+.business-icon {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 60px;
+}
