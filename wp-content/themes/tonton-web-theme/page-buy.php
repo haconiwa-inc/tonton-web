@@ -182,11 +182,11 @@
 				</div>
 				<div class="buy-block buy-block--wullGreen">
 					<div class="buy-blockInner">
-						<h2 class="buy-contactTitle">とんとんで物件を購入するポイント</h2>
+						<h2 class="buy-contactTitle">まずはお気軽に<br class="buy-disSp" />お問い合わせください。</h2>
 						<div class="buy-button buy-button--green">
 							<div class="buy-buttonInner buy-buttonInner--small">
 								<a href="/business/reform">
-									リフォームについて
+									お問い合わせ
 								</a>
 							</div>
 						</div>
@@ -195,7 +195,7 @@
 				<div class="buy-block">
 					<ul class="buy-linkList">
 						<li>
-							<a href="/business/buy">
+							<a href="/business/buy/lineup">
 								<img src="/wp-content/themes/tonton-web-theme/img/business/link01.png" alt="">
 								<div class="buy-linkTitle">
 									<p>現在取扱中の物件</p>

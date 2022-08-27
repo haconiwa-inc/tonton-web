@@ -4,115 +4,100 @@ html {
   color: #333;
 }
 
-.buy-contents {
+.sell-contents {
   width: 100%;
   margin: 0 auto 120px;;
 }
 
-.buy-contents img {
+.sell-contents img {
   max-width: 100%;
   vertical-align: bottom;
 }
 
-.buy-title-area {
+.sell-title-area {
   background: url('/wp-content/themes/tonton-web-theme/img/business/kv_bg.png') no-repeat left top;
   background-size: cover;
   padding: 70px 0;
 }
 
-.buy-title {
+.sell-title {
   width: 215px;
   margin: 0 auto;
 }
 
-.buy-block {
+.sell-block {
   width: 100%;
   max-width: 1040px;
   margin: 115px auto 0;
 }
 
-.buy-block--wull {
+.sell-block--wull {
   width: 100%;
   max-width: 100%;
   padding: 115px 0 120px;
   background-color: #F7F4EC;
 }
 
-.buy-block--wullGreen {
+.sell-block--wullGreen {
   width: 100%;
   max-width: 100%;
   padding: 115px 0 120px;
   background: rgba(0, 152, 68, .1);
 }
 
-.buy-blockInner {
+.sell-blockInner {
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
 }
 
-.buy-subTitle {
+.sell-subTitle {
   font-size: 3.2rem;
   text-align: center;
   margin: 0 auto 30px;
   letter-spacing: 5px;
 }
 
-.buy-pointsTitle {
+.sell-pointsTitle {
   font-size: 3.2rem;
   text-align: left;
+  margin-bottom: 40px;
 }
 
-.buy-leadText {
+.sell-leadText {
   font-size: 1.6rem;
   text-align: center;
 }
 
-.buy-pointList {
+.sell-pointList {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.buy-pointList li {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 35px;
 }
 
-.buy-pointCapture {
-  width: 25%;
+.sell-pointList li:not(:first-child) {
+  margin-left: 20px;
 }
 
-.buy-pointText {
-  width: 75%;
-  margin-left: 40px;
+.sell-pointCapture {
+  width: 100%;
 }
 
-.buy-pointTitle {
-  margin: 10px auto;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.buy-pointContent {
-  margin-bottom: 30px;
-  font-size: 1.6rem;
-}
-
-.buy-flowTitle {
+.sell-flowTitle {
   font-size: 3.2rem;
   text-align: left;
 }
 
-.buy-flowList {
+.sell-flowList {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.buy-flowList li {
+.sell-flowList li {
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -123,7 +108,7 @@ html {
   border-radius: 10px;
 }
 
-.buy-flowList li:not(:last-child)::before {
+.sell-flowList li:not(:last-child)::before {
   content: '';
   position: absolute;
   top: 102%;
@@ -134,54 +119,54 @@ html {
   z-index: -1;
 }
 
-.buy-stepIcon {
+.sell-stepIcon {
   width: 72px;
   flex-shrink: 0;
 }
 
-.buy-stepText {
+.sell-stepText {
   margin-left: 20px;
 }
 
-.buy-stepTitle {
+.sell-stepTitle {
   margin-bottom: 10px;
   font-size: 1.8rem;
   font-weight: bold;
   color: #4D291F;
 }
 
-.buy-stepContent {
+.sell-stepContent {
   font-size: 1.6rem;
 }
 
-.buy-contactTitle {
+.sell-contactTitle {
   font-size: 3.2rem;
   text-align: center;
   margin: 0 auto 50px;
 }
 
-.buy-button {
+.sell-button {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-.buy-buttonInner {
+.sell-buttonInner {
   width: 50%;
   margin: 0 auto;
 }
 
-.buy-buttonInner--left {
+.sell-buttonInner--left {
   width: 45%;
   margin-left: 0;
   margin-right: auto;
 }
 
-.buy-buttonInner--small {
+.sell-buttonInner--small {
   width: 30%;
 }
 
-.buy-linkList {
+.sell-linkList {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -190,13 +175,13 @@ html {
   padding: 0;
 }
 
-.buy-linkList li a {
+.sell-linkList li a {
   position: relative;
   display: block;
   text-decoration: none;
 }
 
-.buy-linkTitle {
+.sell-linkTitle {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -207,7 +192,7 @@ html {
   text-align: center;
 }
 
-.buy-linkArrow {
+.sell-linkArrow {
   position: absolute;
   top: 50%;
   right: 20px;
@@ -216,11 +201,11 @@ html {
   font-size: 1.8rem;
 }
 
-.buy-linkList li:not(:first-child) {
+.sell-linkList li:not(:first-child) {
   margin-left: 30px;
 }
 
-.buy-button a {
+.sell-button a {
   display: block;
   padding: 20px 0;
   border-radius: 8px;
@@ -228,123 +213,110 @@ html {
   font-size: 1.8rem;
 }
 
-.buy-button--green a {
+.sell-button--green a {
   color: #fff;
   background-color: #009844;
 }
 
-.buy-icon {
+.sell-icon {
   position: absolute;
   top: -25px;
   left: -20px;
   width: 60px;
 }
 
-.buy-disSp {
+.sell-disSp {
   display: none;
 }
 
 @media screen and (max-width:768px) {
-  .buy-contents {
+  .sell-contents {
     margin: 0 auto 60px;
   }
 
-  .buy-title-area {
+  .sell-title-area {
     background: url('/wp-content/themes/tonton-web-theme/img/business/kv_bg_sp.png') no-repeat left top;
     background-size: cover;
     padding: 35px 0;
   }
 
-  .buy-title {
+  .sell-title {
     width: 85px;
     margin: 0 auto;
   }
 
-  .buy-block {
+  .sell-block {
     width: 100%;
     max-width: 100%;
     padding: 0 27.5px;
     margin: 55px auto 0;
   }
 
-  .buy-block--wull {
+  .sell-block--wull {
     width: 100%;
     max-width: 100%;
     padding: 55px 0 60px;
   }
 
-  .buy-block--wullGreen {
+  .sell-block--wullGreen {
     width: 100%;
     max-width: 100%;
     padding: 35px 0 40px;
   }
 
-  .buy-blockInner {
+  .sell-blockInner {
     max-width: 100%;
     padding: 0 27.5px;
   }
 
-  .buy-subTitle {
+  .sell-subTitle {
     font-size: 2rem;
     text-align: left;
     margin: 0 auto 35px;
   }
 
-  .buy-leadText {
+  .sell-leadText {
     font-size: 1.4rem;
     text-align: left;
   }
 
-  .buy-pointsTitle {
+  .sell-pointsTitle {
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 34px;
   }
 
-  .buy-pointList li {
+  .sell-pointList {
     display: block;
-    margin-bottom: 25px;
   }
 
-  .buy-pointCapture {
+  .sell-pointList li {
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  .sell-pointCapture {
     width: 100%;
-    margin-bottom: 25px;
   }
 
-  .buy-pointText {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .buy-pointTitle {
-    margin: 10px auto;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #4D291F;
-  }
-
-  .buy-pointContent {
-    margin-bottom: 30px;
-    font-size: 1.6rem;
-  }
-
-  .buy-flowTitle {
+  .sell-flowTitle {
     font-size: 2rem;
   }
 
-  .buy-flowList {
+  .sell-flowList {
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  .buy-flowList li {
+  .sell-flowList li {
     position: relative;
     display: block;
     margin-bottom: 26px;
     padding: 30px 32px;
   }
 
-  .buy-flowList li:not(:last-child)::before {
+  .sell-flowList li:not(:last-child)::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -356,78 +328,78 @@ html {
     z-index: -1;
   }
 
-  .buy-stepIcon {
+  .sell-stepIcon {
     width: 70px;
     margin: 0 auto 25px;
   }
 
-  .buy-stepText {
+  .sell-stepText {
     margin-left: 0;
   }
 
-  .buy-stepTitle {
+  .sell-stepTitle {
     margin-bottom: 15px;
     font-size: 1.6rem;
   }
 
-  .buy-stepContent {
+  .sell-stepContent {
     font-size: 1.4rem;
   }
 
-  .buy-contactTitle {
+  .sell-contactTitle {
     font-size: 2rem;
     text-align: center;
     margin: 0 auto 20px;
   }
 
-  .buy-button {
+  .sell-button {
     width: 100%;
   }
 
-  .buy-buttonInner {
+  .sell-buttonInner {
     width: 100%;
   }
 
-  .buy-buttonInner--small {
+  .sell-buttonInner--small {
     width: 100%;
     padding: 0 27.5px;
   }
 
-  .buy-linkList {
+  .sell-linkList {
     display: block;
     margin: 0;
     padding: 0;
   }
 
-  .buy-linkList li {
+  .sell-linkList li {
     margin-bottom: 26px;
   }
 
-  .buy-linkTitle {
+  .sell-linkTitle {
     font-size: 1.6rem;
   }
 
-  .buy-linkArrow {
+  .sell-linkArrow {
     right: 10px;
   }
 
-  .buy-linkList li:not(:first-child) {
+  .sell-linkList li:not(:first-child) {
     margin-left: 0;
   }
 
-  .buy-button a {
+  .sell-button a {
     padding: 20px 0;
     font-size: 1.6rem;
   }
 
-  .buy-icon {
+  .sell-icon {
     position: absolute;
     top: -20px;
     left: 10px;
     width: 48px;
   }
 
-  .buy-disSp {
+  .sell-disSp {
     display: block;
   }
 }
