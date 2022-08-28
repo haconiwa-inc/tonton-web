@@ -17,9 +17,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="wp-content/themes/tonton-web-theme/css/header.css" media="all">
-	<link rel="stylesheet" href="wp-content/themes/tonton-web-theme/css/footer.css" media="all">
-	<link rel="stylesheet" href="wp-content/themes/tonton-web-theme/css/index.css" media="all">
+	<link rel="stylesheet" href="/wp-content/themes/tonton-web-theme/css/header.css" media="all">
+	<link rel="stylesheet" href="/wp-content/themes/tonton-web-theme/css/footer.css" media="all">
+	<link rel="stylesheet" href="/wp-content/themes/tonton-web-theme/css/index.css" media="all">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -35,19 +35,21 @@
 			<div class="header">
 				<div class="header-top pc">
 					<div class="header-top-menu">
-						<div class="header-top-menu-item">お知らせ</div>
+						<a href="<?php echo esc_url( site_url( '/news' ) ); ?>">
+							<div class="header-top-menu-item">お知らせ</div>
+						</a>
 						<div class="header-top-menu-item">事業案内</div>
 						<div class="header-top-menu-item">会社概要</div>
 						<div class="header-top-menu-item">お問い合せ</div>
 						<a href="">
-							<img src="wp-content/themes/tonton-web-theme/images/facebook_icon.png" alt="">
+							<img src="/wp-content/themes/tonton-web-theme/images/facebook_icon.png" alt="">
 						</a>
 					</div>
 				</div>
 				<div class="header-bottom">
 					<div class="header-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="wp-content/themes/tonton-web-theme/images/pc/logo_pc.png" alt="とんとんロゴ">
+							<img src="/wp-content/themes/tonton-web-theme/images/pc/logo_pc.png" alt="とんとんロゴ">
 						</a>
 					</div>
 					<div class="header-bottom-wrapper pc">

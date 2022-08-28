@@ -18,8 +18,8 @@ get_header();
 	<main id="primary" class="site-main">
 		<section>
 			<div class="kv">
-				<img class="pc" src="wp-content/themes/tonton-web-theme/images/pc/kv_pc.png" alt="とんとんkv_pc">
-				<img class="sp" src="wp-content/themes/tonton-web-theme/images/sp/kv_sp.png" alt="とんとんkv_sp">
+				<img class="pc" src="/wp-content/themes/tonton-web-theme/images/pc/kv_pc.png" alt="とんとんkv_pc">
+				<img class="sp" src="/wp-content/themes/tonton-web-theme/images/sp/kv_sp.png" alt="とんとんkv_sp">
 				<h1>
 					最大限のメリットを生む<br>
 					不動産プロフェッショナルからの<br>
@@ -55,7 +55,7 @@ get_header();
 								<div class="top-notice-item-tag-num">0 1</div>
 							</div>
 						</div>
-						<img src="wp-content/themes/tonton-web-theme/images/notice_1.png" alt="">
+						<img src="/wp-content/themes/tonton-web-theme/images/notice_1.png" alt="">
 						<div class="top-notice-description">
 							ワンストップで不動産の購入・売却・リフォーム・相続のご相談に乗ることができます。
 						</div>
@@ -67,7 +67,7 @@ get_header();
 								<div class="top-notice-item-tag-num">0 2</div>
 							</div>
 						</div>
-						<img src="wp-content/themes/tonton-web-theme/images/notice_2.png" alt="">
+						<img src="/wp-content/themes/tonton-web-theme/images/notice_2.png" alt="">
 						<div class="top-notice-description">
 							ワンストップで不動産の購入・売却・リフォーム・相続のご相談に乗ることができます。
 						</div>
@@ -79,7 +79,7 @@ get_header();
 								<div class="top-notice-item-tag-num">0 3</div>
 							</div>
 						</div>
-						<img src="wp-content/themes/tonton-web-theme/images/notice_3.png" alt="">
+						<img src="/wp-content/themes/tonton-web-theme/images/notice_3.png" alt="">
 						<div class="top-notice-description">
 							ワンストップで不動産の購入・売却・リフォーム・相続のご相談に乗ることができます。
 						</div>
@@ -97,7 +97,7 @@ get_header();
 					<div class="top-content-block">
 						<div class="top-content-item">
 							<div class="top-content-item-img">
-								<img src="wp-content/themes/tonton-web-theme/images/content_1.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/content_1.png" alt="">
 							</div>
 							<div class="top-content-box">
 								<div class="top-content-item-title">売る</div>
@@ -117,7 +117,7 @@ get_header();
 						</div>
 						<div class="top-content-item">
 							<div class="top-content-item-img sp">
-								<img src="wp-content/themes/tonton-web-theme/images/content_2.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/content_2.png" alt="">
 							</div>
 							<div class="top-content-box">
 								<div class="top-content-item-title">買う・建てる</div>
@@ -146,14 +146,14 @@ get_header();
 							</div>
 							<div class="top-content-item-img pc">
 								<div class="top-content-item-icon">
-									<img src="wp-content/themes/tonton-web-theme/images/character_icon1.png" alt="キャラクター">
+									<img src="/wp-content/themes/tonton-web-theme/images/character_icon1.png" alt="キャラクター">
 								</div>
-								<img src="wp-content/themes/tonton-web-theme/images/content_2.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/content_2.png" alt="">
 							</div>
 						</div>
 						<div class="top-content-item">
 							<div class="top-content-item-img">
-								<img src="wp-content/themes/tonton-web-theme/images/content_3.png" alt="">
+								<img src="/wp-content/themes/tonton-web-theme/images/content_3.png" alt="">
 							</div>
 							<div class="top-content-box">
 								<div class="top-content-item-title">修繕する</div>
@@ -217,12 +217,12 @@ get_header();
 			<div class="top-slider">
 				<div class="swiper infinite-slider">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="wp-content/themes/tonton-web-theme/images/slider_1.png" alt="slider1" /></div>
-						<div class="swiper-slide"><img src="wp-content/themes/tonton-web-theme/images/slider_2.png" alt="slider2" /></div>
-						<div class="swiper-slide"><img src="wp-content/themes/tonton-web-theme/images/slider_3.png" alt="slider3" /></div>
-						<div class="swiper-slide"><img src="wp-content/themes/tonton-web-theme/images/slider_4.png" alt="slider4" /></div>
-						<div class="swiper-slide"><img src="wp-content/themes/tonton-web-theme/images/slider_5.png" alt="slider5" /></div>
-						<div class="swiper-slide"><img src="wp-content/themes/tonton-web-theme/images/slider_6.png" alt="slider6" /></div>
+						<div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_1.png" alt="slider1" /></div>
+						<div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_2.png" alt="slider2" /></div>
+						<div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_3.png" alt="slider3" /></div>
+						<div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_4.png" alt="slider4" /></div>
+						<div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_5.png" alt="slider5" /></div>
+						<div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_6.png" alt="slider6" /></div>
 					</div>
 				</div>
 			</div>
@@ -308,7 +308,7 @@ get_header();
 					</div>
 				</div>
 				<div class="top-news-icon">
-					<img src="wp-content/themes/tonton-web-theme/images/character_icon2.png" alt="キャラクター">
+					<img src="/wp-content/themes/tonton-web-theme/images/character_icon2.png" alt="キャラクター">
 				</div>
 			</div>
 		</section>
@@ -359,11 +359,11 @@ get_header();
 					</div>
 				</div>
 				<div class="top-about-icon">
-					<img src="wp-content/themes/tonton-web-theme/images/character_icon3.png" alt="キャラクター">
+					<img src="/wp-content/themes/tonton-web-theme/images/character_icon3.png" alt="キャラクター">
 				</div>
 			</div>
 		</section>
-		<script src="wp-content/themes/tonton-web-theme/js/common.js"></script>
+		<script src="/wp-content/themes/tonton-web-theme/js/common.js"></script>
 	</main><!-- #main -->
 
 <?php

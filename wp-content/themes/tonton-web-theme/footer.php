@@ -17,7 +17,7 @@
 				<div class="footer-content">
 					<div class="footer-box">
 						<div class="footer-logo">
-							<img src="wp-content/themes/tonton-web-theme/images/pc/logo_pc.png" alt="">
+							<img src="/wp-content/themes/tonton-web-theme/images/pc/logo_pc.png" alt="">
 						</div>
 						<ul class="footer-description">
 							<li>〒063-0034 札幌市西区西野4条3丁目10番1号</li>
@@ -75,7 +75,7 @@
 				</div>
 				<div class="footer-box">
 					<div class="footer-logo">
-						<img src="wp-content/themes/tonton-web-theme/images/pc/logo_pc.png" alt="">
+						<img src="/wp-content/themes/tonton-web-theme/images/pc/logo_pc.png" alt="">
 					</div>
 					<ul class="footer-description">
 						<li>〒063-0034 札幌市西区西野4条3丁目10番1号</li>
