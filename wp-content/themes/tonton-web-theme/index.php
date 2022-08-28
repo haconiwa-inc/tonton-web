@@ -363,7 +363,6 @@ get_header();
 				</div>
 			</div>
 		</section>
-		<script src="/wp-content/themes/tonton-web-theme/js/common.js"></script>
 	</main><!-- #main -->
 
 <?php

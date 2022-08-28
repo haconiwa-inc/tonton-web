@@ -95,7 +95,7 @@
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
+<script src="/wp-content/themes/tonton-web-theme/js/common.js"></script>
 <?php wp_footer(); ?>
 
 </body>
