@@ -11,21 +11,15 @@
  *
  * @package tonton-web-theme
  */
-// TODO: ヘッダーあとから入れる get_header();
+	get_header();
 ?>
-<!-- TODO: ヘッダーあとから入れる -->
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<?php wp_head(); ?>
-	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tonton-web-theme/css/pages/sell.css" media="screen" >
-</head>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/pages/sell.css" media="screen" >
+
 	<main id="primary" class="site-main">
 		 <div class="sell-contents">
 			<div class="sell-title-area">
 				<h1 class="sell-title">
-					<img src="/wp-content/themes/tonton-web-theme/images/business/sell_title.png" alt="物件購入">
+					<img src="<?php echo get_template_directory_uri();?>/images/business/sell_title.png" alt="物件購入">
 				</h1>
 			</div>
 			<ul class="breadcrumbs">
@@ -48,22 +42,22 @@
 						<ul class="sell-pointList">
 							<li>
 								<div class="sell-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/point01.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/point01.png" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="sell-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/point02.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/point02.png" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="sell-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/point03.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/point03.png" alt="">
 								</div>
 							</li>
 							<li>
 								<div class="sell-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/point03.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/point03.png" alt="">
 								</div>
 							</li>
 						</ul>
@@ -76,7 +70,7 @@
 					<ul class="sell-flowList">
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step01.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step01.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -87,7 +81,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step02.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step02.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -101,7 +95,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step03.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step03.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -115,7 +109,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step04.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step04.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -126,7 +120,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step05.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step05.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -140,7 +134,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step06.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step06.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -153,7 +147,7 @@
 						</li>
 						<li>
 							<div class="sell-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step07.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step07.png" alt="">
 							</div>
 							<div class="sell-stepText">
 								<p class="sell-stepTitle">
@@ -172,11 +166,11 @@
 						<li>
 							<h3 class="sell-exampleTitle">
 								<div class="sell-exampleTitleInner">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/case01.png" alt="case01 住み替え" class="sell-disPc">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/case01_sp.png" alt="case01 住み替え" class="sell-disSp">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/case01.png" alt="case01 住み替え" class="sell-disPc">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/case01_sp.png" alt="case01 住み替え" class="sell-disSp">
 								</div>
 								<div class="sell-exampleTitleDeco">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/tonton_family.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
 								</div>
 							</h3>
 							<h4 class="sell-exampleSubtitle">お客様の背景</h4>
@@ -194,7 +188,7 @@
 									<dd>住み替えのため</dd>
 								</dl>
 								<div class="sell-point01Img">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/sell_example_01.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/sell_example_01.png" alt="">
 								</div>
 							</div>
 							<h4 class="sell-exampleSubtitle">ご相談内容</h4>
@@ -217,11 +211,11 @@
 						<li>
 							<h3 class="sell-exampleTitle">
 								<div class="sell-exampleTitleInner">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/case02.png" alt="case02 資産処分" class="sell-disPc">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/case02_sp.png" alt="case01 資産処分" class="sell-disSp">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/case02.png" alt="case02 資産処分" class="sell-disPc">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/case02_sp.png" alt="case01 資産処分" class="sell-disSp">
 								</div>
 								<div class="sell-exampleTitleDeco">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/tonton_family.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
 								</div>
 							</h3>
 							<h4 class="sell-exampleSubtitle">お客様の背景</h4>
@@ -239,7 +233,7 @@
 									<dd>資産処分</dd>
 								</dl>
 								<div class="sell-point01Img">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/sell_example_02.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/sell_example_02.png" alt="">
 								</div>
 							</div>
 							<h4 class="sell-exampleSubtitle">ご相談内容</h4>
@@ -262,12 +256,12 @@
 						<li>
 							<h3 class="sell-exampleTitle">
 								<div class="sell-exampleTitleInner">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/case03.png" alt="case03 買い替え" class="sell-disPc">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/case03_sp.png" alt="case03 買い替え" class="sell-disSp">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/case03.png" alt="case03 買い替え" class="sell-disPc">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/case03_sp.png" alt="case03 買い替え" class="sell-disSp">
 
 								</div>
 								<div class="sell-exampleTitleDeco">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/tonton_family.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
 								</div>
 							</h3>
 							<h4 class="sell-exampleSubtitle">お客様の背景</h4>
@@ -285,7 +279,7 @@
 									<dd>引っ越しによる買い替え</dd>
 								</dl>
 								<div class="sell-point01Img">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/sell_example_03.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/sell_example_03.png" alt="">
 								</div>
 							</div>
 							<h4 class="sell-exampleSubtitle">ご相談内容</h4>
@@ -308,11 +302,11 @@
 						<li>
 							<h3 class="sell-exampleTitle">
 								<div class="sell-exampleTitleInner">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/case04.png" alt="case04 維持不能" class="sell-disPc">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/case04_sp.png" alt="case04 維持不能" class="sell-disSp">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/case04.png" alt="case04 維持不能" class="sell-disPc">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/case04_sp.png" alt="case04 維持不能" class="sell-disSp">
 								</div>
 								<div class="sell-exampleTitleDeco">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/tonton_family.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
 								</div>
 							</h3>
 							<h4 class="sell-exampleSubtitle">お客様の背景</h4>
@@ -330,7 +324,7 @@
 									<dd>住み替えのため</dd>
 								</dl>
 								<div class="sell-point01Img">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/sell_example_04.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/sell_example_04.png" alt="">
 								</div>
 							</div>
 							<h4 class="sell-exampleSubtitle">ご相談内容</h4>
@@ -370,5 +364,5 @@
 	</main><!-- #main -->
 
 <?php
-// TODO: フッターあとから入れる get_footer();
+ get_footer();
 ?>

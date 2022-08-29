@@ -11,21 +11,15 @@
  *
  * @package tonton-web-theme
  */
-// TODO: ヘッダーあとから入れる get_header();
+	get_header();
 ?>
-<!-- TODO: ヘッダーあとから入れる -->
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<?php wp_head(); ?>
-	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tonton-web-theme/css/pages/buy.css" media="screen" >
-</head>
-	<main id="primary" class="site-main">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/pages/buy.css" media="screen" >
+
+		<main id="primary" class="site-main">
 		 <div class="buy-contents">
 			<div class="buy-title-area">
 				<h1 class="buy-title">
-					<img src="/wp-content/themes/tonton-web-theme/images/business/buy_title.png" alt="物件購入">
+					<img src="<?php echo get_template_directory_uri();?>/images/business/buy_title.png" alt="物件購入">
 				</h1>
 			</div>
 			<ul class="breadcrumbs">
@@ -48,7 +42,7 @@
 						<ul class="buy-pointList">
 							<li>
 								<div class="buy-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/point01.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/point01.png" alt="">
 								</div>
 								<div class="buy-pointText">
 									<p class="buy-pointTitle">地元に密着した不動産情報多数</p>
@@ -59,7 +53,7 @@
 							</li>
 							<li>
 								<div class="buy-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/point02.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/point02.png" alt="">
 								</div>
 								<div class="buy-pointText">
 									<p class="buy-pointTitle">実績豊富なため安心して不動産購入を任せることができる</p>
@@ -70,7 +64,7 @@
 							</li>
 							<li>
 								<div class="buy-pointCapture">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/point03.png" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/point03.png" alt="">
 								</div>
 								<div class="buy-pointText">
 									<p class="buy-pointTitle">物件購入と併せてご予算・ご希望に合ったリフォーム提案が可能</p>
@@ -96,7 +90,7 @@
 					<ul class="buy-flowList">
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step01.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step01.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -107,7 +101,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step02.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step02.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -121,7 +115,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step03.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step03.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -135,7 +129,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step04.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step04.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -149,7 +143,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step05.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step05.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -160,7 +154,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step06.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step06.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -171,7 +165,7 @@
 						</li>
 						<li>
 							<div class="buy-stepIcon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/step07.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/step07.png" alt="">
 							</div>
 							<div class="buy-stepText">
 								<p class="buy-stepTitle">
@@ -198,7 +192,7 @@
 					<ul class="buy-linkList">
 						<li>
 							<a href="/business/buy/lineup">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/link01.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/link01.png" alt="">
 								<div class="buy-linkTitle">
 									<p>現在取扱中の物件</p>
 								</div>
@@ -211,7 +205,7 @@
 						</li>
 						<li>
 							<a href="/business/sold">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/link02.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/link02.png" alt="">
 								<div class="buy-linkTitle">
 									<p>過去の成約物件</p>
 								</div>
@@ -224,7 +218,7 @@
 						</li>
 						<li>
 							<a href="/business/reform">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/link03.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/link03.png" alt="">
 								<div class="buy-linkTitle">
 									<p>
 										リフォーム/<br />
@@ -245,5 +239,5 @@
 	</main><!-- #main -->
 
 <?php
-// TODO: フッターあとから入れる get_footer();
+	get_footer();
 ?>

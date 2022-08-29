@@ -11,21 +11,15 @@
  *
  * @package tonton-web-theme
  */
-// TODO: ヘッダーあとから入れる get_header();
+	get_header();
 ?>
-<!-- TODO: ヘッダーあとから入れる -->
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<?php wp_head(); ?>
-	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tonton-web-theme/css/pages/business.css" media="screen" >
-</head>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/pages/business.css" media="screen" >
+
 	<main id="primary" class="site-main">
 		 <div class="business-contents">
 			<div class="business-title-area">
 				<h1 class="business-title">
-					<img src="/wp-content/themes/tonton-web-theme/images/business/business_title.png" alt="事業案内">
+					<img src="<?php echo get_template_directory_uri();?>/images/business/business_title.png" alt="事業案内">
 				</h1>
 			</div>
 			<ul class="breadcrumbs">
@@ -45,7 +39,7 @@
 						<li>
 							<a href="/business/sell">
 								<div class="business-itemCapture">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/item01.jpg" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/item01.jpg" alt="">
 								</div>
 								<div>
 									<p class="business-itemTitle">物件売却</p>
@@ -63,7 +57,7 @@
 						<li>
 							<a href="/business/buy">
 								<div class="business-itemCapture">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/item02.jpg" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/item02.jpg" alt="">
 								</div>
 								<div>
 									<p class="business-itemTitle">物件購入</p>
@@ -81,7 +75,7 @@
 						<li>
 							<a href="/business/reform">
 								<div class="business-itemCapture">
-									<img src="/wp-content/themes/tonton-web-theme/images/business/item03.jpg" alt="">
+									<img src="<?php echo get_template_directory_uri();?>/images/business/item03.jpg" alt="">
 								</div>
 								<div>
 									<p class="business-itemTitle">リフォーム / リノベーション</p>
@@ -135,7 +129,7 @@
 								TOPへ戻る
 							</a>
 							<div class="business-icon">
-								<img src="/wp-content/themes/tonton-web-theme/images/business/tonton-boy.png" alt="">
+								<img src="<?php echo get_template_directory_uri();?>/images/business/tonton-boy.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -144,5 +138,5 @@
 	</main><!-- #main -->
 
 <?php
-// TODO: フッターあとから入れる get_footer();
+	get_footer();
 ?>
