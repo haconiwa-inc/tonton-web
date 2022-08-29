@@ -21,9 +21,6 @@
 	<?php wp_head(); ?>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tonton-web-theme/css/pages/business.css" media="screen" >
 </head>
-<!-- TODO: パンくずで使う -->
-<?#php single_post_title(); ?>
-
 	<main id="primary" class="site-main">
 		 <div class="business-contents">
 			<div class="business-title-area">
@@ -31,7 +28,11 @@
 					<img src="/wp-content/themes/tonton-web-theme/images/business/business_title.png" alt="事業案内">
 				</h1>
 			</div>
-				<div class="business-block">
+			<ul class="breadcrumbs">
+				<li><a href="/">TOP</a></li>
+				<li>事業案内</li>
+			</ul>
+				<div class="business-block business-block--top">
 					<h2 class="business-subTitle">
 						不動産の価値を最大化できるプランニング力に自信があります
 					</h2>

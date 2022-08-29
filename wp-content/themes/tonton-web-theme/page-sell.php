@@ -21,9 +21,6 @@
 	<?php wp_head(); ?>
 	<link rel="stylesheet" type="text/css" href="/wp-content/themes/tonton-web-theme/css/pages/sell.css" media="screen" >
 </head>
-<!-- TODO: パンくずで使う -->
-<?#php single_post_title(); ?>
-
 	<main id="primary" class="site-main">
 		 <div class="sell-contents">
 			<div class="sell-title-area">
@@ -31,7 +28,12 @@
 					<img src="/wp-content/themes/tonton-web-theme/images/business/sell_title.png" alt="物件購入">
 				</h1>
 			</div>
-				<div class="sell-block">
+			<ul class="breadcrumbs">
+				<li><a href="/">TOP</a></li>
+				<li><a href="/business">事業案内</a></li>
+				<li>物件売却</li>
+			</ul>
+				<div class="sell-block sell-block--top">
 					<h2 class="sell-subTitle">
 					とんとんでの物件売却
 					</h2>

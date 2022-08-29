@@ -4,6 +4,58 @@ html {
   color: #333;
 }
 
+.breadcrumbs {
+  width: 100%;
+  max-width: 1040px;
+  list-style: none;
+  margin: 25px auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-left: 15px;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.breadcrumbs li::before {
+  content: ">";
+  display: inline-block;
+  margin-right: 15px;
+  color: #333;
+}
+
+.breadcrumbs li:first-child {
+  margin-left: 0;
+}
+
+.breadcrumbs li:first-child:before {
+  content: none;
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    max-width: 100%;
+    padding: 0 27.5px;
+  }
+
+  .breadcrumbs li {
+    font-size: 1.2rem;
+  }
+}
+
+/* TODO: 仮で記載 end */
+
 .buy-contents {
   width: 100%;
   margin: 0 auto 120px;;
@@ -43,6 +95,10 @@ html {
   max-width: 100%;
   padding: 115px 0 120px;
   background: rgba(0, 152, 68, .1);
+}
+
+.buy-block--top {
+  margin: 75px auto 0;
 }
 
 .buy-blockInner {
@@ -277,6 +333,10 @@ html {
     width: 100%;
     max-width: 100%;
     padding: 35px 0 40px;
+  }
+
+  .buy-block--top {
+    margin: 35px auto 0;
   }
 
   .buy-blockInner {
