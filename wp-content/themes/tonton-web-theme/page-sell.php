@@ -166,6 +166,202 @@
 					<div class="sell-blockInner">
 						<h2 class="sell-pointsTitle">代表的な売却事例</h2>
 					</div>
+					<ul class="sell-exampleList">
+						<li>
+							<h3 class="sell-exampleTitle">
+								<div class="sell-exampleTitleInner">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/case01.png" alt="case01 住み替え" class="sell-disPc">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/case01_sp.png" alt="case01 住み替え" class="sell-disSp">
+								</div>
+								<div class="sell-exampleTitleDeco">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/tonton_family.png" alt="">
+								</div>
+							</h3>
+							<h4 class="sell-exampleSubtitle">お客様の背景</h4>
+							<div class="sell-point01">
+								<dl class="sell-tableBlock">
+									<dt>年代</dt>
+									<dd>70代</dd>
+									<dt>ご職業</dt>
+									<dd>無職</dd>
+									<dt>お住まい</dt>
+									<dd>札幌市</dd>
+									<dt>ご相談の地域</dt>
+									<dd>札幌市</dd>
+									<dt>ご売却の理由</dt>
+									<dd>住み替えのため</dd>
+								</dl>
+								<div class="sell-point01Img">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/sell_example_01.png" alt="">
+								</div>
+							</div>
+							<h4 class="sell-exampleSubtitle">ご相談内容</h4>
+							<div class="sell-point02">
+							新しくマンションを購入するため、夏ごろまでに売却して、移り住みたい。
+							</div>
+							<h4 class="sell-exampleSubtitle">ご提案内容と結果</h4>
+							<div class="sell-point03">
+							住み替え先が決まっていることから、早く売却をしたいという売主様のご要望だったので、しっかりと早期成約が見込める価格の提示。広告活動を開始してから2日後に購入申込が入り、成約となりました。
+							</div>
+							<h4 class="sell-exampleSubtitle">とんとんならではのポイント</h4>
+							<div class="sell-point04">
+							単なる査定額の提示だけではなく、成約が見込める価格の提示と価格の根拠、売却にかかる経費をご説明いたします。
+							</div>
+							<h4 class="sell-exampleSubtitle">担当スタッフからのメッセージ</h4>
+							<div class="sell-point05">
+							売却をされる4年前にご自宅をフルリフォームされており、売主様ご夫婦がこまめに清掃をされていたので、状態の良いご自宅でした。お部屋の写真をたくさんインターネットに載せることで、反響やお気に入り数も多く早期成約となりました。
+							</div>
+						</li>
+						<li>
+							<h3 class="sell-exampleTitle">
+								<div class="sell-exampleTitleInner">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/case02.png" alt="case02 資産処分" class="sell-disPc">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/case02_sp.png" alt="case01 資産処分" class="sell-disSp">
+								</div>
+								<div class="sell-exampleTitleDeco">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/tonton_family.png" alt="">
+								</div>
+							</h3>
+							<h4 class="sell-exampleSubtitle">お客様の背景</h4>
+							<div class="sell-point01">
+								<dl class="sell-tableBlock">
+									<dt>年代</dt>
+									<dd>80代</dd>
+									<dt>ご職業</dt>
+									<dd>無職</dd>
+									<dt>お住まい</dt>
+									<dd>札幌市</dd>
+									<dt>ご相談の地域</dt>
+									<dd>札幌市</dd>
+									<dt>ご売却の理由</dt>
+									<dd>資産処分</dd>
+								</dl>
+								<div class="sell-point01Img">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/sell_example_02.png" alt="">
+								</div>
+							</div>
+							<h4 class="sell-exampleSubtitle">ご相談内容</h4>
+							<div class="sell-point02">
+							体の不調があり、家も古いため売却をして娘と賃貸で暮らそうかと考えている。
+							</div>
+							<h4 class="sell-exampleSubtitle">ご提案内容と結果</h4>
+							<div class="sell-point03">
+							建物が築後40年以上経過しており、お住いのエリアが新築を建てるお客様に向けて土地としての売却をご提案しました。広告活動開始後、約１週間ほどで 契約となりました。
+							</div>
+							<h4 class="sell-exampleSubtitle">とんとんならではのポイント</h4>
+							<div class="sell-point04">
+							住み替え先の賃貸住宅の条件もヒヤリングをして、売却活動と並行しながら住み替え先の物件もお探しできます。
+							</div>
+							<h4 class="sell-exampleSubtitle">担当スタッフからのメッセージ</h4>
+							<div class="sell-point05">
+							約62坪の大きさの土地で、目の前には大きな公園のある住環境の良い立地であったため、広告には物件の良さを全面的にアピールをしました。たくさんのお問い合わせをいただき、早期成約となり、弊社でご紹介しました賃貸物件で売主様の住み替え先も決まりました。
+							</div>
+						</li>
+						<li>
+							<h3 class="sell-exampleTitle">
+								<div class="sell-exampleTitleInner">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/case03.png" alt="case03 買い替え" class="sell-disPc">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/case03_sp.png" alt="case03 買い替え" class="sell-disSp">
+
+								</div>
+								<div class="sell-exampleTitleDeco">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/tonton_family.png" alt="">
+								</div>
+							</h3>
+							<h4 class="sell-exampleSubtitle">お客様の背景</h4>
+							<div class="sell-point01">
+								<dl class="sell-tableBlock">
+									<dt>年代</dt>
+									<dd>40代</dd>
+									<dt>ご職業</dt>
+									<dd>会社員</dd>
+									<dt>お住まい</dt>
+									<dd>札幌市</dd>
+									<dt>ご相談の地域</dt>
+									<dd>札幌市</dd>
+									<dt>ご売却の理由</dt>
+									<dd>引っ越しによる買い替え</dd>
+								</dl>
+								<div class="sell-point01Img">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/sell_example_03.png" alt="">
+								</div>
+							</div>
+							<h4 class="sell-exampleSubtitle">ご相談内容</h4>
+							<div class="sell-point02">
+							注文住宅を建てることとなったため、持ち家（マンション）の売却をしたい。
+							</div>
+							<h4 class="sell-exampleSubtitle">ご提案内容と結果</h4>
+							<div class="sell-point03">
+							持ち家の住宅ローンの残債があったため、まず残債を上回る価格で販売できるかを査定いたしました。実際に売れたマンション棟内の事例に基づいて注文住宅の完成までに成約することが条件だったため、その条件にあう価格での販売活動をいたしました。広告活動後、約1か月で契約となり無事、余裕を持った買い替えを行うことができました。
+							</div>
+							<h4 class="sell-exampleSubtitle">とんとんならではのポイント</h4>
+							<div class="sell-point04">
+							買い替えは購入と売却のスケジュールを合わせるのが非常に難しいですが、とんとんはお客様の状況に合わせた売却方法をご提案いたします。
+							</div>
+							<h4 class="sell-exampleSubtitle">担当スタッフからのメッセージ</h4>
+							<div class="sell-point05">
+							購入スケジュールに沿ったスムーズな売却ができたので、売主様は余裕をもった買い替えができました。
+							</div>
+						</li>
+						<li>
+							<h3 class="sell-exampleTitle">
+								<div class="sell-exampleTitleInner">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/case04.png" alt="case04 維持不能" class="sell-disPc">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/case04_sp.png" alt="case04 維持不能" class="sell-disSp">
+								</div>
+								<div class="sell-exampleTitleDeco">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/tonton_family.png" alt="">
+								</div>
+							</h3>
+							<h4 class="sell-exampleSubtitle">お客様の背景</h4>
+							<div class="sell-point01">
+								<dl class="sell-tableBlock">
+									<dt>年代</dt>
+									<dd>40代</dd>
+									<dt>ご職業</dt>
+									<dd>会社員</dd>
+									<dt>お住まい</dt>
+									<dd>札幌市</dd>
+									<dt>ご相談の地域</dt>
+									<dd>札幌市</dd>
+									<dt>ご売却の理由</dt>
+									<dd>住み替えのため</dd>
+								</dl>
+								<div class="sell-point01Img">
+									<img src="/wp-content/themes/tonton-web-theme/images/business/sell_example_04.png" alt="">
+								</div>
+							</div>
+							<h4 class="sell-exampleSubtitle">ご相談内容</h4>
+							<div class="sell-point02">
+							離婚されて1人の収入となり、住宅ローンの支払いが厳しくなったため。住宅ローンの残債を無くし、住み替え先の費用もできればまかないたい。
+							</div>
+							<h4 class="sell-exampleSubtitle">ご提案内容と結果</h4>
+							<div class="sell-point03">
+							住宅ローンの残債と住み替え先の費用も加味し、自宅を見させて頂いた上で不動産のマーケットを分析し成約が見込める価格を提示。価格、住宅ローンの残債もなくなり住み替え先の費用も残せる価格で成約。
+							</div>
+							<h4 class="sell-exampleSubtitle">とんとんならではのポイント</h4>
+							<div class="sell-point04">
+							お客様にとって、不動産売買を成功させることに加え＋アルファを心がけています。<br />
+							通常の不動産売買であれば、それがなされれば終わりです。しかし弊社は今回のように引っ越しのことまで、最後までサポートさせていただきます。
+							</div>
+							<h4 class="sell-exampleSubtitle">担当スタッフからのメッセージ</h4>
+							<div class="sell-point05">
+							私たち担当者を、信じて任せて頂けた結果成約に繋がりました。心配なこともあったと思いますが、売主様のご希望通りに売却ができたこと、私たちも大変嬉しく思います。
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="sell-block sell-block--wullGreen">
+					<div class="sell-blockInner">
+						<h2 class="sell-contactTitle">まずはお気軽に<br class="sell-disSp" />お問い合わせください。</h2>
+						<div class="sell-button sell-button--green">
+							<div class="sell-buttonInner sell-buttonInner--small">
+								<a href="/business/reform">
+									お問い合わせ
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

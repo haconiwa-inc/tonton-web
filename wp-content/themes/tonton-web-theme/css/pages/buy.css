@@ -15,7 +15,7 @@ html {
 }
 
 .buy-title-area {
-  background: url('/wp-content/themes/tonton-web-theme/img/business/kv_bg.png') no-repeat left top;
+  background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg.png') no-repeat left top;
   background-size: cover;
   padding: 70px 0;
 }
@@ -250,7 +250,7 @@ html {
   }
 
   .buy-title-area {
-    background: url('/wp-content/themes/tonton-web-theme/img/business/kv_bg_sp.png') no-repeat left top;
+    background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg_sp.png') no-repeat left top;
     background-size: cover;
     padding: 35px 0;
   }
