@@ -229,77 +229,42 @@ get_header();
 		</section>
 
 		<section>
+			
 			<div class="top-news">
 				<div class="top-news-title">お知らせ</div>
 				<div class="top-news-wrapper">
 					<div class="top-news-list">
-						<ul>
+					<ul>
+						<?php
+							$args = array(
+								'posts_per_page' => 10 // 表示件数の指定
+							);
+							$posts = get_posts( $args );
+							foreach ( $posts as $post ): // ループの開始
+							setup_postdata( $post ); // 記事データの取得
+						?>
 							<li>
-								<div class="top-news-item-box">
-									<div class="top-news-item">
-										<div class="top-news-date">2022.2.22</div>
-										<div class="top-news-tags top-news-tags-brown">ニュース</div>
+								<a href="<?php the_permalink(); ?>">
+									<div class="top-news-item-box">
+										<div class="top-news-item">
+											<div class="top-news-date"><?php the_time("Y.n.j"); ?></div>
+											<div class="top-news-tags top-news-tags-<?php foreach((get_the_tags()) as $tag) { echo $tag->slug . ' ';} ?>">
+												<?php foreach((get_the_tags()) as $tag) {
+													echo $tag->name . ' ';
+												} ?>
+											</div>
+										</div>
+										<div class="top-news-description">
+											<?php the_title(); ?>
+										</div>
 									</div>
-									<div class="top-news-description">
-										<a href="">
-											「〈土地〉西宮の沢６条２丁目」が成約となりました
-										</a>
-									</div>
-								</div>
+								</a>
 							</li>
-							<li>
-								<div class="top-news-item-box">
-									<div class="top-news-item">
-										<div class="top-news-date">2022.2.22</div>
-										<div class="top-news-tags top-news-tags-blue">新規</div>
-									</div>
-									<div class="top-news-description">
-										<a href="">
-											「〈土地〉平和１条６丁目」の販売を開始しました。
-										</a>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="top-news-item-box">
-									<div class="top-news-item">
-										<div class="top-news-date">2022.2.22</div>
-										<div class="top-news-tags top-news-tags-yellow">成約</div>
-									</div>
-									<div class="top-news-description">
-										<a href="">
-											「〈中古マンション〉エバーグリーン円山　４０１号室」が新価格となりました。
-										</a>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="top-news-item-box">
-									<div class="top-news-item">
-										<div class="top-news-date">2022.2.22</div>
-										<div class="top-news-tags top-news-tags-red">ニュース</div>
-									</div>
-									<div class="top-news-description">
-										<a href="">
-											「〈中古マンション〉エバーグリーン円山　４０１号室」が新価格となりました。
-										</a>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="top-news-item-box">
-									<div class="top-news-item">
-										<div class="top-news-date">2022.2.22</div>
-										<div class="top-news-tags top-news-tags-brown">採用</div>
-									</div>
-									<div class="top-news-description">
-										<a href="">
-											「〈中古マンション〉エバーグリーン円山　４０１号室」が新価格となりました。
-										</a>
-									</div>
-								</div>
-							</li>
-						</ul>
+						<?php
+							endforeach; // ループの終了
+							wp_reset_postdata(); // 直前のクエリを復元する
+						?>
+					</ul>
 					</div>
 					<div class="top-news-button-wrapper">
 						<div class="top-button">
