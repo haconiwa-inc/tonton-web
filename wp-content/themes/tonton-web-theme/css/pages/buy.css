@@ -58,7 +58,7 @@ html {
 
 .buy-contents {
   width: 100%;
-  margin: 0 auto 120px;;
+  margin: 0 auto 6.2%;
 }
 
 .buy-contents img {
@@ -69,7 +69,7 @@ html {
 .buy-title-area {
   background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg.png') no-repeat left top;
   background-size: cover;
-  padding: 70px 0;
+  padding: 4% 0;
 }
 
 .buy-title {
@@ -80,25 +80,25 @@ html {
 .buy-block {
   width: 100%;
   max-width: 1040px;
-  margin: 115px auto 0;
+  margin: 6% auto 0;
 }
 
 .buy-block--wull {
   width: 100%;
   max-width: 100%;
-  padding: 115px 0 120px;
+  padding: 6% 0 6.2%;
   background-color: #F7F4EC;
 }
 
 .buy-block--wullGreen {
   width: 100%;
   max-width: 100%;
-  padding: 115px 0 120px;
+  padding: 6% 0 6.2%;
   background: rgba(0, 152, 68, .1);
 }
 
 .buy-block--top {
-  margin: 75px auto 0;
+  margin: 4% auto 0;
 }
 
 .buy-blockInner {
@@ -110,7 +110,7 @@ html {
 .buy-subTitle {
   font-size: 3.2rem;
   text-align: center;
-  margin: 0 auto 30px;
+  margin: 0 auto 2.9%;
   letter-spacing: 5px;
 }
 
@@ -134,7 +134,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 35px;
+  margin-bottom: 3.4%;
 }
 
 .buy-pointCapture {
@@ -143,17 +143,17 @@ html {
 
 .buy-pointText {
   width: 75%;
-  margin-left: 40px;
+  margin-left: 3.9%;
 }
 
 .buy-pointTitle {
-  margin: 10px auto;
+  margin: 1.3% auto;
   font-size: 1.8rem;
   font-weight: bold;
 }
 
 .buy-pointContent {
-  margin-bottom: 30px;
+  margin-bottom: 4%;
   font-size: 1.6rem;
 }
 
@@ -174,7 +174,7 @@ html {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 40px;
-  padding: 25px 30px;
+  padding: 2.4% 2.9%;
   border: 2px solid #4D291F;
   border-radius: 10px;
 }
@@ -196,11 +196,11 @@ html {
 }
 
 .buy-stepText {
-  margin-left: 20px;
+  margin-left: 2.1%;
 }
 
 .buy-stepTitle {
-  margin-bottom: 10px;
+  margin: 0 auto 2.3%;
   font-size: 1.8rem;
   font-weight: bold;
   color: #4D291F;
@@ -213,7 +213,7 @@ html {
 .buy-contactTitle {
   font-size: 3.2rem;
   text-align: center;
-  margin: 0 auto 50px;
+  margin: 0 auto 4.8%;
 }
 
 .buy-button {
@@ -273,12 +273,12 @@ html {
 }
 
 .buy-linkList li:not(:first-child) {
-  margin-left: 30px;
+  margin-left: 2.9%;
 }
 
 .buy-button a {
   display: block;
-  padding: 20px 0;
+  padding: 6.4% 0;
   border-radius: 8px;
   text-decoration: none;
   font-size: 1.8rem;
@@ -302,13 +302,13 @@ html {
 
 @media screen and (max-width:768px) {
   .buy-contents {
-    margin: 0 auto 60px;
+    margin: 0 auto 16%;
   }
 
   .buy-title-area {
     background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg_sp.png') no-repeat left top;
     background-size: cover;
-    padding: 35px 0;
+    padding: 9.4% 0;
   }
 
   .buy-title {
@@ -319,35 +319,35 @@ html {
   .buy-block {
     width: 100%;
     max-width: 100%;
-    padding: 0 27.5px;
-    margin: 55px auto 0;
+    padding: 0 7.3%;
+    margin: 14.7% auto 0;
   }
 
   .buy-block--wull {
     width: 100%;
     max-width: 100%;
-    padding: 55px 0 60px;
+    padding: 14.7% 0 16%
   }
 
   .buy-block--wullGreen {
     width: 100%;
     max-width: 100%;
-    padding: 35px 0 40px;
+    padding: 9.3% 0 10.7%;
   }
 
   .buy-block--top {
-    margin: 35px auto 0;
+    margin: 9.4% auto 0;
   }
 
   .buy-blockInner {
     max-width: 100%;
-    padding: 0 27.5px;
+    padding: 0 7.3%;
   }
 
   .buy-subTitle {
     font-size: 2rem;
     text-align: left;
-    margin: 0 auto 35px;
+    margin: 0 auto 11%;
   }
 
   .buy-leadText {
@@ -362,12 +362,12 @@ html {
 
   .buy-pointList li {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 7.8%;
   }
 
   .buy-pointCapture {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 7.8%;
   }
 
   .buy-pointText {
@@ -376,14 +376,14 @@ html {
   }
 
   .buy-pointTitle {
-    margin: 10px auto;
+    margin: 3.1% auto;
     font-size: 1.8rem;
     font-weight: bold;
     color: #4D291F;
   }
 
   .buy-pointContent {
-    margin-bottom: 30px;
+    margin-bottom: 9.4%;
     font-size: 1.6rem;
   }
 
@@ -401,7 +401,7 @@ html {
     position: relative;
     display: block;
     margin-bottom: 26px;
-    padding: 30px 32px;
+    padding: 9.4% 10%;
   }
 
   .buy-flowList li:not(:last-child)::before {
@@ -418,7 +418,7 @@ html {
 
   .buy-stepIcon {
     width: 70px;
-    margin: 0 auto 25px;
+    margin: 0 auto 10%;
   }
 
   .buy-stepText {
@@ -426,7 +426,7 @@ html {
   }
 
   .buy-stepTitle {
-    margin-bottom: 15px;
+    margin-bottom: 6%;
     font-size: 1.6rem;
   }
 
@@ -437,7 +437,7 @@ html {
   .buy-contactTitle {
     font-size: 2rem;
     text-align: center;
-    margin: 0 auto 20px;
+    margin: 0 auto 6.3%;
   }
 
   .buy-button {
@@ -450,17 +450,13 @@ html {
 
   .buy-buttonInner--small {
     width: 100%;
-    padding: 0 27.5px;
+    padding: 0 8.5%;
   }
 
   .buy-linkList {
     display: block;
     margin: 0;
     padding: 0;
-  }
-
-  .buy-linkList li {
-    margin-bottom: 26px;
   }
 
   .buy-linkTitle {
@@ -476,7 +472,7 @@ html {
   }
 
   .buy-button a {
-    padding: 20px 0;
+    padding: 7.6% 0;
     font-size: 1.6rem;
   }
 

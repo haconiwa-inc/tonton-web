@@ -58,7 +58,7 @@ html {
 
 .business-contents {
   width: 100%;
-  margin: 0 auto 120px;;
+  margin: 0 auto 6.2%;
 }
 
 .business-contents img {
@@ -69,7 +69,7 @@ html {
 .business-title-area {
   background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg.png') no-repeat left top;
   background-size: cover;
-  padding: 70px 0;
+  padding: 4% 0;
 }
 
 .business-title {
@@ -80,17 +80,17 @@ html {
 .business-block {
   width: 100%;
   max-width: 1040px;
-  margin: 115px auto 0;
+  margin: 6% auto 0;
 }
 
 .business-block--top {
-  margin: 75px auto 0;
+  margin: 4% auto 0;
 }
 
 .business-subTitle {
   font-size: 3.2rem;
   text-align: center;
-  margin: 0 auto 30px;
+  margin: 0 auto 2.9%;
 }
 
 .business-leadText {
@@ -104,13 +104,13 @@ html {
   align-items: stretch;
   list-style: none;
   padding: 0;
-  margin: 75px auto 40px;
+  margin: 7.3% auto 3.9%;
 }
 
 .business-itemList li a {
   display: block;
   height: calc(100% - 40px);
-  padding: 20px 25px;
+  padding: 6.2% 7.7%;
   color: #333;
   text-decoration: none;
 }
@@ -123,12 +123,12 @@ html {
 }
 
 .business-itemList li:not(:first-child) {
-  margin-left: 25px;
+  margin-left: 2.4%;
 }
 
 .business-itemCapture {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 7.3%;
 }
 
 .business-itemTitle {
@@ -138,7 +138,7 @@ html {
 }
 
 .business-itemContent {
-  margin-bottom: 45px;
+  margin-bottom: 16.3%;
   font-size: 1.6rem;
 }
 
@@ -154,28 +154,28 @@ html {
   align-items: stretch;
   list-style: none;
   padding: 0;
-  margin: 50px auto 80px;
+  margin: 4.9% auto 7.7%;
 }
 
 .business-realEstateList li {
   width: calc(100% / 2);
-  padding: 25px;
+  padding: 2.4%;
   box-shadow: 0px 0px 9px -5px #4d291f;
   border-radius: 10px;
 }
 
 .business-realEstateList li:last-child {
-  margin-left: 25px;
+  margin-left: 2.4%;
 }
 
 .business-realEstateTitle {
-  margin: 0 auto 10px;
+  margin: 0 auto 2.2%;
   font-size: 2rem;
   color: #009844;
 }
 
 .business-realEstateContent {
-  margin-bottom: 20px;
+  margin-bottom: 4.4%;
   font-size: 1.6rem;
 }
 
@@ -197,7 +197,7 @@ html {
 
 .business-button a {
   display: block;
-  padding: 20px 0;
+  padding: 3.9% 0;
   border-radius: 8px;
   text-decoration: none;
   font-size: 1.8rem;
@@ -217,13 +217,13 @@ html {
 
 @media screen and (max-width:768px) {
   .business-contents {
-    margin: 0 auto 60px;
+    margin: 0 auto 16%;
   }
 
   .business-title-area {
     background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg_sp.png') no-repeat left top;
     background-size: cover;
-    padding: 35px 0;
+    padding: 9.4% 0;
   }
 
   .business-title {
@@ -234,18 +234,18 @@ html {
   .business-block {
     width: 100%;
     max-width: 100%;
-    padding: 0 27.5px;
-    margin: 55px auto 0;
+    padding: 0 7.3%;
+    margin: 14.7% auto 0;
   }
 
   .business-block--top {
-    margin: 35px auto 0;
+    margin: 9.4% auto 0;
   }
 
   .business-subTitle {
     font-size: 2rem;
     text-align: left;
-    margin: 0 auto 35px;
+    margin: 0 auto 11%;
   }
 
   .business-leadText {
@@ -255,17 +255,17 @@ html {
 
   .business-itemList {
     display: block;
-    margin: 30px auto 20px;
+    margin: 9.4% auto 6.2%;
   }
 
   .business-itemList li a {
     height: auto;
-    padding: 27.5px 30px;
+    padding: 8.7% 9.4%;
   }
 
   .business-itemList li {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 9.4%;
   }
 
   .business-itemList li:not(:first-child) {
@@ -273,34 +273,34 @@ html {
   }
 
   .business-itemCapture {
-    margin-bottom: 20px;
+    margin-bottom: 7.8%;
   }
 
   .business-itemTitle {
-    margin: 15px auto;
+    margin: 5.9% auto;
     font-size: 1.6rem;
   }
 
   .business-itemContent {
-    margin-bottom: 10px;
+    margin-bottom: 3.9%;
     font-size: 1.4rem;
   }
 
   .business-arrow {
     position: absolute;
-    bottom: 27.5px;
+    bottom: 10.7%;
     right: 30px;
   }
 
   .business-realEstateList {
     display: block;
-    margin: 40px auto;
+    margin: 12.5% auto;
   }
 
   .business-realEstateList li {
     width: 100%;
-    padding: 25px;
-    margin-bottom: 28px;
+    padding: 7.8%;
+    margin-bottom: 8.8%;
     box-shadow: 0px 0px 9px -5px #4d291f;
   }
 
@@ -309,13 +309,13 @@ html {
   }
 
   .business-realEstateTitle {
-    margin: 0 auto 10px;
+    margin: 0 auto 3.7%;
     font-size: 1.6rem;
     color: #009844;
   }
 
   .business-realEstateContent {
-    margin-bottom: 18px;
+    margin-bottom: 6.7%;
     font-size: 1.4rem;
   }
 
@@ -329,11 +329,11 @@ html {
 
   .business-buttonInner--small {
     width: 100%;
-    padding: 0 27.5px;
+    padding: 0 7.3%;
   }
 
   .business-button a {
-    padding: 20px 0;
+    padding: 6.3% 0;
     font-size: 1.6rem;
   }
 

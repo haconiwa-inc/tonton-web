@@ -18,9 +18,9 @@
   <main id="primary" class="site-main">
      <div class="sell-contents">
       <div class="sell-title-area">
-        <h1 class="sell-title">
+        <h2 class="sell-title">
           <img src="<?php echo get_template_directory_uri();?>/images/business/sell_title.png" alt="物件購入">
-        </h1>
+        </h2>
       </div>
       <ul class="breadcrumbs">
         <li><a href="/">TOP</a></li>
@@ -28,9 +28,9 @@
         <li>物件売却</li>
       </ul>
         <div class="sell-block sell-block--top">
-          <h2 class="sell-subTitle">
+          <h3 class="sell-subTitle">
           とんとんでの物件売却
-          </h2>
+          </h3>
           <div class="sell-leadText">
           とんとん住宅販売では、不動産の無料査定等・自社での買取を行なっています。<br />
           札幌市内全域の土地・中古住宅・マンションを豊富に取り扱っています。
@@ -38,7 +38,7 @@
         </div>
         <div class="sell-block sell-block--wull">
           <div class="sell-blockInner">
-            <h2 class="sell-pointsTitle">とんとんで物件を売却するポイント</h2>
+            <h3 class="sell-pointsTitle">とんとんで物件を売却するポイント</h3>
             <ul class="sell-pointList">
               <li>
                 <div class="sell-pointCapture">
@@ -64,9 +64,9 @@
           </div>
         </div>
         <div class="sell-block">
-          <h2 class="sell-flowTitle">
+          <h3 class="sell-flowTitle">
             売却の流れ
-          </h2>
+          </h3>
           <ul class="sell-flowList">
             <li>
               <div class="sell-stepIcon">
@@ -160,7 +160,7 @@
         </div>
         <div class="sell-block sell-block--wull">
           <div class="sell-blockInner">
-            <h2 class="sell-pointsTitle">代表的な売却事例</h2>
+            <h3 class="sell-pointsTitle">代表的な売却事例</h3>
           </div>
           <ul class="sell-exampleList">
             <li>
@@ -349,7 +349,7 @@
         </div>
         <div class="sell-block sell-block--wullGreen">
           <div class="sell-blockInner">
-            <h2 class="sell-contactTitle">まずはお気軽に<br class="sell-disSp" />お問い合わせください。</h2>
+            <h3 class="sell-contactTitle">まずはお気軽に<br class="sell-disSp" />お問い合わせください。</h3>
             <div class="sell-button sell-button--green">
               <div class="sell-buttonInner sell-buttonInner--small">
                 <a href="/business/reform">

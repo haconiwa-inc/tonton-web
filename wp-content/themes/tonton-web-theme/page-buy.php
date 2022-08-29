@@ -18,9 +18,9 @@
     <main id="primary" class="site-main">
      <div class="buy-contents">
       <div class="buy-title-area">
-        <h1 class="buy-title">
+        <h2 class="buy-title">
           <img src="<?php echo get_template_directory_uri();?>/images/business/buy_title.png" alt="物件購入">
-        </h1>
+        </h2>
       </div>
       <ul class="breadcrumbs">
         <li><a href="/">TOP</a></li>
@@ -28,9 +28,9 @@
         <li>物件購入</li>
       </ul>
         <div class="buy-block buy-block--top">
-          <h2 class="buy-subTitle">
+          <h3 class="buy-subTitle">
           とんとんでの物件購入
-          </h2>
+          </h3>
           <div class="buy-leadText">
             とんとん住宅販売では、物件のご紹介・現地ご案内・資金計画の提案・住宅ローンのご相談等も行なっております。<br />
             新築・中古どちらも取り扱っておりますので、まずはお気軽にご相談ください。
@@ -38,7 +38,7 @@
         </div>
         <div class="buy-block buy-block--wull">
           <div class="buy-blockInner">
-            <h2 class="buy-pointsTitle">とんとんで物件を購入するポイント</h2>
+            <h3 class="buy-pointsTitle">とんとんで物件を購入するポイント</h3>
             <ul class="buy-pointList">
               <li>
                 <div class="buy-pointCapture">
@@ -84,9 +84,9 @@
           </div>
         </div>
         <div class="buy-block">
-          <h2 class="buy-flowTitle">
+          <h3 class="buy-flowTitle">
             購入の流れ
-          </h2>
+          </h3>
           <ul class="buy-flowList">
             <li>
               <div class="buy-stepIcon">
@@ -178,7 +178,7 @@
         </div>
         <div class="buy-block buy-block--wullGreen">
           <div class="buy-blockInner">
-            <h2 class="buy-contactTitle">まずはお気軽に<br class="buy-disSp" />お問い合わせください。</h2>
+            <h3 class="buy-contactTitle">まずはお気軽に<br class="buy-disSp" />お問い合わせください。</h3>
             <div class="buy-button buy-button--green">
               <div class="buy-buttonInner buy-buttonInner--small">
                 <a href="/business/reform">

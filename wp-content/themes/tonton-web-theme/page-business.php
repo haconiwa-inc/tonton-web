@@ -18,18 +18,18 @@
   <main id="primary" class="site-main">
      <div class="business-contents">
       <div class="business-title-area">
-        <h1 class="business-title">
+        <h2 class="business-title">
           <img src="<?php echo get_template_directory_uri();?>/images/business/business_title.png" alt="事業案内">
-        </h1>
+        </h2>
       </div>
       <ul class="breadcrumbs">
         <li><a href="/">TOP</a></li>
         <li>事業案内</li>
       </ul>
         <div class="business-block business-block--top">
-          <h2 class="business-subTitle">
+          <h3 class="business-subTitle">
             不動産の価値を最大化できるプランニング力に自信があります
-          </h2>
+          </h3>
           <div class="business-leadText">
             不動産の購入・売却・新築・リフォーム全てを網羅できる“総合不動産会社”としてお客様にとって最善の『住み替え』を提案します！<br />
             住まいのこと、何でもご相談下さい。<br />

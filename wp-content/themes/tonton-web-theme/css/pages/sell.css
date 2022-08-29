@@ -58,7 +58,7 @@ html {
 
 .sell-contents {
   width: 100%;
-  margin: 0 auto 120px;;
+  margin: 0 auto 6.2%;
 }
 
 .sell-contents img {
@@ -69,7 +69,7 @@ html {
 .sell-title-area {
   background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg.png') no-repeat left top;
   background-size: cover;
-  padding: 70px 0;
+  padding: 4% 0;
 }
 
 .sell-title {
@@ -80,13 +80,13 @@ html {
 .sell-block {
   width: 100%;
   max-width: 1040px;
-  margin: 115px auto 0;
+  margin: 6% auto 0;
 }
 
 .sell-block--wull {
   width: 100%;
   max-width: 100%;
-  padding: 115px 0 120px;
+  padding: 6% 0 6.2%;
   background-color: #F7F4EC;
 }
 
@@ -94,12 +94,12 @@ html {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 115px 0 120px;
+  padding: 6% 0 6.2%;
   background: rgba(0, 152, 68, .1);
 }
 
 .sell-block--top {
-  margin: 75px auto 0;
+  margin: 4% auto 0;
 }
 
 .sell-blockInner {
@@ -111,14 +111,14 @@ html {
 .sell-subTitle {
   font-size: 3.2rem;
   text-align: center;
-  margin: 0 auto 30px;
+  margin: 0 auto 2.9%;
   letter-spacing: 5px;
 }
 
 .sell-pointsTitle {
   font-size: 3.2rem;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 3.9%;
 }
 
 .sell-leadText {
@@ -136,7 +136,7 @@ html {
 }
 
 .sell-pointList li:not(:first-child) {
-  margin-left: 20px;
+  margin-left: 1.9%;
 }
 
 .sell-pointCapture {
@@ -160,7 +160,7 @@ html {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 40px;
-  padding: 25px 30px;
+  padding: 2.4% 2.9%;
   border: 2px solid #4D291F;
   border-radius: 10px;
 }
@@ -182,11 +182,11 @@ html {
 }
 
 .sell-stepText {
-  margin-left: 20px;
+  margin-left: 2.1%;
 }
 
 .sell-stepTitle {
-  margin-bottom: 10px;
+  margin: 0 auto 2.3%;
   font-size: 1.8rem;
   font-weight: bold;
   color: #4D291F;
@@ -199,7 +199,7 @@ html {
 .sell-contactTitle {
   font-size: 3.2rem;
   text-align: center;
-  margin: 0 auto 50px;
+  margin: 0 auto 4.8%;
 }
 
 .sell-exampleList {
@@ -212,15 +212,15 @@ html {
 }
 
 .sell-exampleList li {
-  margin-bottom: 50px;
-  padding: 50px 55px;
+  margin-bottom: 4.8%;
+  padding: 4.8% 5.3%;
   background-color: #fff;
 }
 
 .sell-exampleTitle {
   position: relative;
-  margin-bottom: 45px;
-  padding-bottom: 25px;
+  margin-bottom: 4.9%;
+  padding-bottom: 2.7%;
   border-bottom: 2px solid #4D291F;
 }
 
@@ -238,7 +238,7 @@ html {
 }
 
 .sell-exampleSubtitle {
-  margin: 0 auto 15px;
+  margin: 0 auto 1.6%;
   font-size: 2rem;
   color: #009844;
 }
@@ -247,7 +247,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 4.3%;
 }
 
 .sell-tableBlock {
@@ -260,8 +260,8 @@ html {
 
 .sell-tableBlock dt {
   width: 30%;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 4.5%;
+  padding-bottom: 4.5%;
   color: #4D291F;
   font-size: 1.8rem;
   border-bottom: 2px solid #F6F4F4;
@@ -269,8 +269,8 @@ html {
 
 .sell-tableBlock dd {
   width: 70%;
-  margin: 0 auto 20px;
-  padding-bottom: 20px;
+  margin-bottom: 4.5%;
+  padding-bottom: 4.5%;
   color: #333;
   font-size: 1.8rem;
   border-bottom: 2px solid #F6F4F4;
@@ -278,7 +278,7 @@ html {
 
 .sell-point01Img {
   width: 50%;
-  margin-left: 40px;
+  margin-left: 4.3%;
 }
 
 .sell-point02,
@@ -286,7 +286,7 @@ html {
 .sell-point04,
 .sell-point05 {
   font-size: 1.6rem;
-  margin-bottom: 40px;
+  margin-bottom: 4.3%;
 }
 
 .sell-button {
@@ -345,13 +345,9 @@ html {
   font-size: 1.8rem;
 }
 
-.sell-linkList li:not(:first-child) {
-  margin-left: 30px;
-}
-
 .sell-button a {
   display: block;
-  padding: 20px 0;
+  padding: 6.4% 0;
   border-radius: 8px;
   text-decoration: none;
   font-size: 1.8rem;
@@ -375,13 +371,13 @@ html {
 
 @media screen and (max-width:768px) {
   .sell-contents {
-    margin: 0 auto 60px;
+    margin: 0 auto 16%;
   }
 
   .sell-title-area {
     background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg_sp.png') no-repeat left top;
     background-size: cover;
-    padding: 35px 0;
+    padding: 9.4% 0;
   }
 
   .sell-title {
@@ -393,35 +389,35 @@ html {
     width: 100%;
     max-width: 100%;
     padding: 0 27.5px;
-    margin: 55px auto 0;
+    margin: 14.7% auto 0;
   }
 
   .sell-block--wull {
     width: 100%;
     max-width: 100%;
-    padding: 55px 0 60px;
+    padding: 14.7% 0 16%
   }
 
   .sell-block--wullGreen {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 35px 0 40px;
+    padding: 9.3% 0 10.7%;
   }
 
   .sell-block--top {
-    margin: 35px auto 0;
+    margin: 9.4% auto 0;
   }
 
   .sell-blockInner {
     max-width: 100%;
-    padding: 0 27.5px;
+    padding: 0 7.3%
   }
 
   .sell-subTitle {
     font-size: 2rem;
     text-align: left;
-    margin: 0 auto 35px;
+    margin: 0 auto 11%;
   }
 
   .sell-leadText {
@@ -432,7 +428,7 @@ html {
   .sell-pointsTitle {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 34px;
+    margin-bottom: 10.9%;
   }
 
   .sell-pointList {
@@ -441,7 +437,7 @@ html {
 
   .sell-pointList li {
     display: block;
-    margin-bottom: 28px;
+    margin-bottom: 8.8%;
   }
 
   .sell-pointCapture {
@@ -462,7 +458,7 @@ html {
     position: relative;
     display: block;
     margin-bottom: 26px;
-    padding: 30px 32px;
+    padding: 9.4% 10%;
   }
 
   .sell-flowList li:not(:last-child)::before {
@@ -479,7 +475,7 @@ html {
 
   .sell-stepIcon {
     width: 70px;
-    margin: 0 auto 25px;
+    margin: 0 auto 10%;
   }
 
   .sell-stepText {
@@ -498,25 +494,25 @@ html {
   .sell-contactTitle {
     font-size: 2rem;
     text-align: center;
-    margin: 0 auto 20px;
+    margin: 0 auto 6.3%;
   }
 
   .sell-exampleList {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 6.7%;
   }
 
   .sell-exampleList li {
-    margin-bottom: 25px;
-    padding: 25px;
+    margin-bottom: 7.7%;
+    padding: 7.7%;
     background-color: #fff;
   }
 
   .sell-exampleTitle {
     position: relative;
-    margin-bottom: 25px;
-    padding-bottom: 17px;
+    margin-bottom: 9.1%;
+    padding-bottom: 6.2%;
     border-bottom: 2px solid #4D291F;
   }
 
@@ -534,13 +530,13 @@ html {
   }
 
   .sell-exampleSubtitle {
-    margin: 0 auto 13px;
+    margin: 0 auto 4.8%;
     font-size: 1.6rem;
   }
 
   .sell-point01 {
     display: block;
-    margin-bottom: 25px;
+    margin-bottom: 9.1%;
   }
 
   .sell-tableBlock {
@@ -549,15 +545,15 @@ html {
 
   .sell-tableBlock dt {
     width: 40%;
-    margin-bottom: 15px;
-    padding-bottom: 18px;
+    margin-bottom: 5.5%;
+    padding-bottom: 6.6%;
     font-size: 1.4rem;
   }
 
   .sell-tableBlock dd {
     width: 60%;
-    margin: 0 auto 15px;
-    padding-bottom: 18px;
+    margin: 0 auto 5.5%;
+    padding-bottom: 6.6%;
     font-size: 1.4rem;
   }
 
@@ -571,7 +567,7 @@ html {
   .sell-point04,
   .sell-point05 {
     font-size: 1.4rem;
-    margin-bottom: 25px;
+    margin-bottom: 9.1%;
   }
 
   .sell-button {
@@ -584,7 +580,7 @@ html {
 
   .sell-buttonInner--small {
     width: 100%;
-    padding: 0 27.5px;
+    padding: 0 8.5%;
   }
 
   .sell-linkList {
@@ -593,24 +589,8 @@ html {
     padding: 0;
   }
 
-  .sell-linkList li {
-    margin-bottom: 26px;
-  }
-
-  .sell-linkTitle {
-    font-size: 1.6rem;
-  }
-
-  .sell-linkArrow {
-    right: 10px;
-  }
-
-  .sell-linkList li:not(:first-child) {
-    margin-left: 0;
-  }
-
   .sell-button a {
-    padding: 20px 0;
+    padding: 7.6% 0;
     font-size: 1.6rem;
   }
 
