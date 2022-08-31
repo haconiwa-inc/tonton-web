@@ -66,29 +66,6 @@ html {
   vertical-align: bottom;
 }
 
-.buy-title-area {
-  background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg.png') no-repeat left top;
-  background-size: cover;
-  padding: 4% 0;
-}
-
-.buy-title {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.buy-title p {
-  font-size: 3.2rem;
-  font-family: "GenJyuuGothic";
-  text-align: center;
-  margin: 0;
-}
-
-.buy-title span {
-  font-size: 2.4rem;
-  font-family: "Ropa Sans"
-}
-
 .buy-block {
   width: 100%;
   max-width: 1040px;
@@ -319,21 +296,6 @@ html {
 @media screen and (max-width:768px) {
   .buy-contents {
     margin: 0 auto 16%;
-  }
-
-  .buy-title-area {
-    background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg_sp.png') no-repeat left top;
-    background-size: cover;
-    padding: 9.4% 0;
-  }
-
-  .buy-title p {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .buy-title span {
-    font-size: 1.4rem;
   }
 
   .buy-block {

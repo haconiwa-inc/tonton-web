@@ -17,8 +17,8 @@
 
     <main id="primary" class="site-main">
      <div class="buy-contents">
-      <div class="buy-title-area">
-        <h2 class="buy-title">
+      <div class="title-area">
+        <h2 class="title">
           <p>物件購入</p>
           <span>buy</span>
         </h2>

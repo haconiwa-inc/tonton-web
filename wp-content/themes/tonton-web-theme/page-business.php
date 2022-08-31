@@ -17,8 +17,8 @@
 
   <main id="primary" class="site-main">
      <div class="business-contents">
-      <div class="business-title-area">
-        <h2 class="business-title">
+      <div class="title-area">
+        <h2 class="title">
           <p>事業案内</p>
           <span>business</span>
         </h2>

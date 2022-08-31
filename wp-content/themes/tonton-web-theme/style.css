@@ -967,3 +967,44 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+/* 追加css */
+.title-area {
+  background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg.png') no-repeat left top;
+  background-size: cover;
+  padding: 4% 0;
+}
+
+.title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title p {
+  font-size: 3.2rem;
+  font-family: "GenJyuuGothic";
+  text-align: center;
+  margin: 0;
+}
+
+.title span {
+  font-size: 2.4rem;
+  font-family: "Ropa Sans"
+}
+
+@media screen and (max-width:768px) {
+	.title-area {
+    background: url('/wp-content/themes/tonton-web-theme/images/business/kv_bg_sp.png') no-repeat left top;
+    background-size: cover;
+    padding: 9.4% 0;
+  }
+
+  .title p {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .title span {
+    font-size: 1.4rem;
+  }
+}
