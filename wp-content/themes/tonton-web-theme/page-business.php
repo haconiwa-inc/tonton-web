@@ -19,7 +19,8 @@
      <div class="business-contents">
       <div class="business-title-area">
         <h2 class="business-title">
-          <img src="<?php echo get_template_directory_uri();?>/images/business/business_title.png" alt="事業案内">
+          <p>事業案内</p>
+          <span>business</span>
         </h2>
       </div>
       <ul class="breadcrumbs">

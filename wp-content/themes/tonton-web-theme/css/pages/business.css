@@ -73,8 +73,20 @@ html {
 }
 
 .business-title {
-  width: 215px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.business-title p {
+  font-size: 3.2rem;
+  font-family: "GenJyuuGothic";
+  text-align: center;
+  margin: 0;
+}
+
+.business-title span {
+  font-size: 2.4rem;
+  font-family: "Ropa Sans"
 }
 
 .business-block {
@@ -91,6 +103,7 @@ html {
   font-size: 3.2rem;
   text-align: center;
   margin: 0 auto 2.9%;
+  font-family: "GenJyuuGothic";
 }
 
 .business-leadText {
@@ -226,9 +239,13 @@ html {
     padding: 9.4% 0;
   }
 
-  .business-title {
-    width: 85px;
-    margin: 0 auto;
+  .business-title p {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .business-title span {
+    font-size: 1.4rem;
   }
 
   .business-block {

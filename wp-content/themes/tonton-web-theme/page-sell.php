@@ -19,7 +19,8 @@
      <div class="sell-contents">
       <div class="sell-title-area">
         <h2 class="sell-title">
-          <img src="<?php echo get_template_directory_uri();?>/images/business/sell_title.png" alt="物件購入">
+          <p>物件売却</p>
+          <span>sell</span>
         </h2>
       </div>
       <ul class="breadcrumbs">

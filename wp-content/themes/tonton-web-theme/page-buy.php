@@ -19,7 +19,8 @@
      <div class="buy-contents">
       <div class="buy-title-area">
         <h2 class="buy-title">
-          <img src="<?php echo get_template_directory_uri();?>/images/business/buy_title.png" alt="物件購入">
+          <p>物件購入</p>
+          <span>buy</span>
         </h2>
       </div>
       <ul class="breadcrumbs">
