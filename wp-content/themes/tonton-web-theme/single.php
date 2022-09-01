@@ -26,9 +26,18 @@ get_header();
         </ul>
 
         <div class="news-detail-content">
-          <div class="news-detail-tags news-tags-brown">ニュース</div>
+          <div class="news-detail-tags news-tags-<?php foreach((get_the_tags()) as $tag) { echo $tag->slug . ' ';} ?>">
+          <?php 
+            foreach((get_the_tags()) as $tag) {
+              echo $tag->name . ' ';
+            } 
+          ?>
+          </div>
           <div class="news-detail-title">
             <?php the_title(); ?>
+          </div>
+          <div class="news-detail-date">
+            <?php the_time("Y.n.j"); ?>
           </div>
           <div class="news-detail-description">
             <?php the_content(); ?>

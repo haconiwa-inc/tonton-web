@@ -317,7 +317,7 @@
 
 .news-detail-tags {
   padding: 6px;
-  font-size: 12px;
+  font-size: 16px;
   width: 120px;
   color: #fff;
   border-radius: 5px;
@@ -325,7 +325,13 @@
 }
 
 .news-detail-title {
+  margin-top: 2%;
   font-size: 30px;
+}
+
+.news-detail-date {
+  margin-top: 2%;
+  font-size: 20px;
 }
 
 .news-detail-img {
@@ -408,6 +414,7 @@
   }
 
   .news-detail-tags {
+    font-size: 12px;
     width: 100px;
   }
 
