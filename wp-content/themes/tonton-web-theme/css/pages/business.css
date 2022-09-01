@@ -11,7 +11,6 @@
 
 .business-block {
   width: 100%;
-  max-width: 1040px;
   margin: 6% auto 0;
 }
 
@@ -23,6 +22,7 @@
   font-size: 3.2rem;
   text-align: center;
   margin: 0 auto 2.9%;
+  letter-spacing: 4px;
   font-family: "GenJyuuGothic";
 }
 
@@ -52,7 +52,7 @@
   position: relative;
   width: calc(100% / 3);
   border: 2px solid #009844;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 .business-itemList li:not(:first-child) {
@@ -68,6 +68,7 @@
   margin: 10px auto;
   font-size: 2rem;
   color: #009844;
+  font-weight: bold;
 }
 
 .business-itemContent {
@@ -94,7 +95,7 @@
   width: calc(100% / 2);
   padding: 2.4%;
   box-shadow: 0px 0px 9px -5px #4d291f;
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 .business-realEstateList li:last-child {
@@ -105,6 +106,7 @@
   margin: 0 auto 2.2%;
   font-size: 2rem;
   color: #009844;
+  font-weight: bold;
 }
 
 .business-realEstateContent {
@@ -119,19 +121,20 @@
 }
 
 .business-buttonInner {
+  position: relative;
   width: 50%;
+  max-width: 454px;
   margin: 0 auto;
 }
 
-.business-buttonInner--small {
-  position: relative;
-  width: 30%;
+.business-buttonInner--2col {
+  width: 100%;
 }
 
 .business-button a {
   display: block;
   padding: 3.9% 0;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
   font-size: 1.8rem;
 }
@@ -148,16 +151,21 @@
   width: 60px;
 }
 
+.business-buttonArrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
 @media screen and (max-width:768px) {
   .business-contents {
     margin: 0 auto 16%;
   }
 
   .business-block {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 7.3%;
     margin: 14.7% auto 0;
+    line-height: 1.8;
   }
 
   .business-block--top {
@@ -209,9 +217,8 @@
   }
 
   .business-arrow {
-    position: absolute;
-    bottom: 10.7%;
-    right: 30px;
+    position: static;
+    text-align: right;
   }
 
   .business-realEstateList {
@@ -255,7 +262,7 @@
   }
 
   .business-button a {
-    padding: 6.3% 0;
+    padding: 5% 0;
     font-size: 1.6rem;
   }
 
