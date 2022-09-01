@@ -1,0 +1,472 @@
+/* TODO: 仮で記載 */
+html {
+  font-size: 62.5%;
+  color: #333;
+}
+
+.breadcrumbs {
+  width: 100%;
+  max-width: 1040px;
+  list-style: none;
+  margin: 25px auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-left: 15px;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.breadcrumbs li::before {
+  content: ">";
+  display: inline-block;
+  margin-right: 15px;
+  color: #333;
+}
+
+.breadcrumbs li:first-child {
+  margin-left: 0;
+}
+
+.breadcrumbs li:first-child:before {
+  content: none;
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    max-width: 100%;
+    padding: 0 27.5px;
+  }
+
+  .breadcrumbs li {
+    font-size: 1.2rem;
+  }
+}
+
+/* TODO: 仮で記載 end */
+
+.buy-contents {
+  width: 100%;
+  margin: 0 auto 6.2%;
+}
+
+.buy-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.buy-block {
+  width: 100%;
+  max-width: 1040px;
+  margin: 6% auto 0;
+}
+
+.buy-block--wull {
+  width: 100%;
+  max-width: 100%;
+  padding: 6% 0 6.2%;
+  background-color: #F7F4EC;
+}
+
+.buy-block--wullGreen {
+  width: 100%;
+  max-width: 100%;
+  padding: 6% 0 6.2%;
+  background: rgba(0, 152, 68, .1);
+}
+
+.buy-block--top {
+  margin: 4% auto 0;
+}
+
+.buy-blockInner {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.buy-subTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0 auto 2.9%;
+  letter-spacing: 5px;
+  font-family: "GenJyuuGothic";
+}
+
+.buy-pointsTitle {
+  font-size: 3.2rem;
+  text-align: left;
+  font-family: "GenJyuuGothic";
+}
+
+.buy-leadText {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.buy-pointList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.buy-pointList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3.4%;
+}
+
+.buy-pointCapture {
+  width: 25%;
+}
+
+.buy-pointText {
+  width: 75%;
+  margin-left: 3.9%;
+}
+
+.buy-pointTitle {
+  margin: 1.3% auto;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.buy-pointContent {
+  margin-bottom: 4%;
+  font-size: 1.6rem;
+}
+
+.buy-flowTitle {
+  font-size: 3.2rem;
+  text-align: left;
+  font-family: "GenJyuuGothic";
+}
+
+.buy-flowList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buy-flowList li {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 2.4% 2.9%;
+  border: 2px solid #4D291F;
+  border-radius: 10px;
+}
+
+.buy-flowList li:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 102%;
+  left: 65px;
+  width: 4px;
+  height: 40px;
+  background-color: #4D291F;
+  z-index: -1;
+}
+
+.buy-stepIcon {
+  width: 72px;
+  flex-shrink: 0;
+}
+
+.buy-stepText {
+  margin-left: 2.1%;
+}
+
+.buy-stepTitle {
+  margin: 0 auto 2.3%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4D291F;
+}
+
+.buy-stepContent {
+  font-size: 1.6rem;
+}
+
+.buy-contactTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0 auto 4.8%;
+  font-family: "GenJyuuGothic";
+}
+
+.buy-button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.buy-buttonInner {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.buy-buttonInner--left {
+  width: 45%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.buy-buttonInner--small {
+  width: 30%;
+}
+
+.buy-linkList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.buy-linkList li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.buy-linkTitle {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.buy-linkArrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.buy-linkList li:not(:first-child) {
+  margin-left: 2.9%;
+}
+
+.buy-button a {
+  display: block;
+  padding: 6.4% 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.buy-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
+
+.buy-icon {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 60px;
+}
+
+.buy-disSp {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .buy-contents {
+    margin: 0 auto 16%;
+  }
+
+  .buy-block {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 7.3%;
+    margin: 14.7% auto 0;
+  }
+
+  .buy-block--wull {
+    width: 100%;
+    max-width: 100%;
+    padding: 14.7% 0 16%
+  }
+
+  .buy-block--wullGreen {
+    width: 100%;
+    max-width: 100%;
+    padding: 9.3% 0 10.7%;
+  }
+
+  .buy-block--top {
+    margin: 9.4% auto 0;
+  }
+
+  .buy-blockInner {
+    max-width: 100%;
+    padding: 0 7.3%;
+  }
+
+  .buy-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 11%;
+  }
+
+  .buy-leadText {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .buy-pointsTitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .buy-pointList li {
+    display: block;
+    margin-bottom: 7.8%;
+  }
+
+  .buy-pointCapture {
+    width: 100%;
+    margin-bottom: 7.8%;
+  }
+
+  .buy-pointText {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .buy-pointTitle {
+    margin: 3.1% auto;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4D291F;
+  }
+
+  .buy-pointContent {
+    margin-bottom: 9.4%;
+    font-size: 1.6rem;
+  }
+
+  .buy-flowTitle {
+    font-size: 2rem;
+  }
+
+  .buy-flowList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .buy-flowList li {
+    position: relative;
+    display: block;
+    margin-bottom: 26px;
+    padding: 9.4% 10%;
+  }
+
+  .buy-flowList li:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 3px;
+    height: 28px;
+    transform: translateX(-50%);
+    background-color: #4D291F;
+    z-index: -1;
+  }
+
+  .buy-stepIcon {
+    width: 70px;
+    margin: 0 auto 10%;
+  }
+
+  .buy-stepText {
+    margin-left: 0;
+  }
+
+  .buy-stepTitle {
+    margin-bottom: 6%;
+    font-size: 1.6rem;
+  }
+
+  .buy-stepContent {
+    font-size: 1.4rem;
+  }
+
+  .buy-contactTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto 6.3%;
+  }
+
+  .buy-button {
+    width: 100%;
+  }
+
+  .buy-buttonInner {
+    width: 100%;
+  }
+
+  .buy-buttonInner--small {
+    width: 100%;
+    padding: 0 8.5%;
+  }
+
+  .buy-linkList {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .buy-linkTitle {
+    font-size: 1.6rem;
+  }
+
+  .buy-linkArrow {
+    right: 10px;
+  }
+
+  .buy-linkList li:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .buy-button a {
+    padding: 7.6% 0;
+    font-size: 1.6rem;
+  }
+
+  .buy-icon {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 48px;
+  }
+
+  .buy-disSp {
+    display: block;
+  }
+}
+

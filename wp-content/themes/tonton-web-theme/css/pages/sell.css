@@ -1,0 +1,594 @@
+/* TODO: 仮で記載 */
+html {
+  font-size: 62.5%;
+  color: #333;
+}
+
+.breadcrumbs {
+  width: 100%;
+  max-width: 1040px;
+  list-style: none;
+  margin: 25px auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-left: 15px;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.breadcrumbs li::before {
+  content: ">";
+  display: inline-block;
+  margin-right: 15px;
+  color: #333;
+}
+
+.breadcrumbs li:first-child {
+  margin-left: 0;
+}
+
+.breadcrumbs li:first-child:before {
+  content: none;
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    max-width: 100%;
+    padding: 0 27.5px;
+  }
+
+  .breadcrumbs li {
+    font-size: 1.2rem;
+  }
+}
+
+/* TODO: 仮で記載 end */
+
+.sell-contents {
+  width: 100%;
+  margin: 0 auto 6.2%;
+}
+
+.sell-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.sell-block {
+  width: 100%;
+  max-width: 1040px;
+  margin: 6% auto 0;
+}
+
+.sell-block--wull {
+  width: 100%;
+  max-width: 100%;
+  padding: 6% 0 6.2%;
+  background-color: #F7F4EC;
+}
+
+.sell-block--wullGreen {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 6% 0 6.2%;
+  background: rgba(0, 152, 68, .1);
+}
+
+.sell-block--top {
+  margin: 4% auto 0;
+}
+
+.sell-blockInner {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.sell-subTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0 auto 2.9%;
+  letter-spacing: 5px;
+  font-family: "GenJyuuGothic";
+}
+
+.sell-pointsTitle {
+  font-size: 3.2rem;
+  text-align: left;
+  margin-bottom: 3.9%;
+  font-family: "GenJyuuGothic";
+}
+
+.sell-leadText {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.sell-pointList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sell-pointList li:not(:first-child) {
+  margin-left: 1.9%;
+}
+
+.sell-pointCapture {
+  width: 100%;
+}
+
+.sell-flowTitle {
+  font-size: 3.2rem;
+  text-align: left;
+  font-family: "GenJyuuGothic";
+}
+
+.sell-flowList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sell-flowList li {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 2.4% 2.9%;
+  border: 2px solid #4D291F;
+  border-radius: 10px;
+}
+
+.sell-flowList li:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 102%;
+  left: 65px;
+  width: 4px;
+  height: 40px;
+  background-color: #4D291F;
+  z-index: -1;
+}
+
+.sell-stepIcon {
+  width: 72px;
+  flex-shrink: 0;
+}
+
+.sell-stepText {
+  margin-left: 2.1%;
+}
+
+.sell-stepTitle {
+  margin: 0 auto 2.3%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4D291F;
+}
+
+.sell-stepContent {
+  font-size: 1.6rem;
+}
+
+.sell-contactTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0 auto 4.8%;
+  font-family: "GenJyuuGothic";
+}
+
+.sell-exampleList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.sell-exampleList li {
+  margin-bottom: 4.8%;
+  padding: 4.8% 5.3%;
+  background-color: #fff;
+}
+
+.sell-exampleTitle {
+  position: relative;
+  margin-bottom: 4.9%;
+  padding-bottom: 2.7%;
+  border-bottom: 2px solid #4D291F;
+}
+
+.sell-exampleTitleDeco {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  max-width: 270px;
+}
+
+.sell-exampleTitleInner {
+  width: 32%;
+  max-width: 295px;
+}
+
+.sell-exampleSubtitle {
+  margin: 0 auto 1.6%;
+  font-size: 2rem;
+  color: #009844;
+}
+
+.sell-point01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4.3%;
+}
+
+.sell-tableBlock {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.sell-tableBlock dt {
+  width: 30%;
+  margin-bottom: 4.5%;
+  padding-bottom: 4.5%;
+  color: #4D291F;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #F6F4F4;
+}
+
+.sell-tableBlock dd {
+  width: 70%;
+  margin-bottom: 4.5%;
+  padding-bottom: 4.5%;
+  color: #333;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #F6F4F4;
+}
+
+.sell-point01Img {
+  width: 50%;
+  margin-left: 4.3%;
+}
+
+.sell-point02,
+.sell-point03,
+.sell-point04,
+.sell-point05 {
+  font-size: 1.6rem;
+  margin-bottom: 4.3%;
+}
+
+.sell-button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sell-buttonInner {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.sell-buttonInner--left {
+  width: 45%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.sell-buttonInner--small {
+  width: 30%;
+}
+
+.sell-linkList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sell-linkList li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.sell-linkTitle {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.sell-linkArrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.sell-button a {
+  display: block;
+  padding: 6.4% 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.sell-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
+
+.sell-icon {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 60px;
+}
+
+.sell-disSp {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .sell-contents {
+    margin: 0 auto 16%;
+  }
+
+  .sell-block {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 27.5px;
+    margin: 14.7% auto 0;
+  }
+
+  .sell-block--wull {
+    width: 100%;
+    max-width: 100%;
+    padding: 14.7% 0 16%
+  }
+
+  .sell-block--wullGreen {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 9.3% 0 10.7%;
+  }
+
+  .sell-block--top {
+    margin: 9.4% auto 0;
+  }
+
+  .sell-blockInner {
+    max-width: 100%;
+    padding: 0 7.3%
+  }
+
+  .sell-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 11%;
+  }
+
+  .sell-leadText {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .sell-pointsTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10.9%;
+  }
+
+  .sell-pointList {
+    display: block;
+  }
+
+  .sell-pointList li {
+    display: block;
+    margin-bottom: 8.8%;
+  }
+
+  .sell-pointCapture {
+    width: 100%;
+  }
+
+  .sell-flowTitle {
+    font-size: 2rem;
+  }
+
+  .sell-flowList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sell-flowList li {
+    position: relative;
+    display: block;
+    margin-bottom: 26px;
+    padding: 9.4% 10%;
+  }
+
+  .sell-flowList li:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 3px;
+    height: 28px;
+    transform: translateX(-50%);
+    background-color: #4D291F;
+    z-index: -1;
+  }
+
+  .sell-stepIcon {
+    width: 70px;
+    margin: 0 auto 10%;
+  }
+
+  .sell-stepText {
+    margin-left: 0;
+  }
+
+  .sell-stepTitle {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+  }
+
+  .sell-stepContent {
+    font-size: 1.4rem;
+  }
+
+  .sell-contactTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto 6.3%;
+  }
+
+  .sell-exampleList {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 6.7%;
+  }
+
+  .sell-exampleList li {
+    margin-bottom: 7.7%;
+    padding: 7.7%;
+    background-color: #fff;
+  }
+
+  .sell-exampleTitle {
+    position: relative;
+    margin-bottom: 9.1%;
+    padding-bottom: 6.2%;
+    border-bottom: 2px solid #4D291F;
+  }
+
+  .sell-exampleTitleDeco {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    max-width: 83px;
+  }
+
+  .sell-exampleTitleInner {
+    width: 30%;
+    max-width: 81px;
+  }
+
+  .sell-exampleSubtitle {
+    margin: 0 auto 4.8%;
+    font-size: 1.6rem;
+  }
+
+  .sell-point01 {
+    display: block;
+    margin-bottom: 9.1%;
+  }
+
+  .sell-tableBlock {
+    width: 100%;
+  }
+
+  .sell-tableBlock dt {
+    width: 40%;
+    margin-bottom: 5.5%;
+    padding-bottom: 6.6%;
+    font-size: 1.4rem;
+  }
+
+  .sell-tableBlock dd {
+    width: 60%;
+    margin: 0 auto 5.5%;
+    padding-bottom: 6.6%;
+    font-size: 1.4rem;
+  }
+
+  .sell-point01Img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .sell-point02,
+  .sell-point03,
+  .sell-point04,
+  .sell-point05 {
+    font-size: 1.4rem;
+    margin-bottom: 9.1%;
+  }
+
+  .sell-button {
+    width: 100%;
+  }
+
+  .sell-buttonInner {
+    width: 100%;
+  }
+
+  .sell-buttonInner--small {
+    width: 100%;
+    padding: 0 8.5%;
+  }
+
+  .sell-linkList {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sell-button a {
+    padding: 7.6% 0;
+    font-size: 1.6rem;
+  }
+
+  .sell-icon {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 48px;
+  }
+
+  .sell-disPc {
+    display: none;
+  }
+
+  .sell-disSp {
+    display: block;
+  }
+}
+
