@@ -18,8 +18,8 @@ get_header();
   <main id="primary" class="site-main">
     <section>
       <div class="kv">
-        <img class="pc" src="/wp-content/themes/tonton-web-theme/images/pc/kv_pc.png" alt="とんとんkv_pc">
-        <img class="sp" src="/wp-content/themes/tonton-web-theme/images/sp/kv_sp.png" alt="とんとんkv_sp">
+        <img class="dis-pc" src="<?php echo get_template_directory_uri(); ?>/images/pc/kv_pc.png" alt="とんとんkv_pc">
+        <img class="dis-sp" src="<?php echo get_template_directory_uri(); ?>/images/sp/kv_sp.png" alt="とんとんkv_sp">
         <h1>
           最大限のメリットを生む<br>
           不動産プロフェッショナルからの<br>
@@ -45,7 +45,7 @@ get_header();
     <section>
       <div class="top-notice">
         <div class="top-notice-title">
-          とんとん住宅販売に<br class="sp-br">お任せいただくメリットとは
+          とんとん住宅販売に<br class="dis-sp">お任せいただくメリットとは
         </div>
         <div class="top-notice-block">
           <div class="top-notice-item">
@@ -55,7 +55,7 @@ get_header();
                 <div class="top-notice-item-tag-num">0 1</div>
               </div>
             </div>
-            <img src="/wp-content/themes/tonton-web-theme/images/notice_1.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/notice_1.png" alt="">
             <div class="top-notice-description">
               ワンストップで不動産の購入・売却・リフォーム・相続のご相談に乗ることができます。
             </div>
@@ -67,7 +67,7 @@ get_header();
                 <div class="top-notice-item-tag-num">0 2</div>
               </div>
             </div>
-            <img src="/wp-content/themes/tonton-web-theme/images/notice_2.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/notice_2.png" alt="">
             <div class="top-notice-description">
               ワンストップで不動産の購入・売却・リフォーム・相続のご相談に乗ることができます。
             </div>
@@ -79,7 +79,7 @@ get_header();
                 <div class="top-notice-item-tag-num">0 3</div>
               </div>
             </div>
-            <img src="/wp-content/themes/tonton-web-theme/images/notice_3.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/notice_3.png" alt="">
             <div class="top-notice-description">
               ワンストップで不動産の購入・売却・リフォーム・相続のご相談に乗ることができます。
             </div>
@@ -97,7 +97,7 @@ get_header();
           <div class="top-content-block">
             <div class="top-content-item">
               <div class="top-content-item-img">
-                <img src="/wp-content/themes/tonton-web-theme/images/content_1.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/content_1.png" alt="">
               </div>
               <div class="top-content-box">
                 <div class="top-content-item-title">売る</div>
@@ -116,8 +116,8 @@ get_header();
               </div>
             </div>
             <div class="top-content-item">
-              <div class="top-content-item-img sp">
-                <img src="/wp-content/themes/tonton-web-theme/images/content_2.png" alt="">
+              <div class="top-content-item-img dis-sp">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/content_2.png" alt="">
               </div>
               <div class="top-content-box">
                 <div class="top-content-item-title">買う・建てる</div>
@@ -144,16 +144,16 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div class="top-content-item-img pc">
+              <div class="top-content-item-img dis-pc">
                 <div class="top-content-item-icon">
-                  <img src="/wp-content/themes/tonton-web-theme/images/character_icon1.png" alt="キャラクター">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/character_icon1.png" alt="キャラクター">
                 </div>
-                <img src="/wp-content/themes/tonton-web-theme/images/content_2.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/content_2.png" alt="">
               </div>
             </div>
             <div class="top-content-item">
               <div class="top-content-item-img">
-                <img src="/wp-content/themes/tonton-web-theme/images/content_3.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/content_3.png" alt="">
               </div>
               <div class="top-content-box">
                 <div class="top-content-item-title">修繕する</div>
@@ -217,12 +217,12 @@ get_header();
       <div class="top-slider">
         <div class="swiper infinite-slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_1.png" alt="slider1" /></div>
-            <div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_2.png" alt="slider2" /></div>
-            <div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_3.png" alt="slider3" /></div>
-            <div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_4.png" alt="slider4" /></div>
-            <div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_5.png" alt="slider5" /></div>
-            <div class="swiper-slide"><img src="/wp-content/themes/tonton-web-theme/images/slider_6.png" alt="slider6" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_1.png" alt="slider1" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_2.png" alt="slider2" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_3.png" alt="slider3" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_4.png" alt="slider4" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_5.png" alt="slider5" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_6.png" alt="slider6" /></div>
           </div>
         </div>
       </div>
@@ -273,7 +273,7 @@ get_header();
           </div>
         </div>
         <div class="top-news-icon">
-          <img src="/wp-content/themes/tonton-web-theme/images/character_icon2.png" alt="キャラクター">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/character_icon2.png" alt="キャラクター">
         </div>
       </div>
     </section>
@@ -311,7 +311,7 @@ get_header();
             <div class="top-about-item-text">〒063-0034　札幌市西区西野4条3丁目10番1号</div>
             <div class="top-about-item-text">最寄り駅：地下鉄東西線 発寒南駅から徒歩20分</div>
             <div class="top-about-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.6156245691864!2d141.27565731519098!3d43.07055109792871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b282f6489ac1b%3A0xd45f1a67b852d28!2z44CSMDYzLTAwMzQg5YyX5rW36YGT5pyt5bmM5biC6KW_5Yy66KW_6YeO77yU5p2h77yT5LiB55uu77yR77yQ4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657822054!5m2!1sja!2sjp" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.6156245691864!2d141.27565731519098!3d43.07055109792871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b282f6489ac1b%3A0xd45f1a67b852d28!2z44CSMDYzLTAwMzQg5YyX5rW36YGT5pyt5bmM5biC6KW_5Yy66KW_6YeO77yU5p2h77yT5LiB55uu77yR77yQ4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657822054!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           <div class="top-about-item">
@@ -319,12 +319,12 @@ get_header();
             <div class="top-about-item-text">〒063-0034　札幌市西区西野4条3丁目10番1号</div>
             <div class="top-about-item-text">最寄り駅：地下鉄東西線 発寒南駅から徒歩20分</div>
             <div class="top-about-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.3842022163735!2d141.34368531518976!3d43.03334720030831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a1036f06aa5%3A0xc115ef6fd986d426!2z44CSMDY0LTA5MjAg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65Y2X77yS77yQ5p2h6KW_77yR77yQ5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657879810!5m2!1sja!2sjp" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.3842022163735!2d141.34368531518976!3d43.03334720030831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a1036f06aa5%3A0xc115ef6fd986d426!2z44CSMDY0LTA5MjAg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65Y2X77yS77yQ5p2h6KW_77yR77yQ5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657879810!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
         <div class="top-about-icon">
-          <img src="/wp-content/themes/tonton-web-theme/images/character_icon3.png" alt="キャラクター">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/character_icon3.png" alt="キャラクター">
         </div>
       </div>
     </section>
