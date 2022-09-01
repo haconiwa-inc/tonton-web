@@ -9,32 +9,54 @@
 
 get_header();
 ?>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/pages/news.css" media="screen" >
+  <main id="primary" class="site-main">
+    <div class="news-detail">
+      <div class="title-area">
+        <h2 class="title">
+          <p>お知らせ</p>
+          <span>information</span>
+        </h2>
+      </div>
+      <div class="news-detail-wrapper wrapper">
+        <ul class="breadcrumbs">
+          <li><a href="/">TOP</a></li>
+          <li><a href="/news/">お知らせ一覧</a></li>
+          <li><?php the_title(); ?></li>
+        </ul>
 
-	<main id="primary" class="site-main">
+        <div class="news-detail-content">
+          <div class="news-detail-tags news-tags-brown">ニュース</div>
+          <div class="news-detail-title">
+            <?php the_title(); ?>
+          </div>
+          <div class="news-detail-description">
+            <?php the_content(); ?>
+          </div>
+          <div class="news-detail-button-wrapper">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'tonton-web-theme' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'tonton-web-theme' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-	</main><!-- #main -->
+            <div class="news-detail-button-prev">
+              <a href="/news/">
+                <div class="news-detail-button">
+                  お知らせ一覧に戻る
+                </div>
+              </a>
+            </div>
+            <div class="news-detail-button-top">
+              <div class="news-detail-icon">
+                <img src="<?php echo get_template_directory_uri();?>/images/news/character-news-1.png" alt="">
+              </div>
+              <a href="/">
+                <div class="news-button-top">
+                  TOPへ戻る
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
