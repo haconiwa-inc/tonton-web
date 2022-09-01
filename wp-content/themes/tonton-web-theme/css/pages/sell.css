@@ -46,7 +46,7 @@
   font-size: 3.2rem;
   text-align: center;
   margin: 0 auto 2.9%;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   font-family: "GenJyuuGothic";
 }
 
@@ -310,10 +310,6 @@
 }
 
 @media screen and (max-width:768px) {
-  .sell-contents {
-    margin: 0 auto;
-  }
-
   .sell-block {
     width: 100%;
     margin: 14.7% auto 0;
@@ -347,6 +343,7 @@
     font-size: 2rem;
     text-align: left;
     margin: 0 auto 8.9%;
+    letter-spacing: 2px;
   }
 
   .sell-leadText {

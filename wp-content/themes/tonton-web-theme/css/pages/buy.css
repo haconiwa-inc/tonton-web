@@ -1,7 +1,7 @@
 /* buy */
 .buy-contents {
   width: 100%;
-  margin: 0 auto 6.2%;
+  margin: 0 auto;
 }
 
 .buy-contents img {
@@ -246,10 +246,6 @@
 }
 
 @media screen and (max-width:768px) {
-  .buy-contents {
-    margin: 0 auto 16%;
-  }
-
   .buy-block {
     width: 100%;
     margin: 14.7% auto 0;
@@ -282,6 +278,7 @@
     font-size: 2rem;
     text-align: left;
     margin: 0 auto 8.9%;
+    letter-spacing: 2px;
   }
 
   .buy-leadText {

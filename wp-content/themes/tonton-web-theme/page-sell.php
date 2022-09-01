@@ -23,12 +23,12 @@
           <span>sell</span>
         </h2>
       </div>
-      <ul class="breadcrumbs">
-        <li><a href="/">TOP</a></li>
-        <li><a href="/business">事業案内</a></li>
-        <li>物件売却</li>
-      </ul>
       <div class="wrapper">
+        <ul class="breadcrumbs">
+          <li><a href="/">TOP</a></li>
+          <li><a href="/business">事業案内</a></li>
+          <li>物件売却</li>
+        </ul>
         <div class="sell-block sell-block--top">
           <h3 class="sell-subTitle">
           とんとんでの物件売却
