@@ -71,7 +71,7 @@ html {
   color: #333
 }
 
-body{
+body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
@@ -81,6 +81,15 @@ a {
 
 img {
   width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+dt,dd,ol,li {
+  margin: 0;
+  padding: 0;
 }
 
 .title-area {
