@@ -124,16 +124,16 @@
             </li>
           </ul>
         </div>
-        <div class="business-button business-button--green">
-            <div class="business-buttonInner business-buttonInner--small">
-              <a href="/">
-                TOPへ戻る
-              </a>
-              <div class="business-icon">
-                <img src="<?php echo get_template_directory_uri();?>/images/business/tonton-boy.png" alt="">
-              </div>
+        <div class="top-button top-button--green">
+          <div class="top-buttonInner">
+            <a href="/">
+              TOPへ戻る
+            </a>
+            <div class="top-icon">
+              <img src="<?php echo get_template_directory_uri();?>/images/common/tonton-boy.png" alt="">
             </div>
           </div>
+        </div>
       </div>
     </div>
   </main><!-- #main -->
