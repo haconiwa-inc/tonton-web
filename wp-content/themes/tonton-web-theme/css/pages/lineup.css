@@ -1,0 +1,190 @@
+/* lineup */
+.lineup-contents {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lineup-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.lineup-block {
+  width: 100%;
+  margin: 6% auto 0;
+}
+
+.lineup-block--top {
+  margin: 4% auto 0;
+}
+
+.lineup-tab {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
+  color: #4D291F;
+}
+
+.lineup-tab li:not(:last-child) {
+  padding-right: 3%;
+  margin-right: 3%;
+  border-right: 1px solid #4D291F;
+}
+
+.lineup-list {
+  padding: 0;
+  margin-top: 4.4%;
+}
+.lineup-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 3.4%;
+  margin-bottom: 2.9%;
+  box-shadow: 0px 0px 9px -5px #4d291f;
+  border-radius: 8px;
+  color: #333333;
+}
+
+.lineup-img {
+  width: 30%;
+}
+
+.lineup-textArea {
+  width: 70%;
+  margin-left: 3.2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.lineup-textArea p {
+  margin: 0;
+}
+
+.lineup-access {
+  font-size: 1.8rem;
+}
+
+.lineup-price {
+  padding: 1.6% 0;
+  font-size: 2.8rem;
+  color: #FC6408;
+}
+
+.lineup-accessDetail,
+.lineup-minutes {
+  font-size: 1.8rem;
+}
+
+.lineup-detail {
+  font-size: 1.6rem;
+}
+
+.lineup-buttonArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lineup-button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lineup-buttonInner {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lineup-button:last-child {
+  margin-left: 6.2%;
+}
+
+.lineup-button a {
+  display: block;
+  padding: 3.9% 0;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid #009844;
+  font-size: 1.8rem;
+}
+
+.lineup-button--white a {
+  color: #009844;
+  background-color: #fff;
+}
+
+.lineup-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
+
+.lineup-icon {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 60px;
+}
+
+.lineup-buttonArrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width:768px) {
+  .lineup-block {
+    margin: 14.7% auto 0;
+    line-height: 1.8;
+  }
+
+  .lineup-block--top {
+    margin: 9.4% auto 0;
+  }
+
+  .lineup-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 11%;
+    letter-spacing: 2px;
+  }
+
+  .lineup-leadText {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .lineup-button {
+    width: 100%;
+  }
+
+  .lineup-buttonInner {
+    width: 100%;
+  }
+
+  .lineup-buttonInner--small {
+    width: 100%;
+    padding: 0 7.3%;
+  }
+
+  .lineup-button a {
+    padding: 5% 0;
+    font-size: 1.6rem;
+  }
+
+  .lineup-icon {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 48px;
+  }
+}
+
