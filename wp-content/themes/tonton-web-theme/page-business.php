@@ -27,7 +27,7 @@
           <li><a href="/">TOP</a></li>
           <li>事業案内</li>
         </ul>
-        <div class="wapper">
+        <div class="wrapper">
           <div class="business-block business-block--top">
             <h3 class="business-subTitle">
               不動産の価値を最大化できるプランニング力に自信があります

@@ -11,8 +11,8 @@
 
 .buy-block {
   width: 100%;
-  max-width: 1040px;
   margin: 6% auto 0;
+  line-height: 1.8;
 }
 
 .buy-block--wull {
@@ -20,6 +20,7 @@
   max-width: 100%;
   padding: 6% 0 6.2%;
   background-color: #F7F4EC;
+  margin: 0 auto;
 }
 
 .buy-block--wullGreen {
@@ -27,6 +28,7 @@
   max-width: 100%;
   padding: 6% 0 6.2%;
   background: rgba(0, 152, 68, .1);
+  margin: 0 auto;
 }
 
 .buy-block--top {
@@ -51,6 +53,7 @@
   font-size: 3.2rem;
   text-align: left;
   font-family: "GenJyuuGothic";
+  margin-bottom: 3.9%;
 }
 
 .buy-leadText {
@@ -89,12 +92,14 @@
 .buy-pointContent {
   margin-bottom: 4%;
   font-size: 1.6rem;
+  line-height: 1.8;
 }
 
 .buy-flowTitle {
   font-size: 3.2rem;
   text-align: left;
   font-family: "GenJyuuGothic";
+  margin-bottom: 4.7%;
 }
 
 .buy-flowList {
@@ -159,6 +164,7 @@
 }
 
 .buy-buttonInner {
+  position: relative;
   width: 50%;
   margin: 0 auto;
 }
@@ -232,8 +238,11 @@
   width: 60px;
 }
 
-.buy-disSp {
-  display: none;
+.buy-buttonArrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 
 @media screen and (max-width:768px) {
@@ -243,21 +252,21 @@
 
   .buy-block {
     width: 100%;
-    max-width: 100%;
-    padding: 0 7.3%;
     margin: 14.7% auto 0;
   }
 
   .buy-block--wull {
     width: 100%;
     max-width: 100%;
-    padding: 14.7% 0 16%
+    padding: 14.7% 0 16%;
+    margin: 0 auto;
   }
 
   .buy-block--wullGreen {
     width: 100%;
     max-width: 100%;
     padding: 9.3% 0 10.7%;
+    margin: 0 auto;
   }
 
   .buy-block--top {
@@ -266,13 +275,13 @@
 
   .buy-blockInner {
     max-width: 100%;
-    padding: 0 7.3%;
+    padding: 0 5.4%;
   }
 
   .buy-subTitle {
     font-size: 2rem;
     text-align: left;
-    margin: 0 auto 11%;
+    margin: 0 auto 8.9%;
   }
 
   .buy-leadText {
@@ -283,6 +292,7 @@
   .buy-pointsTitle {
     font-size: 2rem;
     text-align: center;
+    letter-spacing: 0.8px;
   }
 
   .buy-pointList li {
@@ -384,8 +394,13 @@
     padding: 0;
   }
 
+  .buy-linkList li a {
+    margin-bottom: 6.8%;
+  }
+
   .buy-linkTitle {
     font-size: 1.6rem;
+    line-height: 1.4;
   }
 
   .buy-linkArrow {
@@ -406,10 +421,6 @@
     top: -20px;
     left: 10px;
     width: 48px;
-  }
-
-  .buy-disSp {
-    display: block;
   }
 }
 
