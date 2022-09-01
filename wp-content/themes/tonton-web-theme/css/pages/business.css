@@ -1,0 +1,326 @@
+/* TODO: 仮で記載 */
+html {
+  font-size: 62.5%;
+  color: #333;
+}
+
+.breadcrumbs {
+  width: 100%;
+  max-width: 1040px;
+  list-style: none;
+  margin: 25px auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-left: 15px;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.breadcrumbs li::before {
+  content: ">";
+  display: inline-block;
+  margin-right: 15px;
+  color: #333;
+}
+
+.breadcrumbs li:first-child {
+  margin-left: 0;
+}
+
+.breadcrumbs li:first-child:before {
+  content: none;
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    max-width: 100%;
+    padding: 0 27.5px;
+  }
+
+  .breadcrumbs li {
+    font-size: 1.2rem;
+  }
+}
+
+/* TODO: 仮で記載 end */
+
+.business-contents {
+  width: 100%;
+  margin: 0 auto 6.2%;
+}
+
+.business-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.business-block {
+  width: 100%;
+  max-width: 1040px;
+  margin: 6% auto 0;
+}
+
+.business-block--top {
+  margin: 4% auto 0;
+}
+
+.business-subTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0 auto 2.9%;
+  font-family: "GenJyuuGothic";
+}
+
+.business-leadText {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.business-itemList {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+  margin: 7.3% auto 3.9%;
+}
+
+.business-itemList li a {
+  display: block;
+  height: calc(100% - 40px);
+  padding: 6.2% 7.7%;
+  color: #333;
+  text-decoration: none;
+}
+
+.business-itemList li {
+  position: relative;
+  width: calc(100% / 3);
+  border: 2px solid #009844;
+  border-radius: 10px;
+}
+
+.business-itemList li:not(:first-child) {
+  margin-left: 2.4%;
+}
+
+.business-itemCapture {
+  text-align: center;
+  margin-bottom: 7.3%;
+}
+
+.business-itemTitle {
+  margin: 10px auto;
+  font-size: 2rem;
+  color: #009844;
+}
+
+.business-itemContent {
+  margin-bottom: 16.3%;
+  font-size: 1.6rem;
+}
+
+.business-arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.business-realEstateList {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  list-style: none;
+  padding: 0;
+  margin: 4.9% auto 7.7%;
+}
+
+.business-realEstateList li {
+  width: calc(100% / 2);
+  padding: 2.4%;
+  box-shadow: 0px 0px 9px -5px #4d291f;
+  border-radius: 10px;
+}
+
+.business-realEstateList li:last-child {
+  margin-left: 2.4%;
+}
+
+.business-realEstateTitle {
+  margin: 0 auto 2.2%;
+  font-size: 2rem;
+  color: #009844;
+}
+
+.business-realEstateContent {
+  margin-bottom: 4.4%;
+  font-size: 1.6rem;
+}
+
+.business-button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.business-buttonInner {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.business-buttonInner--small {
+  position: relative;
+  width: 30%;
+}
+
+.business-button a {
+  display: block;
+  padding: 3.9% 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.business-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
+
+.business-icon {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 60px;
+}
+
+@media screen and (max-width:768px) {
+  .business-contents {
+    margin: 0 auto 16%;
+  }
+
+  .business-block {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 7.3%;
+    margin: 14.7% auto 0;
+  }
+
+  .business-block--top {
+    margin: 9.4% auto 0;
+  }
+
+  .business-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 11%;
+  }
+
+  .business-leadText {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .business-itemList {
+    display: block;
+    margin: 9.4% auto 6.2%;
+  }
+
+  .business-itemList li a {
+    height: auto;
+    padding: 8.7% 9.4%;
+  }
+
+  .business-itemList li {
+    width: 100%;
+    margin-bottom: 9.4%;
+  }
+
+  .business-itemList li:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .business-itemCapture {
+    margin-bottom: 7.8%;
+  }
+
+  .business-itemTitle {
+    margin: 5.9% auto;
+    font-size: 1.6rem;
+  }
+
+  .business-itemContent {
+    margin-bottom: 3.9%;
+    font-size: 1.4rem;
+  }
+
+  .business-arrow {
+    position: absolute;
+    bottom: 10.7%;
+    right: 30px;
+  }
+
+  .business-realEstateList {
+    display: block;
+    margin: 12.5% auto;
+  }
+
+  .business-realEstateList li {
+    width: 100%;
+    padding: 7.8%;
+    margin-bottom: 8.8%;
+    box-shadow: 0px 0px 9px -5px #4d291f;
+  }
+
+  .business-realEstateList li:last-child {
+    margin-left: 0;
+  }
+
+  .business-realEstateTitle {
+    margin: 0 auto 3.7%;
+    font-size: 1.6rem;
+    color: #009844;
+  }
+
+  .business-realEstateContent {
+    margin-bottom: 6.7%;
+    font-size: 1.4rem;
+  }
+
+  .business-button {
+    width: 100%;
+  }
+
+  .business-buttonInner {
+    width: 100%;
+  }
+
+  .business-buttonInner--small {
+    width: 100%;
+    padding: 0 7.3%;
+  }
+
+  .business-button a {
+    padding: 6.3% 0;
+    font-size: 1.6rem;
+  }
+
+  .business-icon {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 48px;
+  }
+}
+
