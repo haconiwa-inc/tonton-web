@@ -109,7 +109,7 @@ get_header();
                   お客様のマンション・戸建て・土地等の不動産売却はとんとん住宅販売にお任せください。豊富な経験と地域に根付いた知識を生かし資産を最大化します。
                 </div>
                 <div class="top-content-button">
-                  <div class="top-button m-start">
+                  <div class="top-kv-button m-start">
                     物件売却についてみる
                   </div>
                 </div>
@@ -119,7 +119,7 @@ get_header();
               <div class="top-content-item-img dis-sp">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/content_2.png" alt="">
               </div>
-              <div class="top-content-box">
+              <div class="top-content-box top-content-box--right">
                 <div class="top-content-item-title">買う・建てる</div>
                 <div class="top-content-item-title-min">buy / build</div>
                 <div class="top-content-item-subtitle">
@@ -129,17 +129,17 @@ get_header();
                   初めてのマンション・戸建て・土地等の不動産購入でも安心ください。豊富な経験と地域に根付いた知識を生かし資産を最大化します。
                 </div>
                 <div class="top-content-button">
-                  <div class="top-button m-start">
+                  <div class="top-kv-button m-start">
                     取扱物件を見る
                   </div>
                 </div>
                 <div class="top-content-button">
-                  <div class="top-button m-start">
+                  <div class="top-kv-button m-start">
                     過去の成約物件を見る
                   </div>
                 </div>
                 <div class="top-content-button">
-                  <div class="top-button m-start">
+                  <div class="top-kv-button m-start">
                     物件購入について見る
                   </div>
                 </div>
@@ -165,12 +165,12 @@ get_header();
                   リフォーム・リノベーションはとんとんにお任せください。スタイルに合わせた豊富な事例やわかりやすいパッケージを取り揃えてます。
                 </div>
                 <div class="top-content-button">
-                  <div class="top-button m-start">
+                  <div class="top-kv-button m-start">
                     過去のリフォーム施工例を見る
                   </div>
                 </div>
                 <div class="top-content-button">
-                  <div class="top-button m-start">
+                  <div class="top-kv-button m-start">
                     リフォーム・リノベーションについて見る
                   </div>
                 </div>
@@ -187,7 +187,7 @@ get_header();
                   注文住宅と同じ品質や設備で建てられた賃貸住宅がございます。敷地内駐車場には、積雪時に安心のロードヒーティングが備えつけられています。
                 </div>
                 <div class="top-content-button">
-                  <div class="top-button m-start">
+                  <div class="top-kv-button m-start">
                     取扱物件を見る
                   </div>
                 </div>
@@ -202,7 +202,7 @@ get_header();
                   いまの時代、１つの資産に頼るには不安です。貯金だけじゃ将来や老後が不安…そんな方に不動産投資をご提案させていただきます。
                 </div>
                 <div class="top-content-button">
-                  <div class="top-button m-start">
+                  <div class="top-kv-button m-start">
                     お問い合わせ
                   </div>
                 </div>
@@ -267,7 +267,7 @@ get_header();
           </ul>
           </div>
           <div class="top-news-button-wrapper">
-            <div class="top-button">
+            <div class="top-kv-button">
               お知らせ一覧
             </div>
           </div>

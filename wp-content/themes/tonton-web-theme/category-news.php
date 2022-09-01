@@ -19,7 +19,7 @@ get_header();
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/tonton-web-theme/css/pages/news.css" media="all">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/news.css" media="all">
 </head>
   <main id="primary" class="site-main">
   <section>
@@ -30,12 +30,12 @@ get_header();
           <span>information</span>
         </h2>
       </div>
-      <div class="news-content wapper">
+      <div class="news-content wrapper">
         <ul class="breadcrumbs">
           <li><a href="http://webliker.info">TOP</a></li>
           <li>お知らせ一覧</li>
         </ul>
-        <div class="news-tab-top pc">
+        <div class="news-tab-top dis-pc">
           <ul>
             <li class="news-select">すべて</li>
             <li>ニュース</li>
@@ -44,7 +44,7 @@ get_header();
             <li>価格変更</li>
           </ul>
         </div>
-        <div class="news-tab-top sp">
+        <div class="news-tab-top dis-sp">
           <ul>
             <li class="news-select">すべて</li>
             <li>ニュース</li>
