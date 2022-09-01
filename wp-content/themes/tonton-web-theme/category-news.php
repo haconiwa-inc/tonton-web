@@ -24,15 +24,13 @@ get_header();
   <main id="primary" class="site-main">
   <section>
     <div class="news">
-      <div class="news-header">
-        <img class="pc" src="/wp-content/themes/tonton-web-theme/images/news/news_header.png" alt="">
-        <img class="sp" src="/wp-content/themes/tonton-web-theme/images/news/news_header_sp.png" alt="">
-        <div class="news-header-box">
-          <div class="news-header-title">お知らせ</div>
-          <div class="news-header-text">information</div>
-        </div>
+      <div class="title-area">
+        <h2 class="title">
+          <p>お知らせ</p>
+          <span>information</span>
+        </h2>
       </div>
-      <div class="news-content">
+      <div class="news-content wapper">
         <ul class="breadcrumbs">
           <li><a href="http://webliker.info">TOP</a></li>
           <li>お知らせ一覧</li>
@@ -119,7 +117,7 @@ get_header();
         </div>
         <div class="news-button-wrapper">
           <div class="news-icon">
-            <img src="/wp-content/themes/tonton-web-theme/images/news/character-news-1.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/news/character-news-1.png" alt="">
           </div>
           <div class="news-button">
             TOPへ戻る
@@ -129,6 +127,6 @@ get_header();
     </div>
   </section>
 
-	</main><!-- #main -->
+  </main><!-- #main -->
 <?php
 get_footer();

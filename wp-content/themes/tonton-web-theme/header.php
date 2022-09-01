@@ -17,9 +17,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="/wp-content/themes/tonton-web-theme/css/header.css" media="all">
-	<link rel="stylesheet" href="/wp-content/themes/tonton-web-theme/css/footer.css" media="all">
-	<link rel="stylesheet" href="/wp-content/themes/tonton-web-theme/css/index.css" media="all">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/header.css" media="all">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/footer.css" media="all">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/common.css" media="all">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/index.css" media="all">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -33,39 +34,69 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<div class="header">
-				<div class="header-top pc">
+				<div class="header-top dis-pc">
 					<div class="header-top-menu">
-						<a href="<?php echo esc_url( site_url( '/news' ) ); ?>">
-							<div class="header-top-menu-item">お知らせ</div>
-						</a>
-						<div class="header-top-menu-item">事業案内</div>
-						<div class="header-top-menu-item">会社概要</div>
-						<div class="header-top-menu-item">お問い合せ</div>
+						<div class="header-top-menu-item">
+							<a href="/news">
+								お知らせ
+							</a>
+						</div>
+						<div class="header-top-menu-item">
+							<a href="/business">
+								事業案内
+							</a>
+						</div>
+						<div class="header-top-menu-item">
+							<a href="/company-inq">
+								会社概要
+							</a>
+						</div>
+						<div class="header-top-menu-item">
+							<a href="/contact">
+								お問い合せ
+							</a>
+						</div>
 						<a href="">
-							<img src="/wp-content/themes/tonton-web-theme/images/facebook_icon.png" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/images/facebook_icon.png" alt="">
 						</a>
 					</div>
 				</div>
 				<div class="header-bottom">
 					<div class="header-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<img src="/wp-content/themes/tonton-web-theme/images/pc/logo_pc.png" alt="とんとんロゴ">
+							<img src="<?php echo get_template_directory_uri();?>/images/pc/logo_pc.png" alt="とんとんロゴ">
 						</a>
 					</div>
-					<div class="header-bottom-wrapper pc">
+					<div class="header-bottom-wrapper dis-pc">
 						<div class="header-bottom-menu">
-							<div class="header-bottom-menu-item">売る</div>
-							<div class="header-bottom-menu-item">買う・建てる</div>
-							<div class="header-bottom-menu-item">借りる</div>
-							<div class="header-bottom-menu-item">直す</div>
+							<div class="header-bottom-menu-item">
+								<a href="/business/sell">
+									売る
+								</a>
+							</div>
+							<div class="header-bottom-menu-item">
+								<a href="/business/buy">
+									買う・建てる
+								</a>
+							</div>
+							<div class="header-bottom-menu-item">
+								<a href="/chintai">
+									借りる
+								</a>
+							</div>
+							<div class="header-bottom-menu-item">
+								<a href="/reform">
+									直す
+								</a>
+							</div>
 						</div>
 					</div>
-					<div class="responsive-btn sp">
+					<div class="responsive-btn dis-sp">
 						<span></span>
 						<span></span>
 						<span></span>
 					</div>
-					<div class="header-nav-wrapper sp">
+					<div class="header-nav-wrapper dis-sp">
 						<nav class="header-nav">
 							<div class="header-nav-wrapper">
 								<div class="header-nav-lists">
@@ -73,7 +104,11 @@
 										<li>
 											<a class="header-nav-link" href="">
 												<div class="header-item-box">
-													<div class="header-nav-text">TOP</div>
+													<div class="header-nav-text">
+														<a href="">
+															TOP
+														</a>
+													</div>
 												</div>
 											</a>
 										</li>
@@ -164,7 +199,6 @@
 							</div>
 						</nav>
 					</div>
-					
 				</div>
 			</div>
 		</div><!-- .site-branding -->

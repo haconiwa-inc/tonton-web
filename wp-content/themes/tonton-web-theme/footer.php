@@ -13,11 +13,11 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="footer">
-			<div class="footer-wrapper pc">
+			<div class="footer-wrapper dis-pc">
 				<div class="footer-content">
 					<div class="footer-box">
 						<div class="footer-logo">
-							<img src="/wp-content/themes/tonton-web-theme/images/pc/logo_pc.png" alt="">
+							<img src="<?php echo get_template_directory_uri();?>/images/pc/logo_pc.png" alt="">
 						</div>
 						<ul class="footer-description">
 							<li>〒063-0034 札幌市西区西野4条3丁目10番1号</li>
@@ -52,7 +52,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer-content sp">
+			<div class="footer-content dis-sp">
 				<div class="footer-box">
 					<div class="footer-link">
 						<ul class="footer-link-list">
@@ -75,7 +75,7 @@
 				</div>
 				<div class="footer-box">
 					<div class="footer-logo">
-						<img src="/wp-content/themes/tonton-web-theme/images/pc/logo_pc.png" alt="">
+						<img src="<?php echo get_template_directory_uri();?>/images/pc/logo_pc.png" alt="">
 					</div>
 					<ul class="footer-description">
 						<li>〒063-0034 札幌市西区西野4条3丁目10番1号</li>
@@ -95,7 +95,7 @@
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-<script src="/wp-content/themes/tonton-web-theme/js/common.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/common.js"></script>
 <?php wp_footer(); ?>
 
 </body>

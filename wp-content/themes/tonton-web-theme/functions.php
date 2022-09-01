@@ -183,3 +183,9 @@ function my_register_post_tag_taxonomy() {
 	register_taxonomy('post_tag', 'post', (array) $tag_slug_args);
 }
 add_action( 'init', 'my_register_post_tag_taxonomy', 1 );
+
+function my_enqueue_styles() {
+  wp_enqueue_style('ress', '//unpkg.com/ress/dist/ress.min.css', array(), false, 'all');
+  wp_enqueue_style('style', get_stylesheet_uri(), array('ress'), false, 'all');
+}
+add_action('wp_enqueue_scripts', 'my_enqueue_styles');

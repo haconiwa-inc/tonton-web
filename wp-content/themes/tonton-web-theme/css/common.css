@@ -1,0 +1,81 @@
+/* 共通周り */
+a:hover {
+  opacity: 0.7;
+}
+
+.dis-pc {
+  display: block;
+}
+
+.dis-sp {
+  display: none;
+}
+
+.breadcrumbs {
+  width: 100%;
+  max-width: 1040px;
+  list-style: none;
+  margin: 25px auto 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-left: 15px;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.breadcrumbs li::before {
+  content: ">";
+  display: inline-block;
+  margin-right: 15px;
+  color: #333;
+}
+
+.breadcrumbs li:first-child {
+  margin-left: 0;
+}
+
+.breadcrumbs li:first-child:before {
+  content: none;
+}
+
+/* 仮想ページのwrapper共通用 */
+.wapper {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2% 5% 6%;
+}
+
+@media screen and (max-width: 768px) {
+  .dis-pc {
+    display: none;
+  }
+  
+  .dis-sp {
+    display: block;
+  }
+  
+  .breadcrumbs {
+    max-width: 100%;
+  }
+
+  .breadcrumbs li {
+    font-size: 1.2rem;
+  }
+
+  .wrapper {
+    padding: 5% 6% 20%;
+  }
+}
