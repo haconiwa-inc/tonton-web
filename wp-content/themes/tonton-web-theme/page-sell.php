@@ -23,11 +23,12 @@
           <span>sell</span>
         </h2>
       </div>
-      <ul class="breadcrumbs">
-        <li><a href="/">TOP</a></li>
-        <li><a href="/business">事業案内</a></li>
-        <li>物件売却</li>
-      </ul>
+      <div class="wrapper">
+        <ul class="breadcrumbs">
+          <li><a href="/">TOP</a></li>
+          <li><a href="/business">事業案内</a></li>
+          <li>物件売却</li>
+        </ul>
         <div class="sell-block sell-block--top">
           <h3 class="sell-subTitle">
           とんとんでの物件売却
@@ -37,127 +38,123 @@
           札幌市内全域の土地・中古住宅・マンションを豊富に取り扱っています。
           </div>
         </div>
+      </div>
         <div class="sell-block sell-block--wull">
           <div class="sell-blockInner">
             <h3 class="sell-pointsTitle">とんとんで物件を売却するポイント</h3>
             <ul class="sell-pointList">
               <li>
                 <div class="sell-pointCapture">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/point01.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/point01_sell.png" alt="" class="dis-pc">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/point01_sell_sp.png" alt="" class="dis-sp">
                 </div>
               </li>
               <li>
                 <div class="sell-pointCapture">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/point02.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/point02_sell.png" alt="" class="dis-pc">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/point02_sell_sp.png" alt="" class="dis-sp">
                 </div>
               </li>
               <li>
                 <div class="sell-pointCapture">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/point03.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/point03_sell.png" alt="" class="dis-pc">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/point03_sell_sp.png" alt="" class="dis-sp">
                 </div>
               </li>
               <li>
                 <div class="sell-pointCapture">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/point03.png" alt="">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/point04_sell.png" alt="" class="dis-pc">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/point04_sell_sp.png" alt="" class="dis-sp">
                 </div>
               </li>
             </ul>
           </div>
         </div>
-        <div class="sell-block">
-          <h3 class="sell-flowTitle">
-            売却の流れ
-          </h3>
-          <ul class="sell-flowList">
-            <li>
-              <div class="sell-stepIcon">
-                <img src="<?php echo get_template_directory_uri();?>/images/business/step01.png" alt="">
-              </div>
-              <div class="sell-stepText">
-                <p class="sell-stepTitle">
-                売却相談
-                </p>
-                <div class="sell-stepContent">売却をしたい物件を一度見させていただき、その際に物件詳細の確認や売却時期等のご相談をいたします。</div>
-              </div>
-            </li>
-            <li>
-              <div class="sell-stepIcon">
-                <img src="<?php echo get_template_directory_uri();?>/images/business/step02.png" alt="">
-              </div>
-              <div class="sell-stepText">
-                <p class="sell-stepTitle">
-                売却価格のご提示
-                </p>
-                <div class="sell-stepContent">
-                ご自宅を見させていただいた上で、売却が見込める正確な価格をご提示いたします。<br />
-                併せて、売主様に合う売却方法のご提案をいたします。
+        <div class="wrapper">
+          <div class="sell-block">
+            <h3 class="sell-flowTitle">
+              売却の流れ
+            </h3>
+            <ul class="sell-flowList">
+              <li>
+                <div class="sell-stepIcon">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/step01.png" alt="">
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="sell-stepIcon">
-                <img src="<?php echo get_template_directory_uri();?>/images/business/step03.png" alt="">
-              </div>
-              <div class="sell-stepText">
-                <p class="sell-stepTitle">
-                  物件案内
-                </p>
-                <div class="sell-stepContent">
-                  ご希望に沿う物件を紹介し、営業担当者が気になる物件のご案内をします。<br />
-                  購入したい物件が見つかりましたら、購入申込へ！
+                <div class="sell-stepText">
+                  <p class="sell-stepTitle">
+                  売却相談
+                  </p>
+                  <div class="sell-stepContent">売却をしたい物件を一度見させていただき、その際に物件詳細の確認や売却時期等のご相談をいたします。</div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="sell-stepIcon">
-                <img src="<?php echo get_template_directory_uri();?>/images/business/step04.png" alt="">
-              </div>
-              <div class="sell-stepText">
-                <p class="sell-stepTitle">
-                媒介契約
-                </p>
-                <div class="sell-stepContent">不動産の売却をお任せしていただくための契約となります。</div>
-              </div>
-            </li>
-            <li>
-              <div class="sell-stepIcon">
-                <img src="<?php echo get_template_directory_uri();?>/images/business/step05.png" alt="">
-              </div>
-              <div class="sell-stepText">
-                <p class="sell-stepTitle">
-                売却活動
-                </p>
-                <div class="sell-stepContent">
-                購入希望者を探す為の売却活動を行います。皆様からお預かりした不動産を早急に自社HPや不動産検索サイト（SUUMO・アットホーム・ハウスタウン）に物件の広告を出し、多くの購入希望者に不動産の情報を伝えます。<br />
-                なるべく早く売却できるように、スタッフ全員で協力しスピーディーに動きます。
+              </li>
+              <li>
+                <div class="sell-stepIcon">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/step02.png" alt="">
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="sell-stepIcon">
-                <img src="<?php echo get_template_directory_uri();?>/images/business/step06.png" alt="">
-              </div>
-              <div class="sell-stepText">
-                <p class="sell-stepTitle">
-                売買契約
-                </p>
-                <div class="sell-stepContent">
-                売主様・買主様の売却条件、購入条件の合意のもと、売買契約に進みます。売買契約の流れをしっかり説明しご理解頂いてから手続きを進めます。契約締結後に、売主様が行わなければならない手続きも担当スタッフがお手伝いします。
+                <div class="sell-stepText">
+                  <p class="sell-stepTitle">
+                  売却価格のご提示
+                  </p>
+                  <div class="sell-stepContent">
+                  ご自宅を見させていただいた上で、売却が見込める正確な価格をご提示いたします。<br />
+                  併せて、売主様に合う売却方法のご提案をいたします。
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="sell-stepIcon">
-                <img src="<?php echo get_template_directory_uri();?>/images/business/step07.png" alt="">
-              </div>
-              <div class="sell-stepText">
-                <p class="sell-stepTitle">
-                残代金の受領と引渡し
-                </p>
-                <div class="sell-stepContent">残代金を受領し、売買契約時に定めた状態で物件の引き渡しを行います。同時に司法書士が所有権移転登記をします。</div>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <div class="sell-stepIcon">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/step03.png" alt="">
+                </div>
+                <div class="sell-stepText">
+                  <p class="sell-stepTitle">
+                  媒介契約
+                  </p>
+                  <div class="sell-stepContent">
+                  不動産の売却をお任せしていただくための契約となります。
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="sell-stepIcon">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/step04.png" alt="">
+                </div>
+                <div class="sell-stepText">
+                  <p class="sell-stepTitle">
+                  売却活動
+                  </p>
+                  <div class="sell-stepContent">
+                  購入希望者を探す為の売却活動を行います。皆様からお預かりした不動産を早急に自社HPや不動産検索サイト（SUUMO・アットホーム・ハウスタウン）に物件の広告を出し、多くの購入希望者に不動産の情報を伝えます。<br />
+                  なるべく早く売却できるように、スタッフ全員で協力しスピーディーに動きます。
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="sell-stepIcon">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/step05.png" alt="">
+                </div>
+                <div class="sell-stepText">
+                  <p class="sell-stepTitle">
+                  売買契約
+                  </p>
+                  <div class="sell-stepContent">
+                  売主様・買主様の売却条件、購入条件の合意のもと、売買契約に進みます。売買契約の流れをしっかり説明しご理解頂いてから手続きを進めます。契約締結後に、売主様が行わなければならない手続きも担当スタッフがお手伝いします。<br />                </div>
+                </div>
+              </li>
+              <li>
+                <div class="sell-stepIcon">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/step06.png" alt="">
+                </div>
+                <div class="sell-stepText">
+                  <p class="sell-stepTitle">
+                  残代金の受領と引渡し
+                  </p>
+                  <div class="sell-stepContent">
+                  残代金を受領し、売買契約時に定めた状態で物件の引き渡しを行います。同時に司法書士が所有権移転登記をします。
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="sell-block sell-block--wull">
           <div class="sell-blockInner">
