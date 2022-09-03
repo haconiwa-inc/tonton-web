@@ -1,7 +1,7 @@
 /* sell */
 .sell-contents {
   width: 100%;
-  margin: 0 auto 6.2%;
+  margin: 0 auto;
 }
 
 .sell-contents img {
@@ -11,8 +11,8 @@
 
 .sell-block {
   width: 100%;
-  max-width: 1040px;
   margin: 6% auto 0;
+  line-height: 1.8;
 }
 
 .sell-block--wull {
@@ -20,6 +20,7 @@
   max-width: 100%;
   padding: 6% 0 6.2%;
   background-color: #F7F4EC;
+  margin: 0 auto;
 }
 
 .sell-block--wullGreen {
@@ -28,6 +29,7 @@
   margin: 0 auto;
   padding: 6% 0 6.2%;
   background: rgba(0, 152, 68, .1);
+  margin: 0 auto;
 }
 
 .sell-block--top {
@@ -44,7 +46,7 @@
   font-size: 3.2rem;
   text-align: center;
   margin: 0 auto 2.9%;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   font-family: "GenJyuuGothic";
 }
 
@@ -53,6 +55,7 @@
   text-align: left;
   margin-bottom: 3.9%;
   font-family: "GenJyuuGothic";
+  letter-spacing: 4px;
 }
 
 .sell-leadText {
@@ -81,6 +84,8 @@
   font-size: 3.2rem;
   text-align: left;
   font-family: "GenJyuuGothic";
+  margin-bottom: 3.9%;
+  letter-spacing: 4px;
 }
 
 .sell-flowList {
@@ -219,8 +224,7 @@
 
 .sell-point02,
 .sell-point03,
-.sell-point04,
-.sell-point05 {
+.sell-point04 {
   font-size: 1.6rem;
   margin-bottom: 4.3%;
 }
@@ -306,21 +310,16 @@
 }
 
 @media screen and (max-width:768px) {
-  .sell-contents {
-    margin: 0 auto 16%;
-  }
-
   .sell-block {
     width: 100%;
-    max-width: 100%;
-    padding: 0 27.5px;
     margin: 14.7% auto 0;
   }
 
   .sell-block--wull {
     width: 100%;
     max-width: 100%;
-    padding: 14.7% 0 16%
+    padding: 14.7% 0 16%;
+    margin: 0 auto;
   }
 
   .sell-block--wullGreen {
@@ -328,6 +327,7 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 9.3% 0 10.7%;
+    margin: 0 auto;
   }
 
   .sell-block--top {
@@ -336,13 +336,14 @@
 
   .sell-blockInner {
     max-width: 100%;
-    padding: 0 7.3%
+    padding: 0 5.4%;
   }
 
   .sell-subTitle {
     font-size: 2rem;
     text-align: left;
-    margin: 0 auto 11%;
+    margin: 0 auto 8.9%;
+    letter-spacing: 2px;
   }
 
   .sell-leadText {
@@ -354,6 +355,7 @@
     font-size: 2rem;
     text-align: center;
     margin-bottom: 10.9%;
+    letter-spacing: 0.8px;
   }
 
   .sell-pointList {
@@ -466,6 +468,7 @@
 
   .sell-tableBlock {
     width: 100%;
+    margin-bottom: 6.6%;
   }
 
   .sell-tableBlock dt {
@@ -473,6 +476,7 @@
     margin-bottom: 5.5%;
     padding-bottom: 6.6%;
     font-size: 1.4rem;
+    border-bottom: 1px solid #4D291F;
   }
 
   .sell-tableBlock dd {
@@ -480,6 +484,7 @@
     margin: 0 auto 5.5%;
     padding-bottom: 6.6%;
     font-size: 1.4rem;
+    border-bottom: 1px solid #4D291F;
   }
 
   .sell-point01Img {
@@ -489,8 +494,7 @@
 
   .sell-point02,
   .sell-point03,
-  .sell-point04,
-  .sell-point05 {
+  .sell-point04 {
     font-size: 1.4rem;
     margin-bottom: 9.1%;
   }

@@ -1,0 +1,78 @@
+.policy-contents {
+  width: 100%;
+  margin: 0 auto 6.2%;
+}
+
+.policy-subTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  letter-spacing: 4px;
+  margin: 0 auto 2.9%;
+  font-family: "GenJyuuGothic";
+}
+
+.policy-leadText {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+.policy-text {
+  font-size: 1.6rem;
+  margin-bottom: 2.5%;
+}
+
+.policy-text dt {
+  font-weight: bold;
+}
+
+.policy-rightText {
+  font-size: 1.6rem;
+  text-align: right;
+  margin-bottom: 5.5%;
+}
+
+.policy-rightText p {
+  margin-bottom: 2%;
+}
+
+.policy-rightText p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width:768px) {
+  .policy-contents {
+    margin: 0 auto 16%;
+  }
+
+  .policy-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 8%;
+    letter-spacing: 2px;
+  }
+
+  .policy-leadText {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    text-align: left;
+    margin-bottom: 15%;
+  }
+
+  .policy-text {
+    font-size: 1.4rem;
+    margin-bottom: 6%;
+    line-height: 1.8;
+  }
+  
+  .policy-rightText {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 9%;
+    line-height: 1.8;
+  }
+  
+  .policy-rightText p {
+    margin-bottom: 0%;
+  }  
+}
