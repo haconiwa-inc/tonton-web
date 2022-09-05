@@ -1,7 +1,7 @@
 /* business */
 .business-contents {
   width: 100%;
-  margin: 0 auto 6.2%;
+  margin: 0 auto;
 }
 
 .business-contents img {
@@ -159,10 +159,6 @@
 }
 
 @media screen and (max-width:768px) {
-  .business-contents {
-    margin: 0 auto 16%;
-  }
-
   .business-block {
     margin: 14.7% auto 0;
     line-height: 1.8;
@@ -176,6 +172,7 @@
     font-size: 2rem;
     text-align: left;
     margin: 0 auto 11%;
+    letter-spacing: 2px;
   }
 
   .business-leadText {
