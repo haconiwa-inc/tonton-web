@@ -34,6 +34,10 @@
   border-right: 1px solid #4D291F;
 }
 
+.lineup-box {
+  margin-bottom: 6%;
+}
+
 .lineup-list {
   padding: 0;
   margin-top: 4.4%;
