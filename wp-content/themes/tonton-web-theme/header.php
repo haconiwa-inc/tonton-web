@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/footer.css" media="all">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/common.css" media="all">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/index.css" media="all">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/fonts/GenJyuuGothic-Regular.css" media="all">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/fonts/GenJyuuGothic-Bold.css" media="all">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://use.typekit.net/kbr7cbg.css">
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
