@@ -59,6 +59,7 @@
   color: #4D291F;
   font-weight: bold;
   border-bottom: 2px solid #F6F4F4;
+  font-family: 'GenJyuuGothic';
 }
 
 .estate-tableArea dl dd {
@@ -73,6 +74,7 @@
   margin-bottom: 5.9%;
   font-size: 3.2rem;
   color: #333;
+  font-family: 'GenJyuuGothic';
 }
 
 .estate-points {
@@ -89,14 +91,17 @@
   font-weight: bold;
   border-bottom-right-radius: 5px;
   background-color: #330A00;
+  font-family: ropa-sans-pro, sans-serif;
+  font-style: normal;
 }
 
 .estate-pointArea {
-  padding: 25px 40px;
+  padding: 7.7% 12.3%;
   color: #FC6408;
   line-height: 2;
   font-size: 2rem;
   font-weight: bold;
+  font-family: 'GenJyuuGothic';
 }
 
 .estate-pointIcon {
@@ -142,7 +147,6 @@
   margin-bottom: 4.2%;
   font-size: 2.4rem;
 }
-
 
 .estate-buttonArea {
   display: flex;
@@ -228,16 +232,116 @@
     margin: 9.4% auto 0;
   }
 
-  .estate-subTitle {
-    font-size: 2rem;
-    text-align: left;
-    margin: 0 auto 11%;
-    letter-spacing: 2px;
-  }
-
   .estate-leadText {
     font-size: 1.4rem;
     text-align: left;
+  }
+
+  .estate-detailMain {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 16.7%;
+  }
+
+  .estate-label {
+    padding: 3px 10px;
+    font-size: 1.2rem;
+  }
+
+  .estate-area {
+    margin-top: 4.6%;
+    font-size: 1.4rem;
+  }
+
+  .estate-price {
+    padding: 3.1% 0 9.1%;
+    font-size: 2rem;
+  }
+
+  .estate-tableArea dl {
+    font-size: 1.4rem;
+    margin-bottom: 4.6%;
+  }
+
+  .estate-tableArea dl dt {
+    width: 27%;
+    padding-bottom: 4.5%;
+    margin-bottom: 4.5%;
+  }
+
+  .estate-tableArea dl dd {
+    width: 73%;
+    padding-bottom: 4.5%;
+    margin-bottom: 4.5%;
+  }
+
+  .estate-subTitle {
+    margin-bottom: 5.9%;
+    font-size: 2rem;
+  }
+
+  .estate-points {
+    margin-bottom: 3.9%;
+    position: relative;
+    border: 2px solid #330A00;
+  }
+
+  .estate-pointLabel {
+    display: inline-block;
+    padding: 2px 15px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom-right-radius: 5px;
+    background-color: #330A00;
+  }
+
+  .estate-pointArea {
+    padding: 4.6% 9.2%;
+    font-size: 1.4rem;
+  }
+
+  .estate-pointIcon {
+    top: -51px;
+    right: 25px;
+    width: 65px;
+  }
+
+  .estate-detailAll .estate-tableArea dl dt {
+    width: 20%;
+    padding-bottom: 2.6%;
+    margin-bottom: 2.6%;
+  }
+
+  .estate-detailAll .estate-tableArea dl dd {
+    width: 80%;
+    padding-bottom: 2.6%;
+    margin-bottom: 2.6%;
+  }
+
+  .estate-plan {
+    margin: 11.2% auto 0;
+  }
+
+  .estate-plan li {
+    margin-bottom: 11.2%;
+  }
+
+  .estate-planTitle {
+    font-size: 3.2rem;
+    margin-bottom: 4.9%;
+  }
+
+  .estate-planBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    font-size: 1.6rem;
+  }
+
+  .estate-planSubTitle {
+    margin-bottom: 4.2%;
+    font-size: 2.4rem;
   }
 
   .estate-button {
@@ -250,7 +354,6 @@
 
   .estate-buttonInner--small {
     width: 100%;
-    padding: 0 7.3%;
   }
 
   .estate-button a {

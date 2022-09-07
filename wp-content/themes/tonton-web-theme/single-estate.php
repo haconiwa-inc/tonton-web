@@ -61,9 +61,11 @@ get_header();
         <div class="estate-detail">
           <div class="estate-detailMain">
             <div class="estate-tableArea">
-              <span class="estate-label">新築</span>
-              <p class="estate-area"><?php echo $address_field; ?></p>
-              <p class="estate-price"><span><?php echo $price_field; ?></span></p>
+              <div class="dis-pc">
+                <span class="estate-label">新築</span>
+                <p class="estate-area"><?php echo $address_field; ?></p>
+                <p class="estate-price"><span><?php echo $price_field; ?></span></p>
+              </div>
               <dl>
                 <dt>物件種別</dt>
                 <dd><?php echo $genre_field; ?></dd>
@@ -94,6 +96,11 @@ get_header();
               </div>
             </div>
             <div>
+              <div class="dis-sp">
+                <span class="estate-label">新築</span>
+                <p class="estate-area"><?php echo $address_field; ?></p>
+                <p class="estate-price"><span><?php echo $price_field; ?></span></p>
+              </div>
               <img src="<?php echo get_template_directory_uri();?>/images/business/example_item.png" alt="">
             </div>
           </div>
@@ -106,7 +113,7 @@ get_header();
                 <p>
                   <?php
                     foreach((array)$point_obj_field['value'] as $point_field) :
-                      echo $point_field['estate-point-single'] . '<br>';;
+                      echo  '・' . $point_field['estate-point-single'] . '<br>';
                     endforeach;
                   ?>
                 </p>
