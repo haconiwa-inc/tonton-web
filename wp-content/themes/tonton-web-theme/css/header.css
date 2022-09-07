@@ -16,7 +16,8 @@
   justify-content: end;
   align-items: center;
   height: 100%;
-  margin: 0 15%;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .header-top-menu-item {
@@ -37,7 +38,8 @@
   align-items: center;
   width: 100%;
   height: 50px;
-  padding: 0 15% 0 2%;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .header-bottom-wrapper {
