@@ -164,8 +164,8 @@
             <li>
               <h3 class="sell-exampleTitle">
                 <div class="sell-exampleTitleInner">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/case01.png" alt="case01 住み替え" class="sell-disPc">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/case01_sp.png" alt="case01 住み替え" class="sell-disSp">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/case01.png" alt="case01 住み替え" class="dis-pc">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/case01_sp.png" alt="case01 住み替え" class="dis-sp">
                 </div>
                 <div class="sell-exampleTitleDeco">
                   <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
@@ -209,8 +209,8 @@
             <li>
               <h3 class="sell-exampleTitle">
                 <div class="sell-exampleTitleInner">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/case02.png" alt="case02 資産処分" class="sell-disPc">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/case02_sp.png" alt="case01 資産処分" class="sell-disSp">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/case02.png" alt="case02 資産処分" class="dis-pc">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/case02_sp.png" alt="case01 資産処分" class="dis-sp">
                 </div>
                 <div class="sell-exampleTitleDeco">
                   <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
@@ -254,8 +254,8 @@
             <li>
               <h3 class="sell-exampleTitle">
                 <div class="sell-exampleTitleInner">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/case03.png" alt="case03 買い替え" class="sell-disPc">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/case03_sp.png" alt="case03 買い替え" class="sell-disSp">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/case03.png" alt="case03 買い替え" class="dis-pc">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/case03_sp.png" alt="case03 買い替え" class="dis-sp">
 
                 </div>
                 <div class="sell-exampleTitleDeco">
@@ -300,8 +300,8 @@
             <li>
               <h3 class="sell-exampleTitle">
                 <div class="sell-exampleTitleInner">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/case04.png" alt="case04 維持不能" class="sell-disPc">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/case04_sp.png" alt="case04 維持不能" class="sell-disSp">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/case04.png" alt="case04 維持不能" class="dis-pc">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/case04_sp.png" alt="case04 維持不能" class="dis-sp">
                 </div>
                 <div class="sell-exampleTitleDeco">
                   <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
@@ -347,7 +347,7 @@
         </div>
         <div class="sell-block sell-block--wullGreen">
           <div class="sell-blockInner">
-            <h3 class="sell-contactTitle">まずはお気軽に<br class="sell-disSp" />お問い合わせください。</h3>
+            <h3 class="sell-contactTitle">まずはお気軽に<br class="dis-sp" />お問い合わせください。</h3>
             <div class="sell-button sell-button--green">
               <div class="sell-buttonInner sell-buttonInner--small">
                 <a href="/business/reform">

@@ -223,7 +223,7 @@
                 </a>
               </li>
               <li>
-                <a href="/business/sold">
+                <a href="/business//buy/sold">
                   <img src="<?php echo get_template_directory_uri();?>/images/business/link02.png" alt="">
                   <div class="buy-linkTitle">
                     <p>過去の成約物件</p>
