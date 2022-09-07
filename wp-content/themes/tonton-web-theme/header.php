@@ -40,22 +40,22 @@
         <div class="header-top dis-pc">
           <div class="header-top-menu">
             <div class="header-top-menu-item">
-              <a href="/news">
+              <a href="/news/">
                 お知らせ
               </a>
             </div>
             <div class="header-top-menu-item">
-              <a href="/business">
+              <a href="/business/">
                 事業案内
               </a>
             </div>
             <div class="header-top-menu-item">
-              <a href="/company-inq">
+              <a href="/company-inq/">
                 会社概要
               </a>
             </div>
             <div class="header-top-menu-item">
-              <a href="/contact">
+              <a href="/contact/">
                 お問い合せ
               </a>
             </div>
@@ -73,22 +73,22 @@
           <div class="header-bottom-wrapper dis-pc">
             <div class="header-bottom-menu">
               <div class="header-bottom-menu-item">
-                <a href="/business/sell">
+                <a href="/business/sell/">
                   売る
                 </a>
               </div>
               <div class="header-bottom-menu-item">
-                <a href="/business/buy">
+                <a href="/business/buy/">
                   買う・建てる
                 </a>
               </div>
               <div class="header-bottom-menu-item">
-                <a href="/chintai">
+                <a href="/chintai/">
                   借りる
                 </a>
               </div>
               <div class="header-bottom-menu-item">
-                <a href="/reform">
+                <a href="/reform/">
                   直す
                 </a>
               </div>
@@ -119,7 +119,7 @@
                       <a class="header-nav-link" href="">
                         <div class="header-item-box">
                           <div class="header-nav-text">
-                            <a href="/business">
+                            <a href="/business/">
                               事業案内
                             </a>
                           </div>
@@ -130,7 +130,7 @@
                       <a class="header-nav-link" href="">
                         <div class="header-item-box">                
                           <div class="header-nav-text">
-                          <a href="/company-inq">
+                          <a href="/company-inq/">
                             会社概要
                           </a>
                         </div>
@@ -141,7 +141,7 @@
                       <a class="header-nav-link" href="">
                         <div class="header-item-box">
                           <div class="header-nav-text">
-                            <a href="/news">
+                            <a href="/news/">
                               お知らせ
                             </a>
                           </div>
@@ -152,7 +152,7 @@
                       <a class="header-nav-link" href="">
                         <div class="header-item-box">
                           <div class="header-nav-text">
-                            <a href="/contact">
+                            <a href="/contact/">
                               お問い合せ
                             </a>
                           </div>
@@ -163,7 +163,7 @@
                       <a class="header-nav-link" href="">
                         <div class="header-item-box">
                           <div class="header-nav-text">
-                            <a href="/policy">
+                            <a href="/policy/">
                               プライバシーポリシー
                             </a>
                           </div>
@@ -174,7 +174,7 @@
                   <ul class="header-list-box">
                     <li>
                       <div class="header-item-box">
-                        <a class="header-nav-link" href="/business/sell">
+                        <a class="header-nav-link" href="/business/sell/">
                           <div class="header-nav-text text-large">売る</div>
                         </a>
                         <a href="/business/buy/lineup">
@@ -184,13 +184,13 @@
                     </li>
                     <li>
                       <div class="header-item-box">
-                        <a class="header-nav-link" href="/business/buy">
+                        <a class="header-nav-link" href="/business/buy/">
                           <div class="header-nav-text text-large">買う・建てる</div>
                         </a>
-                        <a href="/business/buy/lineup">
+                        <a href="/business/buy/lineup/">
                           <div class="header-nav-text">- 売買物件</div>
                         </a>
-                        <a href="/business/buy/sold">
+                        <a href="/business/buy/sold/">
                           <div class="header-nav-text">- 過去の成約物件</div>
                         </a>
                       </div>
@@ -198,10 +198,10 @@
                     <li>
                       <a class="header-nav-link" href="">
                         <div class="header-item-box">
-                          <a class="header-nav-link" href="/business/reform">
+                          <a class="header-nav-link" href="/business/reform/">
                             <div class="header-nav-text text-large">直す</div>
                           </a>
-                          <a href="/business/reform/results-archive">
+                          <a href="/business/reform/results-archive/">
                             <div class="header-nav-text">- 修繕事例</div>
                           </a>
                         </div>
@@ -209,7 +209,7 @@
                     </li>
                     <li>
                       <div class="header-item-box">
-                        <a class="header-nav-link" href="business/chintai">
+                        <a class="header-nav-link" href="business/chintai/">
                           <div class="header-nav-text text-large">借りる</div>
                         </a>
                       </div>

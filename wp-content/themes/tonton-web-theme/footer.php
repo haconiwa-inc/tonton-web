@@ -41,12 +41,12 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/business">
+                  <a href="/business/">
                     事業内容
                   </a>
                 </li>
                 <li>
-                  <a href="/company-inq">
+                  <a href="/company-inq/">
                     会社概要
                   </a>
                 </li>
@@ -56,13 +56,13 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/contact">
+                  <a href="/contact/">
                     お問い合せ
                   </a>
                 </li>
                 <br>
                 <li>
-                  <a href="/policy">
+                  <a href="/policy/">
                     プライバシーポリシー
                   </a>
                 </li>
@@ -71,37 +71,37 @@
             <div class="footer-link-second">
               <ul class="footer-link-second-list">
                 <li>
-                  <a href="/business/sell">
+                  <a href="/business/sell/">
                     売る
                   </a>
                 </li>
                 <li>
-                  <a href="/business/buy">
+                  <a href="/business/buy/">
                     買う・建てる
                   </a>
                   <div class="footer-link-second-text">
-                    <a href="/business/buy/lineup">
+                    <a href="/business/buy/lineup/">
                       −売買物件
                     </a>
                   </div>
                   <div class="footer-link-second-text">
-                    <a href="/business/buy/sold">
+                    <a href="/business/buy/sold/">
                       −過去の成約物件
                     </a>
                   </div>
                 </li>
                 <li>
-                  <a href="/business/reform">
+                  <a href="/business/reform/">
                     直す
                   </a>
                   <div class="footer-link-second-text">
-                    <a href="/business/reform/results-archive">
+                    <a href="/business/reform/results-archive/">
                       −修繕事例
                     </a>
                   </div>
                 </li>
                 <li>
-                  <a href="business/chintai">
+                  <a href="business/chintai/">
                     借りる
                   </a>
                 </li>
@@ -120,28 +120,28 @@
                 </a>
               </li>
               <li>
-                <a href="/business">
+                <a href="/business/">
                   事業内容
                 </a>
               </li>
               <li>
-                <a href="/company-inq">
+                <a href="/company-inq/">
                   会社概要
                 </a>
               </li>
               <li>
-                <a href="/news">
+                <a href="/news/">
                   お知らせ
                 </a>
               </li>
               <li>
-                <a href="/contact">
+                <a href="/contact/">
                   お問い合せ
                 </a>
               </li>
               <br>
               <li>
-                <a href="/policy">
+                <a href="/policy/">
                   プライバシーポリシー
                 </a>
               </li>
@@ -150,37 +150,37 @@
           <div class="footer-link-second">
             <ul class="footer-link-second-list">
               <li>
-                <a href="/business/sell">
+                <a href="/business/sell/">
                   売る
                 </a>
               </li>
               <li>
-                <a href="/business/buy">
+                <a href="/business/buy/">
                   買う・建てる
                 </a>
                 <div class="footer-link-second-text">
-                  <a href="/business/buy/lineup">
+                  <a href="/business/buy/lineup/">
                     −売買物件
                   </a>
                 </div>
                 <div class="footer-link-second-text">
-                  <a href="/business/buy/sold">
+                  <a href="/business/buy/sold/">
                     −過去の成約物件
                   </a>
                 </div>
               </li>
               <li>
-                <a href="/business/reform">
+                <a href="/business/reform/">
                   直す
                 </a>
                 <div class="footer-link-second-text">
-                  <a href="/business/reform/results-archive">
+                  <a href="/business/reform/results-archive/">
                     −修繕事例
                   </a>
                 </div>
               </li>
               <li>
-                <a href="business/chintai">
+                <a href="business/chintai/">
                   借りる
                 </a>
               </li>
