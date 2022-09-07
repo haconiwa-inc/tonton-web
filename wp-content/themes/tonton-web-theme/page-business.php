@@ -107,7 +107,7 @@
             </div>
             <ul class="business-realEstateList">
               <li>
-                <p class="business-realEstateTitle">不動産投資</p>
+                <p class="business-realEstateTitle">賃貸</p>
                 <div class="business-realEstateContent">
                   注文住宅と同じ品質や設備で建てられた賃貸住宅がございます。敷地内駐車場には、積雪時に安心のロードヒーティングが備えつけられています。
                 </div>
