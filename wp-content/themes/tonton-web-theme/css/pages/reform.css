@@ -1,21 +1,21 @@
 /* sell */
-.sell-contents {
+.reform-contents {
   width: 100%;
   margin: 0 auto;
 }
 
-.sell-contents img {
+.reform-contents img {
   max-width: 100%;
   vertical-align: bottom;
 }
 
-.sell-block {
+.reform-block {
   width: 100%;
-  margin: 6% auto 0;
+  margin: 7.8% auto 0;
   line-height: 1.8;
 }
 
-.sell-block--wull {
+.reform-block--wull {
   width: 100%;
   max-width: 100%;
   padding: 6% 0 6.2%;
@@ -23,7 +23,7 @@
   margin: 0 auto;
 }
 
-.sell-block--wullGreen {
+.reform-block--wullGreen {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
@@ -32,17 +32,17 @@
   margin: 0 auto;
 }
 
-.sell-block--top {
-  margin: 4% auto 0;
+.reform-block--top {
+  margin: 4% auto 9.8%;
 }
 
-.sell-blockInner {
+.reform-blockInner {
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
 }
 
-.sell-subTitle {
+.reform-subTitle {
   font-size: 3.2rem;
   text-align: center;
   margin: 0 auto 2.9%;
@@ -50,7 +50,7 @@
   font-family: "GenJyuuGothic";
 }
 
-.sell-pointsTitle {
+.reform-pointsTitle {
   font-size: 3.2rem;
   text-align: left;
   margin-bottom: 3.9%;
@@ -58,12 +58,12 @@
   letter-spacing: 4px;
 }
 
-.sell-leadText {
+.reform-leadText {
   font-size: 1.6rem;
   text-align: center;
 }
 
-.sell-pointList {
+.reform-pointList {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -72,100 +72,40 @@
   align-items: flex-start;
 }
 
-.sell-pointList li:not(:first-child) {
+.reform-pointList li:not(:first-child) {
   margin-left: 1.9%;
 }
 
-.sell-pointCapture {
+.reform-pointCapture {
   width: 100%;
 }
 
-.sell-flowTitle {
-  font-size: 3.2rem;
-  text-align: left;
-  font-family: "GenJyuuGothic";
-  margin-bottom: 3.9%;
-  letter-spacing: 4px;
-}
-
-.sell-flowList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.sell-flowList li {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 40px;
-  padding: 2.4% 2.9%;
-  border: 2px solid #4D291F;
-  border-radius: 10px;
-}
-
-.sell-flowList li:not(:last-child)::before {
-  content: '';
-  position: absolute;
-  top: 102%;
-  left: 65px;
-  width: 4px;
-  height: 40px;
-  background-color: #4D291F;
-  z-index: -1;
-}
-
-.sell-stepIcon {
-  width: 72px;
-  flex-shrink: 0;
-}
-
-.sell-stepText {
-  margin-left: 2.1%;
-}
-
-.sell-stepTitle {
-  margin: 0 auto 2.3%;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #4D291F;
-}
-
-.sell-stepContent {
-  font-size: 1.6rem;
-}
-
-.sell-contactTitle {
+.reform-contactTitle {
   font-size: 3.2rem;
   text-align: center;
   margin: 0 auto 4.8%;
   font-family: "GenJyuuGothic";
 }
 
-.sell-exampleList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.reform-exampleList {
   width: 100%;
-  max-width: 1040px;
-  margin: 0 auto;
+  margin: 0 auto 11.7%;
 }
 
-.sell-exampleList li {
+.reform-exampleList li {
   margin-bottom: 4.8%;
   padding: 4.8% 5.3%;
-  background-color: #fff;
+  background-color: #F7F4EC;
 }
 
-.sell-exampleTitle {
+.reform-exampleTitle {
   position: relative;
   margin-bottom: 4.9%;
   padding-bottom: 2.7%;
   border-bottom: 2px solid #4D291F;
 }
 
-.sell-exampleTitleDeco {
+.reform-exampleTitleDeco {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -173,25 +113,25 @@
   max-width: 270px;
 }
 
-.sell-exampleTitleInner {
+.reform-exampleTitleInner {
   width: 32%;
   max-width: 295px;
 }
 
-.sell-exampleSubtitle {
+.reform-exampleSubtitle {
   margin: 0 auto 1.6%;
   font-size: 2rem;
   color: #009844;
 }
 
-.sell-point01 {
+.reform-point01 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 4.3%;
 }
 
-.sell-tableBlock {
+.reform-tableBlock {
   width: 50%;
   display: flex;
   justify-content: flex-start;
@@ -199,77 +139,75 @@
   flex-wrap: wrap;
 }
 
-.sell-tableBlock dt {
+.reform-tableBlock dt {
   width: 30%;
   margin-bottom: 4.5%;
   padding-bottom: 4.5%;
   color: #4D291F;
   font-size: 1.8rem;
-  border-bottom: 2px solid #F6F4F4;
+  border-bottom: 2px solid #4D291F;
 }
 
-.sell-tableBlock dd {
+.reform-tableBlock dd {
   width: 70%;
   margin-bottom: 4.5%;
   padding-bottom: 4.5%;
   color: #333;
   font-size: 1.8rem;
-  border-bottom: 2px solid #F6F4F4;
+  border-bottom: 2px solid #4D291F;
 }
 
-.sell-point01Img {
+.reform-point01Img {
   width: 50%;
   margin-left: 4.3%;
 }
 
-.sell-point02,
-.sell-point03,
-.sell-point04 {
+.reform-point02,
+.reform-point03,
+.reform-point04 {
   font-size: 1.6rem;
   margin-bottom: 4.3%;
 }
 
-.sell-point05 {
+.reform-point05 {
   font-size: 1.6rem;
 }
 
-.sell-button {
+.reform-button {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-.sell-buttonInner {
+.reform-buttonInner {
   width: 50%;
   margin: 0 auto;
 }
 
-.sell-buttonInner--left {
+.reform-buttonInner--left {
   width: 45%;
   margin-left: 0;
   margin-right: auto;
 }
 
-.sell-buttonInner--small {
+.reform-buttonInner--small {
   width: 30%;
 }
 
-.sell-linkList {
+.reform-linkList {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 11.7% auto;
 }
 
-.sell-linkList li a {
+.reform-linkList li a {
   position: relative;
   display: block;
   text-decoration: none;
 }
 
-.sell-linkTitle {
+.reform-linkTitle {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -280,7 +218,7 @@
   text-align: center;
 }
 
-.sell-linkArrow {
+.reform-linkArrow {
   position: absolute;
   top: 50%;
   right: 20px;
@@ -289,7 +227,11 @@
   font-size: 1.8rem;
 }
 
-.sell-button a {
+.reform-linkList li:not(:first-child) {
+  margin-left: 2.9%;
+}
+
+.reform-button a {
   display: block;
   padding: 6.4% 0;
   border-radius: 8px;
@@ -297,12 +239,12 @@
   font-size: 1.8rem;
 }
 
-.sell-button--green a {
+.reform-button--green a {
   color: #fff;
   background-color: #009844;
 }
 
-.sell-icon {
+.reform-icon {
   position: absolute;
   top: -25px;
   left: -20px;
@@ -310,19 +252,19 @@
 }
 
 @media screen and (max-width:768px) {
-  .sell-block {
+  .reform-block {
     width: 100%;
     margin: 14.7% auto 0;
   }
 
-  .sell-block--wull {
+  .reform-block--wull {
     width: 100%;
     max-width: 100%;
     padding: 14.7% 0 16%;
     margin: 0 auto;
   }
 
-  .sell-block--wullGreen {
+  .reform-block--wullGreen {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -330,65 +272,64 @@
     margin: 0 auto;
   }
 
-  .sell-block--top {
-    margin: 9.4% auto 0;
+  .reform-block--top {
+    margin: 9.4% auto 15.4%;
   }
 
-  .sell-blockInner {
+  .reform-blockInner {
     max-width: 100%;
     padding: 0 5.4%;
   }
 
-  .sell-subTitle {
+  .reform-subTitle {
     font-size: 2rem;
     text-align: left;
     margin: 0 auto 8.9%;
     letter-spacing: 2px;
   }
 
-  .sell-leadText {
+  .reform-leadText {
     font-size: 1.4rem;
     text-align: left;
   }
 
-  .sell-pointsTitle {
+  .reform-pointsTitle {
     font-size: 2rem;
-    text-align: center;
     margin-bottom: 10.9%;
     letter-spacing: 0.8px;
   }
 
-  .sell-pointList {
+  .reform-pointList {
     display: block;
   }
 
-  .sell-pointList li {
+  .reform-pointList li {
     display: block;
     margin-bottom: 8.8%;
   }
 
-  .sell-pointCapture {
+  .reform-pointCapture {
     width: 100%;
   }
 
-  .sell-flowTitle {
+  .reform-flowTitle {
     font-size: 2rem;
   }
 
-  .sell-flowList {
+  .reform-flowList {
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
-  .sell-flowList li {
+  .reform-flowList li {
     position: relative;
     display: block;
     margin-bottom: 26px;
     padding: 9.4% 10%;
   }
 
-  .sell-flowList li:not(:last-child)::before {
+  .reform-flowList li:not(:last-child)::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -400,50 +341,48 @@
     z-index: -1;
   }
 
-  .sell-stepIcon {
+  .reform-stepIcon {
     width: 70px;
     margin: 0 auto 10%;
   }
 
-  .sell-stepText {
+  .reform-stepText {
     margin-left: 0;
   }
 
-  .sell-stepTitle {
+  .reform-stepTitle {
     margin-bottom: 15px;
     font-size: 1.6rem;
   }
 
-  .sell-stepContent {
+  .reform-stepContent {
     font-size: 1.4rem;
   }
 
-  .sell-contactTitle {
+  .reform-contactTitle {
     font-size: 2rem;
     text-align: center;
     margin: 0 auto 6.3%;
   }
 
-  .sell-exampleList {
+  .reform-exampleList {
     max-width: 100%;
-    margin: 0 auto;
-    padding: 0 6.7%;
+    margin: 0 auto 18.2%;
   }
 
-  .sell-exampleList li {
+  .reform-exampleList li {
     margin-bottom: 7.7%;
     padding: 7.7%;
-    background-color: #fff;
   }
 
-  .sell-exampleTitle {
+  .reform-exampleTitle {
     position: relative;
     margin-bottom: 9.1%;
     padding-bottom: 6.2%;
     border-bottom: 2px solid #4D291F;
   }
 
-  .sell-exampleTitleDeco {
+  .reform-exampleTitleDeco {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -451,27 +390,27 @@
     max-width: 83px;
   }
 
-  .sell-exampleTitleInner {
-    width: 30%;
-    max-width: 81px;
+  .reform-exampleTitleInner {
+    width: 80%;
+    max-width: 184px;
   }
 
-  .sell-exampleSubtitle {
+  .reform-exampleSubtitle {
     margin: 0 auto 4.8%;
     font-size: 1.6rem;
   }
 
-  .sell-point01 {
+  .reform-point01 {
     display: block;
     margin-bottom: 9.1%;
   }
 
-  .sell-tableBlock {
+  .reform-tableBlock {
     width: 100%;
     margin-bottom: 6.6%;
   }
 
-  .sell-tableBlock dt {
+  .reform-tableBlock dt {
     width: 40%;
     margin-bottom: 5.5%;
     padding-bottom: 6.6%;
@@ -479,7 +418,7 @@
     border-bottom: 1px solid #4D291F;
   }
 
-  .sell-tableBlock dd {
+  .reform-tableBlock dd {
     width: 60%;
     margin: 0 auto 5.5%;
     padding-bottom: 6.6%;
@@ -487,47 +426,63 @@
     border-bottom: 1px solid #4D291F;
   }
 
-  .sell-point01Img {
+  .reform-point01Img {
     width: 100%;
     margin-left: 0;
   }
 
-  .sell-point02,
-  .sell-point03,
-  .sell-point04 {
+  .reform-point02,
+  .reform-point03,
+  .reform-point04 {
     font-size: 1.4rem;
     margin-bottom: 9.1%;
   }
 
-  .sell-point05 {
+  .reform-point05 {
     font-size: 1.4rem;
   }
 
-  .sell-button {
+  .reform-button {
     width: 100%;
   }
 
-  .sell-buttonInner {
+  .reform-buttonInner {
     width: 100%;
   }
 
-  .sell-buttonInner--small {
+  .reform-buttonInner--small {
     width: 100%;
     padding: 0 8.5%;
   }
 
-  .sell-linkList {
+  .reform-linkList {
     display: block;
-    margin: 0;
-    padding: 0;
+    margin: 18.2% auto;
   }
 
-  .sell-button a {
+  .reform-linkList li a {
+    margin-bottom: 6.8%;
+  }
+
+  .reform-linkTitle {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .reform-linkArrow {
+    right: 10px;
+  }
+
+  .reform-linkList li:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .reform-button a {
     padding: 7.6% 0;
     font-size: 1.6rem;
   }
 
-  .sell-icon {
+  .reform-icon {
     position: absolute;
     top: -20px;
     left: 10px;
