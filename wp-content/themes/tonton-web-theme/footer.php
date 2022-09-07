@@ -51,7 +51,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/news">
+                  <a href="/news/">
                     お知らせ
                   </a>
                 </li>
@@ -101,7 +101,7 @@
                   </div>
                 </li>
                 <li>
-                  <a href="business/chintai/">
+                  <a href="/business/chintai/">
                     借りる
                   </a>
                 </li>
@@ -180,7 +180,7 @@
                 </div>
               </li>
               <li>
-                <a href="business/chintai/">
+                <a href="/business/chintai/">
                   借りる
                 </a>
               </li>
