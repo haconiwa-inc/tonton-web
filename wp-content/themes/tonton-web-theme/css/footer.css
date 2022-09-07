@@ -90,4 +90,9 @@
   .footer-copyright {
     padding: 5% 0;
   }
+
+  .footer-content {
+    display: block;
+    padding: 0;
+  }
 }
