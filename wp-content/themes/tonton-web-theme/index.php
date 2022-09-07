@@ -105,12 +105,17 @@ get_header();
                 <div class="top-content-item-subtitle">
                   マンション・戸建て・土地売却を検討の方へ
                 </div>
-                <div class="top-content-item-description">
+                <div class="top-content-item-description dis-pc">
                   お客様のマンション・戸建て・土地等の不動産売却はとんとん住宅販売にお任せください。豊富な経験と地域に根付いた知識を生かし資産を最大化します。
                 </div>
                 <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                  <a href="/">
                     物件売却についてみる
+                  </a>
+                  <div class="top-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                      <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -125,22 +130,37 @@ get_header();
                 <div class="top-content-item-subtitle">
                   新築・中古物件をお探しの方へ
                 </div>
-                <div class="top-content-item-description">
+                <div class="top-content-item-description dis-pc">
                   初めてのマンション・戸建て・土地等の不動産購入でも安心ください。豊富な経験と地域に根付いた知識を生かし資産を最大化します。
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                <div class="top-content-button m-start">
+                  <a href="/">
                     取扱物件を見る
+                  </a>
+                  <div class="top-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                      <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                    </svg>
                   </div>
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                <div class="top-content-button m-start">
+                  <a href="/">
                     過去の成約物件を見る
+                  </a>
+                  <div class="top-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                      <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                    </svg>
                   </div>
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
-                    物件購入について見る
+                <div class="top-content-button m-start">
+                  <a href="/">
+                   物件購入について見る
+                  </a>
+                  <div class="top-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                      <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -161,17 +181,27 @@ get_header();
                 <div class="top-content-item-subtitle">
                   お住まいのリフォーム・増改築をご検討の方へ
                 </div>
-                <div class="top-content-item-description">
+                <div class="top-content-item-description dis-pc">
                   リフォーム・リノベーションはとんとんにお任せください。スタイルに合わせた豊富な事例やわかりやすいパッケージを取り揃えてます。
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                <div class="top-content-button top-content-button--long m-start">
+                  <a href="/">
                     過去のリフォーム施工例を見る
+                  </a>
+                  <div class="top-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                      <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                    </svg>
                   </div>
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                <div class="top-content-button top-content-button--long m-start">
+                  <a href="/">
                     リフォーム・リノベーションについて見る
+                  </a>
+                  <div class="top-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                      <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -183,12 +213,17 @@ get_header();
                 <div class="top-content-item-subtitle">
                   賃貸をご検討中の方へ
                 </div>
-                <div class="top-content-item-description">
+                <div class="top-content-item-description dis-pc">
                   注文住宅と同じ品質や設備で建てられた賃貸住宅がございます。敷地内駐車場には、積雪時に安心のロードヒーティングが備えつけられています。
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                <div class="top-content-button m-start">
+                  <a href="/">
                     取扱物件を見る
+                  </a>
+                  <div class="top-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                      <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -198,12 +233,17 @@ get_header();
                 <div class="top-content-item-subtitle">
                   不動産投資をご検討中の方へ
                 </div>
-                <div class="top-content-item-description">
+                <div class="top-content-item-description dis-pc">
                   いまの時代、１つの資産に頼るには不安です。貯金だけじゃ将来や老後が不安…そんな方に不動産投資をご提案させていただきます。
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                <div class="top-content-button m-start">
+                  <a href="/">
                     お問い合わせ
+                  </a>
+                  <div class="top-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                      <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -267,8 +307,15 @@ get_header();
           </ul>
           </div>
           <div class="top-news-button-wrapper">
-            <div class="top-kv-button">
-              お知らせ一覧
+            <div class="top-news-button">
+              <a href="/">
+                お知らせ一覧
+              </a>
+              <div class="top-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                  <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>

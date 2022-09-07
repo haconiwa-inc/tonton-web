@@ -59,9 +59,11 @@
                 お問い合せ
               </a>
             </div>
-            <a href="">
-              <img src="<?php echo get_template_directory_uri();?>/images/facebook_icon.png" alt="">
-            </a>
+            <div class="header-top-menu-item">
+              <a href="">
+                <img src="<?php echo get_template_directory_uri();?>/images/facebook_icon.png" alt="">
+              </a>
+            </div>
           </div>
         </div>
         <div class="header-bottom">
