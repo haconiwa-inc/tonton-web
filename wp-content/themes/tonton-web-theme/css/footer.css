@@ -40,6 +40,9 @@
 .footer-link-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.footer-link-list a {
   color: #330A00;
 }
 
@@ -62,6 +65,9 @@
 .footer-link-second-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.footer-link-second-list a {
   color: #330A00;
 }
 
