@@ -209,7 +209,7 @@
                     </li>
                     <li>
                       <div class="header-item-box">
-                        <a class="header-nav-link" href="business/chintai/">
+                        <a class="header-nav-link" href="/business/chintai/">
                           <div class="header-nav-text text-large">借りる</div>
                         </a>
                       </div>
