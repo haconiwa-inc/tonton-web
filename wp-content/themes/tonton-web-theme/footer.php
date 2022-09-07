@@ -42,10 +42,17 @@
               </ul>
             </div>
             <div class="footer-link-second">
-              <ul class="footer-link-list">
+              <ul class="footer-link-second-list">
                 <li>売る</li>
-                <li>買う・建てる</li>
-                <li>直す</li>
+                <li>
+                  買う・建てる
+                  <div class="footer-link-second-text">−売買物件</div>
+                  <div class="footer-link-second-text">−過去の成約物件</div>
+                </li>
+                <li>
+                  直す
+                  <div class="footer-link-second-text">−修繕事例</div>
+                </li>
                 <li>借りる</li>
               </ul>
             </div>
@@ -65,10 +72,17 @@
             </ul>
           </div>
           <div class="footer-link-second">
-            <ul class="footer-link-list">
+            <ul class="footer-link-second-list">
               <li>売る</li>
-              <li>買う・建てる</li>
-              <li>直す</li>
+              <li>
+                買う・建てる
+                <div class="footer-link-second-text">−売買物件</div>
+                <div class="footer-link-second-text">−過去の成約物件</div>
+              </li>
+              <li>
+                直す
+                <div class="footer-link-second-text">−修繕事例</div>
+              </li>
               <li>借りる</li>
             </ul>
           </div>
