@@ -46,19 +46,19 @@
               <li>
                 <div class="reform-pointCapture">
                   <img src="<?php echo get_template_directory_uri();?>/images/business/point01_reform.png" alt="ご予算に合ったリフォームプランのご提案が可能" class="dis-pc">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/point01_sell_sp.png" alt="ご予算に合ったリフォームプランのご提案が可能" class="dis-sp">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/point01_reform_sp.png" alt="ご予算に合ったリフォームプランのご提案が可能" class="dis-sp">
                 </div>
               </li>
               <li>
                 <div class="reform-pointCapture">
                   <img src="<?php echo get_template_directory_uri();?>/images/business/point02_reform.png" alt="事例が多数なため安心して任せることができる" class="dis-pc">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/point02_sell_sp.png" alt="事例が多数なため安心して任せることができる" class="dis-sp">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/point02_reform_sp.png" alt="事例が多数なため安心して任せることができる" class="dis-sp">
                 </div>
               </li>
               <li>
                 <div class="reform-pointCapture">
                   <img src="<?php echo get_template_directory_uri();?>/images/business/point03_reform.png" alt="予算に合わせた安心の完全定額制、予算に合わせた選択制" class="dis-pc">
-                  <img src="<?php echo get_template_directory_uri();?>/images/business/point03_sell_sp.png" alt="予算に合わせた安心の完全定額制、予算に合わせた選択制" class="dis-sp">
+                  <img src="<?php echo get_template_directory_uri();?>/images/business/point03_reform_sp.png" alt="予算に合わせた安心の完全定額制、予算に合わせた選択制" class="dis-sp">
                 </div>
               </li>
             </ul>
@@ -66,15 +66,13 @@
         </div>
         <div class="wrapper">
           <div class="reform-block">
-            <div class="reform-blockInner">
-              <h3 class="reform-pointsTitle">代表的なリフォーム / リノベーション事例</h3>
-            </div>
+            <h3 class="reform-pointsTitle">代表的なリフォーム / リノベーション事例</h3>
             <ul class="reform-exampleList">
               <li>
                 <h3 class="reform-exampleTitle">
                   <div class="reform-exampleTitleInner">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/case01_reform.png" alt="case01 フルリノベーション" class="dis-pc">
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/case01_sp.png" alt="case01 フルリノベーション" class="dis-sp">
+                    <img src="<?php echo get_template_directory_uri();?>/images/business/case01_reform_sp.png" alt="case01 フルリノベーション" class="dis-sp">
                   </div>
                   <div class="reform-exampleTitleDeco">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
@@ -118,7 +116,7 @@
                 <h3 class="reform-exampleTitle">
                   <div class="reform-exampleTitleInner">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/case02_reform.png" alt="case02 マンションリフォーム" class="dis-pc">
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/case02_sp.png" alt="case01 マンションリフォーム" class="dis-sp">
+                    <img src="<?php echo get_template_directory_uri();?>/images/business/case02_reform_sp.png" alt="case01 マンションリフォーム" class="dis-sp">
                   </div>
                   <div class="reform-exampleTitleDeco">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
@@ -162,7 +160,7 @@
                 <h3 class="reform-exampleTitle">
                   <div class="reform-exampleTitleInner">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/case03_reform.png" alt="case03" class="dis-pc">
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/case03_sp.png" alt="case03" class="dis-sp">
+                    <img src="<?php echo get_template_directory_uri();?>/images/business/case03_reform_sp.png" alt="case03" class="dis-sp">
 
                   </div>
                   <div class="reform-exampleTitleDeco">
