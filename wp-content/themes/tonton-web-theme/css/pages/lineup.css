@@ -166,8 +166,86 @@
     text-align: left;
   }
 
+  .lineup-tab {
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+  }
+
+  .lineup-tab li {
+    margin-bottom: 5%;
+    line-height: 1;
+  }
+
+  .lineup-tab li:not(:last-child) {
+    padding-right: 6.1%;
+    margin-right: 6.1%;
+  }
+
+  .lineup-box {
+    margin-bottom: 6%;
+  }
+
+  .lineup-list {
+    padding: 0;
+    margin-top: 6.4%;
+  }
+  .lineup-item {
+    display: block;
+    padding: 9.1%;
+    margin-bottom: 9.1%;
+    box-shadow: 0px 0px 8px -5px #4d291f;
+    border-radius: 8px;
+  }
+
+  .lineup-img {
+    width: 100%;
+    margin-bottom: 9.3%;
+  }
+
+  .lineup-textArea {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .lineup-textArea p {
+    margin: 0;
+  }
+
+  .lineup-access {
+    font-size: 1.4rem;
+  }
+
+  .lineup-price {
+    padding: 0.5% 0;
+    font-size: 2rem;
+    color: #FC6408;
+  }
+
+  .lineup-accessDetail,
+  .lineup-minutes {
+    font-size: 1.4rem;
+  }
+
+  .lineup-detail {
+    font-size: 1.2rem;
+  }
+
+  .lineup-buttonArea {
+    display: block;
+    margin-top: 9.3%;
+  }
+
   .lineup-button {
     width: 100%;
+  }
+
+  .lineup-button:last-child {
+    margin-top: 9.3%;
+    margin-left: 0;
   }
 
   .lineup-buttonInner {
@@ -180,7 +258,8 @@
   }
 
   .lineup-button a {
-    padding: 5% 0;
+    border-radius: 5px;
+    padding: 4.3% 0;
     font-size: 1.6rem;
   }
 
