@@ -236,7 +236,7 @@
               </div>
               <h4 class="sell-exampleSubtitle">ご相談内容</h4>
               <div class="sell-point02">
-              体の不調があり、家も古いため売却をして娘と賃貸で暮らそうかと考えている。
+              体調がすぐれなく、家も古いため売却をして娘と賃貸で暮らそうかと考えている。
               </div>
               <h4 class="sell-exampleSubtitle">ご提案内容と結果</h4>
               <div class="sell-point03">
