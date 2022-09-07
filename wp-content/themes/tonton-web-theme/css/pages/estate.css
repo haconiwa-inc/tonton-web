@@ -134,6 +134,7 @@
 .estate-planTitle {
   font-size: 3.2rem;
   margin-bottom: 4.9%;
+  font-family: 'GenJyuuGothic';
 }
 
 .estate-planBlock {
@@ -146,6 +147,7 @@
 .estate-planSubTitle {
   margin-bottom: 4.2%;
   font-size: 2.4rem;
+  font-family: 'GenJyuuGothic';
 }
 
 .estate-buttonArea {
@@ -281,9 +283,7 @@
   }
 
   .estate-points {
-    margin-bottom: 3.9%;
-    position: relative;
-    border: 2px solid #330A00;
+    margin-bottom: 6.1%;
   }
 
   .estate-pointLabel {
@@ -308,40 +308,49 @@
   }
 
   .estate-detailAll .estate-tableArea dl dt {
-    width: 20%;
-    padding-bottom: 2.6%;
-    margin-bottom: 2.6%;
+    width: 27%;
+    padding-bottom: 4.5%;
+    margin-bottom: 4.5%;
   }
 
   .estate-detailAll .estate-tableArea dl dd {
-    width: 80%;
-    padding-bottom: 2.6%;
-    margin-bottom: 2.6%;
+    width: 73%;
+    padding-bottom: 4.5%;
+    margin-bottom: 4.5%;
   }
 
   .estate-plan {
-    margin: 11.2% auto 0;
+    margin: 16.7% auto 0;
   }
 
   .estate-plan li {
-    margin-bottom: 11.2%;
+    margin-bottom: 15.2%;
   }
 
   .estate-planTitle {
-    font-size: 3.2rem;
-    margin-bottom: 4.9%;
+    font-size: 2rem;
+    margin-bottom: 9.1%;
   }
 
   .estate-planBlock {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    font-size: 1.6rem;
+    display: block;
+    font-size: 1.4rem;
   }
 
   .estate-planSubTitle {
-    margin-bottom: 4.2%;
-    font-size: 2.4rem;
+    margin-top: 4.6%;
+    margin-bottom: 3%;
+    font-size: 1.6rem;
+  }
+
+  .estate-buttonArea {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .estate-buttonArea .estate-button {
+    margin-bottom: 10%;
   }
 
   .estate-button {
@@ -367,5 +376,15 @@
     left: 10px;
     width: 48px;
   }
+
+  /* TOPへ戻る調整 */
+  .top-buttonInner {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .top-icon {
+    left: -18px;
+}
 }
 
