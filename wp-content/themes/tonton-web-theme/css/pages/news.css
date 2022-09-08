@@ -4,28 +4,6 @@
   width: 100%;
 }
 
-.news-header img {
-  width: 100%;
-}
-
-.news-header-box {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  text-align: center;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-}
-
-.news-header-title {
-  font-size: 2.5vw;
-}
-
-.news-header-text {
-  font-size: 1.5vw;
-}
-
 .news-tab-top,
 .news-tab-bottom {
   margin-top: 5%;
@@ -37,7 +15,7 @@
   justify-content: start;
   align-items: center;
   width: 100%;
-  font-size: 20px;
+  font-size: 2rem;
   color: #C9BEBB;
   line-height: 1;
   text-align: center;
@@ -84,7 +62,7 @@
 }
 
 .news-date {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #333;
 }
 
@@ -96,7 +74,7 @@
 
 .news-tags {
   padding: 6px;
-  font-size: 12px;
+  font-size: 1.2rem;
   width: 120px;
   height: 100%;
   margin-left: 10%;
@@ -122,7 +100,7 @@
 }
 
 .news-description {
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-left: 5%;
 }
 
@@ -150,7 +128,7 @@
   max-width: 300px;
   padding: 3%;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
   color: #fff;
   background-color: #009844;
@@ -175,7 +153,7 @@
   width: 42px;
   height: 42px;
   padding: 8px 0;
-  font-size: 20px;
+  font-size: 2rem;
   box-sizing: border-box;
   color: #C9BEBB;
   line-height: 1;
@@ -191,7 +169,7 @@
   width: 42px;
   height: 42px;
   padding: 8px 0;
-  font-size: 20px;
+  font-size: 2rem;
   box-sizing: border-box;
   color: #C9BEBB;
   line-height: 1;
@@ -207,30 +185,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .pc {
-    display: none;
-  }
-  
-  .sp {
-    display: block;
-  }
-
-  .news-header-box {
-    top: 30%;
-  }
-
-  .news-header-title {
-    font-size: 6vw;
-  }
-
-  .news-header-text {
-    font-size: 4vw;
-  }
-
   .news-tab-top ul,
   .news-tab-bottom ul {
     margin-top: 8%;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   .news-list {
@@ -274,6 +232,10 @@
     max-width: 100%;
     padding: 5% 0;
   }
+
+  .top-buttonInner {
+    padding: 0 5%;
+  }
 }
 
 
@@ -300,25 +262,13 @@
   -ms-transform: translateX(-50%);
 }
 
-.news-detail-header-title {
-  font-size: 2.5vw;
-}
-
-.news-detail-header-text {
-  font-size: 1.5vw;
-}
-
-.news-detail-wrapper {
-  padding: 2% 20% 10%;
-}
-
 .news-detail-content {
   margin-top: 8%;
 }
 
 .news-detail-tags {
   padding: 6px;
-  font-size: 12px;
+  font-size: 1.6rem;
   width: 120px;
   color: #fff;
   border-radius: 5px;
@@ -326,8 +276,13 @@
 }
 
 .news-detail-title {
-  margin-top: 4%;
-  font-size: 30px;
+  margin-top: 2%;
+  font-size: 3rem;
+}
+
+.news-detail-date {
+  margin-top: 2%;
+  font-size: 2rem;
 }
 
 .news-detail-img {
@@ -342,7 +297,13 @@
 
 .news-detail-description {
   margin-top: 5%;
-  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+.news-detail-description img {
+  display: block;
+  width: 80%;
+  margin: 0 auto 5%;
 }
 
 .news-detail-button-wrapper {
@@ -350,7 +311,7 @@
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin: 10% auto;
+  margin: 10% auto 0;
 }
 
 .news-detail-button-prev {
@@ -358,10 +319,10 @@
 }
 
 .news-detail-button {
-  max-width: 300px;
-  padding: 7% 0;
+  width: 300px;
+  padding: 5.7% 0;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
   color: #009844;
   background-color: #fff;
@@ -378,7 +339,7 @@
   max-width: 300px;
   padding: 7% 0;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
   color: #fff;
   background-color: #009844;
@@ -387,41 +348,32 @@
 
 .news-detail-icon {
   position: absolute;
-  left: 0%;
+  left: 5%;
   bottom: 50%;
 }
 
 @media screen and (max-width: 768px) {
-  .news-detail-header-title {
-    font-size: 6vw;
-  }
-
-  .news-detail-header-text {
-    font-size: 4vw;
-  }
-
-  .news-detail-wrapper {
-    padding: 5% 6% 20%;
-  }
-
   .news-detail-tags {
+    font-size: 1.2rem;
     width: 100px;
   }
 
   .news-detail-title {
-    font-size: 22px;
+    font-size: 2.2rem;
   }
-
-  .news-detail-img {
-    margin-top: 8%;
-  }
-
+  
   .news-detail-img img {
     width: 100%;
   }
 
   .news-detail-description {
     margin-top: 8%;
+  }
+
+  .news-detail-description img {
+    display: block;
+    width: 100%;
+    margin: 0 auto 5%;
   }
 
   .news-detail-button-wrapper {
