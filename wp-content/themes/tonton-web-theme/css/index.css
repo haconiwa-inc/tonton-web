@@ -381,6 +381,10 @@
   border-bottom: none;
 }
 
+.top-news-list li a {
+  color: #333333;
+}
+
 .top-news-date {
   font-size: 16px;
   color: #333;
