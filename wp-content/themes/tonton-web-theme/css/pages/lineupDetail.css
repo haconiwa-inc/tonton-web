@@ -1,0 +1,404 @@
+/* estate */
+.lineupDetail-contents {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lineupDetail-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.lineupDetail-block {
+  width: 100%;
+  margin: 6% auto 0;
+}
+
+.lineupDetail-block--top {
+  margin: 7.8% auto 0;
+}
+
+.lineupDetail-detailMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 11.2%;
+}
+
+.lineupDetail-label {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #619800;
+}
+
+.lineupDetail-area {
+  margin-top: 7.8%;
+  font-size: 2rem;
+}
+
+.lineupDetail-price {
+  padding: 3.9% 0;
+  font-size: 3.2rem;
+  color: #FC6408;
+}
+
+.lineupDetail-images {
+  width: 100%;
+  height: auto;
+}
+
+.lineupDetail-images img {
+  width: 100%;
+  height: auto;
+}
+
+.lineupDetail-tableArea dl {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+}
+
+.lineupDetail-tableArea dl dt {
+  width: 25%;
+  padding-bottom: 5.2%;
+  margin-bottom: 5.2%;
+  color: #4D291F;
+  font-weight: bold;
+  border-bottom: 2px solid #F6F4F4;
+  font-family: 'GenJyuuGothic';
+}
+
+.lineupDetail-tableArea dl dd {
+  width: 75%;
+  padding-bottom: 5.2%;
+  margin-bottom: 5.2%;
+  color: #333;
+  border-bottom: 2px solid #F6F4F4;
+}
+
+.lineupDetail-subTitle {
+  margin-bottom: 5.9%;
+  font-size: 3.2rem;
+  color: #333;
+  font-family: 'GenJyuuGothic';
+}
+
+.lineupDetail-points {
+  margin-bottom: 3.9%;
+  position: relative;
+  border: 2px solid #330A00;
+}
+
+.lineupDetail-pointLabel {
+  display: inline-block;
+  padding: 5px 20px;
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: bold;
+  border-bottom-right-radius: 5px;
+  background-color: #330A00;
+  font-family: ropa-sans-pro, sans-serif;
+  font-style: normal;
+}
+
+.lineupDetail-pointArea {
+  padding:3% 4.4%;
+  color: #FC6408;
+  line-height: 2;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'GenJyuuGothic';
+}
+
+.lineupDetail-pointIcon {
+  position: absolute;
+  top: -88px;
+  right: 20px;
+  width: 112px;
+}
+
+.lineupDetail-detailAll .lineupDetail-tableArea dl {
+  padding-bottom: 2.6%;
+}
+
+.lineupDetail-detailAll .lineupDetail-tableArea dl dt {
+  width: 20%;
+  padding-bottom: 2.6%;
+  margin-bottom: 2.6%;
+}
+
+.lineupDetail-detailAll .lineupDetail-tableArea dl dd {
+  width: 80%;
+  padding-bottom: 2.6%;
+  margin-bottom: 2.6%;
+}
+
+.lineupDetail-plan {
+  margin: 11.2% auto 0;
+}
+
+.lineupDetail-plan li {
+  margin-bottom: 11.2%;
+}
+
+.lineupDetail-planTitle {
+  font-size: 3.2rem;
+  margin-bottom: 4.9%;
+  font-family: 'GenJyuuGothic';
+}
+
+.lineupDetail-planBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  font-size: 1.6rem;
+}
+
+.lineupDetail-planSubTitle {
+  margin-bottom: 4.2%;
+  font-size: 2.4rem;
+  font-family: 'GenJyuuGothic';
+}
+
+.lineupDetail-buttonArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lineupDetail-button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lineupDetail-buttonInner {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lineupDetail-buttonInner--small {
+  width: 70%;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.lineupDetail-buttonInner--back {
+  width: 300px;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.lineupDetail-button a {
+  display: block;
+  padding: 6.7% 0;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid #009844;
+  font-size: 1.8rem;
+}
+
+.lineupDetail-button--white a {
+  color: #009844;
+  background-color: #fff;
+}
+
+.lineupDetail-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
+
+.lineupDetail-icon {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 60px;
+}
+
+.lineupDetail-buttonArrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.lineupDetail-buttonArrow--back {
+  left: 15px;
+  right: inherit;
+}
+
+/* TOPへ戻る調整 */
+.top-buttonInner {
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+@media screen and (max-width:768px) {
+  .lineupDetail-block {
+    margin: 14.7% auto 0;
+    line-height: 1.8;
+  }
+
+  .lineupDetail-block--top {
+    margin: 9.4% auto 0;
+  }
+
+  .lineupDetail-leadText {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .lineupDetail-detailMain {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 16.7%;
+  }
+
+  .lineupDetail-label {
+    padding: 3px 10px;
+    font-size: 1.2rem;
+  }
+
+  .lineupDetail-area {
+    margin-top: 4.6%;
+    font-size: 1.4rem;
+  }
+
+  .lineupDetail-price {
+    padding: 3.1% 0 9.1%;
+    font-size: 2rem;
+  }
+
+  .lineupDetail-tableArea dl {
+    font-size: 1.4rem;
+    margin-bottom: 4.6%;
+  }
+
+  .lineupDetail-tableArea dl dt {
+    width: 27%;
+    padding-bottom: 4.5%;
+    margin-bottom: 4.5%;
+  }
+
+  .lineupDetail-tableArea dl dd {
+    width: 73%;
+    padding-bottom: 4.5%;
+    margin-bottom: 4.5%;
+  }
+
+  .lineupDetail-subTitle {
+    margin-bottom: 5.9%;
+    font-size: 2rem;
+  }
+
+  .lineupDetail-points {
+    margin-bottom: 6.1%;
+  }
+
+  .lineupDetail-pointLabel {
+    display: inline-block;
+    padding: 2px 15px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom-right-radius: 5px;
+    background-color: #330A00;
+  }
+
+  .lineupDetail-pointArea {
+    padding: 4.6% 9.2%;
+    font-size: 1.4rem;
+  }
+
+  .lineupDetail-pointIcon {
+    top: -51px;
+    right: 25px;
+    width: 65px;
+  }
+
+  .lineupDetail-detailAll .lineupDetail-tableArea dl dt {
+    width: 27%;
+    padding-bottom: 4.5%;
+    margin-bottom: 4.5%;
+  }
+
+  .lineupDetail-detailAll .lineupDetail-tableArea dl dd {
+    width: 73%;
+    padding-bottom: 4.5%;
+    margin-bottom: 4.5%;
+  }
+
+  .lineupDetail-plan {
+    margin: 16.7% auto 0;
+  }
+
+  .lineupDetail-plan li {
+    margin-bottom: 15.2%;
+  }
+
+  .lineupDetail-planTitle {
+    font-size: 2rem;
+    margin-bottom: 9.1%;
+  }
+
+  .lineupDetail-planBlock {
+    display: block;
+    font-size: 1.4rem;
+  }
+
+  .lineupDetail-planSubTitle {
+    margin-top: 4.6%;
+    margin-bottom: 3%;
+    font-size: 1.6rem;
+  }
+
+  .lineupDetail-buttonArea {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .lineupDetail-buttonArea .lineupDetail-button {
+    margin-bottom: 10%;
+  }
+
+  .lineupDetail-button {
+    width: 100%;
+  }
+
+  .lineupDetail-buttonInner {
+    width: 100%;
+  }
+
+  .lineupDetail-buttonInner--small {
+    width: 100%;
+  }
+
+  .lineupDetail-button a {
+    padding: 5% 0;
+    font-size: 1.6rem;
+  }
+
+  .lineupDetail-icon {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 48px;
+  }
+
+  /* TOPへ戻る調整 */
+  .top-buttonInner {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .top-icon {
+    left: -18px;
+}
+}
+

@@ -1,50 +1,85 @@
-/* estate */
-.estate-contents {
+/* chintaiDetail */
+.chintaiDetail-contents {
   width: 100%;
   margin: 0 auto;
 }
 
-.estate-contents img {
+.chintaiDetail-contents img {
   max-width: 100%;
   vertical-align: bottom;
 }
 
-.estate-block {
+.chintaiDetail-block {
   width: 100%;
   margin: 6% auto 0;
 }
 
-.estate-block--top {
+.chintaiDetail-block--top {
   margin: 7.8% auto 0;
 }
 
-.estate-detailMain {
+.chintaiDetail-blockInner {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.chintaiDetail-block--wullGreen {
+  width: 100%;
+  max-width: 100%;
+  padding: 6% 0 6.2%;
+  background: rgba(0, 152, 68, .1);
+  margin: 0 auto;
+}
+
+.chintaiDetail-detailMain {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   margin-bottom: 11.2%;
 }
 
-.estate-label {
-  display: inline-block;
-  padding: 5px 20px;
-  font-size: 1.6rem;
-  color: #fff;
-  background-color: #619800;
+.chintaiDetail-labelList {
+  display: flex;
+  margin-bottom: 8.3%;
+  font-size: 2rem;
+  color: #333;
 }
 
-.estate-area {
-  margin-top: 7.8%;
+.chintaiDetail-labelList li span {
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 1.6rem;
+  background-color: #4D291F;
+  color: #fff;
+}
+
+.chintaiDetail-labelList li {
+  margin-right: 4.1%;
   font-size: 2rem;
 }
 
-.estate-price {
+.chintaiDetail-area {
+  font-size: 2rem;
+}
+
+.chintaiDetail-price {
   padding: 3.9% 0;
   font-size: 3.2rem;
   color: #FC6408;
 }
 
-.estate-tableArea dl {
+.chintaiDetail-images {
+  width: 100%;
+  height: auto;
+}
+
+.chintaiDetail-images img {
+  width: 100%;
+  height: auto;
+}
+
+.chintaiDetail-tableArea dl {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -52,7 +87,7 @@
   font-size: 1.8rem;
 }
 
-.estate-tableArea dl dt {
+.chintaiDetail-tableArea dl dt {
   width: 25%;
   padding-bottom: 5.2%;
   margin-bottom: 5.2%;
@@ -62,7 +97,7 @@
   font-family: 'GenJyuuGothic';
 }
 
-.estate-tableArea dl dd {
+.chintaiDetail-tableArea dl dd {
   width: 75%;
   padding-bottom: 5.2%;
   margin-bottom: 5.2%;
@@ -70,20 +105,20 @@
   border-bottom: 2px solid #F6F4F4;
 }
 
-.estate-subTitle {
+.chintaiDetail-subTitle {
   margin-bottom: 5.9%;
   font-size: 3.2rem;
   color: #333;
   font-family: 'GenJyuuGothic';
 }
 
-.estate-points {
+.chintaiDetail-points {
   margin-bottom: 3.9%;
   position: relative;
   border: 2px solid #330A00;
 }
 
-.estate-pointLabel {
+.chintaiDetail-pointLabel {
   display: inline-block;
   padding: 5px 20px;
   color: #fff;
@@ -95,8 +130,8 @@
   font-style: normal;
 }
 
-.estate-pointArea {
-  padding: 7.7% 12.3%;
+.chintaiDetail-pointArea {
+  padding: 3% 4.4%;
   color: #FC6408;
   line-height: 2;
   font-size: 2rem;
@@ -104,83 +139,70 @@
   font-family: 'GenJyuuGothic';
 }
 
-.estate-pointIcon {
+.chintaiDetail-pointIcon {
   position: absolute;
   top: -88px;
   right: 20px;
   width: 112px;
 }
 
-.estate-detailAll .estate-tableArea dl dt {
+.chintaiDetail-detailAll .chintaiDetail-tableArea dl {
+  margin-bottom: 2.6%;
+}
+
+.chintaiDetail-detailAll .chintaiDetail-tableArea dl dt {
   width: 20%;
   padding-bottom: 2.6%;
   margin-bottom: 2.6%;
 }
 
-.estate-detailAll .estate-tableArea dl dd {
+.chintaiDetail-detailAll .chintaiDetail-tableArea dl dd {
   width: 80%;
   padding-bottom: 2.6%;
   margin-bottom: 2.6%;
 }
 
-.estate-plan {
-  margin: 11.2% auto 0;
+.chintaiDetail-map {
+  margin-bottom: 11.7%;
 }
 
-.estate-plan li {
-  margin-bottom: 11.2%;
-}
-
-.estate-planTitle {
-  font-size: 3.2rem;
-  margin-bottom: 4.9%;
-  font-family: 'GenJyuuGothic';
-}
-
-.estate-planBlock {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  font-size: 1.6rem;
-}
-
-.estate-planSubTitle {
-  margin-bottom: 4.2%;
-  font-size: 2.4rem;
-  font-family: 'GenJyuuGothic';
-}
-
-.estate-buttonArea {
+.chintaiDetail-buttonArea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 11.7%;
 }
 
-.estate-button {
+.chintaiDetail-button {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-.estate-buttonInner {
+.chintaiDetail-buttonInner {
   position: relative;
-  width: 100%;
+  width: 50%;
   margin: 0 auto;
 }
 
-.estate-buttonInner--small {
-  width: 70%;
-  margin-right: auto;
+.chintaiDetail-buttonInner--left {
+  width: 62.7%;
+  max-width: 302px;
   margin-left: 0;
+  margin-right: auto;
 }
 
-.estate-buttonInner--back {
+.chintaiDetail-buttonInner--small {
+  width: 30%;
+}
+
+.chintaiDetail-buttonInner--back {
   width: 300px;
   margin-right: 20px;
   margin-left: auto;
 }
 
-.estate-button a {
+.chintaiDetail-button a {
   display: block;
   padding: 6.7% 0;
   border-radius: 10px;
@@ -189,33 +211,40 @@
   font-size: 1.8rem;
 }
 
-.estate-button--white a {
+.chintaiDetail-button--white a {
   color: #009844;
   background-color: #fff;
 }
 
-.estate-button--green a {
+.chintaiDetail-button--green a {
   color: #fff;
   background-color: #009844;
 }
 
-.estate-icon {
+.chintaiDetail-icon {
   position: absolute;
   top: -25px;
   left: -20px;
   width: 60px;
 }
 
-.estate-buttonArrow {
+.chintaiDetail-buttonArrow {
   position: absolute;
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
 }
 
-.estate-buttonArrow--back {
+.chintaiDetail-buttonArrow--back {
   left: 15px;
   right: inherit;
+}
+
+.chintaiDetail-contactTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0 auto 4.8%;
+  font-family: "GenJyuuGothic";
 }
 
 /* TOPへ戻る調整 */
@@ -225,68 +254,93 @@
 }
 
 @media screen and (max-width:768px) {
-  .estate-block {
+  .chintaiDetail-block {
     margin: 14.7% auto 0;
     line-height: 1.8;
   }
 
-  .estate-block--top {
+  .chintaiDetail-block--top {
     margin: 9.4% auto 0;
   }
 
-  .estate-leadText {
+  .chintaiDetail-blockInner {
+    max-width: 100%;
+    padding: 0 5.4%;
+  }
+
+  .chintaiDetail-block--wullGreen {
+    width: 100%;
+    max-width: 100%;
+    padding: 9.3% 0 10.7%;
+    margin: 0 auto;
+  }
+
+  .chintaiDetail-leadText {
     font-size: 1.4rem;
     text-align: left;
   }
 
-  .estate-detailMain {
+  .chintaiDetail-detailMain {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 16.7%;
   }
 
-  .estate-label {
-    padding: 3px 10px;
+  .chintaiDetail-labelList {
+    margin-bottom: 9.8%;
     font-size: 1.2rem;
   }
 
-  .estate-area {
+  .chintaiDetail-labelList li span {
+    margin-right: 3px;
+    padding: 3px;
+    font-size: 1rem;
+    background-color: #4D291F;
+    color: #fff;
+  }
+
+  .chintaiDetail-labelList li {
+    margin-right: 4.1%;
+    font-size: 1.2rem;
+  }
+
+  .chintaiDetail-area {
     margin-top: 4.6%;
     font-size: 1.4rem;
   }
 
-  .estate-price {
-    padding: 3.1% 0 9.1%;
+  .chintaiDetail-price {
+    padding: 3.1% 0 1.5%;
     font-size: 2rem;
   }
 
-  .estate-tableArea dl {
+  .chintaiDetail-tableArea dl {
     font-size: 1.4rem;
     margin-bottom: 4.6%;
   }
 
-  .estate-tableArea dl dt {
+  .chintaiDetail-tableArea dl dt {
     width: 27%;
     padding-bottom: 4.5%;
     margin-bottom: 4.5%;
   }
 
-  .estate-tableArea dl dd {
+  .chintaiDetail-tableArea dl dd {
     width: 73%;
     padding-bottom: 4.5%;
     margin-bottom: 4.5%;
   }
 
-  .estate-subTitle {
+  .chintaiDetail-subTitle {
     margin-bottom: 5.9%;
     font-size: 2rem;
   }
 
-  .estate-points {
+  .chintaiDetail-points {
     margin-bottom: 6.1%;
   }
 
-  .estate-pointLabel {
+  .chintaiDetail-pointLabel {
     display: inline-block;
     padding: 2px 15px;
     color: #fff;
@@ -296,81 +350,70 @@
     background-color: #330A00;
   }
 
-  .estate-pointArea {
+  .chintaiDetail-pointArea {
     padding: 4.6% 9.2%;
     font-size: 1.4rem;
   }
 
-  .estate-pointIcon {
+  .chintaiDetail-pointIcon {
     top: -51px;
     right: 25px;
     width: 65px;
   }
 
-  .estate-detailAll .estate-tableArea dl dt {
+  .chintaiDetail-detailAll .chintaiDetail-tableArea dl dt {
     width: 27%;
     padding-bottom: 4.5%;
     margin-bottom: 4.5%;
   }
 
-  .estate-detailAll .estate-tableArea dl dd {
+  .chintaiDetail-detailAll .chintaiDetail-tableArea dl dd {
     width: 73%;
     padding-bottom: 4.5%;
     margin-bottom: 4.5%;
   }
 
-  .estate-plan {
-    margin: 16.7% auto 0;
-  }
-
-  .estate-plan li {
-    margin-bottom: 15.2%;
-  }
-
-  .estate-planTitle {
-    font-size: 2rem;
-    margin-bottom: 9.1%;
-  }
-
-  .estate-planBlock {
-    display: block;
-    font-size: 1.4rem;
-  }
-
-  .estate-planSubTitle {
-    margin-top: 4.6%;
-    margin-bottom: 3%;
-    font-size: 1.6rem;
-  }
-
-  .estate-buttonArea {
+  .chintaiDetail-buttonArea {
     display: block;
     justify-content: space-between;
     align-items: center;
   }
 
-  .estate-buttonArea .estate-button {
+  .chintaiDetail-buttonArea .chintaiDetail-button {
     margin-bottom: 10%;
   }
 
-  .estate-button {
+  .chintaiDetail-contactTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto 6.3%;
+  }
+
+  .chintaiDetail-button {
     width: 100%;
   }
 
-  .estate-buttonInner {
+  .chintaiDetail-buttonInner {
     width: 100%;
   }
 
-  .estate-buttonInner--small {
+  .chintaiDetail-buttonInner--left {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chintaiDetail-buttonInner--small {
     width: 100%;
   }
 
-  .estate-button a {
+  .chintaiDetail-button a {
     padding: 5% 0;
     font-size: 1.6rem;
   }
 
-  .estate-icon {
+  .chintaiDetail-icon {
     position: absolute;
     top: -20px;
     left: 10px;
