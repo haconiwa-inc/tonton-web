@@ -113,7 +113,7 @@ get_header();
             <div class="sold-detail-button-prev">
               <a href="/sold/">
                 <div class="sold-detail-button">
-                  お知らせ一覧に戻る
+                  物件一覧に戻る
                 </div>
               </a>
             </div>
