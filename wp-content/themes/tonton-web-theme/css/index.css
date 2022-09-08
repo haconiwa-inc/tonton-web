@@ -30,6 +30,17 @@
   border-radius: 10px;
 }
 
+.kv-button-inner {
+  position: relative;
+  width: 100%;
+}
+
+.kv-button-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
+
 .kv-modal-container {
   position: fixed;
   top: 0;
@@ -569,8 +580,12 @@
     width: auto;
     bottom: 40%;
     left: 7%;
-    padding: 4% 10%;
+    padding: 3% 7%;
     font-size: 14px;
+  }
+
+  .kv-button-arrow {
+    right: -20%;
   }
 
   .kv-modal-content {
@@ -580,6 +595,12 @@
 
   .kv-modal-title {
     font-size: 18px;
+  }
+
+  .kv-modal-close {
+    top: 2px;
+    right: 20px;
+    font-size: 4rem;
   }
 
   /* notice */

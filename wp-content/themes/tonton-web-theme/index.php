@@ -25,7 +25,16 @@ get_header();
           不動産プロフェッショナルからの<br>
           ご提案
         </h1>
-        <div class="kv-button kv-modal-open">CM動画はこちら</div>
+        <div class="kv-button kv-modal-open">
+          CM動画はこちら
+          <div class="kv-button-inner">
+            <div class="kv-button-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 15.96 12.424">
+                <path id="Arrow005_1" data-name="Arrow005 1" d="M586.751,620.521l-5.655-5.3c-.775-.726-1.933.455-1.154,1.184l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.675l12.205-.011L579.916,626a.827.827,0,0,0,1.154,1.184l5.68-5.482A.855.855,0,0,0,586.751,620.521Z" transform="translate(-571.028 -614.997)" fill="#009844"/>
+              </svg>
+            </div>
+          </div>
+        </div>
         <div class="kv-modal-container">
           <div class="kv-modal-body">
             <div class="kv-modal-close">×</div>
