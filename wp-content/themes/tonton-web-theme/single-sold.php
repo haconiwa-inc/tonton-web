@@ -74,7 +74,7 @@ get_header();
           </div>
           <div class="sold-detail-button-wrapper">
             <div class="sold-detail-button-prev">
-              <a href="/sold/">
+              <a href="/business/buy/sold/">
                 <div class="sold-detail-button">
                   物件一覧に戻る
                 </div>

@@ -119,29 +119,41 @@ get_header();
               物件種別：<span>中古</span>
             </div>
           </div>
+
           <ul>
             <?php
-              $names = get_post_types( array( 'public'  => true, '_builtin' => false ) );
-              $posts = get_posts( array( 'post_type' => $names ) );
-              foreach( $posts as $post ) { setup_postdata( $post );
+              $args = array(
+                'post_type' => 'sold',
+                'posts_per_page' => 10,
+              );
+              if ( have_posts() ) :
+              while ( have_posts() ) :
+              the_post();
+              $my_posts = get_posts($args);
+              $img_obj_field = get_field_object('estate-img');
             ?>
-              <li>
-                <a href="<?php the_permalink() ?>">
-                  <div class="sold-item">
-                    
-                    <?php the_content() ?>
-                    <div class="sold-item-text">
-                      <?php the_title() ?>
-                    </div>
-                  </div>
-                </a>
-              </li>
+              <?php foreach ($my_posts as $post) : setup_postdata($post); ?>
+                <li>
+                  <a href="<?php the_permalink() ?>">
+                    <div class="sold-item">
+                      <?php
+                        $image = $img_obj_field['value'][0]['estate-img-single'];
+                        $size = 'medium';
+                      ?>
+                      <?php echo wp_get_attachment_image( $image, $size ); ?>
+                      <div class="sold-item-text">
+                        <?php the_title(); ?>
+                      </div>
+                    </div>      
+                  </a>
+                </li>
+              <?php endforeach; ?>
             <?php 
-              } wp_reset_postdata();
-                wp_reset_query(); 
+              endwhile;
+              endif;
+              wp_reset_postdata();
             ?>
           </ul>
-
           <nav class="pagination">
             <div class="nav-links">
               <a class="prev" href="">&lsaquo;</a>
