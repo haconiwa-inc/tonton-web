@@ -6,27 +6,30 @@
   width: 100%;
 }
 
-.kv h1 {
-  position: absolute;
-  top: 18%;
-  left: 11%;
-  font-size: 3vw;
-  font-weight: normal;
-  color: #4A352C;
-}
 
 .kv-button {
   position: absolute;
   bottom: 15%;
-  left: 11%;
-  max-width: 300px;
-  padding: 1.5% 5%;
+  left: 15%;
+  width: 300px;
+  padding: 1.5% 0;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
   color: #009844;
   background-color: #fff;
   border-radius: 10px;
+}
+
+.kv-button-inner {
+  position: relative;
+  width: 100%;
+}
+
+.kv-button-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
 }
 
 .kv-modal-container {
@@ -90,7 +93,8 @@
 
 .kv-modal-title {
   text-align: start;
-  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: bold;
 }
 
 .kv-modal-movie {
@@ -113,7 +117,7 @@
   max-width: 300px;
   padding: 3%;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-align: center;
   color: #fff;
   background-color: #009844;
@@ -131,7 +135,9 @@
 
 .top-notice-title {
   color: #333;
-  font-size: 24px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: "GenJyuuGothic";
 }
 
 .top-notice-block {
@@ -176,15 +182,16 @@
 }
 
 .top-notice-item-tag-text {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 1;
 }
 
 .top-notice-item-tag-num {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .top-notice-description {
+  font-size: 1.6rem;
   margin-top: 3%;
 }
 
@@ -196,12 +203,26 @@
 
 
 .top-content-button {
+  position: relative;
+  max-width: 300px;
   margin-top: 5%;
+  padding: 20px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #009844;
+}
+
+.top-content-button--long {
+  max-width: none;
 }
 
 .top-content-title {
   color: #333;
-  font-size: 24px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: "GenJyuuGothic";
   margin-left: 17%;
 }
 
@@ -215,7 +236,7 @@
 
 .top-content-item-img {
   position: relative;
-  width: 75%;
+  width: 70%;
 }
 
 .top-content-block img {
@@ -228,23 +249,19 @@
   justify-content: center;
   align-items: center;
   margin-top: 4%;
-  margin-left: 20%;
-  width: 80%;
+  margin-left: 15%;
 }
 
 .top-content-item-icon {
   position: absolute;
-  top: -25%;
-  right: 5%;
-}
-
-.top-content-item-icon img {
-  width: 65%;
+  top: -23%;
+  right: 27%;
+  width: 20%;
 }
 
 .top-content-item:nth-child(odd) {
   margin-left: 0;
-  margin-right: 20%;
+  margin-right: 15%;
 }
 
 .top-content-box {
@@ -267,25 +284,28 @@
 
 .top-content-item-title {
   color: #330A00;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: bold;
+  font-family: "GenJyuuGothic";
 }
 
 .top-content-item-title-min {
   color: #330A00;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1;
+  font-family: "GenJyuuGothic";
 }
 
 .top-content-item-subtitle {
   margin-top: 6%;
-  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: "GenJyuuGothic";
 }
 
 .top-content-item-description {
   margin-top: 2%;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 2;
 }
 
@@ -319,13 +339,15 @@
 /* news */
 .top-news {
   position: relative;
-  padding: 8% 20%;
+  padding: 7% 20%;
   background-color: #F7F4EC;
 }
 
 .top-news-title {
   color: #333;
-  font-size: 24px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: "GenJyuuGothic";
 }
 
 .top-news-list {
@@ -348,8 +370,12 @@
   border-bottom: none;
 }
 
+.top-news-list li a {
+  color: #333333;
+}
+
 .top-news-date {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #333;
 }
 
@@ -361,7 +387,7 @@
 
 .top-news-tags {
   padding: 6px;
-  font-size: 12px;
+  font-size: 1.2rem;
   width: 120px;
   height: 100%;
   margin-left: 10%;
@@ -387,7 +413,7 @@
 }
 
 .top-news-description {
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-left: 5%;
 }
 
@@ -400,19 +426,33 @@
   margin-top: 8%;
 }
 
-.top-news-icon {
-  position: absolute;
-  bottom: -3%;
-  left: 10%;
+.top-news-button {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding: 25px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: #009844;
+  color: #fff;
 }
 
-.top-news-icon img {
-  width: 85%;
+.top-news-icon {
+  position: absolute;
+  bottom: -2%;
+  left: 10%;
+  width: 150px;
 }
 
 /* about */
+.top-about-overWrapper {
+  position: relative;
+}
+
 .top-about {
   display: block;
+  box-sizing: content-box;
   position: relative;
   max-width: 1024px;
   padding: 8% 5%;
@@ -421,7 +461,9 @@
 
 .top-about-title {
   color: #333;
-  font-size: 24px;
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: "GenJyuuGothic";
 }
 
 .top-about-wrapper {
@@ -441,10 +483,6 @@
   margin-right: 0;
 }
 
-.top-about-block img {
-  border-radius: 25px;
-}
-
 .top-about-box {
   display: flex;
   justify-content: space-between;
@@ -455,19 +493,21 @@
 
 .top-about-box-text {
   color: #009844;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .top-about-arrorw {
   color: #009844;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .top-about-subtitle {
   margin-top: 6%;
   color: #333;
-  font-size: 22px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: "GenJyuuGothic";
 }
 
 .top-about-item {
@@ -484,44 +524,28 @@
 }
 
 .top-about-item-title {
-  font-size: 20px;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .top-about-item-text {
   margin-top: 3%;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .top-about-icon {
   position: absolute;
-  bottom: -1%;
-  right: -2%;
-}
-
-.top-about-icon img {
-  width: 65%;
+  bottom: -0.5%;
+  right: 2%;
+  width: 150px;
 }
 
 @media screen and (max-width: 768px) {
-  .pc {
-    display: none;
-  }
-  
-  .sp {
-    display: block;
-  }
-
-  .sp-br {
-    display: block;
+  .top-arrow {
+    right: 5%;
   }
 
   /* kv */
-  .kv h1 {
-    top: 24%;
-    left: 7%;
-    font-size: 6vw;
-  }
-
   .kv-modal-container {
     padding: 3%;
   }
@@ -531,10 +555,15 @@
   }
 
   .kv-button {
+    width: auto;
     bottom: 40%;
     left: 7%;
-    padding: 4% 10%;
-    font-size: 14px;
+    padding: 3% 7%;
+    font-size: 1.4rem;
+  }
+
+  .kv-button-arrow {
+    right: -20%;
   }
 
   .kv-modal-content {
@@ -543,12 +572,22 @@
   }
 
   .kv-modal-title {
-    font-size: 18px;
+    font-size: 1.8rem;
+  }
+
+  .kv-modal-close {
+    top: 2px;
+    right: 20px;
+    font-size: 4rem;
   }
 
   /* notice */
   .top-notice {
     margin: 15% 6%;
+  }
+
+  .top-notice-title {
+    font-size: 2.4rem;
   }
 
   .top-notice-block {
@@ -560,12 +599,18 @@
     padding: 18% 20px 8%;
   }
 
+  .top-content-item-subtitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
   /* content */
   .top-content {
-    padding: 20% 6%;
+    padding: 15% 6%;
   }
 
   .top-content-title {
+    font-size: 2.4rem;
     margin-left: 0;
   }
 
@@ -576,12 +621,18 @@
     margin-top: 20%;
   }
 
+  .top-content-button {
+    max-width: none;
+    margin-top: 8%;
+    padding: 20px 35px;
+  }
+
   .top-content-block img {
     border-radius: 10px;
   }
 
   .top-content-item:first-child {
-    margin-top: 15%;
+    margin-top: 10%;
   }
 
   .top-content-item-img {
@@ -605,6 +656,10 @@
     margin-top: 20%;
   }
 
+  .swiper-slide img {
+    border-radius: 10px;
+  }
+
   /* news */
   .top-news {
     padding: 20% 6%;
@@ -617,10 +672,15 @@
   .top-news-tags {
     width: 80px;
     margin-left: 4%;
+    border-radius: 4px;
   }
 
   .top-news-description {
     margin: 4% 0;
+  }
+
+  .top-news-button {
+    width: 100%;
   }
 
   .top-news-button-wrapper {
@@ -628,12 +688,9 @@
   }
 
   .top-news-icon {
-    bottom: 11.5%;
-  }
-  
-
-  .top-news-icon img {
-    width: 30%;
+    bottom: 80%;
+    left: 0;
+    width: 20%;
   }
 
   /* about */
@@ -649,12 +706,12 @@
     margin: 8% 0;
   }
 
-  .top-about-block img {
-    border-radius: 10px;
-  }
-
   .top-about-item {
     margin-right: 0;
+  }
+
+  .top-about-item:last-child {
+    margin-top: 6%;
   }
 
   .top-about-icon {

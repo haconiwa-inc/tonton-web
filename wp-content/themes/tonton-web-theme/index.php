@@ -18,14 +18,18 @@ get_header();
   <main id="primary" class="site-main">
     <section>
       <div class="kv">
-        <img class="dis-pc" src="<?php echo get_template_directory_uri(); ?>/images/pc/kv_pc.png" alt="とんとんkv_pc">
-        <img class="dis-sp" src="<?php echo get_template_directory_uri(); ?>/images/sp/kv_sp.png" alt="とんとんkv_sp">
-        <h1>
-          最大限のメリットを生む<br>
-          不動産プロフェッショナルからの<br>
-          ご提案
-        </h1>
-        <div class="kv-button kv-modal-open">CM動画はこちら</div>
+        <img class="dis-pc" src="<?php echo get_template_directory_uri(); ?>/images/pc/kv_pc.jpg" alt="とんとんkv_pc">
+        <img class="dis-sp" src="<?php echo get_template_directory_uri(); ?>/images/sp/kv_sp.jpg" alt="とんとんkv_sp">
+        <div class="kv-button kv-modal-open">
+          CM動画はこちら
+          <div class="kv-button-inner">
+            <div class="kv-button-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 15.96 12.424">
+                <path id="Arrow005_1" data-name="Arrow005 1" d="M586.751,620.521l-5.655-5.3c-.775-.726-1.933.455-1.154,1.184l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.675l12.205-.011L579.916,626a.827.827,0,0,0,1.154,1.184l5.68-5.482A.855.855,0,0,0,586.751,620.521Z" transform="translate(-571.028 -614.997)" fill="#009844"/>
+              </svg>
+            </div>
+          </div>
+        </div>
         <div class="kv-modal-container">
           <div class="kv-modal-body">
             <div class="kv-modal-close">×</div>
@@ -103,16 +107,21 @@ get_header();
                 <div class="top-content-item-title">売る</div>
                 <div class="top-content-item-title-min">sell</div>
                 <div class="top-content-item-subtitle">
-                  マンション・戸建て・土地売却を検討の方へ
+                  マンション・戸建て・土地売却を<br class="dis-sp">検討の方へ
                 </div>
-                <div class="top-content-item-description">
+                <div class="top-content-item-description dis-pc">
                   お客様のマンション・戸建て・土地等の不動産売却はとんとん住宅販売にお任せください。豊富な経験と地域に根付いた知識を生かし資産を最大化します。
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                <a href="/business/sell/">
+                  <div class="top-content-button">
                     物件売却についてみる
+                    <div class="top-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                        <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                      </svg>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="top-content-item">
@@ -123,26 +132,41 @@ get_header();
                 <div class="top-content-item-title">買う・建てる</div>
                 <div class="top-content-item-title-min">buy / build</div>
                 <div class="top-content-item-subtitle">
-                  新築・中古物件をお探しの方へ
+                  取扱物件を見る
                 </div>
-                <div class="top-content-item-description">
+                <div class="top-content-item-description dis-pc">
                   初めてのマンション・戸建て・土地等の不動産購入でも安心ください。豊富な経験と地域に根付いた知識を生かし資産を最大化します。
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                <a href="/business/buy/lineup/">
+                  <div class="top-content-button m-start">
                     取扱物件を見る
+                    <div class="top-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                        <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                      </svg>
+                    </div>
                   </div>
-                </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                </a>
+                <a href="/business/buy/sold/">
+                  <div class="top-content-button m-start">
                     過去の成約物件を見る
+                    <div class="top-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                        <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                      </svg>
+                    </div>
                   </div>
-                </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                </a>
+                <a href="/business/buy/">
+                  <div class="top-content-button m-start">
                     物件購入について見る
+                    <div class="top-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                        <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                      </svg>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="top-content-item-img dis-pc">
                 <div class="top-content-item-icon">
@@ -159,21 +183,31 @@ get_header();
                 <div class="top-content-item-title">修繕する</div>
                 <div class="top-content-item-title-min">repair</div>
                 <div class="top-content-item-subtitle">
-                  お住まいのリフォーム・増改築をご検討の方へ
+                  お住まいのリフォーム・増改築を<br class="dis-sp">ご検討の方へ
                 </div>
-                <div class="top-content-item-description">
+                <div class="top-content-item-description dis-pc">
                   リフォーム・リノベーションはとんとんにお任せください。スタイルに合わせた豊富な事例やわかりやすいパッケージを取り揃えてます。
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                <a href="/business/reform/results-archive/">
+                  <div class="top-content-button top-content-button--long m-start">
                     過去のリフォーム施工例を見る
+                    <div class="top-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                        <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                      </svg>
+                    </div>
                   </div>
-                </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                </a>
+                <a href="/business/reform/">
+                  <div class="top-content-button top-content-button--long m-start">
                     リフォーム・リノベーションについて見る
+                    <div class="top-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                        <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                      </svg>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             <div class="top-content-item-second">
@@ -183,14 +217,19 @@ get_header();
                 <div class="top-content-item-subtitle">
                   賃貸をご検討中の方へ
                 </div>
-                <div class="top-content-item-description">
+                <div class="top-content-item-description dis-pc">
                   注文住宅と同じ品質や設備で建てられた賃貸住宅がございます。敷地内駐車場には、積雪時に安心のロードヒーティングが備えつけられています。
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                <a href="/business/buy/lineup/">
+                  <div class="top-content-button m-start">
                     取扱物件を見る
+                    <div class="top-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                        <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                      </svg>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="top-content-box">
                 <div class="top-content-item-title">投資する</div>
@@ -198,14 +237,19 @@ get_header();
                 <div class="top-content-item-subtitle">
                   不動産投資をご検討中の方へ
                 </div>
-                <div class="top-content-item-description">
+                <div class="top-content-item-description dis-pc">
                   いまの時代、１つの資産に頼るには不安です。貯金だけじゃ将来や老後が不安…そんな方に不動産投資をご提案させていただきます。
                 </div>
-                <div class="top-content-button">
-                  <div class="top-kv-button m-start">
+                <a href="/contact/">
+                  <div class="top-content-button m-start">
                     お問い合わせ
+                    <div class="top-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                        <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                      </svg>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -267,63 +311,78 @@ get_header();
           </ul>
           </div>
           <div class="top-news-button-wrapper">
-            <div class="top-kv-button">
-              お知らせ一覧
-            </div>
+            <a href="/news/">
+              <div class="top-news-button">
+                お知らせ一覧
+                <div class="top-news-icon dis-sp">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/character_icon2.png" alt="キャラクター">
+                </div>
+                <div class="top-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+                    <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+                  </svg>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="top-news-icon">
+        <div class="top-news-icon dis-pc">
           <img src="<?php echo get_template_directory_uri(); ?>/images/character_icon2.png" alt="キャラクター">
         </div>
       </div>
     </section>
 
     <section>
-      <div class="top-about">
-        <div class="top-about-title">私たちについて</div>
-        <div class="top-about-wrapper">
-          <div class="top-about-block">
-            <img src="wp-content/themes/tonton-web-theme/images/about_1.png" alt="">
-            <div class="top-about-box">
-              <div class="top-about-box-text">経営理念</div>
-              <div class="top-about-arrorw">→</div>
+      <div class="top-about-overWrapper">
+        <div class="top-about">
+          <div class="top-about-title">私たちについて</div>
+          <div class="top-about-wrapper">
+            <div class="top-about-block">
+              <img src="wp-content/themes/tonton-web-theme/images/about_1.png" alt="">
+              <div class="top-about-box">
+                <div class="top-about-box-text">経営理念</div>
+                <div class="top-about-arrorw">→</div>
+              </div>
+            </div>
+            <div class="top-about-block">
+              <img src="wp-content/themes/tonton-web-theme/images/about_2.png" alt="">
+              <div class="top-about-box">
+                <div class="top-about-box-text">代表挨拶</div>
+                <div class="top-about-arrorw">→</div>
+              </div>
+            </div>
+            <div class="top-about-block">
+              <img src="wp-content/themes/tonton-web-theme/images/about_3.png" alt="">
+              <div class="top-about-box">
+                <div class="top-about-box-text">会社概要</div>
+                <div class="top-about-arrorw">→</div>
+              </div>
             </div>
           </div>
-          <div class="top-about-block">
-            <img src="wp-content/themes/tonton-web-theme/images/about_2.png" alt="">
-            <div class="top-about-box">
-              <div class="top-about-box-text">経営理念</div>
-              <div class="top-about-arrorw">→</div>
+          <div class="top-about-subtitle">当社へのアクセス</div>
+          <div class="top-about-wrapper">
+            <div class="top-about-item">
+              <div class="top-about-item-title">本社</div>
+              <div class="top-about-item-text">〒063-0034　札幌市西区西野4条3丁目10番1号</div>
+              <div class="top-about-item-text">最寄り駅：地下鉄東西線 発寒南駅から徒歩20分</div>
+              <div class="top-about-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.6156245691864!2d141.27565731519098!3d43.07055109792871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b282f6489ac1b%3A0xd45f1a67b852d28!2z44CSMDYzLTAwMzQg5YyX5rW36YGT5pyt5bmM5biC6KW_5Yy66KW_6YeO77yU5p2h77yT5LiB55uu77yR77yQ4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657822054!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="top-about-item">
+              <div class="top-about-item-title">中央点</div>
+              <div class="top-about-item-text">〒063-0034　札幌市西区西野4条3丁目10番1号</div>
+              <div class="top-about-item-text">最寄り駅：地下鉄東西線 発寒南駅から徒歩20分</div>
+              <div class="top-about-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.3842022163735!2d141.34368531518976!3d43.03334720030831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a1036f06aa5%3A0xc115ef6fd986d426!2z44CSMDY0LTA5MjAg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65Y2X77yS77yQ5p2h6KW_77yR77yQ5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657879810!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
           </div>
-          <div class="top-about-block">
-            <img src="wp-content/themes/tonton-web-theme/images/about_3.png" alt="">
-            <div class="top-about-box">
-              <div class="top-about-box-text">経営理念</div>
-              <div class="top-about-arrorw">→</div>
-            </div>
+          <div class="top-about-icon dis-sp">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/character_icon3.png" alt="キャラクター">
           </div>
         </div>
-        <div class="top-about-subtitle">当社へのアクセス</div>
-        <div class="top-about-wrapper">
-          <div class="top-about-item">
-            <div class="top-about-item-title">本社</div>
-            <div class="top-about-item-text">〒063-0034　札幌市西区西野4条3丁目10番1号</div>
-            <div class="top-about-item-text">最寄り駅：地下鉄東西線 発寒南駅から徒歩20分</div>
-            <div class="top-about-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.6156245691864!2d141.27565731519098!3d43.07055109792871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b282f6489ac1b%3A0xd45f1a67b852d28!2z44CSMDYzLTAwMzQg5YyX5rW36YGT5pyt5bmM5biC6KW_5Yy66KW_6YeO77yU5p2h77yT5LiB55uu77yR77yQ4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657822054!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-          <div class="top-about-item">
-            <div class="top-about-item-title">中央点</div>
-            <div class="top-about-item-text">〒063-0034　札幌市西区西野4条3丁目10番1号</div>
-            <div class="top-about-item-text">最寄り駅：地下鉄東西線 発寒南駅から徒歩20分</div>
-            <div class="top-about-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.3842022163735!2d141.34368531518976!3d43.03334720030831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a1036f06aa5%3A0xc115ef6fd986d426!2z44CSMDY0LTA5MjAg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65Y2X77yS77yQ5p2h6KW_77yR77yQ5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657879810!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="top-about-icon">
+        <div class="top-about-icon dis-pc">
           <img src="<?php echo get_template_directory_uri(); ?>/images/character_icon3.png" alt="キャラクター">
         </div>
       </div>

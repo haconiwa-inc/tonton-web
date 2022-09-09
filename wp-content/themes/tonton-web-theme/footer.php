@@ -17,7 +17,9 @@
         <div class="footer-content">
           <div class="footer-box">
             <div class="footer-logo">
-              <img src="<?php echo get_template_directory_uri();?>/images/pc/logo_pc.png" alt="">
+              <a href="/">
+                <img src="<?php echo get_template_directory_uri();?>/images/pc/logo_pc.png" alt="">
+              </a>
             </div>
             <ul class="footer-description">
               <li>〒063-0034 札幌市西区西野4条3丁目10番1号</li>
@@ -33,20 +35,76 @@
           <div class="footer-box">
             <div class="footer-link">
               <ul class="footer-link-list">
-                <li>TOP</li>
-                <li>事業内容</li>
-                <li>会社概要</li>
-                <li>お知らせ</li>
-                <li>お問い合せ</li><br>
-                <li>プライバシーポリシー</li>
+                <li>
+                  <a href="/">
+                    TOP
+                  </a>
+                </li>
+                <li>
+                  <a href="/business/">
+                    事業内容
+                  </a>
+                </li>
+                <li>
+                  <a href="/company-inq/">
+                    会社概要
+                  </a>
+                </li>
+                <li>
+                  <a href="/news/">
+                    お知らせ
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact/">
+                    お問い合せ
+                  </a>
+                </li>
+                <br>
+                <li>
+                  <a href="/policy/">
+                    プライバシーポリシー
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="footer-link-second">
-              <ul class="footer-link-list">
-                <li>売る</li>
-                <li>買う・建てる</li>
-                <li>直す</li>
-                <li>借りる</li>
+              <ul class="footer-link-second-list">
+                <li>
+                  <a href="/business/sell/">
+                    売る
+                  </a>
+                </li>
+                <li>
+                  <a href="/business/buy/">
+                    買う・建てる
+                  </a>
+                  <div class="footer-link-second-text">
+                    <a href="/business/buy/lineup/">
+                      −売買物件
+                    </a>
+                  </div>
+                  <div class="footer-link-second-text">
+                    <a href="/business/buy/sold/">
+                      −過去の成約物件
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="/business/reform/">
+                    直す
+                  </a>
+                  <div class="footer-link-second-text">
+                    <a href="/business/reform/results-archive/">
+                      −修繕事例
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="/business/chintai/">
+                    借りる
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -56,20 +114,76 @@
         <div class="footer-box">
           <div class="footer-link">
             <ul class="footer-link-list">
-              <li>TOP</li>
-              <li>事業内容</li>
-              <li>会社概要</li>
-              <li>お知らせ</li>
-              <li>お問い合せ</li><br>
-              <li>プライバシーポリシー</li>
+              <li>
+                <a href="/">
+                  TOP
+                </a>
+              </li>
+              <li>
+                <a href="/business/">
+                  事業内容
+                </a>
+              </li>
+              <li>
+                <a href="/company-inq/">
+                  会社概要
+                </a>
+              </li>
+              <li>
+                <a href="/news/">
+                  お知らせ
+                </a>
+              </li>
+              <li>
+                <a href="/contact/">
+                  お問い合せ
+                </a>
+              </li>
+              <br>
+              <li>
+                <a href="/policy/">
+                  プライバシーポリシー
+                </a>
+              </li>
             </ul>
           </div>
           <div class="footer-link-second">
-            <ul class="footer-link-list">
-              <li>売る</li>
-              <li>買う・建てる</li>
-              <li>直す</li>
-              <li>借りる</li>
+            <ul class="footer-link-second-list">
+              <li>
+                <a href="/business/sell/">
+                  売る
+                </a>
+              </li>
+              <li>
+                <a href="/business/buy/">
+                  買う・建てる
+                </a>
+                <div class="footer-link-second-text">
+                  <a href="/business/buy/lineup/">
+                    −売買物件
+                  </a>
+                </div>
+                <div class="footer-link-second-text">
+                  <a href="/business/buy/sold/">
+                    −過去の成約物件
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="/business/reform/">
+                  直す
+                </a>
+                <div class="footer-link-second-text">
+                  <a href="/business/reform/results-archive/">
+                    −修繕事例
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="/business/chintai/">
+                  借りる
+                </a>
+              </li>
             </ul>
           </div>
         </div>
