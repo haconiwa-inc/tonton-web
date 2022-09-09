@@ -18,8 +18,8 @@ get_header();
   <main id="primary" class="site-main">
     <section>
       <div class="kv">
-        <img class="dis-pc" src="<?php echo get_template_directory_uri(); ?>/images/pc/kv_pc.png" alt="とんとんkv_pc">
-        <img class="dis-sp" src="<?php echo get_template_directory_uri(); ?>/images/sp/kv_sp.png" alt="とんとんkv_sp">
+        <img class="dis-pc" src="<?php echo get_template_directory_uri(); ?>/images/pc/kv_pc.jpg" alt="とんとんkv_pc">
+        <img class="dis-sp" src="<?php echo get_template_directory_uri(); ?>/images/sp/kv_sp.jpg" alt="とんとんkv_sp">
         <h1>
           最大限のメリットを生む<br>
           不動産プロフェッショナルからの<br>
