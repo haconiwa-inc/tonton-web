@@ -175,10 +175,11 @@
   background-color: #fff;
   color: #330A00;
   text-align: center;
+  font-family: "Ropa Sans";
 }
 
 .top-notice-item-tag-box {
-  margin-top: 20%;
+  margin-top: 24%;
 }
 
 .top-notice-item-tag-text {
@@ -538,6 +539,25 @@
   bottom: -0.5%;
   right: 2%;
   width: 150px;
+}
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  .top-notice-item-tag {
+    height: 120px;
+    width: 120px
+  }
+
+  .top-notice-item-tag-box {
+    margin-top: 26%;
+  }
+
+  .top-notice-item-tag-text {
+    font-size: 2.4rem;
+  }
+  
+  .top-notice-item-tag-num {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
