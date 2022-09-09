@@ -189,3 +189,24 @@ function my_enqueue_styles() {
   wp_enqueue_style('style', get_stylesheet_uri(), array('ress'), false, 'all');
 }
 add_action('wp_enqueue_scripts', 'my_enqueue_styles');
+
+add_action( 'admin_print_footer_scripts', 'select_to_radio_genre' );
+function select_to_radio_genre() {
+    ?>
+    <script type="text/javascript">
+    jQuery( function( $ ) {
+        // 投稿画面
+        $( '#taxonomy-genre input[type=checkbox]' ).each( function() {
+            $( this ).replaceWith( $( this ).clone().attr( 'type', 'radio' ) );
+        } );
+
+        // 一覧画面
+        var genre_checklist = $( '.genre-checklist input[type=checkbox]' );
+        genre_checklist.click( function() {
+            $( this ).parents( '.genre-checklist' ).find( ' input[type=checkbox]' ).attr( 'checked', false );
+            $( this ).attr( 'checked', true );
+        } );
+    } );
+    </script>
+    <?php
+}

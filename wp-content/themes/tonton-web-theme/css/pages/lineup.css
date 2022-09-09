@@ -25,6 +25,10 @@
   font-size: 2rem;
   font-family: "GenJyuuGothic";
   font-weight: bold;
+  color: #C9BEBB;
+}
+
+.lineup-tab li.active {
   color: #4D291F;
 }
 
@@ -53,8 +57,61 @@
   color: #333333;
 }
 
+.lineup-item--nothing {
+  display: none;
+  margin-top: 7.8%;
+}
+
+.lineup-item--nothing p {
+  font-size: 3.2rem;
+  text-align: center;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
+  color: #262626;
+}
+
+.lineup-item--nothingImg {
+  width: 100%;
+  max-width: 224px;
+  margin: 4.9% auto 7.8%;
+}
+
 .lineup-img {
+  position: relative;
   width: 30%;
+}
+
+.lineup-img img {
+  width: 100%;
+  height: auto;
+}
+
+.lineup-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 20px;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+/* タクソノミー増えたら更新必要 */
+.lineup-label--new-building {
+  background-color: #619800;
+}
+
+/*　TODO: デザインにないので確認 */
+.lineup-label--construction {
+  background-color: #D6412D;
+}
+
+/*　TODO: デザインにないので確認 */
+.lineup-label--land {
+  background-color: #D9882A;
+}
+
+.lineup-label--old-building {
+  background-color: #007D98;
 }
 
 .lineup-textArea {
@@ -68,6 +125,10 @@
 
 .lineup-textArea p {
   margin: 0;
+}
+
+.lineup-textBox {
+  margin-bottom: 3.9%;
 }
 
 .lineup-access {
@@ -197,9 +258,27 @@
     border-radius: 8px;
   }
 
+  .lineup-item--nothing {
+    margin-top: 9.1%;
+  }
+
+  .lineup-item--nothing p {
+    font-size: 2rem;
+  }
+
+  .lineup-item--nothingImg {
+    max-width: 112px;
+    margin: 9.1% auto 18.2%;
+  }
+
   .lineup-img {
     width: 100%;
     margin-bottom: 9.3%;
+  }
+
+  .lineup-label {
+    padding: 2px 10px;
+    font-size: 1.2rem;
   }
 
   .lineup-textArea {
