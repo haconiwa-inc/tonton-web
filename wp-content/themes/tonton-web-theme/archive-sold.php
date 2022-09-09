@@ -130,15 +130,15 @@ get_header();
               while ( have_posts() ) :
               the_post();
               $my_posts = get_posts($args);
-              $img_obj_field = get_field_object('estate-img');
             ?>
               <?php foreach ($my_posts as $post) : setup_postdata($post); ?>
                 <li>
                   <a href="<?php the_permalink() ?>">
                     <div class="sold-item">
                       <?php
+                        $img_obj_field = get_field_object('estate-img');
                         $image = $img_obj_field['value'][0]['estate-img-single'];
-                        $size = 'medium';
+                        $size = 'full';
                       ?>
                       <?php echo wp_get_attachment_image( $image, $size ); ?>
                       <div class="sold-item-text">

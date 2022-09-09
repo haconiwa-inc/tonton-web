@@ -203,6 +203,7 @@
 
 .sold-item img {
   width: 100%;
+  height: 100%;
 }
 
 .sold-box {
@@ -573,7 +574,7 @@
 }
 
 .sold-button-top {
-  max-width: 300px;
+  width: 300px;
   margin: 0 auto;
   font-size: 1.8rem;
   text-align: center;
@@ -581,7 +582,6 @@
   background-color: #009844;
   border-radius: 10px;
 }
-
 
 @media screen and (max-width: 768px) {
   .sold-detail-header-box {
@@ -660,6 +660,5 @@
   .sold-detail-button,
   .sold-button-top {
     width: 100%;
-    padding: 5% 0;
   }
 }
