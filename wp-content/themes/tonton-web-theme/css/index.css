@@ -218,11 +218,8 @@
   border-radius: 10px;
   text-align: center;
   font-size: 1.8rem;
-  background-color: #009844;
-}
-
-.top-content-button a {
   color: #fff;
+  background-color: #009844;
 }
 
 .top-content-button--long {
