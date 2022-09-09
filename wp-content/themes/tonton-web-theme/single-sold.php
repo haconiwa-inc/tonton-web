@@ -10,7 +10,6 @@
 get_header();
 ?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/pages/sold.css" media="screen" >
-
   <main id="primary" class="site-main">
     <div class="sold-detail">
       <div class="title-area">
@@ -101,6 +100,7 @@ get_header();
         </div>
       </div>
     </div>
+    <script src="<?php echo get_template_directory_uri();?>/js/sold.js"></script>
   </main><!-- #main -->
 
 <?php
