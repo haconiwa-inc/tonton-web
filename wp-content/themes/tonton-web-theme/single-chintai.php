@@ -15,8 +15,8 @@ get_header();
   <div class="chintaiDetail-contents">
     <div class="title-area">
       <h2 class="title">
-        <p>売買物件詳細</p>
-        <span>properties for sale</span>
+        <p>賃貸物件</p>
+        <span>rental property</span>
       </h2>
     </div>
     <div class="wrapper-boxes">
@@ -55,7 +55,7 @@ get_header();
       <div class="wrapper-boxes-inner">
         <ul class="breadcrumbs">
           <li><a href="/">TOP</a></li>
-          <li><a href="/business/buy/lineup">売買物件</a></li>
+          <li><a href="/business/chintai">賃貸物件</a></li>
           <li><?php echo the_title(); ?></li>
         </ul>
         <div class="chintaiDetail-block chintaiDetail-block--top">
@@ -207,7 +207,7 @@ get_header();
               <div class="chintaiDetail-buttonArea">
                 <div class="chintaiDetail-button chintaiDetail-button--white">
                   <div class="chintaiDetail-buttonInner chintaiDetail-buttonInner--back">
-                    <a href="/business/buy/lineup">
+                    <a href="/business/chintai">
                       物件一覧に戻る
                     </a>
                     <div class="chintaiDetail-buttonArrow chintaiDetail-buttonArrow--back">
@@ -256,27 +256,6 @@ get_header();
       </div>
     </div>
   </div>
-
-   <?php
-  //  while ( have_posts() ) :
-  //    the_post();
-
-  //    get_template_part( 'template-parts/content', get_post_type() );
-
-  //    the_post_navigation(
-  //      array(
-  //        'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'tonton-web-theme' ) . '</span> <span class="nav-title">%title</span>',
-  //        'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'tonton-web-theme' ) . '</span> <span class="nav-title">%title</span>',
-  //      )
-  //    );
-
-  //    // If comments are open or we have at least one comment, load up the comment template.
-  //    if ( comments_open() || get_comments_number() ) :
-  //      comments_template();
-  //    endif;
-
-  //  endwhile; // End of the loop.
-    ?>
   </main><!-- #main -->
 
 <?php
