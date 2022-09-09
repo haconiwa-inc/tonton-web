@@ -103,7 +103,7 @@ get_header();
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="chintaiDetail-images">
                 <div class="dis-sp">
                   <p class="chintaiDetail-area"><?php echo $address_field; ?></p>
                   <p class="chintaiDetail-price"><span><?php echo $price_field; ?></span></p>
@@ -118,18 +118,105 @@ get_header();
                     </li>
                   </ul>
                 </div>
-                <div class="chintaiDetail-images">
-                <?php
-                  foreach((array)$img_obj_field['value'] as $img_field) :
-                    $image = $img_field['estate-img-single'];
-                    $size = 'full';
-                    if( $image ) {
-                      echo wp_get_attachment_image( $image, $size );
-                    }
-                  endforeach;
-                ?>
+
+                <!-- swiper -->
+                <div class="chintaiDetail-slider">
+                  <div class="swiper swiper-fade">
+                    <div class="swiper-wrapper">
+                      <?php
+                        foreach((array)$img_obj_field['value'] as $img_field) :
+                          $image = $img_field['estate-img-single'];
+                          $size = 'full';
+                          if( $image ) {
+                            echo '<div class="swiper-slide"><figure class="slide"><div class="slide-media">' . wp_get_attachment_image( $image, $size ) . '</div></figure></div>';
+                          }
+                        endforeach;
+                      ?>
+                    </div><!-- /swiper-wrapper -->
+                  <!-- /swiper-main -->
+
+                  <div class="thumb-wrapper">
+                    <?php
+                      foreach((array)$img_obj_field['value'] as $img_field) :
+                        $image = $img_field['estate-img-single'];
+                        $size = 'full';
+                        if( $image ) {
+                          echo '<div class="thumb-media">' .  wp_get_attachment_image( $image, $size ) . '</div>';
+                        }
+                      endforeach;
+                    ?>
+                  </div>
+                </div>
+
+                <!-- モーダルを開くボタン -->
+                <div class="chintaiDetail-more">
+                  <div class="more-button">
+                    <span>すべての画像をみる</span>
+                  </div>
+                </div>
+
+                <!-- モーダル本体 -->
+                <div class="modal-container">
+                  <div class="modal-body">
+                    <div class="modal-close">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="29.699" height="29.698" viewBox="0 0 29.699 29.698">
+                        <g transform="translate(-6200.151 -247.151)">
+                          <g fill="#f6f4f4">
+                            <path d="M 6228.43505859375 275.4351501464844 L 6224.89990234375 271.8996887207031 L 6228.43505859375 275.4351501464844 L 6228.43505859375 275.4351501464844 Z" stroke="none"/>
+                            <path d="M 6201.56494140625 247.1508483886719 L 6229.849609375 275.435302734375 L 6228.43505859375 276.8492126464844 L 6200.15087890625 248.5650024414062 L 6201.56494140625 247.1508483886719 Z" stroke="none" fill="#080103"/>
+                          </g>
+                          <g fill="#f6f4f4">
+                            <path d="M 6217.17578125 259.8243408203125 L 6228.43505859375 248.5649261474609 L 6228.435546875 248.5650787353516 L 6217.17578125 259.8243408203125 Z" stroke="none"/>
+                            <path d="M 6228.43505859375 247.1508483886719 L 6229.849609375 248.5650024414062 L 6201.56494140625 276.8492126464844 L 6200.15087890625 275.435302734375 L 6228.43505859375 247.1508483886719 Z" stroke="none" fill="#080103"/>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <!-- モーダル内のコンテンツ -->
+                    <div class="chintaiDetail-modalContent">
+                      <!-- swiper modal -->
+                      <div class="chintaiDetail-sliderModal">
+
+                        <div class="swiper-container slider">
+                          <div class="swiper-wrapper">
+                            <?php
+                              foreach((array)$img_obj_field['value'] as $img_field) :
+                                $image = $img_field['estate-img-single'];
+                                $size = 'full';
+                                if( $image ) {
+                                  echo '<div class="swiper-slide">' .  wp_get_attachment_image( $image, $size ) . '</div>';
+                                }
+                              endforeach;
+                              ?>
+                          </div>
+                          <div class="swiper-modal-next">
+                            <img src="<?php echo get_template_directory_uri();?>/images/common/next_button.svg" alt="">
+                          </div>
+                          <div class="swiper-modal-prev">
+                            <img src="<?php echo get_template_directory_uri();?>/images/common/prev_button.svg" alt="">
+                          </div>
+                        </div>
+
+                        <!-- サムネイル -->
+                        <div class="swiper-container slider-thumbnail">
+                          <div class="swiper-wrapper">
+                          <?php
+                            foreach((array)$img_obj_field['value'] as $img_field) :
+                              $image = $img_field['estate-img-single'];
+                              $size = 'full';
+                              if( $image ) {
+                                echo '<div class="swiper-slide">' .  wp_get_attachment_image( $image, $size ) . '</div>';
+                              }
+                            endforeach;
+                            ?>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
             </div>
             <div>
               <h3 class="chintaiDetail-subTitle">物件情報</h3>
@@ -257,7 +344,7 @@ get_header();
     </div>
   </div>
   </main><!-- #main -->
-
+  <script src="<?php echo get_template_directory_uri();?>/js/business.js"></script>
 <?php
 get_footer();
 ?>

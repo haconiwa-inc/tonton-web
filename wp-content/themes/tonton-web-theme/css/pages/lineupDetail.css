@@ -18,10 +18,29 @@
   margin: 7.8% auto 0;
 }
 
+.lineupDetail-blockInner {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.lineupDetail-block--wullGreen {
+  width: 100%;
+  max-width: 100%;
+  padding: 6% 0 6.2%;
+  background: rgba(0, 152, 68, .1);
+  margin: 0 auto;
+}
+
+.lineupDetail-detail {
+  margin-bottom: 11.7%;
+}
+
 .lineupDetail-detailMain {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 11.2%;
 }
 
@@ -45,13 +64,14 @@
 }
 
 .lineupDetail-images {
-  width: 100%;
+  width: 47%;
   height: auto;
+  margin-left: 3%;
 }
 
-.lineupDetail-images img {
-  width: 100%;
-  height: auto;
+.lineupDetail-tableArea {
+  width: 47%;
+  margin-right: 3%;
 }
 
 .lineupDetail-tableArea dl {
@@ -183,9 +203,7 @@
 }
 
 .lineupDetail-buttonInner--small {
-  width: 70%;
-  margin-right: auto;
-  margin-left: 0;
+  width: 30%;
 }
 
 .lineupDetail-buttonInner--back {
@@ -232,10 +250,229 @@
   right: inherit;
 }
 
+.lineupDetail-contactTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0 auto 4.8%;
+  font-family: "GenJyuuGothic";
+}
+
 /* TOPへ戻る調整 */
 .top-buttonInner {
   margin-left: 20px;
   margin-right: auto;
+}
+
+/* swiper */
+.lineupDetail-slider {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.lineupDetail-slider .swiper {
+  width: 100%;
+  height: auto;
+}
+
+.lineupDetail-slider .swiper {
+  overflow: visible;
+}
+
+.lineupDetail-slider .swiper .swiper-wrapper {
+  margin-bottom: 15px;
+}
+
+.lineupDetail-slider .swiper,
+.lineupDetail-slider .thumb-wrapper {
+  max-width: 720px;
+  margin: auto;
+}
+
+.lineupDetail-slider .swiper-fade .swiper-slide {
+  -webkit-transition-property: opacity, -webkit-transform !important;
+  transition-property: opacity, -webkit-transform !important;
+  transition-property: opacity, transform !important;
+  transition-property: opacity, transform, -webkit-transform !important;
+  pointer-events: none;
+}
+
+.lineupDetail-slider .swiper-fade .swiper-slide {
+  margin: 0;
+}
+
+.lineupDetail-slider .swiper-fade .swiper-slide .slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.lineupDetail-slider .swiper-fade .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.lineupDetail-slider .slide {
+  display: block;
+  overflow: hidden;
+}
+
+.lineupDetail-slider .thumb-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.lineupDetail-slider .thumb-media img {
+  width: 100%;
+  height: auto;
+}
+
+/* modal */
+.more-button {
+  margin-top: 5.2%;
+  text-align: right;
+}
+
+.more-button span {
+  display: inline-block;
+  padding: 8px 25px;
+  border: 2px solid #009844;
+  border-radius: 8px;
+  color: #009844;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.modal-container .lineupDetail-slider .swiper {
+  max-width: 720px;
+  margin: auto;
+}
+
+.modal-container .lineupDetail-slider .thumb-wrapper {
+  max-width: 100%;
+  margin: auto;
+}
+
+.modal-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0,0,0,50%);
+  padding: 40px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+  z-index: 1;
+
+}
+.modal-container:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.modal-container.active{
+  opacity: 1;
+  visibility: visible;
+}
+.modal-body{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+}
+.modal-close{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.lineupDetail-modalContent{
+  background: #fff;
+  padding: 50px 40px;
+}
+.lineupDetail-sliderModal {
+  width: 100%;
+  overflow: hidden;
+}
+.lineupDetail-sliderModal .swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+.lineupDetail-sliderModal .swiper-wrapper {
+  margin: 0 auto;
+}
+.lineupDetail-sliderModal .swiper-container.slider {
+  width: 70%;
+  margin: 0 auto;
+  height: 60vh;
+}
+.lineupDetail-sliderModal .swiper-container .swiper-wrapper .swiper-slide {
+  margin-right: 0;
+}
+.lineupDetail-sliderModal .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+.lineupDetail-sliderModal .swiper-container.slider-thumbnail {
+  width: 90%;
+  margin: 0 auto;
+  height: 10vh;
+}
+.lineupDetail-sliderModal .swiper-container.slider-thumbnail .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+.lineupDetail-sliderModal .swiper-container.slider-thumbnail .swiper-wrapper .swiper-slide {
+  width: 25%;
+  height: max-content;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.lineupDetail-sliderModal .swiper-container.slider-thumbnail .swiper-wrapper .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+/* prev nextカスタマイズ */
+.swiper-modal-prev {
+  position: absolute;
+  bottom: 8vh;
+  left: 40px;
+  height: 32px;
+  width: 32px;
+}
+.swiper-modal-prev.swiper-button-disabled,
+.swiper-modal-next.swiper-button-disabled {
+  opacity: 0.3;
+}
+.swiper-modal-next {
+  position: absolute;
+  bottom: 8vh;
+  right: 40px;
+  height: 32px;
+  width: 32px;
+}
+.swiper-modal-prev:after,
+.swiper-modal-next:after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 32px;
+  width: 32px;
+  margin: auto;
 }
 
 @media screen and (max-width:768px) {
@@ -246,6 +483,11 @@
 
   .lineupDetail-block--top {
     margin: 9.4% auto 0;
+  }
+
+  .lineupDetail-blockInner {
+    max-width: 100%;
+    padding: 0 5.4%;
   }
 
   .lineupDetail-leadText {
@@ -272,6 +514,16 @@
   .lineupDetail-price {
     padding: 3.1% 0 9.1%;
     font-size: 2rem;
+  }
+
+  .lineupDetail-images {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .lineupDetail-tableArea {
+    width: 100%;
+    margin-right: 0
   }
 
   .lineupDetail-tableArea dl {
@@ -367,6 +619,12 @@
     margin-bottom: 10%;
   }
 
+  .lineupDetail-contactTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto 6.3%;
+  }
+
   .lineupDetail-button {
     width: 100%;
   }
@@ -399,6 +657,67 @@
 
   .top-icon {
     left: -18px;
-}
+  }
+
+  /* swiper */
+
+  .lineupDetail-slider .thumb-wrapper {
+    gap: 10px;
+  }
+
+  .lineupDetail-sliderModal .swiper-container.slider {
+    width: 100%;
+    height: 25.5vh;
+  }
+
+  .lineupDetail-sliderModal .swiper-container.slider-thumbnail {
+    width: 80%;
+    height: 6vh;
+  }
+
+  /* modal */
+  .more-button {
+    margin-top: 4.6%;
+    margin-bottom: 4.6%;
+  }
+
+  .more-button span {
+    padding: 6px 20px;
+    font-size: 1.2rem;
+  }
+
+  .lineupDetail-modalContent{
+    padding: 60px 20px;
+  }
+
+  .modal-close {
+    top: 20px;
+    right: 20px;
+    width: 23px;
+    height: 23px;
+  }
+
+  .modal-body{
+    width: 95%;
+  }
+
+  /* prev nextカスタマイズ */
+  .swiper-modal-prev {
+    bottom: 10.5vh;
+    left: 15px;
+    height: 28px;
+    width: 28px;
+  }
+  .swiper-modal-next {
+    bottom: 10.5vh;
+    right: 15px;
+    height: 28px;
+    width:28px;
+  }
+  .swiper-modal-prev:after,
+  .swiper-modal-next:after {
+    height: 28px;
+    width: 28px;
+  }
 }
 

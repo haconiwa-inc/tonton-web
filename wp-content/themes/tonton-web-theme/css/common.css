@@ -115,6 +115,14 @@ a:hover {
   transform: translateY(-50%);
 }
 
+.acf-map {
+  width: 100%;
+  height: 400px;
+}
+.acf-map img {
+  max-width: inherit !important;
+}
+
 @media screen and (max-width: 768px) {
   .dis-pc {
     display: none;
