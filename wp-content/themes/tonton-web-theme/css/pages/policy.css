@@ -42,7 +42,7 @@
 
 @media screen and (max-width:768px) {
   .policy-contents {
-    margin: 0 auto 16%;
+    margin: 0 auto;
   }
 
   .policy-subTitle {
