@@ -58,10 +58,14 @@ get_header();
       <div class="lineup-block lineup-block--top">
         <ul class="lineup-tab">
           <li class="active" data-tab="all">すべて</li>
-          <li data-tab="new-building">新築</li>
-          <li data-tab="old-building">中古</li>
-          <li data-tab="construction">建築中</li>
-          <li data-tab="land">土地</li>
+          <?php
+          $args = array(
+            'hide_empty' => false,
+          );
+          $this_terms = get_terms('genre',$args);
+          foreach ($this_terms as $each_term){
+            echo '<li data-tab="' . $each_term -> slug . '">' . $each_term -> name . '</li>';
+          } ?>
         </ul>
         <div class="lineup-box">
           <ul class="lineup-list">
@@ -88,13 +92,9 @@ get_header();
               $age_field = get_field('estate-age');
               $this_term = get_the_terms($post->ID,'genre');
             ?>
-            <li class="lineup-item
-              <?php
-                foreach((array)$this_term as $term) :
-                  echo 'lineup-item--' . $term->slug;
-                endforeach;
-              ?>
-            ">
+            <li class="lineup-item <?php foreach((array)$this_term as $term) :
+              echo 'lineup-item--' . $term->slug;
+              endforeach;?>">
               <div class="lineup-img">
                 <?php
                   $image = $img_obj_field['value'][0]['estate-img-single'];
@@ -151,32 +151,6 @@ get_header();
             </li>
             <?php endwhile; endif; ?>
             <?php wp_reset_query();?>
-            <li class="lineup-item">
-              <div class="lineup-img">
-                <img src="/wp-content/themes/tonton-web-theme/images/business/lineup_item01.png" alt="">
-              </div>
-              <div class="lineup-textArea">
-                <div class="lineup-textBox">
-                  <p class="lineup-access">{住所}</p>
-                  <p class="lineup-price"><span>{金額}</span></p>
-                  <p class="lineup-accessDetail">{住所詳細}</p>
-                  <p class="lineup-minutes">{駅徒歩分}</p>
-                  <div class="lineup-detail">{その他詳細}</div>
-                </div>
-                <ul class="lineup-buttonArea">
-                  <li class="lineup-button lineup-button--white">
-                    <a href="#">
-                      詳細をみる
-                    </a>
-                  </li>
-                  <li class="lineup-button lineup-button--green">
-                    <a href="#">
-                      お問い合わせ
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
             <li class="lineup-item--nothing">
               <p>現在対象の物件はございません</p>
               <div class="lineup-item--nothingImg">
@@ -204,34 +178,6 @@ get_header();
     </div>
   </div>
   </main><!-- #main -->
-
-
-
-
-  <?#php if ( have_posts() ) : ?>
-
-  <?#php
-  /* Start the Loop */
-  // while ( have_posts() ) :
-  //   the_post();
-
-  //   /*
-  //   * Include the Post-Type-specific template for the content.
-  //   * If you want to override this in a child theme, then include a file
-  //   * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-  //   */
-  //   get_template_part( 'template-parts/content', get_post_type() );
-
-  // endwhile;
-
-  // // the_posts_navigation();
-
-  // else :
-
-  // get_template_part( 'template-parts/content', 'none' );
-
-  // endif;
-  #?>
   <script src="<?php echo get_template_directory_uri();?>/js/lineup.js"></script>
 <?php
 get_footer();

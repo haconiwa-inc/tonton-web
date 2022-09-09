@@ -28,6 +28,10 @@
   color: #C9BEBB;
 }
 
+.lineup-tab li {
+  cursor: pointer;
+}
+
 .lineup-tab li.active {
   color: #4D291F;
 }
