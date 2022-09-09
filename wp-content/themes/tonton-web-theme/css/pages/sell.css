@@ -11,7 +11,7 @@
 
 .sell-block {
   width: 100%;
-  margin: 6% auto 0;
+  margin: 7.8% auto 0;
   line-height: 1.8;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .sell-block--top {
-  margin: 4% auto 0;
+  margin: 4% auto 9.8%;
 }
 
 .sell-blockInner {
@@ -89,9 +89,7 @@
 }
 
 .sell-flowList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 11.7%;
 }
 
 .sell-flowList li {
@@ -126,7 +124,7 @@
 }
 
 .sell-stepTitle {
-  margin: 0 auto 2.3%;
+  margin: 0 auto 1%;
   font-size: 1.8rem;
   font-weight: bold;
   color: #4D291F;
@@ -156,6 +154,7 @@
   margin-bottom: 4.8%;
   padding: 4.8% 5.3%;
   background-color: #fff;
+  border-radius: 10px;
 }
 
 .sell-exampleTitle {
@@ -182,6 +181,7 @@
   margin: 0 auto 1.6%;
   font-size: 2rem;
   color: #009844;
+  font-family: "GenJyuuGothic";
 }
 
 .sell-point01 {
@@ -206,6 +206,8 @@
   color: #4D291F;
   font-size: 1.8rem;
   border-bottom: 2px solid #F6F4F4;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
 }
 
 .sell-tableBlock dd {
@@ -229,6 +231,10 @@
   margin-bottom: 4.3%;
 }
 
+.sell-point05 {
+  font-size: 1.6rem;
+}
+
 .sell-button {
   width: 100%;
   margin: 0 auto;
@@ -236,6 +242,7 @@
 }
 
 .sell-buttonInner {
+  position: relative;
   width: 50%;
   margin: 0 auto;
 }
@@ -305,8 +312,11 @@
   width: 60px;
 }
 
-.sell-disSp {
-  display: none;
+.sell-buttonArrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 
 @media screen and (max-width:768px) {
@@ -331,7 +341,7 @@
   }
 
   .sell-block--top {
-    margin: 9.4% auto 0;
+    margin: 9.4% auto 15.4%;
   }
 
   .sell-blockInner {
@@ -376,9 +386,7 @@
   }
 
   .sell-flowList {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 21.2%;;
   }
 
   .sell-flowList li {
@@ -410,7 +418,7 @@
   }
 
   .sell-stepTitle {
-    margin-bottom: 15px;
+    margin-bottom: 2%;
     font-size: 1.6rem;
   }
 
@@ -499,6 +507,10 @@
     margin-bottom: 9.1%;
   }
 
+  .sell-point05 {
+    font-size: 1.4rem;
+  }
+
   .sell-button {
     width: 100%;
   }
@@ -507,9 +519,12 @@
     width: 100%;
   }
 
+  .sell-button--contact {
+    padding: 0 8.5%;
+  }
+
   .sell-buttonInner--small {
     width: 100%;
-    padding: 0 8.5%;
   }
 
   .sell-linkList {
@@ -528,14 +543,6 @@
     top: -20px;
     left: 10px;
     width: 48px;
-  }
-
-  .sell-disPc {
-    display: none;
-  }
-
-  .sell-disSp {
-    display: block;
   }
 }
 
