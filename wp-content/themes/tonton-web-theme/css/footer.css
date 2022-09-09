@@ -1,7 +1,7 @@
 .footer {
   display: block;
   width: 100%;
-  padding: 10% 5% 5%;
+  padding: 5% 5%;
   background-color: #F7F4EC;
 }
 
@@ -91,7 +91,7 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 20% 6%;
+    padding: 15% 6%;
   }
 
   .footer-box {
