@@ -11,7 +11,7 @@
 
 .buy-block {
   width: 100%;
-  margin: 6% auto 0;
+  margin: 7.8% auto 0;
   line-height: 1.8;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .buy-block--top {
-  margin: 4% auto 0;
+  margin: 4% auto 9.8%;
 }
 
 .buy-blockInner {
@@ -104,9 +104,7 @@
 }
 
 .buy-flowList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 11.7%;
 }
 
 .buy-flowList li {
@@ -141,10 +139,11 @@
 }
 
 .buy-stepTitle {
-  margin: 0 auto 2.3%;
+  margin: 0 auto 2.2%;
   font-size: 1.8rem;
   font-weight: bold;
   color: #4D291F;
+  line-height: 1;
 }
 
 .buy-stepContent {
@@ -184,9 +183,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 11.7% auto;
 }
 
 .buy-linkList li a {
@@ -267,7 +264,7 @@
   }
 
   .buy-block--top {
-    margin: 9.4% auto 0;
+    margin: 9.4% auto 15.4%;
   }
 
   .buy-blockInner {
@@ -324,9 +321,7 @@
   }
 
   .buy-flowList {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 21.2%;;
   }
 
   .buy-flowList li {
@@ -358,7 +353,7 @@
   }
 
   .buy-stepTitle {
-    margin-bottom: 6%;
+    margin-bottom: 5.5%;
     font-size: 1.6rem;
   }
 
@@ -380,15 +375,17 @@
     width: 100%;
   }
 
+  .buy-button--contact {
+    padding: 0 8.5%;
+  }
+
   .buy-buttonInner--small {
     width: 100%;
-    padding: 0 8.5%;
   }
 
   .buy-linkList {
     display: block;
-    margin: 0;
-    padding: 0;
+    margin: 18.2% auto;
   }
 
   .buy-linkList li a {
@@ -409,7 +406,7 @@
   }
 
   .buy-button a {
-    padding: 7.6% 0;
+    padding: 7.2% 0;
     font-size: 1.6rem;
   }
 
