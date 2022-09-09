@@ -255,26 +255,46 @@ get_header();
                     <dd><?php echo $price_field ?></dd>
                     <dt>物件種別</dt>
                     <dd><?php echo $structure_field; ?></dd>
-                    <dt>所在階	</dt>
-                    <dd><?php echo $floor_field; ?></dd>
-                    <dt>駐車場</dt>
-                    <dd><?php echo $parking_field; ?></dd>
-                    <dt>設備・仕様</dt>
-                    <dd><?php echo $facilities_field; ?></dd>
-                    <dt>契約期間</dt>
-                    <dd><?php echo $term_field; ?></dd>
-                    <dt>入居条件</dt>
-                    <dd><?php echo $conditions_field; ?></dd>
-                    <dt>その他</dt>
-                    <dd><?php echo $others_field; ?></dd>
-                    <dt>学校区</dt>
-                    <dd><?php echo $school_field; ?></dd>
-                    <dt>現況</dt>
-                    <dd><?php echo $state_field; ?></dd>
-                    <dt>引渡し</dt>
-                    <dd><?php echo $transfer_field; ?></dd>
-                    <dt>情報登録日</dt>
-                    <dd><?php echo $day_field; ?></dd>
+                    <?php if (!!$floor_field) : ?>
+                      <dt>所在階	</dt>
+                      <dd><?php echo $floor_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$parking_field) : ?>
+                      <dt>駐車場</dt>
+                      <dd><?php echo $parking_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$facilities_field) : ?>
+                      <dt>設備・仕様</dt>
+                      <dd><?php echo $facilities_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$term_field) : ?>
+                      <dt>契約期間</dt>
+                      <dd><?php echo $term_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$conditions_field) : ?>
+                      <dt>入居条件</dt>
+                      <dd><?php echo $conditions_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$others_field) : ?>
+                      <dt>その他</dt>
+                      <dd><?php echo $others_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$school_field) : ?>
+                      <dt>学校区</dt>
+                      <dd><?php echo $school_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$state_field) : ?>
+                      <dt>現況</dt>
+                      <dd><?php echo $state_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$transfer_field) : ?>
+                      <dt>引渡し</dt>
+                      <dd><?php echo $transfer_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$day_field) : ?>
+                      <dt>情報登録日</dt>
+                      <dd><?php echo $day_field; ?></dd>
+                    <?php endif; ?>
                   </dl>
                   <div class="chintaiDetail-map">
                   <!-- TODO: jsいれないと表示されなさそう -->

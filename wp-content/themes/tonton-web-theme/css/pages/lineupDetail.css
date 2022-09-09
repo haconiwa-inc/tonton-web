@@ -161,6 +161,12 @@
   margin: 11.2% auto 0;
 }
 
+.lineupDetail-plan img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .lineupDetail-plan li {
   margin-bottom: 11.2%;
 }
@@ -176,6 +182,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   font-size: 1.6rem;
+  margin-bottom: 3.9%;
 }
 
 .lineupDetail-planSubTitle {
@@ -660,7 +667,6 @@
   }
 
   /* swiper */
-
   .lineupDetail-slider .thumb-wrapper {
     gap: 10px;
   }

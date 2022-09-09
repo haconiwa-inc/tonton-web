@@ -54,9 +54,10 @@ get_header();
       <?php $other_laws_field = get_field('estate-other-Laws'); ?>
       <?php $load_field = get_field('estate-load'); ?>
       <?php $capacity_field = get_field('estate-capacity'); ?>
-      <?php
-        $map_field = get_field('estate-map');
-      ?>
+      <?php $map_field = get_field('estate-map'); ?>
+      <?php $reform_plan_obj_field = get_field_object('estate-reform-plan'); ?>
+      <?php $renovation_plan_obj_field = get_field_object('estate-renovation-plan'); ?>
+      <?php $recommend_plan_obj_field = get_field_object('estate-recommend-plan'); ?>
 
       <div class="wrapper-boxes-inner">
         <ul class="breadcrumbs">
@@ -249,30 +250,54 @@ get_header();
                     <dd><?php echo $price_field ?></dd>
                     <dt>物件種別</dt>
                     <dd><?php echo $structure_field; ?></dd>
-                    <dt>駐車場</dt>
-                    <dd><?php echo $parking_field; ?></dd>
-                    <dt>設備・仕様</dt>
-                    <dd><?php echo $facilities_field; ?></dd>
-                    <dt>学校区</dt>
-                    <dd><?php echo $school_field; ?></dd>
-                    <dt>引渡し</dt>
-                    <dd><?php echo $transfer_field; ?></dd>
-                    <dt>都市計画</dt>
-                    <dd><?php echo $plan_field; ?></dd>
-                    <dt>用途地域</dt>
-                    <dd><?php echo $region_field; ?></dd>
-                    <dt>地目</dt>
-                    <dd><?php echo $chimoku_field; ?></dd>
-                    <dt>土地権利</dt>
-                    <dd><?php echo $right_field; ?></dd>
-                    <dt>建ぺい率</dt>
-                    <dd><?php echo $kenpei_field; ?></dd>
-                    <dt>容積率</dt>
-                    <dd><?php echo $capacity_field; ?></dd>
-                    <dt>その他の法令上の制限</dt>
-                    <dd><?php echo $other_laws_field; ?></dd>
-                    <dt>接道状況</dt>
-                    <dd><?php echo $load_field; ?></dd>
+                    <?php if (!!$parking_field) : ?>
+                      <dt>駐車場</dt>
+                      <dd><?php echo $parking_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$facilities_field) : ?>
+                      <dt>設備・仕様</dt>
+                      <dd><?php echo $facilities_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$school_field) : ?>
+                      <dt>学校区</dt>
+                      <dd><?php echo $school_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$transfer_field) : ?>
+                      <dt>引渡し</dt>
+                      <dd><?php echo $transfer_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$plan_field) : ?>
+                      <dt>都市計画</dt>
+                      <dd><?php echo $plan_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$region_field) : ?>
+                      <dt>用途地域</dt>
+                      <dd><?php echo $region_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$chimoku_field) : ?>
+                      <dt>地目</dt>
+                      <dd><?php echo $chimoku_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$right_field) : ?>
+                      <dt>土地権利</dt>
+                      <dd><?php echo $right_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$kenpei_field) : ?>
+                      <dt>建ぺい率</dt>
+                      <dd><?php echo $kenpei_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$capacity_field) : ?>
+                      <dt>容積率</dt>
+                      <dd><?php echo $capacity_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$other_laws_field) : ?>
+                      <dt>その他の法令上の制限</dt>
+                      <dd><?php echo $other_laws_field; ?></dd>
+                    <?php endif; ?>
+                    <?php if (!!$load_field) : ?>
+                      <dt>接道状況</dt>
+                      <dd><?php echo $load_field; ?></dd>
+                    <?php endif; ?>
                   </dl>
                   <div class="lineupDetail-map">
                   <!-- TODO: jsいれないと表示されなさそう -->
@@ -288,50 +313,82 @@ get_header();
                     <img src="<?php echo get_template_directory_uri();?>/images/business/map.png" alt="">
                   </div>
                 </div>
-                <!-- TODO: 新規で作成？ -->
                 <ul class="lineupDetail-plan">
-                  <li>
-                    <h3 class="lineupDetail-planTitle">実施したリフォームプラン</h3>
-                    <div class="lineupDetail-planBlock">
-                      <div>
-                        <img src="https://placehold.jp/492x276.png" alt="">
-                      </div>
-                      <div>
-                        <h4 class="lineupDetail-planSubTitle">プラン名が入りますプラン名が入ります</h4>
-                        <div>
-                        プラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入ります
+                  <?php if ( (!!(array)$reform_plan_obj_field['value']) ) : ?>
+                    <li>
+                      <h3 class="lineupDetail-planTitle">実施したリフォームプラン</h3>
+                      <?php foreach((array)$reform_plan_obj_field['value'] as $reform_plan_field) : ?>
+                        <div class="lineupDetail-planBlock">
+                          <div>
+                            <?php
+                              $reform_image = $reform_plan_field['estate-reform-plan-img'];
+
+                              $size = 'full';
+                              if( $reform_image ) {
+                                echo wp_get_attachment_image( $reform_image, $size );
+                              }
+                            ?>
+                          </div>
+                          <div>
+                            <h4 class="lineupDetail-planSubTitle"><?php echo $reform_plan_field['estate-reform-plan-title'] ?></h4>
+                            <div>
+                              <?php echo $reform_plan_field['estate-reform-plan-detail'] ?>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3 class="lineupDetail-planTitle">実施したリノベーションプラン</h3>
-                    <div class="lineupDetail-planBlock">
-                      <div>
-                        <img src="https://placehold.jp/492x276.png" alt="">
-                      </div>
-                      <div>
-                        <h4 class="lineupDetail-planSubTitle">プラン名が入りますプラン名が入ります</h4>
-                        <div>
-                        プラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入ります
+                      <?php endforeach;?>
+                    </li>
+                  <?php endif; ?>
+                  <?php if ( (!!(array)$renovation_plan_obj_field['value']) ) : ?>
+                    <li>
+                      <h3 class="lineupDetail-planTitle">実施したリノベーションプラン</h3>
+                      <?php foreach((array)$renovation_plan_obj_field['value'] as $renovation_plan_field) : ?>
+                        <div class="lineupDetail-planBlock">
+                          <div>
+                            <?php
+                              $renovation_image = $renovation_plan_field['estate-renovation-plan-img'];
+
+                              $size = 'full';
+                              if( $renovation_image ) {
+                                echo wp_get_attachment_image( $renovation_image, $size );
+                              }
+                            ?>
+                          </div>
+                          <div>
+                            <h4 class="lineupDetail-planSubTitle"><?php echo $renovation_plan_field['estate-renovation-plan-title'] ?></h4>
+                            <div>
+                              <?php echo $renovation_plan_field['estate-renovation-plan-detail'] ?>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h3 class="lineupDetail-planTitle">おすすめのプラン</h3>
-                    <div class="lineupDetail-planBlock">
-                      <div>
-                        <img src="https://placehold.jp/492x276.png" alt="">
-                      </div>
-                      <div>
-                        <h4 class="lineupDetail-planSubTitle">プラン名が入りますプラン名が入ります</h4>
-                        <div>
-                        プラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入ります
+                      <?php endforeach;?>
+                    </li>
+                  <?php endif; ?>
+                  <?php if ( (!!(array)$recommend_plan_obj_field['value']) ) : ?>
+                    <li>
+                      <h3 class="lineupDetail-planTitle">おすすめのプラン</h3>
+                      <?php foreach((array)$recommend_plan_obj_field['value'] as $recommend_plan_field) : ?>
+                        <div class="lineupDetail-planBlock">
+                          <div>
+                            <?php
+                              $recommend_image = $recommend_plan_field['estate-recommend-plan-img'];
+
+                              $size = 'full';
+                              if( $recommend_image ) {
+                                echo wp_get_attachment_image( $recommend_image, $size );
+                              }
+                            ?>
+                          </div>
+                          <div>
+                            <h4 class="lineupDetail-planSubTitle"><?php echo $recommend_plan_field['estate-recommend-plan-title'] ?></h4>
+                            <div>
+                              <?php echo $recommend_plan_field['estate-recommend-plan-detail'] ?>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </li>
+                      <?php endforeach;?>
+                    </li>
+                  <?php endif; ?>
                 </ul>
               </div>
               <div class="lineupDetail-buttonArea">
