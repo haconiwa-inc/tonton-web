@@ -27,7 +27,7 @@ a:hover {
   position: relative;
   margin-left: 15px;
   font-size: 1.4rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .breadcrumbs li a {
@@ -144,8 +144,8 @@ a:hover {
 
   .wrapper-boxes-inner {
     max-width: 100%;
-    padding: 0 6%;
     margin: 0 auto;
+    padding: 0 6%;
   }
 
   .top-button {
@@ -157,18 +157,18 @@ a:hover {
   }
 
   .top-button a {
-    padding: 6.3% 0;
+    padding: 5.2% 0;
     font-size: 1.6rem;
   }
 
   .top-icon {
     position: absolute;
     top: -20px;
-    left: 10px;
+    left: -18px;
     width: 48px;
   }
 
   .top-arrow {
-    right: 12%;
+    right: 15px;
   }
 }
