@@ -175,11 +175,11 @@
   background-color: #fff;
   color: #330A00;
   text-align: center;
-  font-family: "Ropa Sans";
+  font-family: ropa-sans-pro, sans-serif;
 }
 
 .top-notice-item-tag-box {
-  margin-top: 24%;
+  margin-top: 26%;
 }
 
 .top-notice-item-tag-text {
