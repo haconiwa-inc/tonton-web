@@ -59,6 +59,17 @@ a:hover {
   padding: 0 5% 6%;
 }
 
+.wrapper-boxes {
+  box-sizing: content-box;
+  position: relative;
+  margin: 0 auto;
+}
+
+.wrapper-boxes-inner {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .top-button {
   width: 100%;
   margin: 0 auto;
@@ -125,6 +136,16 @@ a:hover {
   .wrapper {
     box-sizing: border-box;
     padding: 0 6% 20%;
+  }
+
+  .wrapper-boxes {
+    box-sizing: border-box;
+  }
+
+  .wrapper-boxes-inner {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 6%;
   }
 
   .top-button {
