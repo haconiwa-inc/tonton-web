@@ -23,8 +23,7 @@ get_header();
           <li><a href="/">TOP</a></li>
           <li><a href="/business/">事業案内</a></li>
           <li><a href="/business/buy/">物件購入</a></li>
-          <li><a href="/news/">お知らせ一覧</a></li>
-          <li><?php the_title(); ?></li>
+          <li>過去の成約物件</li>
         </ul>
 
         <div class="sold-search">
