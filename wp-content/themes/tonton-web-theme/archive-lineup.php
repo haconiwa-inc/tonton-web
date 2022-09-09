@@ -159,6 +159,39 @@ get_header();
             </li>
           </ul>
         </div>
+
+        <!-- ページネーション -->
+        <?php
+          $paged = get_query_var('paged') ? get_query_var('paged') : 1; //pagedの設定
+          $args = array(
+              'post_type' => 'lineup',
+              'posts_per_page' => 2,
+              'paged' => $paged
+          );
+          $my_query = new WP_Query($args);
+          $max_num_pages = $my_query->max_num_pages;  //max_num_pagesの設定　my_queryを使う
+        ?>
+        <?php
+          if ($my_query->have_posts()) :
+          while ($my_query->have_posts()) : $my_query->the_post();   //my_queryを使う
+        ?>
+        <?php endwhile; endif;?>
+        <div class="lineup-pagination">
+          <nav class="pagination">
+            <?php
+            if ($my_query->max_num_pages > 1) {    //max_num_pagesの設定　my_queryを使う
+              echo paginate_links(array(
+                'base' => get_pagenum_link(1) . '%_%',
+                'format' => '?paged=%#%',
+                'current' => max(1, $paged),
+                'total' => $my_query->max_num_pages,  //max_num_pagesの設定
+                'prev_text' => '‹',
+                'next_text' => '›'
+              ));
+            }
+            ?>
+          </nav>
+        </div>
       </div>
       <div class="top-button top-button--green">
         <div class="top-buttonInner">

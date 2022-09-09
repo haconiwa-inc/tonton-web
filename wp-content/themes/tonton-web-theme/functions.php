@@ -210,3 +210,21 @@ function select_to_radio_genre() {
     </script>
     <?php
 }
+
+// TODO: 表示件数修正はいる
+add_filter( 'parse_query', 'custom_per_page' );
+function custom_per_page( $query ) {
+  if ( is_admin() || is_singular() || !is_main_query() ) {
+    return false;
+  }
+
+  if ( get_query_var( 'post_type' ) == 'lineup' ) {
+      $query->set( 'posts_per_page', '2' );
+  }
+}
+
+function add_query_vars_filter( $vars ){
+	$vars[] = "taxonomy";
+	return $vars;
+}
+add_filter( 'query_vars', 'add_query_vars_filter' );

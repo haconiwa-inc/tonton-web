@@ -209,6 +209,11 @@
   transform: translateY(-50%);
 }
 
+/* ページネーション */
+.lineup-pagination {
+  margin-bottom: 3.4%;
+}
+
 @media screen and (max-width:768px) {
   .lineup-block {
     margin: 14.7% auto 0;
