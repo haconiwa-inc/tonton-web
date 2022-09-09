@@ -33,76 +33,39 @@ get_header();
             <?php the_title(); ?>
           </div>
           <div class="sold-detail-main-image">
-            <div
-              style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-              class="swiper mySwiper2"
-            >
+            <div class="swiper mySwiper2">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="https://placehold.jp/880x500.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://placehold.jp/880x500.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://placehold.jp/880x500.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://placehold.jp/880x500.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://placehold.jp/880x500.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://placehold.jp/880x500.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://placehold.jp/880x500.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://placehold.jp/880x500.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://placehold.jp/880x500.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://placehold.jp/880x500.png" alt="">
-                </div>
+                <?php $img_obj_field = get_field_object('estate-img'); ?>
+                <?php
+                  foreach((array)$img_obj_field['value'] as $img_field):
+                  $size = 'full';
+                  $image = $img_field['estate-img-single'];
+                ?>
+                  <div class="swiper-slide">
+                    <?php echo wp_get_attachment_image($image, $size); ?>
+                  </div>
+                <?php
+                  endforeach;
+                  wp_reset_postdata();
+                ?>
               </div>
             </div>
             <div class="news-swiper-second">
               <div thumbsSlider="" class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="https://placehold.jp/880x500.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.jp/880x500.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.jp/880x500.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.jp/880x500.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.jp/880x500.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.jp/880x500.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.jp/880x500.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.jp/880x500.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.jp/880x500.png" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="https://placehold.jp/880x500.png" alt="">
-                  </div>
+                  <?php $img_obj_field = get_field_object('estate-img'); ?>
+                  <?php
+                    foreach((array)$img_obj_field['value'] as $img_field):
+                    $size = 'full';
+                    $image = $img_field['estate-img-single'];
+                  ?>
+                    <div class="swiper-slide">
+                      <?php echo wp_get_attachment_image($image, $size); ?>
+                    </div>
+                  <?php
+                    endforeach;
+                    wp_reset_postdata();
+                  ?>
                 </div>
               </div>
             </div>
