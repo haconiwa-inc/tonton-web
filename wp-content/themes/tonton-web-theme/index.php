@@ -20,11 +20,6 @@ get_header();
       <div class="kv">
         <img class="dis-pc" src="<?php echo get_template_directory_uri(); ?>/images/pc/kv_pc.jpg" alt="とんとんkv_pc">
         <img class="dis-sp" src="<?php echo get_template_directory_uri(); ?>/images/sp/kv_sp.jpg" alt="とんとんkv_sp">
-        <h1>
-          最大限のメリットを生む<br>
-          不動産プロフェッショナルからの<br>
-          ご提案
-        </h1>
         <div class="kv-button kv-modal-open">
           CM動画はこちら
           <div class="kv-button-inner">
@@ -112,7 +107,7 @@ get_header();
                 <div class="top-content-item-title">売る</div>
                 <div class="top-content-item-title-min">sell</div>
                 <div class="top-content-item-subtitle">
-                  マンション・戸建て・土地売却を検討の方へ
+                  マンション・戸建て・土地売却を<br class="dis-sp">検討の方へ
                 </div>
                 <div class="top-content-item-description dis-pc">
                   お客様のマンション・戸建て・土地等の不動産売却はとんとん住宅販売にお任せください。豊富な経験と地域に根付いた知識を生かし資産を最大化します。
@@ -137,7 +132,7 @@ get_header();
                 <div class="top-content-item-title">買う・建てる</div>
                 <div class="top-content-item-title-min">buy / build</div>
                 <div class="top-content-item-subtitle">
-                  新築・中古物件をお探しの方へ
+                  取扱物件を見る
                 </div>
                 <div class="top-content-item-description dis-pc">
                   初めてのマンション・戸建て・土地等の不動産購入でも安心ください。豊富な経験と地域に根付いた知識を生かし資産を最大化します。
@@ -188,7 +183,7 @@ get_header();
                 <div class="top-content-item-title">修繕する</div>
                 <div class="top-content-item-title-min">repair</div>
                 <div class="top-content-item-subtitle">
-                  お住まいのリフォーム・増改築をご検討の方へ
+                  お住まいのリフォーム・増改築を<br class="dis-sp">ご検討の方へ
                 </div>
                 <div class="top-content-item-description dis-pc">
                   リフォーム・リノベーションはとんとんにお任せください。スタイルに合わせた豊富な事例やわかりやすいパッケージを取り揃えてます。
@@ -338,51 +333,56 @@ get_header();
     </section>
 
     <section>
-      <div class="top-about">
-        <div class="top-about-title">私たちについて</div>
-        <div class="top-about-wrapper">
-          <div class="top-about-block">
-            <img src="wp-content/themes/tonton-web-theme/images/about_1.png" alt="">
-            <div class="top-about-box">
-              <div class="top-about-box-text">経営理念</div>
-              <div class="top-about-arrorw">→</div>
+      <div class="top-about-overWrapper">
+        <div class="top-about">
+          <div class="top-about-title">私たちについて</div>
+          <div class="top-about-wrapper">
+            <div class="top-about-block">
+              <img src="wp-content/themes/tonton-web-theme/images/about_1.png" alt="">
+              <div class="top-about-box">
+                <div class="top-about-box-text">経営理念</div>
+                <div class="top-about-arrorw">→</div>
+              </div>
+            </div>
+            <div class="top-about-block">
+              <img src="wp-content/themes/tonton-web-theme/images/about_2.png" alt="">
+              <div class="top-about-box">
+                <div class="top-about-box-text">代表挨拶</div>
+                <div class="top-about-arrorw">→</div>
+              </div>
+            </div>
+            <div class="top-about-block">
+              <img src="wp-content/themes/tonton-web-theme/images/about_3.png" alt="">
+              <div class="top-about-box">
+                <div class="top-about-box-text">会社概要</div>
+                <div class="top-about-arrorw">→</div>
+              </div>
             </div>
           </div>
-          <div class="top-about-block">
-            <img src="wp-content/themes/tonton-web-theme/images/about_2.png" alt="">
-            <div class="top-about-box">
-              <div class="top-about-box-text">経営理念</div>
-              <div class="top-about-arrorw">→</div>
+          <div class="top-about-subtitle">当社へのアクセス</div>
+          <div class="top-about-wrapper">
+            <div class="top-about-item">
+              <div class="top-about-item-title">本社</div>
+              <div class="top-about-item-text">〒063-0034　札幌市西区西野4条3丁目10番1号</div>
+              <div class="top-about-item-text">最寄り駅：地下鉄東西線 発寒南駅から徒歩20分</div>
+              <div class="top-about-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.6156245691864!2d141.27565731519098!3d43.07055109792871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b282f6489ac1b%3A0xd45f1a67b852d28!2z44CSMDYzLTAwMzQg5YyX5rW36YGT5pyt5bmM5biC6KW_5Yy66KW_6YeO77yU5p2h77yT5LiB55uu77yR77yQ4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657822054!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="top-about-item">
+              <div class="top-about-item-title">中央点</div>
+              <div class="top-about-item-text">〒063-0034　札幌市西区西野4条3丁目10番1号</div>
+              <div class="top-about-item-text">最寄り駅：地下鉄東西線 発寒南駅から徒歩20分</div>
+              <div class="top-about-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.3842022163735!2d141.34368531518976!3d43.03334720030831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a1036f06aa5%3A0xc115ef6fd986d426!2z44CSMDY0LTA5MjAg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65Y2X77yS77yQ5p2h6KW_77yR77yQ5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657879810!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
           </div>
-          <div class="top-about-block">
-            <img src="wp-content/themes/tonton-web-theme/images/about_3.png" alt="">
-            <div class="top-about-box">
-              <div class="top-about-box-text">経営理念</div>
-              <div class="top-about-arrorw">→</div>
-            </div>
+          <div class="top-about-icon dis-sp">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/character_icon3.png" alt="キャラクター">
           </div>
         </div>
-        <div class="top-about-subtitle">当社へのアクセス</div>
-        <div class="top-about-wrapper">
-          <div class="top-about-item">
-            <div class="top-about-item-title">本社</div>
-            <div class="top-about-item-text">〒063-0034　札幌市西区西野4条3丁目10番1号</div>
-            <div class="top-about-item-text">最寄り駅：地下鉄東西線 発寒南駅から徒歩20分</div>
-            <div class="top-about-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.6156245691864!2d141.27565731519098!3d43.07055109792871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b282f6489ac1b%3A0xd45f1a67b852d28!2z44CSMDYzLTAwMzQg5YyX5rW36YGT5pyt5bmM5biC6KW_5Yy66KW_6YeO77yU5p2h77yT5LiB55uu77yR77yQ4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657822054!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-          <div class="top-about-item">
-            <div class="top-about-item-title">中央点</div>
-            <div class="top-about-item-text">〒063-0034　札幌市西区西野4条3丁目10番1号</div>
-            <div class="top-about-item-text">最寄り駅：地下鉄東西線 発寒南駅から徒歩20分</div>
-            <div class="top-about-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.3842022163735!2d141.34368531518976!3d43.03334720030831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a1036f06aa5%3A0xc115ef6fd986d426!2z44CSMDY0LTA5MjAg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65Y2X77yS77yQ5p2h6KW_77yR77yQ5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657879810!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="top-about-icon">
+        <div class="top-about-icon dis-pc">
           <img src="<?php echo get_template_directory_uri(); ?>/images/character_icon3.png" alt="キャラクター">
         </div>
       </div>
