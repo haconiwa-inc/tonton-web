@@ -96,6 +96,21 @@ a:hover {
   background-color: #009844;
 }
 
+.top-button input {
+  display: block;
+  padding: 6.7% 0;
+  width: 300px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.8rem;
+  border: 1px solid #009844;
+}
+
+.top-button--green input {
+  color: #fff;
+  background-color: #009844;
+}
+
 .top-button--white a {
   color: #009844;
   background-color: #fff;
@@ -157,6 +172,12 @@ a:hover {
   }
 
   .top-button a {
+    padding: 5.2% 0;
+    font-size: 1.6rem;
+  }
+
+  .top-button input {
+    width: 100%;
     padding: 5.2% 0;
     font-size: 1.6rem;
   }

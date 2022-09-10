@@ -26,79 +26,68 @@ get_header();
           <li>過去の成約物件</li>
         </ul>
 
+        <!-- 1. 検索条件の取得と変数の設定 -->
+        <?php
+          $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+          $args = array(
+            'paged' => $paged, // ページ番号を設定
+            'post_type' => 'sold',
+            'post_status' => 'publish',
+            'posts_per_page' => 12, // 一つのページに表示する件数を設定
+            'orderby' => 'date',
+            'order' => 'DESC'
+          );
+
+          if(!empty($_GET['search_area'])) {
+            foreach($_GET['search_area'] as $value) {
+              $search_area[] = htmlspecialchars($value, ENT_QUOTES);
+            }
+            $tax_query_args[] = array(
+              'taxonomy' => 'sold_area',
+              'terms' => $search_area,
+              'field' => 'slug',
+              'operator' => 'IN'
+            );
+          }
+
+          if(!empty($_GET['search_price'])) {
+            foreach($_GET['search_price'] as $value) {
+              $search_price[] = htmlspecialchars($value, ENT_QUOTES);
+            }
+
+            $tax_query_args[] = array(
+              'taxonomy' => 'sold_area',
+              'terms' => $search_price,
+              'field' => 'slug',
+              'operator' => 'IN'
+            );
+          }
+          if(!empty($_GET['search_area']) || !empty($_GET['search_price'])) {
+            $args += array('tax_query' => array($tax_query_args));
+          }
+        ?>
+
         <div class="sold-search">
-          <div class="sold-serch-box">
-            <div class="sold-search-text">エリア</div>
-            <div class="sold-search-list dis-pc">
-              <input type="checkbox" id="" name="中央区">
-              <label for="">中央区</label>
-              <input type="checkbox" id="" name="北区">
-              <label for="">北区</label>
-              <input type="checkbox" id="" name="東区">
-              <label for="">東区</label>
-              <input type="checkbox" id="" name="白石区">
-              <label for="">白石区</label>
-              <input type="checkbox" id="" name="豊平区">
-              <label for="">豊平区</label>
-              <input type="checkbox" id="" name="厚別区">
-              <label for="">厚別区</label>
-              <input type="checkbox" id="" name="南区">
-              <label for="">南区</label>
-              <input type="checkbox" id="" name="西区">
-              <label for="">西区</label>
-              <input type="checkbox" id="" name="手稲区">
-              <label for="">手稲区</label>
-              <input type="checkbox" id="" name="清田区">
-              <label for="">清田区</label>
+          <!-- 2. 検索フォームの表示 -->
+          <form method="get" action="/business/buy/sold/">
+            <div class="sold-serch-box">
+              <div class="sold-search-text">エリア</div>
+              <div class="sold-search-list">
+                <?php
+                  $areas = get_terms('sold_area', Array('hide_empty' => false));
+                  foreach($areas as $area):
+                    $checked = "";
+                    if(in_array($area->slug, $search_area)) $checked = " checked";
+                ?>
+                <input type="checkbox" name="search_area[]" value="<?php echo esc_attr($area->slug); ?>"<?php echo $checked; ?>>
+                <label><?php echo esc_html($area->name); ?></label>
+                <?php endforeach; ?>
+              </div>
             </div>
-            <div class="sold-search-list dis-sp">
-              <input type="checkbox" id="" name="中央区">
-              <label for="">中央区</label>
-              <input type="checkbox" id="" name="北区">
-              <label for="">北区</label>
-              <input type="checkbox" id="" name="東区">
-              <label for="">東区</label>
-              <input type="checkbox" id="" name="白石区">
-              <label for="">白石区</label>
-            </div>
-            <div class="sold-search-list dis-sp">
-              <input type="checkbox" id="" name="豊平区">
-              <label for="">豊平区</label>
-              <input type="checkbox" id="" name="厚別区">
-              <label for="">厚別区</label>
-              <input type="checkbox" id="" name="南区">
-              <label for="">南区</label>
-              <input type="checkbox" id="" name="西区">
-              <label for="">西区</label>
-            </div>
-            <div class="sold-search-list dis-sp">
-              <input type="checkbox" id="" name="手稲区">
-              <label for="">手稲区</label>
-              <input type="checkbox" id="" name="清田区">
-              <label for="">清田区</label>
-            </div>
-          </div>
-          <div class="sold-serch-box">
-            <div class="sold-search-text">物件種別</div>
-            <div class="sold-search-list">
-              <input type="checkbox" id="" name="中古">
-              <label for="">中古</label>
-              <input type="checkbox" id="" name="新築">
-              <label for="">新築</label>
-              <input type="checkbox" id="" name="戸建">
-              <label for="">戸建</label>
-              <input type="checkbox" id="" name="マンション">
-              <label for="">マンション</label>
-              <input type="checkbox" id="" name="土地">
-              <label for="">土地</label>
-            </div>
-          </div>
-          <div class="sold-button-wrapper">
+            <div class="sold-button-wrapper">
             <div class="top-button top-button--green">
               <div class="top-buttonInner">
-                <a href="/">
-                  検索する
-                </a>
+              <input type="submit" value="検索する" class="submit-button">
                 <div class="top-arrow">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
                     <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
@@ -106,71 +95,57 @@ get_header();
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
-
+        <?php
+          $the_query = new WP_Query($args);
+          if($the_query->have_posts()) :
+        ?>	
         <div class="sold-content">
-          <div class="sold-info">
-            <div class="sold-info-text">
-              エリア：<span>中央区</span>
-            </div>
-            <div class="sold-info-text">
-              物件種別：<span>中古</span>
-            </div>
-          </div>
-
           <ul>
             <?php
-              $args = array(
-                'post_type' => 'sold',
-                'posts_per_page' => 10,
-              );
-              if ( have_posts() ) :
-              while ( have_posts() ) :
-              the_post();
-              $my_posts = get_posts($args);
+              while($the_query->have_posts()) :
+                $the_query->the_post();
             ?>
-              <?php foreach ($my_posts as $post) : setup_postdata($post); ?>
-                <li>
-                  <a href="<?php the_permalink() ?>">
-                    <div class="sold-item">
-                      <?php
-                        $img_obj_field = get_field_object('estate-img');
-                        $image = $img_obj_field['value'][0]['estate-img-single'];
-                        $size = 'full';
-                      ?>
-                      <?php echo wp_get_attachment_image( $image, $size ); ?>
-                      <div class="sold-item-text">
-                        <?php the_title(); ?>
-                      </div>
-                    </div>      
-                  </a>
-                </li>
-              <?php endforeach; ?>
-            <?php 
-              endwhile;
-              endif;
-              wp_reset_postdata();
-            ?>
-          </ul>
-          <nav class="pagination">
-            <div class="nav-links">
-              <a class="prev" href="">&lsaquo;</a>
-              <span aria-current="page" class="page-numbers current">1</span>
-              <a class="page-numbers" href="">2</a>
-              <a class="page-numbers" href="">3</a>
-              <a class="page-numbers" href="">4</a>
-              <a class="page-numbers" href="">5</a>
-              <a class="page-numbers pc" href="">6</a>
-              <a class="page-numbers pc" href="">7</a>
-              <a class="page-numbers pc" href="">8</a>
-              <a class="page-numbers pc" href="">9</a>
-              <a class="page-numbers pc" href="">10</a>
-              <span class="page-numbers dots">…</span>
-              <a class="page-numbers" href="">62</a>
-              <a class="next" href="">&rsaquo;</a>
+              <li>
+                <a href="<?php the_permalink() ?>">
+                  <div class="sold-item">
+                    <?php
+                      $img_obj_field = get_field_object('estate-img');
+                      $image = $img_obj_field['value'][0]['estate-img-single'];
+                      $size = 'full';
+                    ?>
+                    <?php echo wp_get_attachment_image( $image, $size ); ?>
+                    <div class="sold-item-text">
+                      <?php the_title(); ?>
+                    </div>
+                  </div>      
+                </a>
+              </li>
+            <?php endwhile; wp_reset_postdata(); ?>
             </div>
-          </nav>
+            <div class="sold-pagination">
+              <div class="navigation pagination">
+                <?php
+                  // ページャーを設置
+                  $big = 99999;
+                  echo paginate_links(array(
+                    'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                    'total' => $the_query->max_num_pages,
+                    'prev_text' => '&lsaquo;',
+                    'next_text' => '&rsaquo;',
+                    'current' => max( 1, get_query_var('paged') ),
+                    'type' => 'list',
+                  ));
+                  wp_reset_postdata();
+                ?>
+              </div>
+              <?php else : ?>
+              <p>該当する物件はありませんでした。</p>
+              <?php endif; ?>
+              </div>
+            </div>
+          </ul>
           <div class="sold-button-wrapper">
             <div class="sold-button-top">
               <div class="top-button top-button--green">
