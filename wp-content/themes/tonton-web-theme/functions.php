@@ -189,3 +189,25 @@ function my_enqueue_styles() {
   wp_enqueue_style('style', get_stylesheet_uri(), array('ress'), false, 'all');
 }
 add_action('wp_enqueue_scripts', 'my_enqueue_styles');
+
+// 過去のリフォーム事例
+add_action( 'admin_print_footer_scripts', 'select_to_radio_archive_type' );
+function select_to_radio_archive_type() {
+  ?>
+  <script type="text/javascript">
+  jQuery( function( $ ) {
+    // 投稿画面
+    $( '#taxonomy-archive_type input[type=checkbox]' ).each( function() {
+      $( this ).replaceWith( $( this ).clone().attr( 'type', 'radio' ) );
+    } );
+
+    // 一覧画面
+    var archive_type_checklist = $( '.archive_type-checklist input[type=checkbox]' );
+    archive_type_checklist.click( function() {
+      $( this ).parents( '.archive_type-checklist' ).find( ' input[type=checkbox]' ).attr( 'checked', false );
+      $( this ).attr( 'checked', true );
+    } );
+  } );
+  </script>
+  <?php
+}
