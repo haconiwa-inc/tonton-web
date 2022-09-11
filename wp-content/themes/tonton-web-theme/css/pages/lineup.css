@@ -28,15 +28,23 @@
   color: #C9BEBB;
 }
 
-.lineup-tab li {
-  cursor: pointer;
+.lineup-tab input {
+  display: none;
 }
 
-.lineup-tab li.active {
+.lineup-tab input:checked + label {
   color: #4D291F;
 }
 
-.lineup-tab li:not(:last-child) {
+.lineup-tab label {
+  cursor: pointer;
+}
+
+.lineup-tab label.active {
+  color: #4D291F;
+}
+
+.lineup-tab label:not(:last-child) {
   padding-right: 3%;
   margin-right: 3%;
   border-right: 1px solid #4D291F;
@@ -62,7 +70,6 @@
 }
 
 .lineup-item--nothing {
-  display: none;
   margin-top: 7.8%;
 }
 
@@ -241,12 +248,12 @@
     font-size: 1.5rem;
   }
 
-  .lineup-tab li {
+  .lineup-tab label {
     margin-bottom: 5%;
     line-height: 1;
   }
 
-  .lineup-tab li:not(:last-child) {
+  .lineup-tab label:not(:last-child) {
     padding-right: 6.1%;
     margin-right: 6.1%;
   }
