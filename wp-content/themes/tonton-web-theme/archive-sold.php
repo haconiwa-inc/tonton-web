@@ -77,7 +77,7 @@ get_header();
                   $areas = get_terms('sold_area', Array('hide_empty' => false));
                   foreach($areas as $area):
                     $checked = "";
-                    if(in_array($area->slug, $search_area)) $checked = " checked";
+                    if(in_array($area->slug, (array)$search_area)) $checked = " checked";
                 ?>
                 <input type="checkbox" name="search_area[]" value="<?php echo esc_attr($area->slug); ?>"<?php echo $checked; ?>>
                 <label><?php echo esc_html($area->name); ?></label>
