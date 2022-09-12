@@ -27,7 +27,7 @@
         <div class="wrapper-boxes-inner">
             <ul class="breadcrumbs">
               <li><a href="/">TOP</a></li>
-              <li><a href="/business">事業案内</a></li>
+              <li><a href="/business/">事業案内</a></li>
               <li>物件売却</li>
             </ul>
             <div class="sell-block sell-block--top">
@@ -351,7 +351,7 @@
               <h3 class="sell-contactTitle">まずはお気軽に<br class="dis-sp" />お問い合わせください。</h3>
               <div class="sell-button sell-button--green sell-button--contact">
                 <div class="sell-buttonInner sell-buttonInner--small">
-                  <a href="/business/reform">
+                  <a href="/contact/">
                     お問い合わせ
                   </a>
                   <div class="sell-buttonArrow">

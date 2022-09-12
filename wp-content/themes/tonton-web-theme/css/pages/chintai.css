@@ -1,0 +1,320 @@
+/* chintai */
+.chintai-contents {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.chintai-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.chintai-block {
+  width: 100%;
+  margin: 6% auto 0;
+}
+
+.chintai-block--top {
+  margin: 4% auto 0;
+}
+
+.chintai-tab {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
+  color: #4D291F;
+}
+
+.chintai-tab li:not(:last-child) {
+  padding-right: 3%;
+  margin-right: 3%;
+  border-right: 1px solid #4D291F;
+}
+
+.chintai-box {
+  margin-bottom: 6%;
+}
+
+.chintai-list {
+  padding: 0;
+  margin-top: 4.4%;
+}
+.chintai-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 3.4%;
+  margin-bottom: 2.9%;
+  box-shadow: 0px 0px 9px -5px #4d291f;
+  border-radius: 8px;
+  color: #333333;
+}
+
+.chintai-img {
+  width: 30%;
+}
+
+.chintai-img img {
+  width: 100%;
+  height: auto;
+}
+
+.chintai-textArea {
+  width: 70%;
+  margin-left: 3.2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.chintai-textBox {
+  margin-bottom: 3.9%;
+}
+
+.chintai-textArea p {
+  margin: 0;
+}
+
+.chintai-access {
+  font-size: 1.8rem;
+}
+
+.chintai-price {
+  padding: 1.6% 0;
+  font-size: 2.8rem;
+  color: #FC6408;
+}
+
+.chintai-labelList {
+  display: flex;
+  margin-bottom: 3.1%;
+  font-size: 2rem;
+  color: #333;
+}
+
+.chintai-labelList li span {
+  margin-right: 5px;
+  padding: 5px;
+  font-size: 1.6rem;
+  background-color: #4D291F;
+  color: #fff;
+}
+
+.chintai-labelList li {
+  margin-right: 4.1%;
+  font-size: 2rem;
+}
+
+.chintai-accessDetail,
+.chintai-minutes {
+  font-size: 1.8rem;
+}
+
+.chintai-detail {
+  font-size: 1.6rem;
+}
+
+.chintai-buttonArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chintai-button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.chintai-buttonInner {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.chintai-button:last-child {
+  margin-left: 6.2%;
+}
+
+.chintai-button a {
+  display: block;
+  padding: 3.9% 0;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid #009844;
+  font-size: 1.8rem;
+}
+
+.chintai-button--white a {
+  color: #009844;
+  background-color: #fff;
+}
+
+.chintai-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
+
+.chintai-icon {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 60px;
+}
+
+.chintai-buttonArrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width:768px) {
+  .chintai-block {
+    margin: 14.7% auto 0;
+    line-height: 1.8;
+  }
+
+  .chintai-block--top {
+    margin: 9.4% auto 0;
+  }
+
+  .chintai-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 11%;
+    letter-spacing: 2px;
+  }
+
+  .chintai-leadText {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .chintai-tab {
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+  }
+
+  .chintai-tab li {
+    margin-bottom: 5%;
+    line-height: 1;
+  }
+
+  .chintai-tab li:not(:last-child) {
+    padding-right: 6.1%;
+    margin-right: 6.1%;
+  }
+
+  .chintai-box {
+    margin-bottom: 6%;
+  }
+
+  .chintai-list {
+    padding: 0;
+    margin-top: 6.4%;
+  }
+  .chintai-item {
+    display: block;
+    padding: 9.1%;
+    margin-bottom: 9.1%;
+    box-shadow: 0px 0px 8px -5px #4d291f;
+    border-radius: 8px;
+  }
+
+  .chintai-img {
+    width: 100%;
+    margin-bottom: 9.3%;
+  }
+
+  .chintai-textArea {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .chintai-textArea p {
+    margin: 0;
+  }
+
+  .chintai-access {
+    font-size: 1.4rem;
+  }
+
+  .chintai-price {
+    padding: 0.5% 0;
+    font-size: 2rem;
+    color: #FC6408;
+  }
+
+  .chintai-labelList {
+    margin-bottom: 3.7%;
+    font-size: 1.2rem;
+  }
+
+  .chintai-labelList li span {
+    margin-right: 3px;
+    padding: 3px;
+    font-size: 1rem;
+    background-color: #4D291F;
+    color: #fff;
+  }
+
+  .chintai-labelList li {
+    margin-right: 4.1%;
+    font-size: 1.2rem;
+  }
+
+  .chintai-accessDetail,
+  .chintai-minutes {
+    font-size: 1.4rem;
+  }
+
+  .chintai-detail {
+    font-size: 1.2rem;
+  }
+
+  .chintai-buttonArea {
+    display: block;
+    margin-top: 9.3%;
+  }
+
+  .chintai-button {
+    width: 100%;
+  }
+
+  .chintai-button:last-child {
+    margin-top: 9.3%;
+    margin-left: 0;
+  }
+
+  .chintai-buttonInner {
+    width: 100%;
+  }
+
+  .chintai-buttonInner--small {
+    width: 100%;
+    padding: 0 7.3%;
+  }
+
+  .chintai-button a {
+    border-radius: 5px;
+    padding: 4.3% 0;
+    font-size: 1.6rem;
+  }
+
+  .chintai-icon {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 48px;
+  }
+}
+

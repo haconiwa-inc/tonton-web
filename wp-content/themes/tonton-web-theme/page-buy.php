@@ -27,7 +27,7 @@
           <div class="wrapper-boxes-inner">
             <ul class="breadcrumbs">
               <li><a href="/">TOP</a></li>
-              <li><a href="/business">事業案内</a></li>
+              <li><a href="/business/">事業案内</a></li>
               <li>物件購入</li>
             </ul>
             <div class="buy-block buy-block--top">
@@ -80,7 +80,7 @@
                     </div>
                     <div class="buy-button buy-button--green">
                       <div class="buy-buttonInner buy-buttonInner--left">
-                        <a href="/business/reform">
+                        <a href="/business/reform/">
                           リフォームについて
                         </a>
                         <div class="buy-buttonArrow">
@@ -195,7 +195,7 @@
               <h3 class="buy-contactTitle">まずはお気軽に<br class="dis-sp" />お問い合わせください。</h3>
               <div class="buy-button buy-button--green buy-button--contact">
                 <div class="buy-buttonInner buy-buttonInner--small">
-                  <a href="/business/reform">
+                  <a href="/contact/">
                     お問い合わせ
                   </a>
                   <div class="buy-buttonArrow">
@@ -211,7 +211,7 @@
             <div class="buy-block">
               <ul class="buy-linkList">
                 <li>
-                  <a href="/business/buy/lineup">
+                  <a href="/business/buy/lineup/">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/link01.png" alt="">
                     <div class="buy-linkTitle">
                       <p>現在取扱中の物件</p>
@@ -224,7 +224,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/business/sold">
+                  <a href="/business/sold/">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/link02.png" alt="">
                     <div class="buy-linkTitle">
                       <p>過去の成約物件</p>
@@ -237,7 +237,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/business/reform">
+                  <a href="/business/reform/">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/link03.png" alt="">
                     <div class="buy-linkTitle">
                       <p>
