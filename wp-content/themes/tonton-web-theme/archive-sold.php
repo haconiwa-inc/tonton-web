@@ -97,11 +97,17 @@ get_header();
             </div>
           </form>
         </div>
+
         <?php
           $the_query = new WP_Query($args);
           if($the_query->have_posts()) :
         ?>	
         <div class="sold-content">
+          <div class="sold-info">
+            <div class="sold-info-text">
+              エリア：<span><?php echo esc_html($area->name); ?></span>
+            </div>
+          </div>
           <ul>
             <?php
               while($the_query->have_posts()) :

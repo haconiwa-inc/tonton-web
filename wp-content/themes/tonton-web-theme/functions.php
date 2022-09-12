@@ -195,56 +195,58 @@ add_action( 'admin_print_footer_scripts', 'select_to_radio_sold_area' );
 function select_to_radio_sold_area() {
   ?>
   <script type="text/javascript">
-  jQuery( function( $ ) {
-    // 投稿画面
-    $( '#taxonomy-sold_area input[type=checkbox]' ).each( function() {
-      $( this ).replaceWith( $( this ).clone().attr( 'type', 'radio' ) );
-    } );
+    jQuery(function($) {
+      // 投稿画面
+      $('#taxonomy-sold_area input[type=checkbox]').each(function() {
+        $(this).replaceWith($(this).clone().attr('type','radio'));
+      });
 
-    // 一覧画面
-    var sold_area_checklist = $( '.sold_area-checklist input[type=checkbox]' );
-    sold_area_checklist.click( function() {
-      $( this ).parents( '.sold_area-checklist' ).find( ' input[type=checkbox]' ).attr( 'checked', false );
-      $( this ).attr( 'checked', true );
-    } );
-  } );
+      // 一覧画面
+      var sold_area_checklist = $('.sold_area-checklist input[type=checkbox]');
+      sold_area_checklist.click(function() {
+        $(this).parents('.sold_area-checklist').find(' input[type=checkbox]').attr('checked', false);
+        $(this).attr('checked',true);
+      });
+    });
   </script>
   <?php
 }
-function my_mwform_error_message( $error, $key, $rule ) {
-	if ( $key === 'first_name' && $rule === 'noempty' ) {
-	  return '姓を入力してください';
-	}
-	if ( $key === 'last_name' && $rule === 'noempty' ) {
-		return '名を入力してください';
-	}
-	if ( $key === 'first_name_kana' && $rule === 'noempty' ) {
-		return 'セイを入力してください';
-	}
-  if ( $key === 'last_name_kana' && $rule === 'noempty' ) {
-		return 'メイを入力してください';
-	}
-  if ( $key === 'first_name_kana' && $rule === 'katakana' ) {
-		return 'カタカナで入力してください';
-	}
-  if ( $key === 'last_name_kana' && $rule === 'katakana' ) {
-		return 'カタカナで入力してください';
-	}
-  if ( $key === 'tel' && $rule === 'noempty' ) {
-		return '電話番号を入力してください';
-	}
-  if ( $key === 'tel' && $rule === 'tel' ) {
-		return '電話番号の形式ではありません';
-	}
-  if ( $key === 'email01' && $rule === 'noempty' ) {
-		return 'メールアドレスを入力してください';
-	}
-  if ( $key === 'email02' && $rule === 'noempty' ) {
-		return 'メールアドレスを入力してください ';
-	}
-  if ( $key === 'email02' && $rule === 'eq' ) {
-		return 'メールアドレスが一致しません ';
-	}
-	return $error;
+
+
+function my_mwform_error_message($error, $key, $rule) {
+  if ($key === 'first_name' && $rule === 'noempty') {
+    return '姓を入力してください';
   }
-  add_filter( 'mwform_error_message_mw-wp-form-5', 'my_mwform_error_message', 10, 3 );
+  if ($key === 'last_name' && $rule === 'noempty') {
+    return '名を入力してください';
+  }
+  if ($key === 'first_name_kana' && $rule === 'noempty') {
+    return 'セイを入力してください';
+  }
+  if ($key === 'last_name_kana' && $rule === 'noempty') {
+    return 'メイを入力してください';
+  }
+  if ($key === 'first_name_kana' && $rule === 'katakana') {
+    return 'カタカナで入力してください';
+  }
+  if ($key === 'last_name_kana' && $rule === 'katakana') {
+    return 'カタカナで入力してください';
+  }
+  if ($key === 'tel' && $rule === 'noempty') {
+    return '電話番号を入力してください';
+  }
+  if ($key === 'tel' && $rule === 'tel') {
+    return '電話番号の形式ではありません';
+  }
+  if ($key === 'email01' && $rule === 'noempty') {
+    return 'メールアドレスを入力してください';
+  }
+  if ($key === 'email02' && $rule === 'noempty') {
+    return 'メールアドレスを入力してください ';
+  }
+  if ($key === 'email02' && $rule === 'eq') {
+    return 'メールアドレスが一致しません ';
+  }
+  return $error;
+  }
+  add_filter('mwform_error_message_mw-wp-form-5', 'my_mwform_error_message', 10, 3);
