@@ -1,5 +1,4 @@
-(function( $ ) {
-
+(function($) {
   /**
    * initMap
    *
@@ -11,29 +10,28 @@
    * @param   jQuery $el The jQuery element.
    * @return  object The map instance.
    */
-  function initMap( $el ) {
+  function initMap($el) {
+    // Find marker elements within map.
+    var $markers = $el.find('.marker');
 
-      // Find marker elements within map.
-      var $markers = $el.find('.marker');
+    // Create gerenic map.
+    var mapArgs = {
+    zoom : $el.data('zoom') || 16,
+    mapTypeId : google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map($el[0], mapArgs);
 
-      // Create gerenic map.
-      var mapArgs = {
-          zoom        : $el.data('zoom') || 16,
-          mapTypeId   : google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map( $el[0], mapArgs );
+    // Add markers.
+    map.markers = [];
+    $markers.each(function(){
+        initMarker($(this), map);
+    });
 
-      // Add markers.
-      map.markers = [];
-      $markers.each(function(){
-          initMarker( $(this), map );
-      });
+    // Center map based on markers.
+    centerMap(map);
 
-      // Center map based on markers.
-      centerMap( map );
-
-      // Return map instance.
-      return map;
+    // Return map instance.
+    return map;
   }
 
   /**
