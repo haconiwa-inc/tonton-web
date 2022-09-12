@@ -1,0 +1,492 @@
+/* sell */
+.reform-contents {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.reform-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.reform-block {
+  width: 100%;
+  margin: 7.8% auto 0;
+  line-height: 1.8;
+}
+
+.reform-block--wull {
+  width: 100%;
+  max-width: 100%;
+  padding: 6% 0 6.2%;
+  background-color: #F7F4EC;
+  margin: 0 auto;
+}
+
+.reform-block--wullGreen {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 6% 0 6.2%;
+  background: rgba(0, 152, 68, .1);
+  margin: 0 auto;
+}
+
+.reform-block--top {
+  margin: 4% auto 9.8%;
+}
+
+.reform-blockInner {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.reform-subTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0 auto 2.9%;
+  letter-spacing: 4px;
+  font-family: "GenJyuuGothic";
+}
+
+.reform-pointsTitle {
+  font-size: 3.2rem;
+  text-align: left;
+  margin-bottom: 3.9%;
+  font-family: "GenJyuuGothic";
+  letter-spacing: 4px;
+}
+
+.reform-leadText {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.reform-pointList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.reform-pointList li:not(:first-child) {
+  margin-left: 1.9%;
+}
+
+.reform-pointCapture {
+  width: 100%;
+}
+
+.reform-contactTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 0 auto 4.8%;
+  font-family: "GenJyuuGothic";
+}
+
+.reform-exampleList {
+  width: 100%;
+  margin: 0 auto 11.7%;
+}
+
+.reform-exampleList li {
+  margin-bottom: 4.8%;
+  padding: 4.8% 5.3%;
+  background-color: #F7F4EC;
+}
+
+.reform-exampleTitle {
+  position: relative;
+  margin-bottom: 4.9%;
+  padding-bottom: 2.7%;
+  border-bottom: 2px solid #4D291F;
+}
+
+.reform-exampleTitleDeco {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  max-width: 270px;
+}
+
+.reform-exampleTitleInner {
+  width: 32%;
+  max-width: 295px;
+}
+
+.reform-exampleSubtitle {
+  margin: 0 auto 1.6%;
+  font-size: 2rem;
+  color: #009844;
+}
+
+.reform-point01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4.3%;
+}
+
+.reform-tableBlock {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.reform-tableBlock dt {
+  width: 30%;
+  margin-bottom: 4.5%;
+  padding-bottom: 4.5%;
+  color: #4D291F;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #4D291F;
+}
+
+.reform-tableBlock dd {
+  width: 70%;
+  margin-bottom: 4.5%;
+  padding-bottom: 4.5%;
+  color: #333;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #4D291F;
+}
+
+.reform-point01Img {
+  width: 50%;
+  margin-left: 4.3%;
+}
+
+.reform-point02,
+.reform-point03,
+.reform-point04 {
+  font-size: 1.6rem;
+  margin-bottom: 4.3%;
+}
+
+.reform-point05 {
+  font-size: 1.6rem;
+}
+
+.reform-button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reform-buttonInner {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.reform-buttonInner--left {
+  width: 45%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.reform-buttonInner--small {
+  width: 30%;
+}
+
+.reform-linkList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 11.7% auto;
+}
+
+.reform-linkList li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.reform-linkTitle {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.reform-linkArrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.reform-linkList li:not(:first-child) {
+  margin-left: 2.9%;
+}
+
+.reform-button a {
+  display: block;
+  padding: 6.4% 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.reform-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
+
+.reform-icon {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 60px;
+}
+
+@media screen and (max-width:768px) {
+  .reform-block {
+    width: 100%;
+    margin: 14.7% auto 0;
+  }
+
+  .reform-block--wull {
+    width: 100%;
+    max-width: 100%;
+    padding: 14.7% 0 16%;
+    margin: 0 auto;
+  }
+
+  .reform-block--wullGreen {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 9.3% 0 10.7%;
+    margin: 0 auto;
+  }
+
+  .reform-block--top {
+    margin: 9.4% auto 15.4%;
+  }
+
+  .reform-blockInner {
+    max-width: 100%;
+    padding: 0 5.4%;
+  }
+
+  .reform-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 8.9%;
+    letter-spacing: 2px;
+  }
+
+  .reform-leadText {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .reform-pointsTitle {
+    font-size: 2rem;
+    margin-bottom: 10.9%;
+    letter-spacing: 0.8px;
+  }
+
+  .reform-pointList {
+    display: block;
+  }
+
+  .reform-pointList li {
+    display: block;
+    margin-bottom: 8.8%;
+  }
+
+  .reform-pointCapture {
+    width: 100%;
+  }
+
+  .reform-flowTitle {
+    font-size: 2rem;
+  }
+
+  .reform-flowList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .reform-flowList li {
+    position: relative;
+    display: block;
+    margin-bottom: 26px;
+    padding: 9.4% 10%;
+  }
+
+  .reform-flowList li:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 3px;
+    height: 28px;
+    transform: translateX(-50%);
+    background-color: #4D291F;
+    z-index: -1;
+  }
+
+  .reform-stepIcon {
+    width: 70px;
+    margin: 0 auto 10%;
+  }
+
+  .reform-stepText {
+    margin-left: 0;
+  }
+
+  .reform-stepTitle {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+  }
+
+  .reform-stepContent {
+    font-size: 1.4rem;
+  }
+
+  .reform-contactTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto 6.3%;
+  }
+
+  .reform-exampleList {
+    max-width: 100%;
+    margin: 0 auto 18.2%;
+  }
+
+  .reform-exampleList li {
+    margin-bottom: 7.7%;
+    padding: 7.7%;
+  }
+
+  .reform-exampleTitle {
+    position: relative;
+    margin-bottom: 9.1%;
+    padding-bottom: 6.2%;
+    border-bottom: 2px solid #4D291F;
+  }
+
+  .reform-exampleTitleDeco {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    max-width: 83px;
+  }
+
+  .reform-exampleTitleInner {
+    width: 80%;
+    max-width: 184px;
+  }
+
+  .reform-exampleSubtitle {
+    margin: 0 auto 4.8%;
+    font-size: 1.6rem;
+  }
+
+  .reform-point01 {
+    display: block;
+    margin-bottom: 9.1%;
+  }
+
+  .reform-tableBlock {
+    width: 100%;
+    margin-bottom: 6.6%;
+  }
+
+  .reform-tableBlock dt {
+    width: 40%;
+    margin-bottom: 5.5%;
+    padding-bottom: 6.6%;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #4D291F;
+  }
+
+  .reform-tableBlock dd {
+    width: 60%;
+    margin: 0 auto 5.5%;
+    padding-bottom: 6.6%;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #4D291F;
+  }
+
+  .reform-point01Img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .reform-point02,
+  .reform-point03,
+  .reform-point04 {
+    font-size: 1.4rem;
+    margin-bottom: 9.1%;
+  }
+
+  .reform-point05 {
+    font-size: 1.4rem;
+  }
+
+  .reform-button {
+    width: 100%;
+  }
+
+  .reform-buttonInner {
+    width: 100%;
+  }
+
+  .reform-buttonInner--small {
+    width: 100%;
+    padding: 0 8.5%;
+  }
+
+  .reform-linkList {
+    display: block;
+    margin: 18.2% auto;
+  }
+
+  .reform-linkList li a {
+    margin-bottom: 6.8%;
+  }
+
+  .reform-linkTitle {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .reform-linkArrow {
+    right: 10px;
+  }
+
+  .reform-linkList li:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .reform-button a {
+    padding: 7.6% 0;
+    font-size: 1.6rem;
+  }
+
+  .reform-icon {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 48px;
+  }
+}
+
