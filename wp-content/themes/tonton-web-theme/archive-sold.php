@@ -111,7 +111,6 @@ get_header();
             <div class="sold-info-text">
               エリア：<span>
                 <?php
-                  $areas_search = $tax_query_args[0]["terms"];
                   foreach($areas_search as $area_search) :
                   echo esc_html($area_search);
                 ?>
