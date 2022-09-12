@@ -72,46 +72,71 @@ get_header();
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
-          <div class="archive-detail-box">
-            <div class="archive-detail-item-title">
-              実施したリフォームプラン
-            </div>
-            <div class="archive-detail-item-box">
-              <div class="archive-detail-item">
-                <div class="archive-detail-item-image">
-                  <img src="https://placehold.jp/500x300.png" alt="">
-                </div>
+
+          <?php $reform_plan_obj_field = get_field_object('estate-reform-plan'); ?>
+          <?php $renovation_plan_obj_field = get_field_object('estate-renovation-plan'); ?>
+          <?php if ( (!!(array)$reform_plan_obj_field['value']) ) : ?>
+            <div class="archive-detail-box">
+              <div class="archive-detail-item-title">
+                実施したリフォームプラン
               </div>
-              <div class="archive-detail-item">
-                <div class="archive-detail-item-text">
-                  プラン名が入りますプラン名が入ります
+              <?php foreach((array)$reform_plan_obj_field['value'] as $reform_plan_field) : ?>
+                <div class="archive-detail-item-box">
+                  <div class="archive-detail-item">
+                    <div class="archive-detail-item-image">
+                      <?php
+                        $reform_image = $reform_plan_field['estate-reform-plan-img'];
+
+                        $size = 'full';
+                        if( $reform_image ) {
+                          echo wp_get_attachment_image( $reform_image, $size );
+                        }
+                      ?>
+                    </div>
+                  </div>
+                  <div class="archive-detail-item">
+                    <div class="archive-detail-item-text">
+                      <?php echo $reform_plan_field['estate-reform-plan-title'] ?>
+                    </div>
+                    <div class="archive-detail-item-description">
+                      <?php echo $reform_plan_field['estate-reform-plan-detail'] ?>
+                    </div>
+                  </div>
                 </div>
-                <div class="archive-detail-item-description">
-                  プラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入ります
-                </div>
-              </div>
+              <?php endforeach;?>
             </div>
-          </div>
-          <div class="archive-detail-box">
-            <div class="archive-detail-item-title">
-              実施したリフォームプラン
-            </div>
-            <div class="archive-detail-item-box">
-              <div class="archive-detail-item">
-                <div class="archive-detail-item-image">
-                  <img src="https://placehold.jp/500x300.png" alt="">
-                </div>
+          <?php endif; ?>
+          <?php if ( (!!(array)$renovation_plan_obj_field['value']) ) : ?>
+            <div class="archive-detail-box">
+              <div class="archive-detail-item-title">
+                実施したリノベーションプラン
               </div>
-              <div class="archive-detail-item">
-                <div class="archive-detail-item-text">
-                  プラン名が入りますプラン名が入ります
+              <?php foreach((array)$renovation_plan_obj_field['value'] as $renovation_plan_field) : ?>
+                <div class="archive-detail-item-box">
+                  <div class="archive-detail-item">
+                    <div class="archive-detail-item-image">
+                      <?php
+                        $renovation_image = $renovation_plan_field['estate-renovation-plan-img'];
+
+                        $size = 'full';
+                        if( $renovation_image ) {
+                          echo wp_get_attachment_image( $renovation_image, $size );
+                        }
+                      ?>
+                    </div>
+                  </div>
+                  <div class="archive-detail-item">
+                    <div class="archive-detail-item-text">
+                      <?php echo $renovation_plan_field['estate-renovation-plan-title'] ?>
+                    </div>
+                    <div class="archive-detail-item-description">
+                      <?php echo $renovation_plan_field['estate-renovation-plan-detail'] ?>
+                    </div>
+                  </div>
                 </div>
-                <div class="archive-detail-item-description">
-                  プラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入りますプラン詳細内容が入ります
-                </div>
-              </div>
+              <?php endforeach;?>
             </div>
-          </div>
+          <?php endif; ?>
           <div class="archive-detail-button-wrapper">
             <div class="archive-detail-button-prev">
               <a href="/archive/">
