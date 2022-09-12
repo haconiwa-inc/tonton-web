@@ -130,6 +130,7 @@
 
 .archive-search-list {
   margin-left: 4%;
+  font-weight: bold;
   width: 80%;
 }
 
@@ -152,6 +153,7 @@
 
 .archive-search-text {
   font-size: 2.2rem;
+  font-weight: bold;
   font-family: "GenJyuuGothic";
   width: 100px;
 }
@@ -169,7 +171,9 @@
 
 .archive-item-text {
   margin: 4% 0;
+  color: #333;
   font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .archive-content {
@@ -185,6 +189,7 @@
 }
 
 .archive-info-text {
+  font-weight: bold;
   margin-left: 3%;
   font-size: 1.6rem;
 }
@@ -349,6 +354,7 @@
   .archive-item-text {
     margin: 3% 0;
     font-size: 1.6rem;
+    font-weight: bold;
   }
 
   .archive-box {
