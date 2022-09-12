@@ -210,3 +210,41 @@ function select_to_radio_genre() {
   </script>
   <?php
 }
+
+function my_mwform_error_message($error, $key, $rule) {
+  if ($key === 'first_name' && $rule === 'noempty') {
+    return '姓を入力してください';
+  }
+  if ($key === 'last_name' && $rule === 'noempty') {
+    return '名を入力してください';
+  }
+  if ($key === 'first_name_kana' && $rule === 'noempty') {
+    return 'セイを入力してください';
+  }
+  if ($key === 'last_name_kana' && $rule === 'noempty') {
+    return 'メイを入力してください';
+  }
+  if ($key === 'first_name_kana' && $rule === 'katakana') {
+    return 'カタカナで入力してください';
+  }
+  if ($key === 'last_name_kana' && $rule === 'katakana') {
+    return 'カタカナで入力してください';
+  }
+  if ($key === 'tel' && $rule === 'noempty') {
+    return '電話番号を入力してください';
+  }
+  if ($key === 'tel' && $rule === 'tel') {
+    return '電話番号の形式ではありません';
+  }
+  if ($key === 'email01' && $rule === 'noempty') {
+    return 'メールアドレスを入力してください';
+  }
+  if ($key === 'email02' && $rule === 'noempty') {
+    return 'メールアドレスを入力してください ';
+  }
+  if ($key === 'email02' && $rule === 'eq') {
+    return 'メールアドレスが一致しません ';
+  }
+  return $error;
+  }
+  add_filter('mwform_error_message_mw-wp-form-1832', 'my_mwform_error_message', 10, 3);

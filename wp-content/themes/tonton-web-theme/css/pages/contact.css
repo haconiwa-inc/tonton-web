@@ -1,0 +1,423 @@
+.contact-contents {
+  width: 100%;
+  margin: 0 auto 6.2%;
+}
+.contact-flow {
+  max-width: 430px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contact-flow li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-flow li:not(:first-of-type)::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -171px;
+  width: 548%;
+  top: 51%;
+  height: 4px;
+  background-color: #c9bebb;
+}
+.contact-flow li .contact-flow-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #c9bebb;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+.contact-flow li.active .contact-flow-icon {
+  background-color: #000;
+  color: #fff;
+}
+.contact-flow li span {
+  color: #D2D2D2;
+}
+.contact-flow li.active span {
+  color: #000;
+}
+.contact-flow li .contact-flow-num {
+  font-size: 2.4rem;
+  font-family: ropa-sans-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.contact-flow li .contact-flow-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.contact-subTitle {
+  font-size: 3.2rem;
+  text-align: center;
+  letter-spacing: 4px;
+  margin: 0 auto 2.9%;
+  font-family: "GenJyuuGothic";
+}
+.contact-leadText {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 7%;
+  font-weight: bold;
+}
+.contact-leadText--complete {
+  font-size: 2.0rem;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-weight: bold;
+  font-family: "GenJyuuGothic";
+}
+.contact-table {
+  max-width: 1024px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.contact-table-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  border-bottom: 1px solid #f6f4f4;
+  padding-bottom: 4%;
+  margin-bottom: 4%;
+}
+.contact-table-item-title {
+  vertical-align: top;
+  text-align: left;
+  width: 32%;
+  font-size: 2.0rem;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
+}
+.contact-table-item-contents {
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 68%;
+}
+.contact-table-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 3%;
+}
+.contact-table-box:first-child {
+  margin-top: 0;
+}
+.contact-table-box-inner {
+  width: 49%;
+  margin-left: 2%;
+}
+.contact-table-box-inner:first-child {
+  margin-left: 0;
+}
+.contact-table-box-inner-label {
+  margin-bottom: 2%;
+  display: block;
+}
+.contact-table-box-inner-label--top {
+  margin-top: 2%;
+}
+.input-required {
+  font-size: 1.2rem;
+  color: #fff;
+  background: #4d291f;
+  border-radius: 4px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  padding: 1.5% 2%;
+  vertical-align: middle;
+  margin-left: 3%;
+}
+.input-any {
+  font-size: 1.2rem;
+  color: #4d291f;
+  background: #f6f4f4;
+  border-radius: 4px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  padding: 1.5% 2%;
+  vertical-align: middle;
+  margin-left: 3%;
+}
+.contact-table-item-contents input[type=text],
+.contact-table-item-contents input[type=email],
+.contact-table-item-contents textarea {
+  background: #f6f4f4;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 100%;
+}
+.is-error input[type=text],
+.is-error input[type=email] {
+  background: #fdd9d6;
+}
+.contact-table-item-contents input[type=text]::placeholder,
+.contact-table-item-contents textarea::placeholder {
+  color: #bbbaba;
+}
+.contact-table-item-contents input[type=radio] {
+  display: none;
+}
+.mwform-radio-field span {
+  position: relative;
+  margin-left: 22px
+}
+.mwform-radio-field {
+  display: inline-block;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+.mwform-radio-field:last-of-type {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.mwform-radio-field span::before,
+.mwform-radio-field span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 50%
+}
+.mwform-radio-field span::before {
+  width: 18px;
+  height: 18px;
+  background-color: #f6f4f4;
+  top: 0px;
+  left: -25px
+}
+.mwform-radio-field span::after {
+  width: 8px;
+  height: 8px;
+  background-color: #f6f4f4;
+  top: 5px;
+  left: -20px
+}
+.mwform-radio-field input:checked + span::after {
+  background-color: #4d291f
+}
+.mw_wp_form .horizontal-item + .horizontal-item {
+  margin-left: 0;
+}
+.contact-table .input-box-inner .input-box-inner-label {
+  display: block;
+}
+.mwform-beconfirm-block {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+.mwform_beconfirm {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6.4% 0;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+  background-color: #d6d6d6;
+  border-radius: 8px;
+}
+.mwform_beconfirm::after {
+  content: "";
+  background-image: url("../../images/common/arrow.png");
+  width: 16px;
+  height: 12px;
+  position: absolute;
+  right: 5%;
+  top: 40%;
+}
+.mw_wp_form .error {
+  color: #ff1700;
+  font-size: 1.6rem;
+  margin-top: 2%;
+}
+.mw_wp_form_confirm .confirm-hidden {
+  display: none;
+}
+.mwform-submit-block {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.mwform_back {
+  position: relative;
+  box-sizing: border-box;
+  width: 300px;
+  padding: 1.8% 0;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #009844;
+  background-color: #fff;
+  border: 2px solid #009844;
+  border-radius: 8px;
+}
+.mwform_back::before {
+  content: "";
+  background-image: url("../../images/common/arrow02.png");
+  width: 16px;
+  height: 12px;
+  position: absolute;
+  left: 5%;
+  top: 40%;
+}
+.mwform_submit {
+  position: relative;
+  box-sizing: border-box;
+  width: 300px;
+  padding: 2% 0;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+  background-color: #009844;
+  border-radius: 8px;
+  margin-left: 2%;
+}
+.mwform_submit::after {
+  content: "";
+  background-image: url("../../images/common/arrow.png");
+  width: 16px;
+  height: 12px;
+  position: absolute;
+  right: 5%;
+  top: 40%;
+}
+@media screen and (max-width:768px) {
+  .contact-contents {
+    margin: 0 auto;
+  }
+  .contact-flow {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+  .contact-flow li:not(:first-of-type)::before {
+    left: -25.9vw;
+    width: 27.4vw;
+  }
+  .contact-flow li .contact-flow-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .contact-flow li .contact-flow-num {
+    font-size: 1.9rem;
+  }
+  .contact-flow li .contact-flow-text {
+    font-size: 1.3rem;
+  }
+  .contact-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 8%;
+    letter-spacing: 2px;
+  }
+  .contact-leadText {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    text-align: left;
+    margin-bottom: 15%;
+  }
+  .contact-leadText--complete {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-family: "GenJyuuGothic";
+  }
+  
+  .contact-table {
+    max-width: 100%;
+  }
+  .contact-table-item {
+    display: block;
+    border-bottom: 2px solid #f6f4f4;
+    padding-bottom: 6%;
+    margin-bottom: 6%;
+  }
+  .contact-table-item-title {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 4%;
+  }
+  .contact-table-item-contents {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .contact-table-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 3%;
+  }
+  .contact-table-box:first-child {
+    margin-top: 0;
+  }
+  .contact-table-box-inner {
+    width: 48%;
+    margin-left: 4%;
+  }
+  .contact-table-box-inner:first-child {
+    margin-left: 0;
+  }
+  .contact-table-box-inner-label {
+    margin-bottom: 3%;
+  }
+  .contact-table-box-inner-label--top {
+    margin-top: 3%;
+  }
+  .input-required,
+  .input-any {
+    font-size: 1.0rem;
+    border-radius: 2px;
+    padding: 1.5% 3%;
+    margin-left: 2%;
+  }
+  .contact-table-item-contents input[type=text],
+  .contact-table-item-contents input[type=email],
+  .contact-table-item-contents textarea {
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .contact-table-item-contents input[type=text]::placeholder,
+  .contact-table-item-contents textarea::placeholder {
+    font-size: 1.2rem;
+  }
+  .mwform-radio-field span {
+    position: relative;
+    margin-left: 20px
+  }
+  .mwform-radio-field {
+    margin-right: 4%;
+    margin-bottom: 3%;
+  }
+  .mwform-radio-field span::before {
+    width: 15px;
+    height: 15px;
+    top: 0px;
+    left: -22px;
+  }
+  .mwform-radio-field span::after {
+    width: 7px;
+    height: 7px;
+    top: 4px;
+    left: -18px;
+  }
+  .mwform-beconfirm-block {
+    width: 100%;
+    padding-top: 5%;
+  }
+  .mwform_beconfirm {
+    padding: 7.2% 0;
+    font-size: 1.6rem;
+  }
+  .mw_wp_form .error {
+    font-size: 1.2rem;
+    margin-top: 3%;
+  }  
+}
