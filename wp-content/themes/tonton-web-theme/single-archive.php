@@ -139,7 +139,7 @@ get_header();
           <?php endif; ?>
           <div class="archive-detail-button-wrapper">
             <div class="archive-detail-button-prev">
-              <a href="/archive/">
+              <a href="/business/reform/results-archive/">
                 <div class="archive-detail-button">
                   物件一覧に戻る
                 </div>
