@@ -141,6 +141,10 @@
   width: 112px;
 }
 
+.lineupDetail-detailAll .lineupDetail-tableArea {
+  width: 100%;
+}
+
 .lineupDetail-detailAll .lineupDetail-tableArea dl {
   padding-bottom: 2.6%;
 }
