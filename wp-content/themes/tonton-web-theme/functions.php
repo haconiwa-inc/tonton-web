@@ -194,7 +194,7 @@ add_action( 'admin_print_footer_scripts', 'select_to_radio_genre' );
 function select_to_radio_genre() {
   ?>
   <script type="text/javascript">
-    $(function() {
+    jQuery(function($) {
       // 投稿画面
       $( '#taxonomy-genre input[type=checkbox]' ).each( function() {
         $(this).replaceWith($(this).clone().attr('type', 'radio'));
@@ -203,8 +203,8 @@ function select_to_radio_genre() {
       // 一覧画面
       var genre_checklist = $('.genre-checklist input[type=checkbox]');
       genre_checklist.click( function() {
-				$(this).parents('.genre-checklist').find(' input[type=checkbox]').attr('checked', false);
-				$(this).attr('checked', true);
+          $(this).parents('.genre-checklist').find(' input[type=checkbox]').attr('checked', false);
+          $(this).attr('checked', true);
       });
     });
   </script>
