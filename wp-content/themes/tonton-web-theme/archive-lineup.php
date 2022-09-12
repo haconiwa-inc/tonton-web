@@ -157,7 +157,7 @@ get_header();
                       </li>
                       <li class="lineup-button lineup-button--green">
                         <div class="lineup-buttonInner">
-                          <a href="/contact">
+                          <a href="/contact/">
                             お問い合わせ
                           </a>
                           <div class="lineup-buttonArrow">

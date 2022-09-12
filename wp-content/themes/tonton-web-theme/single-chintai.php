@@ -55,7 +55,7 @@ get_header();
       <div class="wrapper-boxes-inner">
         <ul class="breadcrumbs">
           <li><a href="/">TOP</a></li>
-          <li><a href="/business/chintai">賃貸物件</a></li>
+          <li><a href="/business/chintai/">賃貸物件</a></li>
           <li><?php echo the_title(); ?></li>
         </ul>
         <div class="chintaiDetail-block chintaiDetail-block--top">
@@ -92,7 +92,7 @@ get_header();
                 </dl>
                 <div class="chintaiDetail-button chintaiDetail-button--green">
                   <div class="chintaiDetail-buttonInner chintaiDetail-buttonInner--left">
-                    <a href="/contact">
+                    <a href="/contact/">
                       お問い合わせ
                     </a>
                     <div class="chintaiDetail-buttonArrow">
@@ -314,7 +314,7 @@ get_header();
               <div class="chintaiDetail-buttonArea">
                 <div class="chintaiDetail-button chintaiDetail-button--white">
                   <div class="chintaiDetail-buttonInner chintaiDetail-buttonInner--back">
-                    <a href="/business/chintai">
+                    <a href="/business/chintai/">
                       物件一覧に戻る
                     </a>
                     <div class="chintaiDetail-buttonArrow chintaiDetail-buttonArrow--back">
@@ -349,7 +349,7 @@ get_header();
           <h3 class="chintaiDetail-contactTitle">まずはお気軽に<br class="dis-sp" />お問い合わせください。</h3>
           <div class="chintaiDetail-button chintaiDetail-button--green">
             <div class="chintaiDetail-buttonInner chintaiDetail-buttonInner--small">
-              <a href="/business/reform">
+              <a href="/contact/">
                 お問い合わせ
               </a>
               <div class="chintaiDetail-buttonArrow">

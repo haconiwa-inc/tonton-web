@@ -62,7 +62,7 @@ get_header();
       <div class="wrapper-boxes-inner">
         <ul class="breadcrumbs">
           <li><a href="/">TOP</a></li>
-          <li><a href="/business/buy/lineup">売買物件</a></li>
+          <li><a href="/business/buy/lineup/">売買物件</a></li>
           <li><?php echo the_title(); ?></li>
         </ul>
         <div class="lineupDetail-block lineupDetail-block--top">
@@ -92,7 +92,7 @@ get_header();
                 </dl>
                 <div class="lineupDetail-button lineupDetail-button--green">
                   <div class="lineupDetail-buttonInner lineupDetail-buttonInner--small">
-                    <a href="/contact">
+                    <a href="/contact/">
                       お問い合わせ
                     </a>
                     <div class="lineupDetail-buttonArrow">
@@ -394,7 +394,7 @@ get_header();
               <div class="lineupDetail-buttonArea">
                 <div class="lineupDetail-button lineupDetail-button--white">
                   <div class="lineupDetail-buttonInner lineupDetail-buttonInner--back">
-                    <a href="/business/buy/lineup">
+                    <a href="/business/buy/lineup/">
                       物件一覧に戻る
                     </a>
                     <div class="lineupDetail-buttonArrow lineupDetail-buttonArrow--back">
@@ -429,7 +429,7 @@ get_header();
             <h3 class="lineupDetail-contactTitle">まずはお気軽に<br class="dis-sp" />お問い合わせください。</h3>
             <div class="lineupDetail-button lineupDetail-button--green">
               <div class="lineupDetail-buttonInner lineupDetail-buttonInner--small">
-                <a href="/business/reform">
+                <a href="/contact/">
                   お問い合わせ
                 </a>
                 <div class="lineupDetail-buttonArrow">

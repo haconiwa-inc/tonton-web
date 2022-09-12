@@ -131,7 +131,7 @@ get_header();
                     </li>
                     <li class="chintai-button chintai-button--green">
                       <div class="chintai-buttonInner">
-                        <a href="#">
+                        <a href="/contact/">
                           お問い合わせ
                         </a>
                         <div class="chintai-buttonArrow">

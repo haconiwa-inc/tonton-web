@@ -39,7 +39,7 @@
             </div>
             <ul class="business-itemList">
               <li>
-                <a href="/business/sell">
+                <a href="/business/sell/">
                   <div class="business-itemCapture">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/item01.jpg" alt="">
                   </div>
@@ -57,7 +57,7 @@
                 </a>
               </li>
               <li>
-                <a href="/business/buy">
+                <a href="/business/buy/">
                   <div class="business-itemCapture">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/item02.jpg" alt="">
                   </div>
@@ -75,7 +75,7 @@
                 </a>
               </li>
               <li>
-                <a href="/business/reform">
+                <a href="/business/reform/">
                   <div class="business-itemCapture">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/item03.jpg" alt="">
                   </div>
@@ -95,7 +95,7 @@
             </ul>
             <div class="business-button business-button--green">
               <div class="business-buttonInner">
-                <a href="/contact">
+                <a href="/contact/">
                   お問い合わせ
                 </a>
                 <div class="business-buttonArrow">
@@ -113,7 +113,7 @@
                 </div>
                 <div class="business-button business-button--green">
                   <div class="business-buttonInner business-buttonInner--2col">
-                    <a href="#">
+                    <a href="/business/buy/lineup/">
                       取扱物件を見る
                     </a>
                     <div class="business-buttonArrow">
@@ -131,7 +131,7 @@
                 </div>
                 <div class="business-button business-button--green">
                   <div class="business-buttonInner business-buttonInner--2col">
-                    <a href="/content">
+                    <a href="/content/">
                       お問い合わせ
                     </a>
                     <div class="business-buttonArrow">
