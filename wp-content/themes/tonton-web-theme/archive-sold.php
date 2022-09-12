@@ -77,9 +77,9 @@ get_header();
                   $areas = get_terms('sold_area', Array('hide_empty' => false));
                   foreach($areas as $area):
                     $checked = "";
-                    if(in_array($area->slug, (array)$search_area)) $checked = " checked";
+                    if(in_array($area->name, (array)$search_area)) $checked = " checked";
                 ?>
-                <input type="checkbox" name="search_area[]" value="<?php echo esc_attr($area->slug); ?>"<?php echo $checked; ?>>
+                <input type="checkbox" name="search_area[]" value="<?php echo esc_attr($area->name); ?>"<?php echo $checked; ?>>
                 <label><?php echo esc_html($area->name); ?></label>
                 <?php endforeach; ?>
               </div>
@@ -103,11 +103,23 @@ get_header();
           if($the_query->have_posts()) :
         ?>	
         <div class="sold-content">
+          <?php
+            $areas_search = $tax_query_args[0]["terms"];
+            if($areas_search):
+          ?>
           <div class="sold-info">
             <div class="sold-info-text">
-              エリア：<span><?php echo esc_html($area->name); ?></span>
+              エリア：<span>
+                <?php
+                  $areas_search = $tax_query_args[0]["terms"];
+                  foreach($areas_search as $area_search) :
+                  echo esc_html($area_search);
+                ?>
+                <?php endforeach; ?>
+              </span>
             </div>
           </div>
+          <?php endif; ?>
           <ul>
             <?php
               while($the_query->have_posts()) :
