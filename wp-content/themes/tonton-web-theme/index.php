@@ -56,7 +56,7 @@ get_header();
             <div class="top-notice-item-tag">
               <div class="top-notice-item-tag-box">
                 <div class="top-notice-item-tag-text">merit</div>
-                <div class="top-notice-item-tag-num">0 1</div>
+                <div class="top-notice-item-tag-num">01</div>
               </div>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/images/notice_1.png" alt="">
@@ -68,7 +68,7 @@ get_header();
             <div class="top-notice-item-tag">
               <div class="top-notice-item-tag-box">
                 <div class="top-notice-item-tag-text">merit</div>
-                <div class="top-notice-item-tag-num">0 2</div>
+                <div class="top-notice-item-tag-num">02</div>
               </div>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/images/notice_2.png" alt="">
@@ -80,7 +80,7 @@ get_header();
             <div class="top-notice-item-tag">
               <div class="top-notice-item-tag-box">
                 <div class="top-notice-item-tag-text">merit</div>
-                <div class="top-notice-item-tag-num">0 3</div>
+                <div class="top-notice-item-tag-num">03</div>
               </div>
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/images/notice_3.png" alt="">
