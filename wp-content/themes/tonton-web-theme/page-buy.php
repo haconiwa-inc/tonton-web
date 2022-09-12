@@ -195,7 +195,7 @@
               <h3 class="buy-contactTitle">まずはお気軽に<br class="dis-sp" />お問い合わせください。</h3>
               <div class="buy-button buy-button--green buy-button--contact">
                 <div class="buy-buttonInner buy-buttonInner--small">
-                  <a href="/business/reform/">
+                  <a href="/contact/">
                     お問い合わせ
                   </a>
                   <div class="buy-buttonArrow">
