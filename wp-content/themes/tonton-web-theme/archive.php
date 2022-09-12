@@ -33,7 +33,7 @@ get_header();
             'paged' => $paged, // ページ番号を設定
             'post_type' => 'archive',
             'post_status' => 'publish',
-            'posts_per_page' => 1, // 一つのページに表示する件数を設定
+            'posts_per_page' => 12, // 一つのページに表示する件数を設定
             'orderby' => 'date',
             'order' => 'DESC'
           );
@@ -65,9 +65,9 @@ get_header();
                   $types = get_terms('archive_type', Array('hide_empty' => false));
                   foreach($types as $type):
                     $checked = "";
-                    if(in_array($type->slug, $search_type)) $checked = " checked";
+                    if(in_array($type->name, $search_type)) $checked = " checked";
                 ?>
-                <input type="checkbox" name="search_type[]" value="<?php echo esc_attr($type->slug); ?>"<?php echo $checked; ?>>
+                <input type="checkbox" name="search_type[]" value="<?php echo esc_attr($type->name); ?>"<?php echo $checked; ?>>
                 <label><?php echo esc_html($type->name); ?></label>
                 <?php endforeach; ?>
               </div>
@@ -90,11 +90,22 @@ get_header();
           if($the_type->have_posts()) :
         ?>
         <div class="archive-content">
-          <div class="archive-info">
-            <div class="archive-info-text">
-              物件種別：<span><?php echo esc_html($type->name); ?></span>
+          <?php
+            $types_search = $tax_query_args[0]["terms"];
+            if($types_search):
+          ?>
+            <div class="archive-info">
+              <div class="archive-info-text">
+                物件種別：<span>
+                  <?php
+                    foreach($types_search as $type_search) :
+                    echo esc_html($type_search);
+                  ?>
+                  <?php endforeach; ?>
+                </span>
+              </div>
             </div>
-          </div>
+          <?php endif; ?>
           <ul>
             <?php
               while($the_type->have_posts()) :
