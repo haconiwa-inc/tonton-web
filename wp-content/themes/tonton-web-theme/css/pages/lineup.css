@@ -1,0 +1,368 @@
+/* lineup */
+.lineup-contents {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lineup-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.lineup-block {
+  width: 100%;
+  margin: 6% auto 0;
+}
+
+.lineup-block--top {
+  margin: 4% auto 0;
+}
+
+.lineup-tab {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
+  color: #C9BEBB;
+}
+
+.lineup-tab input {
+  display: none;
+}
+
+.lineup-tab input:checked + label {
+  color: #4D291F;
+}
+
+.lineup-tab label {
+  cursor: pointer;
+}
+
+.lineup-tab label.active {
+  color: #4D291F;
+}
+
+.lineup-tab label:not(:last-child) {
+  padding-right: 3%;
+  margin-right: 3%;
+  border-right: 1px solid #4D291F;
+}
+
+.lineup-box {
+  margin-bottom: 6%;
+}
+
+.lineup-list {
+  padding: 0;
+  margin-top: 4.4%;
+}
+.lineup-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 3.4%;
+  margin-bottom: 2.9%;
+  box-shadow: 0px 0px 9px -5px #4d291f;
+  border-radius: 8px;
+  color: #333333;
+}
+
+.lineup-item--nothing {
+  margin-top: 7.8%;
+}
+
+.lineup-item--nothing p {
+  font-size: 3.2rem;
+  text-align: center;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
+  color: #262626;
+}
+
+.lineup-item--nothingImg {
+  width: 100%;
+  max-width: 224px;
+  margin: 4.9% auto 7.8%;
+}
+
+.lineup-img {
+  position: relative;
+  width: 30%;
+}
+
+.lineup-img img {
+  width: 100%;
+  height: auto;
+}
+
+.lineup-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 20px;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+/* タクソノミー増えたら更新必要 */
+.lineup-label--new-building {
+  background-color: #619800;
+}
+
+/*　TODO: デザインにないので確認 */
+.lineup-label--construction {
+  background-color: #D6412D;
+}
+
+/*　TODO: デザインにないので確認 */
+.lineup-label--land {
+  background-color: #D9882A;
+}
+
+.lineup-label--old-building {
+  background-color: #007D98;
+}
+
+.lineup-textArea {
+  width: 70%;
+  margin-left: 3.2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.lineup-textArea p {
+  margin: 0;
+}
+
+.lineup-textBox {
+  margin-bottom: 3.9%;
+}
+
+.lineup-access {
+  font-size: 1.8rem;
+}
+
+.lineup-price {
+  padding: 1.6% 0;
+  font-size: 2.8rem;
+  color: #FC6408;
+}
+
+.lineup-accessDetail,
+.lineup-minutes {
+  font-size: 1.8rem;
+}
+
+.lineup-detail {
+  font-size: 1.6rem;
+}
+
+.lineup-buttonArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lineup-button {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lineup-buttonInner {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lineup-button:last-child {
+  margin-left: 6.2%;
+}
+
+.lineup-button a {
+  display: block;
+  padding: 3.9% 0;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid #009844;
+  font-size: 1.8rem;
+}
+
+.lineup-button--white a {
+  color: #009844;
+  background-color: #fff;
+}
+
+.lineup-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
+
+.lineup-icon {
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  width: 60px;
+}
+
+.lineup-buttonArrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+/* ページネーション */
+.lineup-pagination {
+  margin-bottom: 3.4%;
+}
+
+@media screen and (max-width:768px) {
+  .lineup-block {
+    margin: 14.7% auto 0;
+    line-height: 1.8;
+  }
+
+  .lineup-block--top {
+    margin: 9.4% auto 0;
+  }
+
+  .lineup-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 11%;
+    letter-spacing: 2px;
+  }
+
+  .lineup-leadText {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  .lineup-tab {
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+  }
+
+  .lineup-tab label {
+    margin-bottom: 5%;
+    line-height: 1;
+  }
+
+  .lineup-tab label:not(:last-child) {
+    padding-right: 6.1%;
+    margin-right: 6.1%;
+  }
+
+  .lineup-box {
+    margin-bottom: 6%;
+  }
+
+  .lineup-list {
+    padding: 0;
+    margin-top: 6.4%;
+  }
+  .lineup-item {
+    display: block;
+    padding: 9.1%;
+    margin-bottom: 9.1%;
+    box-shadow: 0px 0px 8px -5px #4d291f;
+    border-radius: 8px;
+  }
+
+  .lineup-item--nothing {
+    margin-top: 9.1%;
+  }
+
+  .lineup-item--nothing p {
+    font-size: 2rem;
+  }
+
+  .lineup-item--nothingImg {
+    max-width: 112px;
+    margin: 9.1% auto 18.2%;
+  }
+
+  .lineup-img {
+    width: 100%;
+    margin-bottom: 9.3%;
+  }
+
+  .lineup-label {
+    padding: 2px 10px;
+    font-size: 1.2rem;
+  }
+
+  .lineup-textArea {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .lineup-textArea p {
+    margin: 0;
+  }
+
+  .lineup-access {
+    font-size: 1.4rem;
+  }
+
+  .lineup-price {
+    padding: 0.5% 0;
+    font-size: 2rem;
+    color: #FC6408;
+  }
+
+  .lineup-accessDetail,
+  .lineup-minutes {
+    font-size: 1.4rem;
+  }
+
+  .lineup-detail {
+    font-size: 1.2rem;
+  }
+
+  .lineup-buttonArea {
+    display: block;
+    margin-top: 9.3%;
+  }
+
+  .lineup-button {
+    width: 100%;
+  }
+
+  .lineup-button:last-child {
+    margin-top: 9.3%;
+    margin-left: 0;
+  }
+
+  .lineup-buttonInner {
+    width: 100%;
+  }
+
+  .lineup-buttonInner--small {
+    width: 100%;
+    padding: 0 7.3%;
+  }
+
+  .lineup-button a {
+    border-radius: 5px;
+    padding: 4.3% 0;
+    font-size: 1.6rem;
+  }
+
+  .lineup-icon {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    width: 48px;
+  }
+}
+

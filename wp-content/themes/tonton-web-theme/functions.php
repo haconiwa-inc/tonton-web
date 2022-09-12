@@ -190,6 +190,28 @@ function my_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'my_enqueue_styles');
 
+// 売買物件・賃貸物件実装
+add_action( 'admin_print_footer_scripts', 'select_to_radio_genre' );
+function select_to_radio_genre() {
+  ?>
+  <script type="text/javascript">
+    jQuery(function($) {
+      // 投稿画面
+      $( '#taxonomy-genre input[type=checkbox]' ).each( function() {
+        $(this).replaceWith($(this).clone().attr('type', 'radio'));
+      });
+
+      // 一覧画面
+      var genre_checklist = $('.genre-checklist input[type=checkbox]');
+      genre_checklist.click( function() {
+          $(this).parents('.genre-checklist').find(' input[type=checkbox]').attr('checked', false);
+          $(this).attr('checked', true);
+      });
+    });
+  </script>
+  <?php
+}
+
 // 過去の成約物件
 add_action( 'admin_print_footer_scripts', 'select_to_radio_sold_area' );
 function select_to_radio_sold_area() {
@@ -212,7 +234,7 @@ function select_to_radio_sold_area() {
   <?php
 }
 
-
+// お問合せ
 function my_mwform_error_message($error, $key, $rule) {
   if ($key === 'first_name' && $rule === 'noempty') {
     return '姓を入力してください';
@@ -249,4 +271,4 @@ function my_mwform_error_message($error, $key, $rule) {
   }
   return $error;
   }
-  add_filter('mwform_error_message_mw-wp-form-5', 'my_mwform_error_message', 10, 3);
+  add_filter('mwform_error_message_mw-wp-form-1832', 'my_mwform_error_message', 10, 3);
