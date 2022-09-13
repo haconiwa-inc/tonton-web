@@ -1,0 +1,430 @@
+/* company */
+.company-contents {
+  width: 100%;
+  margin: 0 auto 6.2%;
+}
+.company-contents img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+.company-block {
+  width: 100%;
+  margin: 7.8% auto 0;
+  line-height: 1.8;
+}
+.company-block--wull {
+  width: 100%;
+  max-width: 100%;
+  padding: 6% 0 6.2%;
+  background-color: #F7F4EC;
+  margin: 0 auto;
+}
+.company-block--top {
+  margin: 4% auto 9.8%;
+}
+.company-blockInner {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.company-subTitle {
+  font-size: 3.2rem;
+  margin: 0 auto 2.9%;
+  letter-spacing: 4px;
+  font-family: "GenJyuuGothic";
+}
+.company-imgArea {
+  position: relative;
+  margin-bottom: 3%;
+}
+.company-imgText {
+  position: absolute;
+  bottom: 6%;
+  right: -6%;
+  background: #fff;
+  padding: 1% 2%;
+  font-size: 2.4rem;
+  width: 43%;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
+}
+.company-leadText {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.company-leadText p {
+  margin-bottom: 4%;
+}
+.company-leadText-right {
+  text-align: right;
+  display: block;
+  margin-top: 2%;
+}
+.company-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.company-table th {
+  font-size: 1.8rem;
+  text-align: left;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
+  border-bottom: 2px solid #4d291f;
+  padding: 2% 0;
+  vertical-align: top;
+}
+.company-table td {
+  font-size: 1.8rem;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #4d291f;
+  padding: 2% 0;
+}
+.company-about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+  color: #333;
+}
+.company-about-item {
+  margin-right: 5%;
+  width: 100%;
+}
+.company-about-item:last-child {
+  margin-right: 0;
+}
+.company-about-item-title {
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+.company-about-item-text {
+  font-size: 1.6rem;
+}
+.company-about-map {
+  margin-top: 5%;
+}
+.company-staffList {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.company-staffList li {
+  text-align: center;
+  width: 18%;
+  margin-right: 2.5%;
+  margin-bottom: 2.5%;
+}
+@media screen and (min-width:768px) {
+  .company-staffList li:nth-child(5n) {
+    margin-right: 0;
+  }
+}
+.company-staffPosition {
+  font-size: 1.2rem;
+  margin-top: 3%;
+}
+.company-staffName {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 1%;
+}
+.company-staffName span {
+  font-size: 1.2rem;
+}
+/* modal */
+.company-modalInner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.company-staffImg-m {
+  width: 30%;
+}
+.company-staffTextArea-m {
+  text-align: left;
+  width: 65%;
+  margin-left: 5%;
+}
+.company-staffPosition-m {
+  font-size: 1.6rem;
+}
+.company-staffName-m {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 3%;
+}
+.company-staffName-m span {
+  font-size: 1.4rem;
+}
+.company-table-m {
+  width: 100%;
+  border-collapse: collapse;
+}
+.company-table-m th {
+  font-size: 1.6rem;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
+  border-bottom: 2px solid #e3e3e3;
+  padding: 1.5% 0;
+  vertical-align: top;
+  width: 24%;
+}
+.company-table-m td {
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-bottom: 2px solid #e3e3e3;
+  padding: 1.5% 0;
+  width: 76%;
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0,0,0,50%);
+  padding: 40px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+  z-index: 1;
+
+}
+.modal-container:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.modal-container.active{
+  opacity: 1;
+  visibility: visible;
+}
+.modal-body{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+}
+.modal-close{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.company-modalContent{
+  background: #fff;
+  padding: 50px 40px;
+}
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  .company-block--wull {
+    padding: 6% 20px 6.2%;
+    box-sizing: border-box;
+  }
+  .company-imgText {
+    right: 0;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .company-block {
+    width: 100%;
+    margin: 14.7% auto 0;
+  }
+  .company-block--wull {
+    width: 100%;
+    max-width: 100%;
+    padding: 14.7% 0 16%;
+    margin: 0 auto;
+  }
+  .company-block--top {
+    margin: 9.4% auto 15.4%;
+  }
+  .company-blockInner {
+    max-width: 100%;
+    padding: 0 5.4%;
+  }
+  .company-subTitle {
+    font-size: 2rem;
+    text-align: left;
+    margin: 0 auto 8.9%;
+    letter-spacing: 2px;
+  }
+  .company-leadText {
+    font-size: 1.4rem;
+    text-align: left;
+    font-weight: bold;
+  }
+  .company-pointsTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10.9%;
+    letter-spacing: 0.8px;
+  }
+  .company-imgArea {
+    margin-bottom: 15%;
+  }
+  .company-imgText {
+    bottom: -15%;
+    right: -5%;
+    padding: 2% 3%;
+    font-size: 1.4rem;
+    width: 83%;
+    line-height: 1.4;
+  }
+  .company-leadText p {
+    margin-bottom: 10%;
+  }
+  .company-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .company-table th {
+    font-size: 1.4rem;
+    padding: 4% 0;
+  }
+  .company-table td {
+    font-size: 1.4rem;
+    padding: 4% 0;
+  }
+  .company-about-wrapper {
+    display: block;
+    margin-top: 8%;
+  }
+  .company-about-item {
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+  .company-about-item:last-child {
+    margin-bottom: 0;
+  }
+  .company-about-item-title {
+    font-size: 1.5rem;
+  }
+  .company-about-item-text {
+    font-size: 1.4rem;
+  }
+  .company-about-map {
+    margin-top: 5%;
+  }
+  .company-staffList {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .company-staffList li {
+    text-align: center;
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+  }
+  .company-staffList li:nth-child(2n) {
+    margin-right: 0;
+  }
+  .company-staffPosition {
+    font-size: 1.0rem;
+    margin-top: 5%;
+  }
+  .company-staffName {
+    font-size: 1.4rem;
+  }
+  .company-staffName span {
+    font-size: 1.0rem;
+  }
+  /* modal */
+  .company-modalInner {
+    display: block;
+  }
+  .company-staffImg-m {
+    width: 60%;
+    margin: 0 auto 10%;
+  }
+  .company-staffTextArea-m {
+    width: 100%;
+    margin-left: 0;
+  }
+  .company-staffPosition-m {
+    font-size: 1.4rem;
+  }
+  .company-staffName-m {
+    font-size: 2.0rem;
+    margin-bottom: 10%;
+  }
+  .company-staffName-m span {
+    font-size: 1.0rem;
+  }
+  .company-table-m {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .company-table-m th {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #4d291f;
+    padding: 3% 0;
+    vertical-align: top;
+    width: 35%;
+  }
+  .company-table-m td {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #4d291f;
+    padding: 3% 0;
+    width: 65%;
+  }
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,50%);
+    padding: 40px 20px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .modal-container:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  .modal-container.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal-body{
+    width: 99%;
+  }
+  .modal-close{
+    top: 20px;
+    right: 20px;
+    width: 23px;
+    height: 23px;
+  }
+  .company-modalContent{
+    padding: 60px 20px;
+  }
+}
+
