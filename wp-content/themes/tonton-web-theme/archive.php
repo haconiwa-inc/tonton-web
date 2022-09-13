@@ -23,7 +23,7 @@ get_header();
           <li><a href="/">TOP</a></li>
           <li><a href="/business/">事業案内</a></li>
           <li><a href="/business/buy/">物件購入</a></li>
-          <li><a href="business/reform/">リフォーム/リノベーション</a></li>
+          <li><a href="/business/reform/">リフォーム/リノベーション</a></li>
           <li>過去のリフォーム施工例</li>
         </ul>
 
