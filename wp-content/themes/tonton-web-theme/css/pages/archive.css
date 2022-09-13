@@ -1,0 +1,739 @@
+/* TODO navは別途commonにかく */
+.nav-links {
+  width: 100%;
+}
+
+.prev,
+.next {
+  display: inline-block;
+  margin: 8px 0;
+  text-decoration: none;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  padding: 8px 0;
+  font-size: 2rem;
+  box-sizing: border-box;
+  color: #C9BEBB;
+  line-height: 1;
+  border: 2px solid #4D291F;
+  color: #4D291F;
+}
+
+.page-numbers {
+  display: inline-block;
+  margin: 8px 0;
+  text-decoration: none;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  padding: 8px 0;
+  font-size: 2rem;
+  box-sizing: border-box;
+  color: #C9BEBB;
+  line-height: 1;
+}
+
+.pagination {
+  margin-top: 14%;
+  text-align: center;
+}
+
+.pagination a:hover {
+  opacity: 0.7;
+}
+
+.pagination .current {
+  font-weight: bold;
+  color: #4D291F;
+}
+
+.archive-icon {
+  position: absolute;
+  left: 26%;
+  bottom: 50%;
+}
+
+.archive-icon img {
+  width: 100%;
+}
+
+.archive-button-wrapper {
+  position: relative;
+  margin-top: 6%;
+}
+
+.archive-button {
+  position: relative;
+  width: 300px;
+  padding: 1%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+  background-color: #009844;
+  border-radius: 10px;
+}
+
+.archive-button a {
+  display: block;
+  padding: 6.4% 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.archive-button--green a {
+  color: #fff;
+  background-color: #009844;
+}
+
+.archive-header {
+  position: relative;
+  width: 100%;
+}
+
+.archive-header img {
+  width: 100%;
+}
+
+.archive-header-box {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+.archive-wrapper {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2% 5% 6%;
+}
+
+.archive-search {
+  margin-top: 10%;
+  color: #333;
+}
+
+.archive-serch-box {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.archive-search-list {
+  margin-left: 4%;
+  font-weight: bold;
+  width: 80%;
+}
+
+.archive-serch-box:first-child {
+  margin-top: 0;
+}
+
+.archive-serch-box input {
+  margin-left: 1%;
+}
+
+.archive-serch-box input:first-child {
+  margin-left: 0;
+}
+
+.archive-serch-box label {
+  margin-left: 1%;
+  font-size: 1.6rem;
+}
+
+.archive-search-text {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: "GenJyuuGothic";
+  width: 100px;
+}
+
+.archive-search-button {
+  max-width: 350px;
+  padding: 2.5% 0;
+  margin: 5% auto 0;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+  background-color: #009844;
+  border-radius: 10px;
+}
+
+.archive-item-text {
+  margin: 4% 0;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.archive-content {
+  margin-top: 10%;
+}
+
+.archive-info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.archive-info-text {
+  font-weight: bold;
+  margin-left: 3%;
+  font-size: 1.6rem;
+}
+
+.archive-info-text:first-child {
+  margin-left: 0;
+}
+
+.archive-content ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2% 3%;
+  width: 100%;
+  height: 80%;
+}
+
+.archive-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.archive-box {
+  padding: 10% 20%;
+  background-color: rgba(0, 152,68, 0.3)
+}
+
+.archive-text {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+}
+
+.archive-inquiries-button {
+  width: 350px;
+  padding: 2.5% 0;
+  margin: 2% auto 0;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+  background-color: #009844;
+  border-radius: 10px;
+}
+
+.archive-nav {
+  margin-top: 30%;
+}
+
+.archive-block {
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.archive-block--wull {
+  width: 100%;
+  max-width: 100%;
+  padding: 6% 0 6.2%;
+  background-color: #F7F4EC;
+  margin: 0 auto;
+}
+
+.archive-block--wullGreen {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 6% 0 6.2%;
+  background: rgba(0, 152, 68, .1);
+  margin: 0 auto;
+}
+
+.archive-block--top {
+  margin: 4% auto 0;
+}
+
+.archive-blockInner {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.archive-buttonInner {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.archive-buttonInner--left {
+  width: 45%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.archive-buttonInner--small {
+  width: 30%;
+}
+
+.archive-contactTitle {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto 4%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .archive-header-box {
+    top: 30%;
+  }
+
+  .archive-wrapper {
+    padding: 5% 6% 20%;
+  }
+
+  .archive-serch-box {
+    display: block;
+  }
+
+  .archive-search-list {
+    margin-left: 0;
+  }
+
+  .archive-search-text {
+    font-size: 1.8rem;
+    margin-bottom: 5%;
+  }
+
+  .archive-serch-box {
+    margin-top: 8%;
+  }
+
+  .archive-serch-box input {
+    margin-left: 2%;
+  }
+
+  .archive-serch-box input:first-child {
+    margin-left: 0;
+  }
+
+  .archive-serch-box label {
+    margin-left: 2%;
+  }
+
+  .archive-button-wrapper {
+    margin-top: 10%;
+  }
+
+  .archive-search-button {
+    width: 100%;
+    margin-top: 8%;
+    padding: 5% 0;
+  }
+
+  .archive-content {
+    margin-top: 16%;
+  }
+
+  .archive-content ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3% 5%;
+    height: 100%;
+  }
+
+  .archive-item-text {
+    margin: 3% 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  .archive-box {
+    padding: 10% 6%;
+    background-color: rgba(0, 152,68, 0.3)
+  }
+
+  .archive-icon {
+    left: -6%;
+  }
+
+  .archive-button {
+    width: 100%;
+    margin-top: 8%;
+    padding: 2% 0;
+  }
+
+  .archive-text {
+    font-size: 2rem;
+  }
+
+  .archive-inquiries-button {
+    width: 100%;
+    margin-top: 8%;
+    padding: 5% 0;
+  }
+
+  .archive-block--wullGreen {
+    padding: 9.3% 0 10.7%;
+  }
+
+  .archive-blockInner {
+    max-width: 100%;
+    padding: 0 5.4%;
+  }
+
+  .archive-contactTitle {
+    font-size: 1.8rem;
+  }
+
+  .top-buttonInner {
+    padding: 0;
+  }
+
+  .top-icon {
+    position: absolute;
+    top: -20px;
+    left: -13px;
+    width: 60px;
+  }
+}
+
+/* detail */
+.archive-detail-header {
+  position: relative;
+  width: 100%;
+}
+
+.archive-detail-header img {
+  width: 100%;
+}
+
+.archive-detail-header-box {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+.archive-detail-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2% 10% 6%;
+}
+
+.archive-detail-content-title {
+  margin-top: 10%;
+  font-size: 2.6rem;
+  font-family: "GenJyuuGothic";
+}
+
+.archive-detail-main-image {
+  position: relative;
+  width: 80%;
+  margin: 5% auto;
+}
+
+.archive-detail-main-image img {
+  width: 100%;
+}
+
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1.8rem;
+  background: #fff;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.archive-mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.archive-mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.archive-mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.archive-mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: auto;
+  bottom: 8%;
+  color: #4D291F;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #4D291F;
+}
+
+.swiper-button-next {
+  right: -6%;
+}
+.swiper-button-prev {
+  left: -6%;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.2rem;
+}
+/* swiper end */
+
+.archive-detail-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 10% auto 0;
+}
+
+.archive-detail-button-prev {
+  width: 50%;
+}
+
+.archive-detail-button {
+  width: 300px;
+  padding: 5.7% 0;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #009844;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #009844;
+}
+
+.archive-detail-button-top {
+  position: relative;
+  width: 50%;
+}
+
+.archive-button-top {
+  width: 300px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+  background-color: #009844;
+  border-radius: 10px;
+}
+
+.archive-detail-box {
+  margin-top: 8%;
+}
+
+.archive-detail-item-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.archive-detail-item {
+  width: 50%;
+}
+
+.archive-detail-item:last-child {
+  margin-left: 5%;
+}
+
+.archive-detail-item-title {
+  font-size: 2.8rem;
+  font-family: "GenJyuuGothic";
+}
+
+.archive-detail-item-image {
+}
+
+.archive-detail-item-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.archive-detail-item-text {
+  font-size: 2.2rem;
+  font-family: "GenJyuuGothic";
+}
+
+.archive-detail-item-description {
+  margin-top: 3%;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .archive-detail-header-box {
+    top: 30%;
+  }
+
+  .archive-detail-wrapper {
+    max-width: none;
+    padding: 5% 6% 20%;
+  }
+
+  .archive-detail-content-title {
+    font-size: 1.8rem;
+  }
+
+  .archive-detail-main-image {
+    width: 100%;
+  }
+
+  .archive-swiper-second {
+    padding: 0 10%;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .archive-detail-item-box {
+    display: block;
+  }
+
+  .archive-detail-item {
+    width: 100%;
+  }
+
+  .archive-detail-item-image {
+    margin-top: 10%;
+  }
+
+  .archive-detail-item:last-child {
+    margin-left: 0;
+  }
+
+  .archive-detail-item-title {
+    margin-top: 5%;
+    font-size: 1.6rem;
+  }
+
+  .archive-detail-item-text {
+    margin-top: 8%;
+    font-size: 1.5rem;
+  }
+
+  .archive-detail-item-description {
+    font-size: 1.2rem;
+  }
+
+  .archive-detail-button-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+  .archive-detail-button-prev,
+  .archive-detail-button-top {
+    width: 100%;
+  }
+
+  .archive-detail-button-top {
+    margin-top: 12%;
+  }
+
+  .archive-detail-button,
+  .archive-button-top {
+    width: 100%;
+  }
+
+  .archive-detail-item-box {
+    display: block;
+  }
+
+  .archive-detail-item {
+    width: 100%;
+  }
+
+  .archive-detail-item-image {
+    margin-top: 10%;
+  }
+
+  .archive-detail-item:last-child {
+    margin-left: 0;
+  }
+
+  .archive-detail-item-title {
+    margin-top: 5%;
+    font-size: 1.6rem;
+  }
+
+  .archive-detail-item-text {
+    margin-top: 8%;
+    font-size: 1.5rem;
+  }
+
+  .archive-detail-item-description {
+    font-size: 1.2rem;
+  }
+}
