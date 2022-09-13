@@ -50,19 +50,19 @@ get_header();
             );
           }
 
-          if(!empty($_GET['search_price'])) {
-            foreach($_GET['search_price'] as $value) {
-              $search_price[] = htmlspecialchars($value, ENT_QUOTES);
+          if(!empty($_GET['search_type'])) {
+            foreach($_GET['search_type'] as $value) {
+              $search_type[] = htmlspecialchars($value, ENT_QUOTES);
             }
 
             $tax_query_args[] = array(
-              'taxonomy' => 'sold_area',
-              'terms' => $search_price,
+              'taxonomy' => 'sold_type',
+              'terms' => $search_type,
               'field' => 'slug',
               'operator' => 'IN'
             );
           }
-          if(!empty($_GET['search_area']) || !empty($_GET['search_price'])) {
+          if(!empty($_GET['search_area']) || !empty($_GET['search_type'])) {
             $args += array('tax_query' => array($tax_query_args));
           }
         ?>
@@ -81,6 +81,20 @@ get_header();
                 ?>
                 <input type="checkbox" name="search_area[]" value="<?php echo esc_attr($area->name); ?>"<?php echo $checked; ?>>
                 <label><?php echo esc_html($area->name); ?></label>
+                <?php endforeach; ?>
+              </div>
+            </div>
+            <div class="sold-serch-box">
+              <div class="sold-search-text">物件種別</div>
+              <div class="sold-search-list">
+                <?php
+                  $types = get_terms('sold_type', Array('hide_empty' => false));
+                  foreach($types as $type):
+                    $checked = "";
+                    if(in_array($type->name, (array)$search_type)) $checked = " checked";
+                ?>
+                <input type="checkbox" name="search_type[]" value="<?php echo esc_attr($type->name); ?>"<?php echo $checked; ?>>
+                <label><?php echo esc_html($type->name); ?></label>
                 <?php endforeach; ?>
               </div>
             </div>
@@ -103,22 +117,37 @@ get_header();
           if($the_query->have_posts()) :
         ?>	
         <div class="sold-content">
-          <?php
-            $areas_search = $tax_query_args[0]["terms"];
-            if($areas_search):
-          ?>
           <div class="sold-info">
-            <div class="sold-info-text">
-              エリア：<span>
-                <?php
-                  foreach($areas_search as $area_search) :
-                  echo esc_html($area_search);
-                ?>
-                <?php endforeach; ?>
-              </span>
-            </div>
+            <?php
+              $areas_search = $tax_query_args[0]["terms"];
+              if($areas_search):
+            ?>
+              <div class="sold-info-text">
+                エリア：<span>
+                  <?php
+                    foreach($areas_search as $area_search) :
+                    echo esc_html($area_search);
+                  ?>
+                  <?php endforeach; ?>
+                </span>
+              </div>
+            <?php endif; ?>
+            <?php
+              $types_search = $tax_query_args[1]["terms"];
+              if($types_search):
+            ?>
+              <div class="sold-info-text">
+                物件種別：<span>
+                  <?php
+                    foreach($types_search as $type_search) :
+                    echo esc_html($type_search);
+                  ?>
+                  <?php endforeach; ?>
+                </span>
+              </div>
+            <?php endif; ?>
           </div>
-          <?php endif; ?>
+          
           <ul>
             <?php
               while($the_query->have_posts()) :
