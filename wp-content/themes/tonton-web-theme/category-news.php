@@ -187,7 +187,7 @@ get_header();
               </nav>
               <?php else : ?>
                 <div class="news-item-none">
-                  <p>該当する物件はありませんでした。</p>
+                  <p>該当するお知らせはありませんでした。</p>
                 </div>
               <?php endif; ?>
 
