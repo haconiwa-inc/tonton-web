@@ -59,13 +59,13 @@ get_header();
           <!-- 2. 検索フォームの表示 -->
           <form method="get" action="/business/reform/results-archive/">
             <div class="archive-serch-box">
-              <div class="archive-search-text">エリア</div>
+              <div class="archive-search-text">物件種別</div>
               <div class="archive-search-list">
                 <?php
                   $types = get_terms('archive_type', Array('hide_empty' => false));
                   foreach($types as $type):
                     $checked = "";
-                    if(in_array($type->name, $search_type)) $checked = " checked";
+                    if(in_array($type->name, (array)$search_type)) $checked = " checked";
                 ?>
                 <input type="checkbox" name="search_type[]" value="<?php echo esc_attr($type->name); ?>"<?php echo $checked; ?>>
                 <label><?php echo esc_html($type->name); ?></label>
