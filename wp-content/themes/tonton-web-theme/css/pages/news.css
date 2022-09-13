@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.news-content {
+
+}
+
 .news-tab-top,
 .news-tab-bottom {
   margin-top: 5%;
@@ -27,6 +31,11 @@
   border-right: 1px solid #4D291F;
 }
 
+.news-tab-top li input[type="radio"]:checked + span,
+.news-tab-bottom li input[type="radio"]:checked + span {
+  color: #4D291F;
+}
+
 .news-tab-top li:first-child,
 .news-tab-bottom li:first-child {
   text-align: start;
@@ -35,6 +44,11 @@
 .news-tab-top li:last-child,
 .news-tab-bottom li:last-child {
   border-right: none;
+}
+
+.news-tab-top input,
+.news-tab-bottom input {
+  display: none;
 }
 
 .news-select {
@@ -100,8 +114,17 @@
 }
 
 .news-description {
+  color: #333;
   font-size: 1.6rem;
   margin-left: 5%;
+}
+
+.news-item-none {
+  margin: 10% 0;
+  font-size: 2rem;
+  font-family: "GenJyuuGothic";
+  color: #333;
+  text-align: center;
 }
 
 .news-description a {
@@ -175,6 +198,10 @@
   line-height: 1;
 }
 
+.nav-links li {
+  border: none;
+}
+
 .pagination a:hover {
   opacity: 0.7;
 }
@@ -189,6 +216,11 @@
   .news-tab-bottom ul {
     margin-top: 8%;
     font-size: 1.8rem;
+  }
+
+  .news-tab-top li,
+  .news-tab-bottom li {
+    font-size: 1.5rem;
   }
 
   .news-list {
@@ -212,6 +244,11 @@
     margin: 4% 0;
   }
 
+  .news-item-none {
+    margin: 10% 0;
+    font-size: 1.8rem;
+  }
+
   .news-button-wrapper {
     margin-top: 20%;
   }
@@ -231,10 +268,6 @@
   .news-button {
     max-width: 100%;
     padding: 5% 0;
-  }
-
-  .top-buttonInner {
-    padding: 0 5%;
   }
 }
 
@@ -267,13 +300,15 @@
   font-size: 1.6rem;
   width: 120px;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 4px;
   text-align: center;
 }
 
 .news-detail-title {
   margin-top: 2%;
   font-size: 3rem;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
 }
 
 .news-detail-date {
@@ -349,13 +384,23 @@
 }
 
 @media screen and (max-width: 768px) {
+  .news-detail-content {
+    margin-top: 12%;
+  }
+
   .news-detail-tags {
+    padding: 3px;
     font-size: 1.2rem;
-    width: 100px;
+    width: 80px;
   }
 
   .news-detail-title {
+    margin-top: 5%;
     font-size: 2.2rem;
+  }
+
+  .news-detail-date {
+    font-size: 1.6rem;
   }
   
   .news-detail-img img {
@@ -388,7 +433,7 @@
 
   .news-detail-button,
   .news-button-top {
-    max-width: 100%;
+    width: 100%;
     padding: 5% 0;
   }
 
