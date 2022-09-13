@@ -18,7 +18,7 @@ get_header();
       'paged' => $paged,
       'post_type' => 'lineup',
       'post_status' => 'publish',
-      'posts_per_page' => 2,
+      'posts_per_page' => 5,
       'orderby' => 'date',
       'order' => 'DESC'
     );
