@@ -4,13 +4,11 @@
   width: 100%;
 }
 
-.news-content {
-
-}
-
 .news-tab-top,
 .news-tab-bottom {
   margin-top: 5%;
+  font-weight: bold;
+  font-family: "GenJyuuGothic";
 }
 
 .news-tab-top ul,
@@ -27,7 +25,7 @@
 
 .news-tab-top li,
 .news-tab-bottom li {
-  width: 150px;
+  padding: 0 30px;
   border-right: 1px solid #4D291F;
 }
 
@@ -38,6 +36,7 @@
 
 .news-tab-top li:first-child,
 .news-tab-bottom li:first-child {
+  padding-left: 0;
   text-align: start;
 }
 
@@ -167,48 +166,8 @@
   width: 100%;
 }
 
-.prev,
-.next {
-  display: inline-block;
-  margin: 8px 0;
-  text-decoration: none;
-  border-radius: 100%;
-  width: 42px;
-  height: 42px;
-  padding: 8px 0;
-  font-size: 2rem;
-  box-sizing: border-box;
-  color: #C9BEBB;
-  line-height: 1;
-  border: 2px solid #4D291F;
-  color: #4D291F;
-}
-
-.page-numbers {
-  display: inline-block;
-  margin: 8px 0;
-  text-decoration: none;
-  border-radius: 100%;
-  width: 42px;
-  height: 42px;
-  padding: 8px 0;
-  font-size: 2rem;
-  box-sizing: border-box;
-  color: #C9BEBB;
-  line-height: 1;
-}
-
 .nav-links li {
   border: none;
-}
-
-.pagination a:hover {
-  opacity: 0.7;
-}
-
-.pagination .current {
-  font-weight: bold;
-  color: #4D291F;
 }
 
 @media screen and (max-width: 768px) {
@@ -220,6 +179,7 @@
 
   .news-tab-top li,
   .news-tab-bottom li {
+    padding: 0 10px;
     font-size: 1.5rem;
   }
 
