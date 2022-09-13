@@ -55,7 +55,7 @@ get_header();
           <div class="top-notice-item">
             <div class="top-notice-item-tag">
               <div class="top-notice-item-tag-box">
-                <div class="top-notice-item-tag-text">merit</div>
+                <div class="top-notice-item-tag-text">Merit</div>
                 <div class="top-notice-item-tag-num">01</div>
               </div>
             </div>
@@ -67,7 +67,7 @@ get_header();
           <div class="top-notice-item">
             <div class="top-notice-item-tag">
               <div class="top-notice-item-tag-box">
-                <div class="top-notice-item-tag-text">merit</div>
+                <div class="top-notice-item-tag-text">Merit</div>
                 <div class="top-notice-item-tag-num">02</div>
               </div>
             </div>
@@ -79,7 +79,7 @@ get_header();
           <div class="top-notice-item">
             <div class="top-notice-item-tag">
               <div class="top-notice-item-tag-box">
-                <div class="top-notice-item-tag-text">merit</div>
+                <div class="top-notice-item-tag-text">Merit</div>
                 <div class="top-notice-item-tag-num">03</div>
               </div>
             </div>
