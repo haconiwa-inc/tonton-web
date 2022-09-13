@@ -1,60 +1,55 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
+ * The template for displaying all pages
  *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package tonton-web-theme
  */
-
 get_header();
 ?>
-
-	<main id="primary" class="site-main">
-
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'tonton-web-theme' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'tonton-web-theme' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'tonton-web-theme' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$tonton_web_theme_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'tonton-web-theme' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$tonton_web_theme_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
-
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/pages/404.css" media="screen" >
+  <main id="primary" class="site-main">
+  <div class="not-contents">
+    <div class="title-area">
+      <h2 class="title">
+        <p>404</p>
+        <span>not found</span>
+      </h2>
+    </div>
+    <div class="wrapper">
+      <ul class="breadcrumbs">
+        <li><a href="/">TOP</a></li>
+        <li>404</li>
+      </ul>
+      <div class="not-item--nothing">
+        <p>お探しのページはございません</p>
+        <div class="not-item--nothingImg">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/tonton-boy2-oops.png" alt="">
+        </div>
+      </div>
+      <div class="top-button top-button--green">
+        <div class="top-buttonInner">
+          <a href="/">
+            TOPへ戻る
+          </a>
+          <div class="top-icon">
+            <img src="<?php echo get_template_directory_uri();?>/images/common/tonton-boy.png" alt="">
+          </div>
+          <div class="top-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15.96" height="12.424" viewBox="0 0 15.96 12.424">
+              <path d="M1427.751,843.521l-5.656-5.3c-.775-.727-1.932.455-1.153,1.183l4.225,3.957-12.349.011a.839.839,0,0,0,0,1.674l12.206-.01L1420.916,849a.827.827,0,0,0,1.154,1.184l5.681-5.482A.857.857,0,0,0,1427.751,843.521Z" transform="translate(-1412.029 -837.997)" fill="#fff"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main><!-- #main -->
 <?php
 get_footer();
