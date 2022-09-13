@@ -165,8 +165,7 @@
               <li>
                 <h3 class="sell-exampleTitle">
                   <div class="sell-exampleTitleInner">
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/case01.png" alt="case01 住み替え" class="dis-pc">
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/case01_sp.png" alt="case01 住み替え" class="dis-sp">
+                    <span>Case01</span><br class="dis-sp" />住み替え
                   </div>
                   <div class="sell-exampleTitleDeco">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
@@ -210,8 +209,7 @@
               <li>
                 <h3 class="sell-exampleTitle">
                   <div class="sell-exampleTitleInner">
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/case02.png" alt="case02 資産処分" class="dis-pc">
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/case02_sp.png" alt="case01 資産処分" class="dis-sp">
+                    <span>Case02</span><br class="dis-sp" />資産処分
                   </div>
                   <div class="sell-exampleTitleDeco">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
@@ -255,9 +253,7 @@
               <li>
                 <h3 class="sell-exampleTitle">
                   <div class="sell-exampleTitleInner">
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/case03.png" alt="case03 買い替え" class="dis-pc">
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/case03_sp.png" alt="case03 買い替え" class="dis-sp">
-
+                    <span>Case03</span><br class="dis-sp" />買い替え
                   </div>
                   <div class="sell-exampleTitleDeco">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
@@ -301,8 +297,7 @@
               <li>
                 <h3 class="sell-exampleTitle">
                   <div class="sell-exampleTitleInner">
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/case04.png" alt="case04 維持不能" class="dis-pc">
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/case04_sp.png" alt="case04 維持不能" class="dis-sp">
+                    <span>Case04</span><br class="dis-sp" />維持不能
                   </div>
                   <div class="sell-exampleTitleDeco">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">

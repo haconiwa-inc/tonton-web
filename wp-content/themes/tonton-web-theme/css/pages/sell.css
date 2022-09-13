@@ -40,6 +40,8 @@
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
+  padding: 0 5%;
+  box-sizing: border-box;
 }
 
 .sell-subTitle {
@@ -148,6 +150,7 @@
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
+  padding: 0 5%;
 }
 
 .sell-exampleList li {
@@ -173,8 +176,15 @@
 }
 
 .sell-exampleTitleInner {
-  width: 32%;
-  max-width: 295px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #009844;
+  font-family: "GenJyuuGothic";
+}
+
+.sell-exampleTitleInner span {
+  padding-right: 10px;
+  font-size: 3.2rem;
 }
 
 .sell-exampleSubtitle {
@@ -182,6 +192,7 @@
   font-size: 2rem;
   color: #009844;
   font-family: "GenJyuuGothic";
+  font-weight: bold;
 }
 
 .sell-point01 {
@@ -460,8 +471,12 @@
   }
 
   .sell-exampleTitleInner {
-    width: 30%;
-    max-width: 81px;
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+
+  .sell-exampleTitleInner span {
+    font-size: 1.6rem;
   }
 
   .sell-exampleSubtitle {
