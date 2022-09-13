@@ -10,7 +10,7 @@ function menuToggle() {
   $(this).toggleClass('active');
 }
 
-//swiper
+//swiper top
 window.addEventListener("DOMContentLoaded", () => {
   const infiniteSlider = new Swiper(".infinite-slider", {
     loop: true,

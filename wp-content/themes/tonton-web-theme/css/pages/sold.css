@@ -12,7 +12,7 @@
   width: 42px;
   height: 42px;
   padding: 8px 0;
-  font-size: 2rem;
+  font-size: 20px;
   box-sizing: border-box;
   color: #C9BEBB;
   line-height: 1;
@@ -28,15 +28,31 @@
   width: 42px;
   height: 42px;
   padding: 8px 0;
-  font-size: 2rem;
+  font-size: 20px;
   box-sizing: border-box;
   color: #C9BEBB;
   line-height: 1;
 }
 
-.pagination {
-  margin-top: 14%;
+.sold-pagination {
+  margin-top: 140px;
   text-align: center;
+}
+
+
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  margin: 8px auto;
+  text-decoration: none;
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  font-size: 20px;
+  box-sizing: border-box;
+  color: #C9BEBB;
+  line-height: 1;
 }
 
 .pagination a:hover {
@@ -48,27 +64,27 @@
   color: #4D291F;
 }
 
-.archive-icon {
+.sold-icon {
   position: absolute;
   left: 26%;
   bottom: 50%;
 }
 
-.archive-icon img {
+.sold-icon img {
   width: 100%;
 }
 
-.archive-button-wrapper {
+.sold-button-wrapper {
   position: relative;
   margin-top: 6%;
 }
 
-.archive-button-top-wrapper {
+.sold-button-top-wrapper {
   position: relative;
   margin: 6% 0 10%;
 }
 
-.archive-button {
+.sold-button {
   position: relative;
   width: 300px;
   padding: 1%;
@@ -80,7 +96,7 @@
   border-radius: 10px;
 }
 
-.archive-button a {
+.sold-button a {
   display: block;
   padding: 6.4% 0;
   border-radius: 8px;
@@ -88,21 +104,21 @@
   font-size: 1.8rem;
 }
 
-.archive-button--green a {
+.sold-button--green a {
   color: #fff;
   background-color: #009844;
 }
 
-.archive-header {
+.sold-header {
   position: relative;
   width: 100%;
 }
 
-.archive-header img {
+.sold-header img {
   width: 100%;
 }
 
-.archive-header-box {
+.sold-header-box {
   position: absolute;
   top: 25%;
   left: 50%;
@@ -113,19 +129,19 @@
   -ms-transform: translateX(-50%);
 }
 
-.archive-wrapper {
+.sold-wrapper {
   position: relative;
   max-width: 1024px;
   margin: 0 auto;
   padding: 2% 5% 6%;
 }
 
-.archive-search {
+.sold-search {
   margin-top: 10%;
   color: #333;
 }
 
-.archive-serch-box {
+.sold-serch-box {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -133,37 +149,37 @@
   margin-top: 5%;
 }
 
-.archive-search-list {
+.sold-search-list {
   margin-left: 4%;
-  font-weight: bold;
   width: 80%;
 }
 
-.archive-serch-box:first-child {
+.sold-serch-box:first-child {
   margin-top: 0;
 }
 
-.archive-serch-box input {
+.sold-serch-box input {
   margin-left: 1%;
 }
 
-.archive-serch-box input:first-child {
+.sold-serch-box input:first-child {
   margin-left: 0;
 }
 
-.archive-serch-box label {
+.sold-serch-box label {
   margin-left: 1%;
+  font-weight: bold;
   font-size: 1.6rem;
 }
 
-.archive-search-text {
+.sold-search-text {
   font-size: 2.2rem;
   font-weight: bold;
   font-family: "GenJyuuGothic";
   width: 100px;
 }
 
-.archive-search-button {
+.sold-search-button {
   max-width: 350px;
   padding: 2.5% 0;
   margin: 5% auto 0;
@@ -174,14 +190,14 @@
   border-radius: 10px;
 }
 
-.archive-item-text {
-  margin: 4% 0;
+.sold-item-text {
   color: #333;
+  margin: 4% 0;
   font-size: 1.6rem;
   font-weight: bold;
 }
 
-.archive-item-none {
+.sold-item-none {
   margin: 10% 0;
   font-size: 2rem;
   font-family: "GenJyuuGothic";
@@ -189,11 +205,11 @@
   text-align: center;
 }
 
-.archive-content {
+.sold-content {
   margin-top: 10%;
 }
 
-.archive-info {
+.sold-info {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -201,17 +217,17 @@
   margin-bottom: 5%;
 }
 
-.archive-info-text {
-  font-weight: bold;
+.sold-info-text {
   margin-left: 3%;
   font-size: 1.6rem;
+  font-weight: bold;
 }
 
-.archive-info-text:first-child {
+.sold-info-text:first-child {
   margin-left: 0;
 }
 
-.archive-content ul {
+.sold-content ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2% 3%;
@@ -219,23 +235,23 @@
   height: 80%;
 }
 
-.archive-item img {
+.sold-item img {
   width: 100%;
   height: 100%;
 }
 
-.archive-box {
+.sold-box {
   padding: 10% 20%;
   background-color: rgba(0, 152,68, 0.3)
 }
 
-.archive-text {
+.sold-text {
   font-size: 3rem;
   text-align: center;
   color: #333;
 }
 
-.archive-inquiries-button {
+.sold-inquiries-button {
   width: 350px;
   padding: 2.5% 0;
   margin: 2% auto 0;
@@ -246,17 +262,18 @@
   border-radius: 10px;
 }
 
-.archive-nav {
+.sold-nav {
   margin-top: 30%;
 }
 
-.archive-block {
+
+.sold-block {
   width: 100%;
   margin: 0 auto;
   line-height: 1.8;
 }
 
-.archive-block--wull {
+.sold-block--wull {
   width: 100%;
   max-width: 100%;
   padding: 6% 0 6.2%;
@@ -264,7 +281,7 @@
   margin: 0 auto;
 }
 
-.archive-block--wullGreen {
+.sold-block--wullGreen {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
@@ -273,32 +290,32 @@
   margin: 0 auto;
 }
 
-.archive-block--top {
+.sold-block--top {
   margin: 4% auto 0;
 }
 
-.archive-blockInner {
+.sold-blockInner {
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
 }
 
-.archive-buttonInner {
+.sold-buttonInner {
   width: 50%;
   margin: 0 auto;
 }
 
-.archive-buttonInner--left {
+.sold-buttonInner--left {
   width: 45%;
   margin-left: 0;
   margin-right: auto;
 }
 
-.archive-buttonInner--small {
+.sold-buttonInner--small {
   width: 30%;
 }
 
-.archive-contactTitle {
+.sold-contactTitle {
   font-size: 2rem;
   text-align: center;
   margin: 0 auto 4%;
@@ -306,114 +323,113 @@
 
 
 @media screen and (max-width: 768px) {
-  .archive-header-box {
+  .sold-header-box {
     top: 30%;
   }
 
-  .archive-wrapper {
+  .sold-wrapper {
     padding: 5% 6% 20%;
   }
 
-  .archive-serch-box {
+  .sold-serch-box {
     display: block;
   }
 
-  .archive-search-list {
+  .sold-search-list {
     margin-left: 0;
   }
 
-  .archive-search-text {
+  .sold-search-text {
     font-size: 1.8rem;
     margin-bottom: 5%;
   }
 
-  .archive-serch-box {
+  .sold-serch-box {
     margin-top: 8%;
   }
 
-  .archive-button-wrapper {
-    margin-top: 10%;
-  }
-
-  .archive-serch-box input {
+  .sold-serch-box input {
     margin-left: 2%;
   }
 
-  .archive-serch-box input:first-child {
+  .sold-serch-box input:first-child {
     margin-left: 0;
   }
 
-  .archive-serch-box label {
+  .sold-serch-box label {
     margin-left: 2%;
   }
 
-  .archive-button-top-wrapper {
+  .sold-button-wrapper {
+    margin-top: 10%;
+  }
+
+  .sold-button-top-wrapper {
     margin: 10% 6%;
   }
 
-  .archive-search-button {
+  .sold-search-button {
     width: 100%;
     margin-top: 8%;
     padding: 5% 0;
   }
 
-  .archive-content {
+  .sold-content {
     margin-top: 16%;
   }
 
-  .archive-content ul {
+  .sold-content ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3% 5%;
     height: 100%;
   }
 
-  .archive-item-text {
+  .sold-item-text {
     margin: 3% 0;
     font-size: 1.6rem;
-    font-weight: bold;
   }
 
-  .archive-item-none {
+  .sold-item-none {
     margin: 10% 0;
     font-size: 1.8rem;
   }
 
-  .archive-box {
+  .sold-box {
     padding: 10% 6%;
     background-color: rgba(0, 152,68, 0.3)
   }
 
-  .archive-icon {
+  .sold-icon {
     left: -6%;
   }
 
-  .archive-button {
+  .sold-button {
     width: 100%;
     margin-top: 8%;
     padding: 2% 0;
   }
 
-  .archive-text {
+  .sold-text {
     font-size: 2rem;
   }
 
-  .archive-inquiries-button {
+  .sold-inquiries-button {
     width: 100%;
     margin-top: 8%;
     padding: 5% 0;
   }
 
-  .archive-block--wullGreen {
+  .sold-block--wullGreen {
     padding: 9.3% 0 10.7%;
   }
 
-  .archive-blockInner {
+  .sold-blockInner {
     max-width: 100%;
     padding: 0 5.4%;
   }
 
-  .archive-contactTitle {
+  .sold-contactTitle {
     font-size: 1.8rem;
   }
 
@@ -430,16 +446,16 @@
 }
 
 /* detail */
-.archive-detail-header {
+.sold-detail-header {
   position: relative;
   width: 100%;
 }
 
-.archive-detail-header img {
+.sold-detail-header img {
   width: 100%;
 }
 
-.archive-detail-header-box {
+.sold-detail-header-box {
   position: absolute;
   top: 25%;
   left: 50%;
@@ -450,25 +466,26 @@
   -ms-transform: translateX(-50%);
 }
 
-.archive-detail-wrapper {
+.sold-detail-wrapper {
   max-width: 1024px;
   margin: 0 auto;
   padding: 2% 10% 6%;
 }
 
-.archive-detail-content-title {
+.sold-detail-content-title {
   margin-top: 10%;
   font-size: 2.6rem;
+  font-weight: bold;
   font-family: "GenJyuuGothic";
 }
 
-.archive-detail-main-image {
+.sold-detail-main-image {
   position: relative;
   width: 80%;
   margin: 5% auto;
 }
 
-.archive-detail-main-image img {
+.sold-detail-main-image img {
   width: 100%;
 }
 
@@ -480,7 +497,7 @@
 
 .swiper-slide {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 18px;
   background: #fff;
 
   display: -webkit-box;
@@ -515,24 +532,24 @@
   background-position: center;
 }
 
-.archive-mySwiper2 {
+.mySwiper2 {
   height: 80%;
   width: 100%;
 }
 
-.archive-mySwiper {
+.mySwiper {
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0;
 }
 
-.archive-mySwiper .swiper-slide {
+.mySwiper .swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.4;
 }
 
-.archive-mySwiper .swiper-slide-thumb-active {
+.mySwiper .swiper-slide-thumb-active {
   opacity: 1;
 }
 
@@ -567,7 +584,7 @@
 }
 /* swiper end */
 
-.archive-detail-button-wrapper {
+.sold-detail-button-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -575,11 +592,11 @@
   margin: 10% auto 0;
 }
 
-.archive-detail-button-prev {
+.sold-detail-button-prev {
   width: 50%;
 }
 
-.archive-detail-button {
+.sold-detail-button {
   width: 300px;
   padding: 5.7% 0;
   margin: 0 auto;
@@ -591,12 +608,12 @@
   border: 1px solid #009844;
 }
 
-.archive-detail-button-top {
+.sold-detail-button-top {
   position: relative;
   width: 50%;
 }
 
-.archive-button-top {
+.sold-button-top {
   width: 300px;
   margin: 0 auto;
   font-size: 1.8rem;
@@ -606,69 +623,25 @@
   border-radius: 10px;
 }
 
-.archive-detail-box {
-  margin-top: 8%;
-}
-
-.archive-detail-item-box {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  margin-top: 5%;
-}
-
-.archive-detail-item {
-  width: 50%;
-}
-
-.archive-detail-item:last-child {
-  margin-left: 5%;
-}
-
-.archive-detail-item-title {
-  font-size: 2.8rem;
-  font-family: "GenJyuuGothic";
-}
-
-.archive-detail-item-image {
-}
-
-.archive-detail-item-image img {
-  width: 100%;
-  height: 100%;
-}
-
-.archive-detail-item-text {
-  font-size: 2.2rem;
-  font-family: "GenJyuuGothic";
-}
-
-.archive-detail-item-description {
-  margin-top: 3%;
-  font-size: 1.6rem;
-  line-height: 2;
-}
-
 @media screen and (max-width: 768px) {
-  .archive-detail-header-box {
+  .sold-detail-header-box {
     top: 30%;
   }
 
-  .archive-detail-wrapper {
+  .sold-detail-wrapper {
     max-width: none;
     padding: 5% 6% 20%;
   }
 
-  .archive-detail-content-title {
+  .sold-detail-content-title {
     font-size: 1.8rem;
   }
 
-  .archive-detail-main-image {
+  .sold-detail-main-image {
     width: 100%;
   }
 
-  .archive-swiper-second {
+  .news-swiper-second {
     padding: 0 10%;
   }
 
@@ -680,82 +653,52 @@
     left: 0;
   }
 
-  .archive-detail-item-box {
+  .sold-detail-item-box {
     display: block;
   }
 
-  .archive-detail-item {
+  .sold-detail-item {
     width: 100%;
   }
 
-  .archive-detail-item-image {
+  .sold-detail-item-image {
     margin-top: 10%;
   }
 
-  .archive-detail-item:last-child {
+  .sold-detail-item:last-child {
     margin-left: 0;
   }
 
-  .archive-detail-item-title {
+  .sold-detail-item-title {
     margin-top: 5%;
     font-size: 1.6rem;
   }
 
-  .archive-detail-item-text {
+  .sold-detail-item-text {
     margin-top: 8%;
     font-size: 1.5rem;
   }
 
-  .archive-detail-item-description {
+  .sold-detail-item-description {
     font-size: 1.2rem;
   }
 
-  .archive-detail-button-wrapper {
+  .sold-detail-button-wrapper {
     display: block;
     width: 100%;
   }
 
-  .archive-detail-button-prev,
-  .archive-detail-button-top {
+  .sold-detail-button-prev,
+  .sold-detail-button-top {
     width: 100%;
   }
 
-  .archive-detail-button-top {
+  .sold-detail-button-top {
     margin-top: 12%;
   }
 
-  .archive-detail-button,
-  .archive-button-top {
+  .sold-detail-button,
+  .sold-button-top {
     width: 100%;
-  }
-
-  .archive-detail-item-box {
-    display: block;
-  }
-
-  .archive-detail-item {
-    width: 100%;
-  }
-
-  .archive-detail-item-image {
-    margin-top: 10%;
-  }
-
-  .archive-detail-item:last-child {
-    margin-left: 0;
-  }
-
-  .archive-detail-item-title {
-    margin-top: 5%;
-    font-size: 1.6rem;
-  }
-
-  .archive-detail-item-text {
-    margin-top: 8%;
-    font-size: 1.5rem;
-  }
-
-  .archive-detail-item-description {
-    font-size: 1.2rem;
   }
 }

@@ -9,70 +9,96 @@
 
 get_header();
 ?>
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/pages/archive.css" media="screen" >
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/css/pages/sold.css" media="screen" >
   <main id="primary" class="site-main">
-    <div class="archive">
+    <div class="sold">
       <div class="title-area">
         <h2 class="title">
-          <p>過去のリフォーム施工例</p>
-          <span>example of construction</span>
+          <p>過去の成約物件</p>
+          <span>list of contracted properties</span>
         </h2>
       </div>
-      <div class="archive-wrapper wrapper">
+      <div class="sold-wrapper wrapper">
         <ul class="breadcrumbs">
           <li><a href="/">TOP</a></li>
           <li><a href="/business/">事業案内</a></li>
           <li><a href="/business/buy/">物件購入</a></li>
-          <li><a href="business/reform/">リフォーム/リノベーション</a></li>
-          <li>過去のリフォーム施工例</li>
+          <li>過去の成約物件</li>
         </ul>
 
+        <!-- 1. 検索条件の取得と変数の設定 -->
         <?php
           $paged = get_query_var('paged') ? get_query_var('paged') : 1;
           $args = array(
             'paged' => $paged, // ページ番号を設定
-            'post_type' => 'archive',
+            'post_type' => 'sold',
             'post_status' => 'publish',
             'posts_per_page' => 12, // 一つのページに表示する件数を設定
             'orderby' => 'date',
             'order' => 'DESC'
           );
 
+          if(!empty($_GET['search_area'])) {
+            foreach($_GET['search_area'] as $value) {
+              $search_area[] = htmlspecialchars($value, ENT_QUOTES);
+            }
+            $tax_query_args[] = array(
+              'taxonomy' => 'sold_area',
+              'terms' => $search_area,
+              'field' => 'slug',
+              'operator' => 'IN'
+            );
+          }
+
           if(!empty($_GET['search_type'])) {
             foreach($_GET['search_type'] as $value) {
               $search_type[] = htmlspecialchars($value, ENT_QUOTES);
             }
+
             $tax_query_args[] = array(
-              'taxonomy' => 'archive_type',
+              'taxonomy' => 'sold_type',
               'terms' => $search_type,
               'field' => 'slug',
               'operator' => 'IN'
             );
           }
-          
-          if(!empty($_GET['search_type'])) {
+          if(!empty($_GET['search_area']) || !empty($_GET['search_type'])) {
             $args += array('tax_query' => array($tax_query_args));
           }
         ?>
-        
-        <div class="archive-search">
+
+        <div class="sold-search">
           <!-- 2. 検索フォームの表示 -->
-          <form method="get" action="/business/reform/results-archive/">
-            <div class="archive-serch-box">
-              <div class="archive-search-text">エリア</div>
-              <div class="archive-search-list">
+          <form method="get" action="/business/buy/sold/">
+            <div class="sold-serch-box">
+              <div class="sold-search-text">エリア</div>
+              <div class="sold-search-list">
                 <?php
-                  $types = get_terms('archive_type', Array('hide_empty' => false));
+                  $areas = get_terms('sold_area', Array('hide_empty' => false));
+                  foreach($areas as $area):
+                    $checked = "";
+                    if(in_array($area->name, (array)$search_area)) $checked = " checked";
+                ?>
+                <input type="checkbox" name="search_area[]" value="<?php echo esc_attr($area->name); ?>"<?php echo $checked; ?>>
+                <label><?php echo esc_html($area->name); ?></label>
+                <?php endforeach; ?>
+              </div>
+            </div>
+            <div class="sold-serch-box">
+              <div class="sold-search-text">物件種別</div>
+              <div class="sold-search-list">
+                <?php
+                  $types = get_terms('sold_type', Array('hide_empty' => false));
                   foreach($types as $type):
                     $checked = "";
-                    if(in_array($type->name, $search_type)) $checked = " checked";
+                    if(in_array($type->name, (array)$search_type)) $checked = " checked";
                 ?>
                 <input type="checkbox" name="search_type[]" value="<?php echo esc_attr($type->name); ?>"<?php echo $checked; ?>>
                 <label><?php echo esc_html($type->name); ?></label>
                 <?php endforeach; ?>
               </div>
             </div>
-            <div class="archive-button-wrapper">
+            <div class="sold-button-wrapper">
             <div class="top-button top-button--green">
               <div class="top-buttonInner">
               <input type="submit" value="検索する" class="submit-button">
@@ -85,17 +111,32 @@ get_header();
             </div>
           </form>
         </div>
+
         <?php
-          $the_type = new WP_Query($args);
-          if($the_type->have_posts()) :
-        ?>
-        <div class="archive-content">
-          <?php
-            $types_search = $tax_query_args[0]["terms"];
-            if($types_search):
-          ?>
-            <div class="archive-info">
-              <div class="archive-info-text">
+          $the_query = new WP_Query($args);
+          if($the_query->have_posts()) :
+        ?>	
+        <div class="sold-content">
+          <div class="sold-info">
+            <?php
+              $areas_search = $tax_query_args[0]["terms"];
+              if($areas_search):
+            ?>
+              <div class="sold-info-text">
+                エリア：<span>
+                  <?php
+                    foreach($areas_search as $area_search) :
+                    echo esc_html($area_search);
+                  ?>
+                  <?php endforeach; ?>
+                </span>
+              </div>
+            <?php endif; ?>
+            <?php
+              $types_search = $tax_query_args[1]["terms"];
+              if($types_search):
+            ?>
+              <div class="sold-info-text">
                 物件種別：<span>
                   <?php
                     foreach($types_search as $type_search) :
@@ -104,31 +145,32 @@ get_header();
                   <?php endforeach; ?>
                 </span>
               </div>
-            </div>
-          <?php endif; ?>
+            <?php endif; ?>
+          </div>
+          
           <ul>
             <?php
-              while($the_type->have_posts()) :
-                $the_type->the_post();
+              while($the_query->have_posts()) :
+                $the_query->the_post();
             ?>
               <li>
                 <a href="<?php the_permalink() ?>">
-                  <div class="archive-item">
+                  <div class="sold-item">
                     <?php
                       $img_obj_field = get_field_object('estate-img');
                       $image = $img_obj_field['value'][0]['estate-img-single'];
                       $size = 'full';
                     ?>
                     <?php echo wp_get_attachment_image( $image, $size ); ?>
-                    <div class="archive-item-text">
+                    <div class="sold-item-text">
                       <?php the_title(); ?>
                     </div>
-                  </div>
+                  </div>      
                 </a>
               </li>
             <?php endwhile; wp_reset_postdata(); ?>
             </div>
-            <div class="archive-pagination">
+            <div class="sold-pagination">
               <div class="navigation pagination">
                 <?php
                   // ページャーを設置
@@ -145,16 +187,15 @@ get_header();
                 ?>
               </div>
               <?php else : ?>
-                <div class="archive-item-none">
+                <div class="sold-item-none">
                   <p>該当する物件はありませんでした。</p>
                 </div>
               <?php endif; ?>
               </div>
             </div>
           </ul>
-
-          <div class="archive-button-top-wrapper">
-            <div class="archive-button-top">
+          <div class="sold-button-top-wrapper">
+            <div class="sold-button-top">
               <div class="top-button top-button--green">
                 <div class="top-buttonInner">
                   <a href="/">
@@ -174,13 +215,13 @@ get_header();
           </div>
         </div>
       </div>
-      <div class="archive-block archive-block--wullGreen">
-        <div class="archive-blockInner">
-          <h3 class="archive-contactTitle">
+      <div class="sold-block sold-block--wullGreen">
+        <div class="sold-blockInner">
+          <h3 class="sold-contactTitle">
             物件の売買・リフォームに<br class="dis-sp">ついては<br class="dis-pc">まずはお気軽に<br class="dis-sp">お問い合わせください。
           </h3>
-          <div class="archive-button archive-button--green">
-            <div class="archive-buttonInner">
+          <div class="sold-button sold-button--green">
+            <div class="sold-buttonInner">
               <a href="/business/reform/">
                 お問い合わせ
               </a>

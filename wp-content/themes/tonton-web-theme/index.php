@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-
+<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/index.css" media="all">
   <main id="primary" class="site-main">
     <section>
       <div class="kv">

@@ -42,7 +42,7 @@
                 </li>
                 <li>
                   <a href="/business/">
-                    事業内容
+                    事業案内
                   </a>
                 </li>
                 <li>
@@ -121,7 +121,7 @@
               </li>
               <li>
                 <a href="/business/">
-                  事業内容
+                  事業案内
                 </a>
               </li>
               <li>
