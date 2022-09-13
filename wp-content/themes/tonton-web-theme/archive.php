@@ -145,13 +145,15 @@ get_header();
                 ?>
               </div>
               <?php else : ?>
-              <p>該当する物件はありませんでした。</p>
+                <div class="archive-item-none">
+                  <p>該当する物件はありませんでした。</p>
+                </div>
               <?php endif; ?>
               </div>
             </div>
           </ul>
 
-          <div class="archive-button-wrapper">
+          <div class="archive-button-top-wrapper">
             <div class="archive-button-top">
               <div class="top-button top-button--green">
                 <div class="top-buttonInner">

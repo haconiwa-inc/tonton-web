@@ -63,6 +63,11 @@
   margin-top: 6%;
 }
 
+.archive-button-top-wrapper {
+  position: relative;
+  margin: 6% 0 10%;
+}
+
 .archive-button {
   position: relative;
   width: 300px;
@@ -174,6 +179,14 @@
   color: #333;
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+.archive-item-none {
+  margin: 10% 0;
+  font-size: 2rem;
+  font-family: "GenJyuuGothic";
+  color: #333;
+  text-align: center;
 }
 
 .archive-content {
@@ -318,6 +331,10 @@
     margin-top: 8%;
   }
 
+  .archive-button-wrapper {
+    margin-top: 10%;
+  }
+
   .archive-serch-box input {
     margin-left: 2%;
   }
@@ -330,8 +347,8 @@
     margin-left: 2%;
   }
 
-  .archive-button-wrapper {
-    margin-top: 10%;
+  .archive-button-top-wrapper {
+    margin: 10% 6%;
   }
 
   .archive-search-button {
@@ -355,6 +372,11 @@
     margin: 3% 0;
     font-size: 1.6rem;
     font-weight: bold;
+  }
+
+  .archive-item-none {
+    margin: 10% 0;
+    font-size: 1.8rem;
   }
 
   .archive-box {

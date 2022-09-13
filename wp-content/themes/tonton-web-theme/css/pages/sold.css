@@ -79,6 +79,11 @@
   margin-top: 6%;
 }
 
+.sold-button-top-wrapper {
+  position: relative;
+  margin: 6% 0 10%;
+}
+
 .sold-button {
   position: relative;
   width: 300px;
@@ -190,6 +195,14 @@
   margin: 4% 0;
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+.sold-item-none {
+  margin: 10% 0;
+  font-size: 2rem;
+  font-family: "GenJyuuGothic";
+  color: #333;
+  text-align: center;
 }
 
 .sold-content {
@@ -351,6 +364,10 @@
     margin-top: 10%;
   }
 
+  .sold-button-top-wrapper {
+    margin: 10% 6%;
+  }
+
   .sold-search-button {
     width: 100%;
     margin-top: 8%;
@@ -371,6 +388,11 @@
   .sold-item-text {
     margin: 3% 0;
     font-size: 1.6rem;
+  }
+
+  .sold-item-none {
+    margin: 10% 0;
+    font-size: 1.8rem;
   }
 
   .sold-box {
