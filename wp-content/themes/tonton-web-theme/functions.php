@@ -234,6 +234,27 @@ function select_to_radio_sold_area() {
   <?php
 }
 
+// 過去のリフォーム事例
+add_action( 'admin_print_footer_scripts', 'select_to_radio_archive_type' );
+function select_to_radio_archive_type() {
+  ?>
+  <script type="text/javascript">
+  jQuery( function( $ ) {
+    // 投稿画面
+    $( '#taxonomy-archive_type input[type=checkbox]' ).each( function() {
+      $( this ).replaceWith( $( this ).clone().attr( 'type', 'radio' ) );
+    } );
+    // 一覧画面
+    var archive_type_checklist = $( '.archive_type-checklist input[type=checkbox]' );
+    archive_type_checklist.click( function() {
+      $( this ).parents( '.archive_type-checklist' ).find( ' input[type=checkbox]' ).attr( 'checked', false );
+      $( this ).attr( 'checked', true );
+    } );
+  } );
+  </script>
+  <?php
+}
+
 // お問合せ
 function my_mwform_error_message($error, $key, $rule) {
   if ($key === 'first_name' && $rule === 'noempty') {

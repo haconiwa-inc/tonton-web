@@ -153,6 +153,10 @@
   width: 112px;
 }
 
+.chintaiDetail-detailAll .chintaiDetail-tableArea {
+  width: 100%;
+}
+
 .chintaiDetail-detailAll .chintaiDetail-tableArea dl {
   margin-bottom: 2.6%;
 }

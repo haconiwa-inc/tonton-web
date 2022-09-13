@@ -78,7 +78,7 @@ get_header();
                   if ($_GET['search_genre'][0] === 'all') {
                     $checked = "";
                   } else {
-                    if(in_array($genre->slug, $search_genre)) $checked = " checked";
+                    if(in_array($genre->slug, (array)$search_genre)) $checked = " checked";
                   }
                 ?>
                 <input type="radio" name="search_genre[]" id="<?php echo esc_attr($genre->slug); ?>" value="<?php echo esc_attr($genre->slug); ?>"<?php echo $checked; ?> onclick="submit();" />
