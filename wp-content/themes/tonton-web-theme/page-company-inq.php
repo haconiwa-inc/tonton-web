@@ -129,8 +129,8 @@
                   </div>
                 </div>
                 <div class="company-about-item">
-                  <div class="company-about-item-title">中央点</div>
-                  <div class="company-about-item-text">〒063-0034　札幌市西区西野4条3丁目10番1号<br>最寄り駅：地下鉄東西線 発寒南駅から徒歩20分</div>
+                  <div class="company-about-item-title">中央店</div>
+                  <div class="company-about-item-text">〒064-0920　札幌市中央区南20条西10丁目1番1号<br>最寄り駅：札幌市電 石山通駅から徒歩20分</div>
                   <div class="company-about-map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.3842022163735!2d141.34368531518976!3d43.03334720030831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2a1036f06aa5%3A0xc115ef6fd986d426!2z44CSMDY0LTA5MjAg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65Y2X77yS77yQ5p2h6KW_77yR77yQ5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1661657879810!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
