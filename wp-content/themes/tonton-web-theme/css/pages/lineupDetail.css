@@ -214,6 +214,13 @@
   margin: 0 auto;
 }
 
+.lineupDetail-buttonInner--left {
+  width: 62.7%;
+  max-width: 302px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
 .lineupDetail-buttonInner--small {
   width: 30%;
 }
@@ -487,6 +494,14 @@
   margin: auto;
 }
 
+.lineupDetail-searchIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+}
+
 @media screen and (max-width:768px) {
   .lineupDetail-block {
     margin: 14.7% auto 0;
@@ -645,6 +660,14 @@
     width: 100%;
   }
 
+
+  .lineupDetail-buttonInner--left {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .lineupDetail-buttonInner--small {
     width: 100%;
   }
@@ -729,6 +752,11 @@
   .swiper-modal-next:after {
     height: 28px;
     width: 28px;
+  }
+
+  .lineupDetail-searchIcon {
+    width: 20px;
+    height: 20px;
   }
 }
 
