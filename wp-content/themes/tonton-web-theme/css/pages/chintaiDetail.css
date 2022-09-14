@@ -480,7 +480,7 @@
   margin: auto;
 }
 
-.chintaiDetail-searchIcon {
+.search-icon {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -734,7 +734,7 @@
     width: 28px;
   }
 
-  .chintaiDetail-searchIcon {
+  .search-icon {
     width: 20px;
     height: 20px;
   }

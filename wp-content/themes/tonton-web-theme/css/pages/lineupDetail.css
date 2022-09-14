@@ -497,7 +497,7 @@
   margin: auto;
 }
 
-.lineupDetail-searchIcon {
+.search-icon {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -757,7 +757,7 @@
     width: 28px;
   }
 
-  .lineupDetail-searchIcon {
+  .search-icon {
     width: 20px;
     height: 20px;
   }

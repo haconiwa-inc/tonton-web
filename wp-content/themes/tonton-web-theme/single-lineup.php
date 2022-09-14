@@ -123,7 +123,7 @@ get_header();
                           }
                         endforeach;
                       ?>
-                      <div class="lineupDetail-searchIcon">
+                      <div class="search-icon">
                         <svg id="icon_mushimegane.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
                           <image id="レイヤー_9" data-name="レイヤー 9" width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAB00lEQVQ4jZWUz4uNURjHP66rocaPwUix0MSQIiYrKz9KasqwGjsbZSlhJf+DJAsLlIUslL/AQiykaJIYNIqmMXc0hKzc+7G4zzv3dJzX5Func97n+32+7znP+7wHlcLYo15SJ9S22lGn1Cvq4ZocVPLAcvWGi+OhunsxwwH1dZJ0Tx1Xh9Ut6lH1uvo90RyqM+xT34bopTryj2OtUe8mpjtKhneCnFSbmcFt9ZG6Kovfipx3ueG25G1DhR1V2FXgPgU3XsUawEm6eABM8TfmYv5W4C7HfHohor6JtxyrqVkr+O0Frj85wcrqyBU2JzVrJaMd/Lw6q86pL9QVof8a/E6VZrL9dswjwGDheAPJej2wNNa/Y24ANIEWsAEYBmaAfcBWoBPCJ8BaYBR4DywDpoGfsV4Xupmqhtdiy1dravg5+NUF7khwE2nb7I/gD7VRSOoEX/rVngZ3NjVEfR7E/ULSK/WXujGLn4+cD2m8WgwlX/tmwbQve76Q6GdNbqBUdDARTapn7LUS6qB63O5NU8KJ3BB1r/osE87ba+4KH+31Z4rRuhvllN165kmP1YuhOVAw7CxRCz28gH5gUzTxl+jZFGN074Aeanb4P2NMnY7SnPsDQUFP2XMHtlwAAAAASUVORK5CYII="/>
                         </svg>
