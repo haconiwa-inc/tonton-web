@@ -72,8 +72,7 @@
                 <li>
                   <h3 class="reform-exampleTitle">
                     <div class="reform-exampleTitleInner">
-                      <img src="<?php echo get_template_directory_uri();?>/images/business/case01_reform.png" alt="case01 フルリノベーション" class="dis-pc">
-                      <img src="<?php echo get_template_directory_uri();?>/images/business/case01_reform_sp.png" alt="case01 フルリノベーション" class="dis-sp">
+                      <span>Case 01</span><br class="dis-sp">フルリノベーション
                     </div>
                     <div class="reform-exampleTitleDeco">
                       <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
@@ -116,8 +115,7 @@
                 <li>
                   <h3 class="reform-exampleTitle">
                     <div class="reform-exampleTitleInner">
-                      <img src="<?php echo get_template_directory_uri();?>/images/business/case02_reform.png" alt="case02 マンションリフォーム" class="dis-pc">
-                      <img src="<?php echo get_template_directory_uri();?>/images/business/case02_reform_sp.png" alt="case01 マンションリフォーム" class="dis-sp">
+                      <span>Case 02</span><br class="dis-sp">マンションリフォーム
                     </div>
                     <div class="reform-exampleTitleDeco">
                       <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
@@ -160,9 +158,7 @@
                 <li>
                   <h3 class="reform-exampleTitle">
                     <div class="reform-exampleTitleInner">
-                      <img src="<?php echo get_template_directory_uri();?>/images/business/case03_reform.png" alt="case03" class="dis-pc">
-                      <img src="<?php echo get_template_directory_uri();?>/images/business/case03_reform_sp.png" alt="case03" class="dis-sp">
-
+                      <span>Case 03</span><br class="dis-sp">事例名が入ります
                     </div>
                     <div class="reform-exampleTitleDeco">
                       <img src="<?php echo get_template_directory_uri();?>/images/business/tonton_family.png" alt="">
