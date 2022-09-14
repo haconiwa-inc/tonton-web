@@ -516,7 +516,7 @@
 .swiper-button-prev {
   position: absolute;
   top: auto;
-  bottom: 8%;
+  bottom: 9%;
   color: #4D291F;
   border-radius: 100%;
   width: 30px;
@@ -533,6 +533,10 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 1.2rem;
+}
+
+.news-swiper-second .swiper-slide img {
+  height: 120px;
 }
 /* swiper end */
 
@@ -572,7 +576,6 @@
 
 .sold-detail-button-top {
   position: relative;
-  width: 50%;
 }
 
 .sold-button-top {
@@ -585,8 +588,38 @@
   border-radius: 10px;
 }
 
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .news-swiper-second .swiper-slide img {
+    height: 70px;
+  }
 
-@media screen and (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    bottom: 8%;
+  }
+
+  .swiper-button-next {
+    right: -8%;
+  }
+
+  .swiper-button-prev {
+    left: -8%;
+  }
+
+  .top-buttonInner {
+    width: 300px;
+  }
+
+  .sold-detail-button {
+    padding: 6.7% 0;
+  }
+
+  .top-button a {
+    padding: 6.7% 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .sold-detail-header-box {
     top: 30%;
   }
@@ -614,6 +647,10 @@
 
   .swiper-button-prev {
     left: 0;
+  }
+
+  .news-swiper-second .swiper-slide img {
+    height: 50px;
   }
 
   .sold-detail-item-box {

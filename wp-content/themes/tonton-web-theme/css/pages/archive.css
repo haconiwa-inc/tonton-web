@@ -257,7 +257,7 @@
   margin: 0 auto 4%;
 }
 
-@media screen and (min-width:768px) and ( max-width:1024px) {
+@media screen and (min-width:768px) and ( max-width:1023px) {
   .archive-item img {
     height: 120px;
   }
@@ -511,7 +511,7 @@
 .swiper-button-prev {
   position: absolute;
   top: auto;
-  bottom: 8%;
+  bottom: 9%;
   color: #4D291F;
   border-radius: 100%;
   width: 30px;
@@ -528,6 +528,10 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 1.2rem;
+}
+
+.archive-swiper-second .swiper-slide img {
+  height: 120px;
 }
 /* swiper end */
 
@@ -606,9 +610,6 @@
   font-family: "GenJyuuGothic";
 }
 
-.archive-detail-item-image {
-}
-
 .archive-detail-item-image img {
   width: 100%;
   height: 100%;
@@ -626,7 +627,38 @@
   line-height: 2;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width:768px) and ( max-width:1023px) {
+  .archive-swiper-second .swiper-slide img {
+    height: 70px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    bottom: 8%;
+  }
+  
+  .swiper-button-next {
+    right: -8%;
+  }
+  
+  .swiper-button-prev {
+    left: -8%;
+  }
+  
+  .top-buttonInner {
+    width: 300px;
+  }
+  
+  .sold-detail-button {
+    padding: 6.7% 0;
+  }
+  
+  .top-button a {
+    padding: 6.7% 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .archive-detail-header-box {
     top: 30%;
   }
@@ -654,6 +686,10 @@
 
   .swiper-button-prev {
     left: 0;
+  }
+
+  .archive-swiper-second .swiper-slide img {
+    height: 50px;
   }
 
   .archive-detail-item-box {
