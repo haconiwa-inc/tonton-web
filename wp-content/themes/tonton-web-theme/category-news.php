@@ -45,7 +45,7 @@ get_header();
               'paged' => $paged, // ページ番号を設定
               'post_type' => 'post',
               'post_status' => 'publish',
-              'posts_per_page' => 5, // 一つのページに表示する件数を設定
+              'posts_per_page' => 10, // 一つのページに表示する件数を設定
               'orderby' => 'date',
               'order' => 'DESC'
             );
