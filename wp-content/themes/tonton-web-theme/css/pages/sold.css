@@ -178,7 +178,8 @@
 
 .sold-item img {
   width: 100%;
-  height: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .sold-box {
@@ -262,8 +263,13 @@
   margin: 0 auto 4%;
 }
 
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  .sold-item img {
+    height: 120px;
+  }
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .sold-header-box {
     top: 30%;
   }
@@ -339,6 +345,10 @@
   .sold-box {
     padding: 10% 6%;
     background-color: rgba(0, 152,68, 0.3)
+  }
+
+  .sold-item img {
+    height: 100px;
   }
 
   .sold-icon {
@@ -506,7 +516,7 @@
 .swiper-button-prev {
   position: absolute;
   top: auto;
-  bottom: 8%;
+  bottom: 40%;
   color: #4D291F;
   border-radius: 100%;
   width: 30px;
@@ -524,6 +534,14 @@
 .swiper-button-prev::after {
   font-size: 1.2rem;
 }
+
+.news-swiper-second {
+  position: relative;
+}
+
+.news-swiper-second .swiper-slide img {
+  height: 120px;
+}
 /* swiper end */
 
 .sold-detail-button-wrapper {
@@ -535,13 +553,13 @@
 }
 
 .sold-detail-button-prev {
-  width: 50%;
+  margin-right: 8%;
 }
 
 .sold-detail-button {
   position: relative;
   width: 300px;
-  padding: 5.7% 0;
+  padding: 6.7% 0;
   margin: 0 auto;
   font-size: 1.8rem;
   text-align: center;
@@ -562,7 +580,6 @@
 
 .sold-detail-button-top {
   position: relative;
-  width: 50%;
 }
 
 .sold-button-top {
@@ -575,7 +592,38 @@
   border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .news-swiper-second .swiper-slide img {
+    height: 70px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    bottom: 30%;
+  }
+
+  .swiper-button-next {
+    right: -8%;
+  }
+
+  .swiper-button-prev {
+    left: -8%;
+  }
+
+  .top-buttonInner {
+    width: 300px;
+  }
+
+  .sold-detail-button {
+    padding: 6.7% 0;
+  }
+
+  .top-button a {
+    padding: 6.7% 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .sold-detail-header-box {
     top: 30%;
   }
@@ -593,6 +641,11 @@
     width: 100%;
   }
 
+  .swiper-button-next,
+  .swiper-button-prev {
+    bottom: 30%;
+  }
+
   .news-swiper-second {
     padding: 0 10%;
   }
@@ -603,6 +656,10 @@
 
   .swiper-button-prev {
     left: 0;
+  }
+
+  .news-swiper-second .swiper-slide img {
+    height: 50px;
   }
 
   .sold-detail-item-box {
@@ -652,5 +709,9 @@
   .sold-detail-button,
   .sold-button-top {
     width: 100%;
+  }
+
+  .sold-detail-button {
+    padding: 4.7% 0;
   }
 }
