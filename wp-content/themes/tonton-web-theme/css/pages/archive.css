@@ -173,7 +173,8 @@
 
 .archive-item img {
   width: 100%;
-  height: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .archive-box {
@@ -256,8 +257,14 @@
   margin: 0 auto 4%;
 }
 
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  .archive-item img {
+    height: 120px;
+  }
+}
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 767px) {
   .archive-header-box {
     top: 30%;
   }
@@ -334,6 +341,10 @@
   .archive-box {
     padding: 10% 6%;
     background-color: rgba(0, 152,68, 0.3)
+  }
+
+  .archive-item img {
+    height: 100px;
   }
 
   .archive-icon {
@@ -529,13 +540,13 @@
 }
 
 .archive-detail-button-prev {
-  width: 50%;
+  margin-right: 8%;
 }
 
 .archive-detail-button {
   position: relative;
   width: 300px;
-  padding: 5.7% 0;
+  padding: 6.7% 0;
   margin: 0 auto;
   font-size: 1.8rem;
   text-align: center;
@@ -692,6 +703,10 @@
   .archive-detail-button,
   .archive-button-top {
     width: 100%;
+  }
+
+  .archive-detail-button {
+    padding: 4.7% 0;
   }
 
   .archive-detail-item-box {
