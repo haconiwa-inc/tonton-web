@@ -84,12 +84,12 @@
                 </a>
               </div>
               <div class="header-bottom-menu-item">
-                <a href="/chintai/">
+                <a href="/business/chintai/">
                   借りる
                 </a>
               </div>
               <div class="header-bottom-menu-item">
-                <a href="/reform/">
+                <a href="/business/reform/">
                   直す
                 </a>
               </div>

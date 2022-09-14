@@ -26,10 +26,10 @@ get_header();
         </ul>
 
         <div class="news-detail-content">
-          <div class="news-detail-tags news-tags-<?php foreach((get_the_tags()) as $tag) { echo $tag->slug . ' ';} ?>">
+          <div class="news-detail-tags news-tags-<?php foreach((get_the_category()) as $category) { echo $category->slug . ' ';} ?>">
           <?php 
-            foreach((get_the_tags()) as $tag) {
-              echo $tag->name . ' ';
+            foreach((get_the_category()) as $category) {
+              echo $category->name . ' ';
             } 
           ?>
           </div>

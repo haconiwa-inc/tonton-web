@@ -7,6 +7,8 @@
 .news-tab-top,
 .news-tab-bottom {
   margin-top: 5%;
+  font-weight: bold;
+  font-family: "GenJyuuGothic";
 }
 
 .news-tab-top ul,
@@ -23,18 +25,29 @@
 
 .news-tab-top li,
 .news-tab-bottom li {
-  width: 150px;
+  padding: 0 30px;
   border-right: 1px solid #4D291F;
+}
+
+.news-tab-top li input[type="radio"]:checked + span,
+.news-tab-bottom li input[type="radio"]:checked + span {
+  color: #4D291F;
 }
 
 .news-tab-top li:first-child,
 .news-tab-bottom li:first-child {
+  padding-left: 0;
   text-align: start;
 }
 
 .news-tab-top li:last-child,
 .news-tab-bottom li:last-child {
   border-right: none;
+}
+
+.news-tab-top input,
+.news-tab-bottom input {
+  display: none;
 }
 
 .news-select {
@@ -100,8 +113,17 @@
 }
 
 .news-description {
+  color: #333;
   font-size: 1.6rem;
   margin-left: 5%;
+}
+
+.news-item-none {
+  margin: 10% 0;
+  font-size: 2rem;
+  font-family: "GenJyuuGothic";
+  color: #333;
+  text-align: center;
 }
 
 .news-description a {
@@ -144,44 +166,8 @@
   width: 100%;
 }
 
-.prev,
-.next {
-  display: inline-block;
-  margin: 8px 0;
-  text-decoration: none;
-  border-radius: 100%;
-  width: 42px;
-  height: 42px;
-  padding: 8px 0;
-  font-size: 2rem;
-  box-sizing: border-box;
-  color: #C9BEBB;
-  line-height: 1;
-  border: 2px solid #4D291F;
-  color: #4D291F;
-}
-
-.page-numbers {
-  display: inline-block;
-  margin: 8px 0;
-  text-decoration: none;
-  border-radius: 100%;
-  width: 42px;
-  height: 42px;
-  padding: 8px 0;
-  font-size: 2rem;
-  box-sizing: border-box;
-  color: #C9BEBB;
-  line-height: 1;
-}
-
-.pagination a:hover {
-  opacity: 0.7;
-}
-
-.pagination .current {
-  font-weight: bold;
-  color: #4D291F;
+.nav-links li {
+  border: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -189,6 +175,12 @@
   .news-tab-bottom ul {
     margin-top: 8%;
     font-size: 1.8rem;
+  }
+
+  .news-tab-top li,
+  .news-tab-bottom li {
+    padding: 0 10px;
+    font-size: 1.5rem;
   }
 
   .news-list {
@@ -212,6 +204,11 @@
     margin: 4% 0;
   }
 
+  .news-item-none {
+    margin: 10% 0;
+    font-size: 1.8rem;
+  }
+
   .news-button-wrapper {
     margin-top: 20%;
   }
@@ -231,10 +228,6 @@
   .news-button {
     max-width: 100%;
     padding: 5% 0;
-  }
-
-  .top-buttonInner {
-    padding: 0 5%;
   }
 }
 
@@ -267,13 +260,15 @@
   font-size: 1.6rem;
   width: 120px;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 4px;
   text-align: center;
 }
 
 .news-detail-title {
   margin-top: 2%;
   font-size: 3rem;
+  font-family: "GenJyuuGothic";
+  font-weight: bold;
 }
 
 .news-detail-date {
@@ -349,13 +344,23 @@
 }
 
 @media screen and (max-width: 768px) {
+  .news-detail-content {
+    margin-top: 12%;
+  }
+
   .news-detail-tags {
+    padding: 3px;
     font-size: 1.2rem;
-    width: 100px;
+    width: 80px;
   }
 
   .news-detail-title {
+    margin-top: 5%;
     font-size: 2.2rem;
+  }
+
+  .news-detail-date {
+    font-size: 1.6rem;
   }
   
   .news-detail-img img {
@@ -388,7 +393,7 @@
 
   .news-detail-button,
   .news-button-top {
-    max-width: 100%;
+    width: 100%;
     padding: 5% 0;
   }
 

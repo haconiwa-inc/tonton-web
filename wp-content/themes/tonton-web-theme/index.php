@@ -281,7 +281,7 @@ get_header();
           <ul>
             <?php
               $args = array(
-                'posts_per_page' => 10 // 表示件数の指定
+                'posts_per_page' => 5 // 表示件数の指定
               );
               $posts = get_posts( $args );
               foreach ( $posts as $post ): // ループの開始
@@ -292,9 +292,9 @@ get_header();
                   <div class="top-news-item-box">
                     <div class="top-news-item">
                       <div class="top-news-date"><?php the_time("Y.n.j"); ?></div>
-                      <div class="top-news-tags top-news-tags-<?php foreach((get_the_tags()) as $tag) { echo $tag->slug . ' ';} ?>">
-                        <?php foreach((get_the_tags()) as $tag) {
-                          echo $tag->name . ' ';
+                      <div class="top-news-tags top-news-tags-<?php foreach((get_the_category()) as $category) { echo $category->slug . ' ';} ?>">
+                        <?php foreach((get_the_category()) as $category) {
+                          echo $category->name . ' ';
                         } ?>
                       </div>
                     </div>
