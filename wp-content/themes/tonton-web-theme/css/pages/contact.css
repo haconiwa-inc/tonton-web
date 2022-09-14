@@ -419,5 +419,16 @@
   .mw_wp_form .error {
     font-size: 1.2rem;
     margin-top: 3%;
-  }  
+  }
+  .mwform_back {
+    width: 100%;
+    padding: 5.2% 0;
+    font-size: 1.6rem;
+  }
+  .mwform_submit {
+    width: 100%;
+    margin: 12% 0 0;
+    padding: 5.2% 0;
+    font-size: 1.6rem;
+  }
 }
