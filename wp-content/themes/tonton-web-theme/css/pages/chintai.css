@@ -64,7 +64,7 @@
   height: auto;
 }
 
-.chintai-searchIcon {
+.search-icon {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -186,6 +186,138 @@
   transform: translateY(-50%);
 }
 
+/* modal */
+.modal-container .chintai-slider .swiper {
+  max-width: 720px;
+  margin: auto;
+}
+
+.modal-container .chintai-slider .thumb-wrapper {
+  max-width: 100%;
+  margin: auto;
+}
+
+.modal-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0,0,0,50%);
+  padding: 40px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+  z-index: 1;
+
+}
+.modal-container:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.modal-container.active{
+  opacity: 1;
+  visibility: visible;
+}
+.modal-body{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+}
+.modal-close{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.chintai-modalContent{
+  background: #fff;
+  padding: 50px 40px;
+}
+.chintai-sliderModal {
+  width: 100%;
+  overflow: hidden;
+}
+.chintai-sliderModal .swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+.chintai-sliderModal .swiper-wrapper {
+  margin: 0 auto;
+}
+.chintai-sliderModal .swiper-container.slider {
+  width: 70%;
+  margin: 0 auto;
+  height: 60vh;
+}
+.chintai-sliderModal .swiper-container .swiper-wrapper .swiper-slide {
+  margin-right: 0;
+}
+.chintai-sliderModal .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+.chintai-sliderModal .swiper-container.slider-thumbnail {
+  width: 90%;
+  margin: 0 auto;
+  height: 10vh;
+}
+.chintai-sliderModal .swiper-container.slider-thumbnail .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+.chintai-sliderModal .swiper-container.slider-thumbnail .swiper-wrapper .swiper-slide {
+  width: 25%;
+  height: max-content;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.chintai-sliderModal .swiper-container.slider-thumbnail .swiper-wrapper .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+/* prev nextカスタマイズ */
+.swiper-modal-prev {
+  position: absolute;
+  bottom: 8vh;
+  left: 40px;
+  height: 32px;
+  width: 32px;
+}
+.swiper-modal-prev.swiper-button-disabled,
+.swiper-modal-next.swiper-button-disabled {
+  opacity: 0.3;
+}
+.swiper-modal-next {
+  position: absolute;
+  bottom: 8vh;
+  right: 40px;
+  height: 32px;
+  width: 32px;
+}
+.swiper-modal-prev:after,
+.swiper-modal-next:after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 32px;
+  width: 32px;
+  margin: auto;
+}
+
 @media screen and (max-width:768px) {
   .chintai-block {
     margin: 14.7% auto 0;
@@ -244,7 +376,7 @@
     margin-bottom: 9.3%;
   }
 
-  .chintai-searchIcon {
+  .search-icon {
     bottom: 5px;
     right: 5px;
     width: 20px;

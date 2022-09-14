@@ -2,7 +2,13 @@ $(function(){
   const open = $('.more-button span');
   const close = $('.modal-close');
   const container = $('.modal-container');
+  const search = $('.search-icon')
   $(open).on('click', function() {
+    $(container).addClass('active');
+    return false;
+  });
+
+  $(search).on('click', function() {
     $(container).addClass('active');
     return false;
   })
@@ -104,6 +110,31 @@ var slider = new Swiper('.lineupDetail-sliderModal .slider', {
   }
 });
 
+//サムネイル
+var sliderThumbnailLineupList = new Swiper('.lineup-sliderModal .slider-thumbnail', {
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  spaceBetween: 10,
+  breakpoints: {
+    600: {
+      slidesPerView: 8,
+    },
+  },
+});
+
+//スライダー lineup
+var slider = new Swiper('.lineup-sliderModal .slider', {
+  navigation: {
+    nextEl: '.swiper-modal-next',
+    prevEl: '.swiper-modal-prev',
+  },
+  thumbs: {
+    swiper: sliderThumbnailLineupList,
+  }
+});
+
 // modal chintai
 //サムネイル
 var sliderThumbnailChintai = new Swiper('.chintaiDetail-sliderModal .slider-thumbnail', {
@@ -127,5 +158,30 @@ var slider = new Swiper('.chintaiDetail-sliderModal .slider', {
   },
   thumbs: {
     swiper: sliderThumbnailChintai,
+  }
+});
+
+//サムネイル
+var sliderThumbnailChintaiList = new Swiper('.chintai-sliderModal .slider-thumbnail', {
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  spaceBetween: 10,
+  breakpoints: {
+    600: {
+      slidesPerView: 8,
+    },
+  },
+});
+
+//スライダー chintai
+var slider = new Swiper('.chintai-sliderModal .slider', {
+  navigation: {
+    nextEl: '.swiper-modal-next',
+    prevEl: '.swiper-modal-prev',
+  },
+  thumbs: {
+    swiper: sliderThumbnailChintaiList,
   }
 });

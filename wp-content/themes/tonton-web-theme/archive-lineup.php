@@ -128,7 +128,7 @@ get_header();
                         echo '<span class="lineup-label lineup-label--' . $term->slug . '">' . $term->name . '</span>';
                       endforeach;
                     ?>
-                    <div class="lineup-searchIcon">
+                    <div class="search-icon">
                       <svg id="icon_mushimegane.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
                         <image id="レイヤー_9" data-name="レイヤー 9" width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAB00lEQVQ4jZWUz4uNURjHP66rocaPwUix0MSQIiYrKz9KasqwGjsbZSlhJf+DJAsLlIUslL/AQiykaJIYNIqmMXc0hKzc+7G4zzv3dJzX5Func97n+32+7znP+7wHlcLYo15SJ9S22lGn1Cvq4ZocVPLAcvWGi+OhunsxwwH1dZJ0Tx1Xh9Ut6lH1uvo90RyqM+xT34bopTryj2OtUe8mpjtKhneCnFSbmcFt9ZG6Kovfipx3ueG25G1DhR1V2FXgPgU3XsUawEm6eABM8TfmYv5W4C7HfHohor6JtxyrqVkr+O0Frj85wcrqyBU2JzVrJaMd/Lw6q86pL9QVof8a/E6VZrL9dswjwGDheAPJej2wNNa/Y24ANIEWsAEYBmaAfcBWoBPCJ8BaYBR4DywDpoGfsV4Xupmqhtdiy1dravg5+NUF7khwE2nb7I/gD7VRSOoEX/rVngZ3NjVEfR7E/ULSK/WXujGLn4+cD2m8WgwlX/tmwbQve76Q6GdNbqBUdDARTapn7LUS6qB63O5NU8KJ3BB1r/osE87ba+4KH+31Z4rRuhvllN165kmP1YuhOVAw7CxRCz28gH5gUzTxl+jZFGN074Aeanb4P2NMnY7SnPsDQUFP2XMHtlwAAAAASUVORK5CYII="/>
                       </svg>
@@ -175,6 +175,72 @@ get_header();
                     </ul>
                   </div>
                 </li>
+
+
+                <!-- モーダル本体 -->
+                <div class="modal-container">
+                  <div class="modal-body">
+                    <div class="modal-close">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="29.699" height="29.698" viewBox="0 0 29.699 29.698">
+                        <g transform="translate(-6200.151 -247.151)">
+                          <g fill="#f6f4f4">
+                            <path d="M 6228.43505859375 275.4351501464844 L 6224.89990234375 271.8996887207031 L 6228.43505859375 275.4351501464844 L 6228.43505859375 275.4351501464844 Z" stroke="none"/>
+                            <path d="M 6201.56494140625 247.1508483886719 L 6229.849609375 275.435302734375 L 6228.43505859375 276.8492126464844 L 6200.15087890625 248.5650024414062 L 6201.56494140625 247.1508483886719 Z" stroke="none" fill="#080103"/>
+                          </g>
+                          <g fill="#f6f4f4">
+                            <path d="M 6217.17578125 259.8243408203125 L 6228.43505859375 248.5649261474609 L 6228.435546875 248.5650787353516 L 6217.17578125 259.8243408203125 Z" stroke="none"/>
+                            <path d="M 6228.43505859375 247.1508483886719 L 6229.849609375 248.5650024414062 L 6201.56494140625 276.8492126464844 L 6200.15087890625 275.435302734375 L 6228.43505859375 247.1508483886719 Z" stroke="none" fill="#080103"/>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <!-- モーダル内のコンテンツ -->
+                    <div class="lineup-modalContent">
+                      <!-- swiper modal -->
+                      <div class="lineup-sliderModal">
+
+                        <div class="swiper-container slider">
+                          <div class="swiper-wrapper">
+                            <?php
+                              foreach((array)$img_obj_field['value'] as $img_field) :
+                                $image = $img_field['estate-img-single'];
+                                $size = 'full';
+                                if( $image ) {
+                                  echo '<div class="swiper-slide">' .  wp_get_attachment_image( $image, $size ) . '</div>';
+                                }
+                              endforeach;
+                              ?>
+                          </div>
+                          <div class="swiper-modal-next">
+                            <img src="<?php echo get_template_directory_uri();?>/images/common/next_button.svg" alt="">
+                          </div>
+                          <div class="swiper-modal-prev">
+                            <img src="<?php echo get_template_directory_uri();?>/images/common/prev_button.svg" alt="">
+                          </div>
+                        </div>
+
+                        <!-- サムネイル -->
+                        <div class="swiper-container slider-thumbnail">
+                          <div class="swiper-wrapper">
+                          <?php
+                            foreach((array)$img_obj_field['value'] as $img_field) :
+                              $image = $img_field['estate-img-single'];
+                              $size = 'full';
+                              if( $image ) {
+                                echo '<div class="swiper-slide">' .  wp_get_attachment_image( $image, $size ) . '</div>';
+                              }
+                            endforeach;
+                            ?>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               <?php endwhile; wp_reset_postdata(); ?>
               <div class="lineup-pagination">
                 <div class="navigation pagination">
@@ -223,6 +289,7 @@ get_header();
       </div>
     </div>
   </main><!-- #main -->
+  <script src="<?php echo get_template_directory_uri();?>/js/business.js"></script>
 <?php
 get_footer();
 ?>
