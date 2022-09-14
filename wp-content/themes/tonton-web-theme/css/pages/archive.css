@@ -511,7 +511,7 @@
 .swiper-button-prev {
   position: absolute;
   top: auto;
-  bottom: 9%;
+  bottom: 40%;
   color: #4D291F;
   border-radius: 100%;
   width: 30px;
@@ -528,6 +528,10 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 1.2rem;
+}
+
+.archive-swiper-second {
+  position: relative;
 }
 
 .archive-swiper-second .swiper-slide img {
@@ -634,7 +638,7 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    bottom: 8%;
+    bottom: 30%;
   }
   
   .swiper-button-next {
@@ -678,6 +682,11 @@
 
   .archive-swiper-second {
     padding: 0 10%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    bottom: 30%;
   }
 
   .swiper-button-next {

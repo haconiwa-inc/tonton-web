@@ -68,9 +68,9 @@ get_header();
                   ?>
                 </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
 
           <?php $reform_plan_obj_field = get_field_object('estate-reform-plan'); ?>
