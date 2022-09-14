@@ -82,12 +82,13 @@
   align-items: stretch;
   flex-wrap: wrap;
   font-size: 1.8rem;
+  margin-bottom: 5%;
 }
 
 .lineupDetail-tableArea dl dt {
   width: 25%;
-  padding-bottom: 5.2%;
-  margin-bottom: 5.2%;
+  padding-bottom: 4%;
+  margin-bottom: 4%;
   color: #4D291F;
   font-weight: bold;
   border-bottom: 2px solid #F6F4F4;
@@ -96,8 +97,8 @@
 
 .lineupDetail-tableArea dl dd {
   width: 75%;
-  padding-bottom: 5.2%;
-  margin-bottom: 5.2%;
+  padding-bottom: 4%;
+  margin-bottom: 4%;
   color: #333;
   border-bottom: 2px solid #F6F4F4;
 }
@@ -148,19 +149,19 @@
 }
 
 .lineupDetail-detailAll .lineupDetail-tableArea dl {
-  padding-bottom: 2.6%;
+  padding-bottom: 2%;
 }
 
 .lineupDetail-detailAll .lineupDetail-tableArea dl dt {
   width: 20%;
-  padding-bottom: 2.6%;
-  margin-bottom: 2.6%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .lineupDetail-detailAll .lineupDetail-tableArea dl dd {
   width: 80%;
-  padding-bottom: 2.6%;
-  margin-bottom: 2.6%;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .lineupDetail-plan {
@@ -301,6 +302,7 @@
 }
 
 .lineupDetail-slider .swiper .swiper-wrapper {
+  align-items: flex-end;
   margin-bottom: 15px;
 }
 

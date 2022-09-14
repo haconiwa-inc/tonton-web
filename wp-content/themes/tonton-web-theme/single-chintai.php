@@ -258,7 +258,7 @@ get_header();
                     <dd><?php echo $age_field; ?></dd>
                     <dt>価格</dt>
                     <dd><?php echo $price_field ?></dd>
-                    <dt>物件種別</dt>
+                    <dt>建物構造</dt>
                     <dd><?php echo $structure_field; ?></dd>
                     <?php if (!!$floor_field) : ?>
                       <dt>所在階	</dt>
