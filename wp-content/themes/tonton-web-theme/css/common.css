@@ -170,13 +170,21 @@ a:hover {
   margin: 8px 0;
   text-decoration: none;
   border-radius: 100%;
-  width: 42px;
-  height: 42px;
-  padding: 8px 0;
+  width: 35px;
+  height: 35px;
+  padding: 5px 0;
   font-size: 2rem;
   box-sizing: border-box;
   color: #C9BEBB;
   line-height: 1;
+}
+
+.page-numbers li {
+  margin-right: 2%;
+}
+
+.page-numbers li:last-child {
+  margin-right: 0;
 }
 
 .pagination a:hover {
