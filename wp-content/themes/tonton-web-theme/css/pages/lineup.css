@@ -153,6 +153,7 @@
 
 .lineup-access {
   font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .lineup-price {
@@ -169,6 +170,7 @@
 
 .lineup-detail {
   font-size: 1.6rem;
+  margin-top: 1.8%;
 }
 
 .lineup-buttonArea {
@@ -198,7 +200,7 @@
   padding: 3.9% 0;
   border-radius: 10px;
   text-decoration: none;
-  border: 1px solid #009844;
+  border: 2px solid #009844;
   font-size: 1.8rem;
 }
 
@@ -373,6 +375,7 @@
     border-radius: 5px;
     padding: 4.3% 0;
     font-size: 1.6rem;
+    border: 1px solid #009844;
   }
 
   .lineup-icon {
