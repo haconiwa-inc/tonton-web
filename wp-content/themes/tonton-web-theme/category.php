@@ -99,8 +99,9 @@ get_header();
                   if (is_category($cat_id)) {
                     echo ' class="active"';
                   }
-                  ?>
-                ><a href="/news/<?php echo $category->slug ?>/">
+              ?>
+              > <!-- li閉じタグ -->
+                <a href="/news/<?php echo $category->slug ?>/">
                   <?php echo esc_html($category->name); ?>
                 </a>
               </li>
@@ -110,7 +111,7 @@ get_header();
 
 
           <!-- 2. 検索フォームの表示 -->
-          <form method="get" action="/news/<?php echo $cat_slug; ?>">
+          <form method="get" action="/news/<?php echo $cat_slug; ?>/">
             <div class="news-tab-bottom">
               <ul>
                 <li>

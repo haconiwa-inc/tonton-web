@@ -23,6 +23,14 @@
   text-align: center;
 }
 
+.news-tab-top a {
+  color: #C9BEBB;
+}
+
+.active a {
+  color: #4D291F;
+}
+
 .news-tab-top li,
 .news-tab-bottom li {
   padding: 0 30px;
@@ -98,7 +106,7 @@
   text-align: center;
 }
 
-.news-tags-news {
+.news-tags-info {
   background-color: #4D291F;
 }
 
