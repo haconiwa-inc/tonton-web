@@ -51,20 +51,6 @@ get_header();
             );
 
             // POSTをGETに変更
-            if(!empty($_GET['search_category'])) {
-              foreach($_GET['search_category'] as $value) {
-                if ($value === 'all') {
-                  $posts = get_categories('post', Array('hide_empty' => false));
-                  foreach($posts as $post):
-                    $search_category[] = htmlspecialchars($post->term_id, ENT_QUOTES);
-                  endforeach;
-                } else {
-                  $search_category[] = htmlspecialchars($value, ENT_QUOTES);
-                }
-              }
-              $args += array('category__in' => $search_category);
-            }
-
             if(!empty($_GET['search_tag'])) {
               foreach($_GET['search_tag'] as $value) {
                 if ($value === 'tag-all') {
@@ -80,36 +66,30 @@ get_header();
             }
           ?>
 
+          <div class="news-tab-top">
+            <ul>
+              <li class="active">
+                <a href="/news/">
+                  すべて
+                </a>
+              </li>
+              <?php
+                $option = array(
+                  'exclude' => '1',
+                );
+                $categories = get_categories($option);
+                foreach($categories as $category):
+                  ?>
+                <li><a href="/news/<?php echo $category->slug ?>/">
+                  <?php echo esc_html($category->name); ?>
+                </a>
+              </li>
+              <?php endforeach; ?>
+            </ul>
+          </div>
+
           <!-- 2. 検索フォームの表示 -->
           <form method="get" action="/news/">
-            <div class="news-tab-top">
-              <ul>
-                <li>
-                  <label for="all">
-                    <input type="radio" id="all" name="search_category[]" value="all" onclick="submit();" checked />
-                    <span>すべて</span>
-                  </label>
-                </li>
-                <?php
-                  $categories = get_categories(Array('hide_empty' => false));
-                  foreach($categories as $category):
-                    $checked = "";
-                    if ($_GET['search_category'][0] === 'all') {
-                      $checked = "";
-                    } else {
-                      if(in_array($category->term_id, (array)$search_category)) $checked = " checked";
-                    }
-                ?>
-                  <li>
-                    <label>
-                      <input type="radio" name="search_category[]" value="<?php echo esc_attr($category->term_id); ?>"<?php echo $checked; ?> onclick="submit();">
-                      <span><?php echo esc_html($category->name); ?></span>
-                    </label>
-                  </li>
-                <?php endforeach; ?>
-              </ul>
-            </div>
-                
             <div class="news-tab-bottom">
               <ul>
                 <li>
