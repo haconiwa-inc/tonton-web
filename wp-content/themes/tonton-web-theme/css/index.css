@@ -543,6 +543,10 @@
   width: 150px;
 }
 
+.top-content-button--long {
+  padding: 20px 30px;
+}
+
 @media screen and (min-width:768px) and ( max-width:1023px) {
   .top-notice-item {
     width: 100%;
