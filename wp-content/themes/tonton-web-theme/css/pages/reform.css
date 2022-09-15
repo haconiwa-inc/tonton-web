@@ -194,6 +194,7 @@
 }
 
 .reform-buttonInner {
+  position: relative;
   width: 50%;
   margin: 0 auto;
 }
@@ -263,6 +264,13 @@
   top: -25px;
   left: -20px;
   width: 60px;
+}
+
+.reform-buttonArrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 
 @media screen and (max-width:768px) {
@@ -432,6 +440,7 @@
     width: 40%;
     margin-bottom: 5.5%;
     padding-bottom: 6.6%;
+    padding-right: 5px;
     font-size: 1.4rem;
     border-bottom: 1px solid #4D291F;
   }
