@@ -73,7 +73,7 @@ get_header();
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/images/notice_2.png" alt="">
             <div class="top-notice-description">
-              ワンストップで不動産の購入・売却・リフォーム・相続のご相談に乗ることができます。
+              地元に密着している会社ならではの情報網でお客様にあった物件をご紹介できます。
             </div>
           </div>
           <div class="top-notice-item">
@@ -85,7 +85,7 @@ get_header();
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/images/notice_3.png" alt="">
             <div class="top-notice-description">
-              ワンストップで不動産の購入・売却・リフォーム・相続のご相談に乗ることができます。
+              お客様の情報を社員一同で管理し共有しているため、スピード感のある安心したご対応が可能です。
             </div>
           </div>
         </div>
