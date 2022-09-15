@@ -187,17 +187,17 @@
 }
 
 /* modal */
-.modal-container .chintai-slider .swiper {
+[class*="modal-container-"] .chintai-slider .swiper {
   max-width: 720px;
   margin: auto;
 }
 
-.modal-container .chintai-slider .thumb-wrapper {
+[class*="modal-container-"] .chintai-slider .thumb-wrapper {
   max-width: 100%;
   margin: auto;
 }
 
-.modal-container{
+[class*="modal-container-"] {
   position: fixed;
   top: 0;
   left: 0;
@@ -214,13 +214,13 @@
   z-index: 1;
 
 }
-.modal-container:before{
+[class*="modal-container-"]:before{
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 100%;
 }
-.modal-container.active{
+[class*="modal-container-"].active{
   opacity: 1;
   visibility: visible;
 }
