@@ -389,17 +389,18 @@
 }
 
 .top-news-tags {
-  padding: 6px;
+  padding: 3px 4px;
   font-size: 1.2rem;
-  width: 120px;
+  font-weight: bold;
   height: 100%;
+  width: 80px;
   margin-left: 10%;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 4px;
   text-align: center;
 }
 
-.top-news-tags-news {
+.top-news-tags-info {
   background-color: #4D291F;
 }
 
@@ -701,9 +702,11 @@
   }
 
   .top-news-tags {
-    width: 80px;
+    width: 65px;
     margin-left: 4%;
-    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 1rem;
+    border-radius: 2px;
   }
 
   .top-news-description {
