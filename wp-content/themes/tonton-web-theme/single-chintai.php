@@ -194,12 +194,6 @@ get_header();
                               endforeach;
                               ?>
                           </div>
-                          <div class="swiper-modal-next">
-                            <img src="<?php echo get_template_directory_uri();?>/images/common/next_button.svg" alt="">
-                          </div>
-                          <div class="swiper-modal-prev">
-                            <img src="<?php echo get_template_directory_uri();?>/images/common/prev_button.svg" alt="">
-                          </div>
                         </div>
 
                         <!-- サムネイル -->
@@ -216,6 +210,13 @@ get_header();
                             ?>
                           </div>
                         </div>
+                        <div class="swiper-modal-next">
+                          <img src="<?php echo get_template_directory_uri();?>/images/common/next_button.svg" alt="">
+                        </div>
+                        <div class="swiper-modal-prev">
+                          <img src="<?php echo get_template_directory_uri();?>/images/common/prev_button.svg" alt="">
+                        </div>
+
                       </div>
                     </div>
                   </div>

@@ -287,6 +287,7 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
+  z-index: 99;
 }
 .lineup-modalContent {
   background: #fff;
@@ -314,8 +315,6 @@
   width: 100%;
   margin: 0 auto;
   height: 60vh;
-  padding-bottom: 10vh;
-  margin-bottom: 20vh;
 }
 .lineup-sliderModal .swiper-container .swiper-wrapper .swiper-slide {
   text-align: center;
@@ -334,14 +333,11 @@
   border-radius: 0;
 }
 .lineup-sliderModal .swiper-container.slider-thumbnail {
-  position: absolute;
   width: 90%;
   margin: 0 auto;
-  height: 10vh;
-  min-height: 230px;
-  bottom: 5vh;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 11vh;
+  min-height: 220px;
+  padding: 0;
 }
 .lineup-sliderModal .swiper-container.slider-thumbnail .swiper-wrapper .swiper-slide img {
   width: 100%;
@@ -361,8 +357,8 @@
 /* prev nextカスタマイズ */
 .swiper-modal-prev {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 120px;
+  left: 30px;
   height: 32px;
   width: 32px;
 }
@@ -372,8 +368,8 @@
 }
 .swiper-modal-next {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 120px;
+  right: 30px;
   height: 32px;
   width: 32px;
 }
@@ -534,20 +530,22 @@
 
   /* modal */
   .lineup-modalContent {
-    padding: 60px 20px 20px;
+    padding: 60px 10px 20px;
+  }
+
+  .lineup-sliderModal {
+    padding: 10px;
   }
 
   .lineup-sliderModal .swiper-container.slider {
     height: 35vh;
-    padding-bottom: 8vh;
-    margin-bottom: 9vh;
     max-height: 300px;
     min-height: 200px;
   }
 
   .lineup-sliderModal .swiper-container.slider-thumbnail {
-    height: 15vh;
-    min-height: 115px;
+    height: 8vh;
+    min-height: 80px;
     bottom: 0;
     width: 70%;
   }
@@ -565,11 +563,14 @@
 
   /* prev nextカスタマイズ */
   .swiper-modal-prev {
-
+    bottom: 36px;
+    left: 10px;
     height: 28px;
     width: 28px;
   }
   .swiper-modal-next {
+    bottom: 36px;
+    right: 10px;
     height: 28px;
     width:28px;
   }
