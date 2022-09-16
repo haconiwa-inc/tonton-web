@@ -235,8 +235,7 @@
                   </a>
                 </li>
                 <li>
-                  <!-- TODO: 中古物件のリンク？ -->
-                  <a href="#">
+                  <a href="/business/buy/lineup/?search_genre%5B%5D=old-building">
                     <img src="<?php echo get_template_directory_uri();?>/images/business/link02_reform.png" alt="">
                     <div class="reform-linkTitle">
                       <p>現在取扱中の中古物件</p>
