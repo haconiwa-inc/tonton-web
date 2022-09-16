@@ -131,7 +131,7 @@
                 </div>
                 <div class="business-button business-button--green">
                   <div class="business-buttonInner business-buttonInner--2col">
-                    <a href="/content/">
+                    <a href="/contact/">
                       お問い合わせ
                     </a>
                     <div class="business-buttonArrow">
