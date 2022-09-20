@@ -206,7 +206,7 @@
               <h3 class="reform-contactTitle">まずはお気軽に<br class="dis-sp" />お問い合わせください。</h3>
               <div class="reform-button reform-button--green">
                 <div class="reform-buttonInner reform-buttonInner--small">
-                  <a href="/business/reform">
+                  <a href="/contact/">
                     お問い合わせ
                   </a>
                   <div class="reform-buttonArrow">

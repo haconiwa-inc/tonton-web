@@ -113,7 +113,7 @@
                 </div>
                 <div class="business-button business-button--green">
                   <div class="business-buttonInner business-buttonInner--2col">
-                    <a href="/business/buy/lineup/">
+                    <a href="/business/chintai/">
                       取扱物件を見る
                     </a>
                     <div class="business-buttonArrow">
