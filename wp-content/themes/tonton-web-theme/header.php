@@ -15,7 +15,14 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="og:url" content="<?php echo get_template_directory_uri();?>/images/common/tonton_ogp.jpg">
   <link rel="profile" href="https://gmpg.org/xfn/11">
+  <link rel="icon" href="<?php echo get_template_directory_uri();?>/images/common/tonton_favicon.ico" />
+  <?php if ( is_home() || is_front_page() ) : ?>
+    <title>
+      北海道札幌市の不動産購入・売却、リノベ、賃貸探しならとんとん住宅販売株式会社
+    </title>
+  <?php endif; ?>
   <?php wp_head(); ?>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/header.css" media="all">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/footer.css" media="all">
