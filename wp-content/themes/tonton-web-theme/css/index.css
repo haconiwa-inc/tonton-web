@@ -21,6 +21,10 @@
   border-radius: 10px;
 }
 
+.kv-button:hover {
+  opacity: 0.7;
+}
+
 .kv-button-inner {
   position: relative;
   width: 100%;
@@ -591,6 +595,7 @@
     left: 7%;
     padding: 3% 7%;
     font-size: 1.4rem;
+    border-radius: 6px;
   }
 
   .kv-button-arrow {

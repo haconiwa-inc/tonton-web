@@ -1,4 +1,8 @@
 /* 共通周り */
+html { 
+  scroll-behavior: smooth;
+}
+
 a:hover {
   opacity: 0.7;
 }
