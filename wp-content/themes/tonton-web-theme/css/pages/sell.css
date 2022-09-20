@@ -536,7 +536,7 @@
   }
 
   .sell-button--contact {
-    padding: 0 8.5%;
+    padding: 0;
   }
 
   .sell-buttonInner--small {
@@ -550,7 +550,7 @@
   }
 
   .sell-button a {
-    padding: 7.6% 0;
+    padding: 5% 0;
     font-size: 1.6rem;
   }
 

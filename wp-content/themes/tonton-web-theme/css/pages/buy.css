@@ -378,7 +378,7 @@
   }
 
   .buy-button--contact {
-    padding: 0 8.5%;
+    padding: 0;
   }
 
   .buy-buttonInner--small {
@@ -408,7 +408,7 @@
   }
 
   .buy-button a {
-    padding: 7.2% 0;
+    padding: 5% 0;
     font-size: 1.6rem;
   }
 

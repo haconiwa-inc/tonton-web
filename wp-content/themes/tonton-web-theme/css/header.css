@@ -89,7 +89,7 @@
   height: 100%;
   cursor: pointer;
   position: relative;
-  z-index: 10;
+  z-index: 9999;
 }
 
 .header-menu-line {
@@ -169,7 +169,7 @@
     top: 0;
     transition: .5s;
     overflow-y: scroll;
-    z-index: 1;
+    z-index: 999;
   }
 
   .header-nav-lists {
