@@ -220,7 +220,7 @@ get_header();
                 <div class="top-content-item-description dis-pc">
                   注文住宅と同じ品質や設備で建てられた賃貸住宅がございます。敷地内駐車場には、積雪時に安心のロードヒーティングが備えつけられています。
                 </div>
-                <a href="/business/buy/lineup/">
+                <a href="/business/chintai/">
                   <div class="top-content-button m-start">
                     取扱物件を見る
                     <div class="top-arrow">
@@ -338,25 +338,31 @@ get_header();
           <div class="top-about-title">私たちについて</div>
           <div class="top-about-wrapper">
             <div class="top-about-block">
-              <img src="wp-content/themes/tonton-web-theme/images/about_1.png" alt="">
-              <div class="top-about-box">
-                <div class="top-about-box-text">経営理念</div>
-                <div class="top-about-arrorw">→</div>
-              </div>
+              <a href="/company-inq/">
+                <img src="wp-content/themes/tonton-web-theme/images/about_1.png" alt="">
+                <div class="top-about-box">
+                  <div class="top-about-box-text">経営理念</div>
+                  <div class="top-about-arrorw">→</div>
+                </div>
+              </a>
             </div>
             <div class="top-about-block">
-              <img src="wp-content/themes/tonton-web-theme/images/about_2.png" alt="">
-              <div class="top-about-box">
-                <div class="top-about-box-text">代表挨拶</div>
-                <div class="top-about-arrorw">→</div>
-              </div>
+              <a href="/company-inq/#greeting">
+                <img src="wp-content/themes/tonton-web-theme/images/about_2.png" alt="">
+                <div class="top-about-box">
+                  <div class="top-about-box-text">代表挨拶</div>
+                  <div class="top-about-arrorw">→</div>
+                </div>
+              </a>
             </div>
             <div class="top-about-block">
-              <img src="wp-content/themes/tonton-web-theme/images/about_3.png" alt="">
-              <div class="top-about-box">
-                <div class="top-about-box-text">会社概要</div>
-                <div class="top-about-arrorw">→</div>
-              </div>
+              <a href="/company-inq/#overview">
+                <img src="wp-content/themes/tonton-web-theme/images/about_3.png" alt="">
+                <div class="top-about-box">
+                  <div class="top-about-box-text">会社概要</div>
+                  <div class="top-about-arrorw">→</div>
+                </div>
+              </a>
             </div>
           </div>
           <div class="top-about-subtitle">当社へのアクセス</div>

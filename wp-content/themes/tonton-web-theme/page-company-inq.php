@@ -29,7 +29,7 @@
               <li><a href="/">TOP</a></li>
               <li>会社概要</li>
             </ul>
-            <div class="company-block company-block--top">
+            <div class="company-block company-block--top" id="greeting">
               <h3 class="company-subTitle">
               代表ご挨拶
               </h3>
@@ -53,7 +53,7 @@
               </div>
             </div>
           </div>
-          <div class="company-block company-block--wull">
+          <div class="company-block company-block--wull" id="overview">
             <div class="company-blockInner">
               <h3 class="company-subTitle">企業情報</h3>
               <table class="company-table">
