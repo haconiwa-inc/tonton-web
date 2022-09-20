@@ -226,6 +226,9 @@
   height: 30px;
   cursor: pointer;
 }
+.modal-close-icon {
+  fill: #080103;
+}
 .company-modalContent{
   background: #fff;
   padding: 50px 40px;
@@ -354,12 +357,13 @@
     display: block;
   }
   .company-staffImg-m {
-    width: 60%;
+    width: 100%;
     margin: 0 auto 10%;
   }
   .company-staffTextArea-m {
     width: 100%;
     margin-left: 0;
+    padding: 0 20px
   }
   .company-staffPosition-m {
     font-size: 1.4rem;
@@ -377,14 +381,14 @@
   }
   .company-table-m th {
     font-size: 1.4rem;
-    border-bottom: 1px solid #4d291f;
+    border-bottom: 2px solid #4d291f;
     padding: 3% 0;
     vertical-align: top;
     width: 35%;
   }
   .company-table-m td {
     font-size: 1.4rem;
-    border-bottom: 1px solid #4d291f;
+    border-bottom: 2px solid #4d291f;
     padding: 3% 0;
     width: 65%;
   }
@@ -423,8 +427,11 @@
     width: 23px;
     height: 23px;
   }
+  .modal-close-icon {
+    fill: #fff;
+  }
   .company-modalContent{
-    padding: 60px 20px;
+    padding: 0 0 35px;
   }
 }
 
