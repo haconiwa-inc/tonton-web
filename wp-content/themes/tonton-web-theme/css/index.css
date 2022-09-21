@@ -6,7 +6,6 @@
   width: 100%;
 }
 
-
 .kv-button {
   position: absolute;
   bottom: 15%;
@@ -19,6 +18,7 @@
   color: #009844;
   background-color: #fff;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .kv-button:hover {
