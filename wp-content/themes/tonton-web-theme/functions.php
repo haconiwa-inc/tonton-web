@@ -310,3 +310,10 @@ function rewrite_title( $title ) {
   return $title;
 }
 add_filter('document_title_parts', 'rewrite_title');
+
+function get_page_title() {
+  // ページタイトルを取得
+  $page_title = wp_get_document_title();
+
+  return $page_title;
+}

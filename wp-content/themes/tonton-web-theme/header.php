@@ -15,36 +15,54 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="og:url" content="<?php echo get_template_directory_uri();?>/images/common/tonton_ogp.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="<?php echo get_page_title(); ?>">
+  <meta property="og:url" content="<?php echo (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>">
+  <meta property="og:image" content="<?php echo get_template_directory_uri();?>/images/common/tonton_ogp.jpg">
+  <meta name="twitter:card" content="summary">
   <link rel="profile" href="https://gmpg.org/xfn/11">
   <link rel="icon" href="<?php echo get_template_directory_uri();?>/images/common/tonton_favicon.ico" />
   <?php if (is_home() || is_front_page()) : ?>
+    <meta property="og:description" content="札幌の不動産のことならとんとん住宅販売。ワンストップで不動産の購入・売却・リフォーム・相続のご相談に乗ることができます。">
     <meta name="description" content="札幌の不動産のことならとんとん住宅販売。ワンストップで不動産の購入・売却・リフォーム・相続のご相談に乗ることができます。">
   <?php elseif (is_category() || is_singular('post')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトのお知らせページです。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトのお知らせページです。">
   <?php elseif (is_category() || is_singular('sold')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトの過去の成約物件ページです。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトの過去の成約物件ページです。">
   <?php elseif (is_category() || is_singular('archive')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトの過去のリフォーム施工例ページです。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトの過去のリフォーム施工例ページです。">
   <?php elseif (is_category() || is_singular('lineup')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトの売買物件ページです。物件のご紹介・現地ご案内・資金計画の提案・住宅ローンのご相談等も行なっております。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトの売買物件ページです。物件のご紹介・現地ご案内・資金計画の提案・住宅ローンのご相談等も行なっております。">
   <?php elseif (is_category() || is_singular('chintai')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトの賃貸物件ページです。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトの賃貸物件ページです。">
   <?php elseif (is_page('company-inq')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトの会社概要・スタッフ紹介ページです。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトの会社概要・スタッフ紹介ページです。">
   <?php elseif (is_page('policy')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトのプライバシーポリシーページです。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトのプライバシーポリシーページです。">
   <?php elseif (is_page('business')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトの事業案内ページです。不動産の価値を最大化できるプランニング力に自信があります。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトの事業案内ページです。不動産の価値を最大化できるプランニング力に自信があります。">
   <?php elseif (is_page('reform')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトのリフォーム／リノベーションページです。購入と併せたリフォームのご提案、お客様のお住まいのリフォーム相談、戸建・マンション問わずリノベーションのご提案が可能です。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトのリフォーム／リノベーションページです。購入と併せたリフォームのご提案、お客様のお住まいのリフォーム相談、戸建・マンション問わずリノベーションのご提案が可能です。">
   <?php elseif (is_page('sell')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトの物件売却ページです。とんとん住宅販売では、不動産の無料査定等・自社での買取を行なっています。札幌市内全域の土地・中古住宅・マンションを豊富に取り扱っています。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトの物件売却ページです。とんとん住宅販売では、不動産の無料査定等・自社での買取を行なっています。札幌市内全域の土地・中古住宅・マンションを豊富に取り扱っています。">
   <?php elseif (is_page('buy')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトの物件購入ページです。札幌市内全域の土地・中古住宅・マンションを豊富に取り扱っています。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトの物件購入ページです。札幌市内全域の土地・中古住宅・マンションを豊富に取り扱っています。">
   <?php elseif (is_page('contact') || is_page('confirm') || is_page('comple')) : ?>
+    <meta property="og:description" content="とんとん住宅販売株式会社企業サイトのお問い合わせページです。">
     <meta name="description" content="とんとん住宅販売株式会社企業サイトのお問い合わせページです。">
   <?php else: ?>
+    <meta property="og:description" content="<?php $post_type = get_queried_object(); echo esc_attr($post_type->description); ?>">
     <meta name="description" content="<?php $post_type = get_queried_object(); echo esc_attr($post_type->description); ?>">
   <?php endif; ?>
   <?php wp_head(); ?>
