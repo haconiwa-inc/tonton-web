@@ -293,3 +293,20 @@ function my_mwform_error_message($error, $key, $rule) {
   return $error;
   }
   add_filter('mwform_error_message_mw-wp-form-1832', 'my_mwform_error_message', 10, 3);
+
+
+// head title
+function custom_title_sep( $sep ){
+  $sep = '|';
+  return $sep;
+}
+add_filter( 'document_title_separator', 'custom_title_sep' );
+
+function rewrite_title( $title ) {
+  if (is_home() || is_front_page() ) {
+    $title['title'] = '北海道札幌市の不動産購入・売却、リノベ、賃貸探しならとんとん住宅販売株式会社';
+    $title['tagline'] = '';
+  }
+  return $title;
+}
+add_filter('document_title_parts', 'rewrite_title');
