@@ -111,14 +111,6 @@
                   <th>設立</th>
                   <td>2015年12月14日</td>
                 </tr>
-                <tr>
-                  <th>年商</th>
-                  <td>7億円</td>
-                </tr>
-                <tr>
-                  <th>取引銀行</th>
-                  <td>北洋銀行</td>
-                </tr>
               </table>
               <div class="company-about-wrapper">
                 <div class="company-about-item">
