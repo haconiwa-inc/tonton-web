@@ -32,7 +32,7 @@
 }
 
 .buy-block--top {
-  margin: 4% auto 9.8%;
+  margin: 4% auto 0;
 }
 
 .buy-blockInner {
@@ -188,6 +188,10 @@
   margin: 11.7% auto;
 }
 
+.buy-linkList--top {
+  margin: 0 auto 9.8%;
+}
+
 .buy-linkList li a {
   position: relative;
   display: block;
@@ -266,7 +270,7 @@
   }
 
   .buy-block--top {
-    margin: 9.4% auto 15.4%;
+    margin: 9.4% auto 0;
   }
 
   .buy-blockInner {
@@ -388,6 +392,10 @@
   .buy-linkList {
     display: block;
     margin: 18.2% auto;
+  }
+
+  .buy-linkList--top {
+    margin: 0 auto 15.4%;
   }
 
   .buy-linkList li a {

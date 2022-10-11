@@ -170,7 +170,7 @@
 .sell-exampleTitleDeco {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 40px;
   width: 30%;
   max-width: 270px;
 }
@@ -459,14 +459,14 @@
   .sell-exampleTitle {
     position: relative;
     margin-bottom: 9.1%;
-    padding-bottom: 6.2%;
+    padding-bottom: 9.1%;
     border-bottom: 2px solid #4D291F;
   }
 
   .sell-exampleTitleDeco {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 10px;
     width: 30%;
     max-width: 83px;
   }
