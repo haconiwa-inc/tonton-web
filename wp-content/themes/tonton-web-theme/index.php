@@ -261,12 +261,36 @@ get_header();
       <div class="top-slider">
         <div class="swiper infinite-slider">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_1.png" alt="slider1" /></div>
-            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_2.png" alt="slider2" /></div>
-            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_3.png" alt="slider3" /></div>
-            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_4.png" alt="slider4" /></div>
-            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_5.png" alt="slider5" /></div>
-            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_6.png" alt="slider6" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_01.png" alt="slider1" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_02.png" alt="slider2" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_03.png" alt="slider3" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_04.png" alt="slider4" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_05.png" alt="slider5" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_06.png" alt="slider6" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_07.png" alt="slider7" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_08.png" alt="slider8" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_09.png" alt="slider9" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_10.png" alt="slider10" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_11.png" alt="slider11" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_12.png" alt="slider12" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_13.png" alt="slider13" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_14.png" alt="slider14" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_15.png" alt="slider15" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_16.png" alt="slider16" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_17.png" alt="slider17" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_18.png" alt="slider18" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_19.png" alt="slider19" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_20.png" alt="slider20" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_21.png" alt="slider21" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_22.png" alt="slider22" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_23.png" alt="slider23" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_24.png" alt="slider24" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_25.png" alt="slider25" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_26.png" alt="slider26" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_27.png" alt="slider27" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_28.png" alt="slider28" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_29.png" alt="slider29" /></div>
+            <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/slider_30.png" alt="slider30" /></div>
           </div>
         </div>
       </div>
@@ -338,10 +362,10 @@ get_header();
           <div class="top-about-title">私たちについて</div>
           <div class="top-about-wrapper">
             <div class="top-about-block">
-              <a href="/company-inq/">
+              <a href="/business/">
                 <img src="wp-content/themes/tonton-web-theme/images/about_1.png" alt="">
                 <div class="top-about-box">
-                  <div class="top-about-box-text">経営理念</div>
+                  <div class="top-about-box-text">事業案内</div>
                   <div class="top-about-arrorw">→</div>
                 </div>
               </a>
