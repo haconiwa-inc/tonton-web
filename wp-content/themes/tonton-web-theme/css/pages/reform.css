@@ -111,7 +111,7 @@
 .reform-exampleTitleDeco {
   position: absolute;
   bottom: 0;
-  right: 20px;
+  right: 0;
   width: 30%;
   max-width: 270px;
 }
@@ -407,7 +407,7 @@
   .reform-exampleTitleDeco {
     position: absolute;
     bottom: 0;
-    right: 10px;
+    right: 0;
     width: 30%;
     max-width: 83px;
   }
