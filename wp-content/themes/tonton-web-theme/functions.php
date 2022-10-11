@@ -317,3 +317,12 @@ function get_page_title() {
 
   return $page_title;
 }
+
+//売買物件情報のカテゴリーBOXを非表示に
+function genre_meta_box_remove() {
+  $id = 'genrediv';
+  $post_type = 'lineup';
+  $position = 'side';
+  remove_meta_box( $id, $post_type, $position );
+}
+add_action( 'admin_menu', 'genre_meta_box_remove');
