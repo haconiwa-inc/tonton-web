@@ -466,6 +466,7 @@
   max-height: 100%;
   align-self: center;
   border-radius: 0;
+  object-fit: contain;
 }
 .lineupDetail-sliderModal .swiper-container.slider-thumbnail {
   width: 90%;
