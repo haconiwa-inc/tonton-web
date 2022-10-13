@@ -89,13 +89,14 @@
 
 .lineup-img {
   position: relative;
-  width: 30%;
+  width: 32%;
   height: fit-content;
 }
 
 .lineup-img img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
 }
 
 .search-icon {
@@ -120,12 +121,10 @@
   background-color: #619800;
 }
 
-/*　TODO: デザインにないので確認 */
 .lineup-label--construction {
   background-color: #D6412D;
 }
 
-/*　TODO: デザインにないので確認 */
 .lineup-label--land {
   background-color: #D9882A;
 }
@@ -135,7 +134,7 @@
 }
 
 .lineup-textArea {
-  width: 70%;
+  width: 68%;
   margin-left: 3.2%;
   display: flex;
   flex-direction: column;
@@ -452,6 +451,10 @@
   .lineup-img {
     width: 100%;
     margin-bottom: 9.3%;
+  }
+
+  .lineup-img img {
+    height: 258px;
   }
 
   .search-icon {

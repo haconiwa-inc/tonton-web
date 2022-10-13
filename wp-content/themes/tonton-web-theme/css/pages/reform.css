@@ -33,14 +33,14 @@
 }
 
 .reform-block--top {
-  margin: 4% auto 9.8%;
+  margin: 4% auto 0;
 }
 
 .reform-blockInner {
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 3.5%;
   box-sizing: border-box;
 }
 
@@ -216,6 +216,10 @@
   margin: 11.7% auto;
 }
 
+.reform-linkList--top {
+  margin: 0 auto 9.8%;
+}
+
 .reform-linkList li a {
   position: relative;
   display: block;
@@ -295,7 +299,7 @@
   }
 
   .reform-block--top {
-    margin: 9.4% auto 15.4%;
+    margin: 9.4% auto 0;
   }
 
   .reform-blockInner {
@@ -485,6 +489,10 @@
   .reform-linkList {
     display: block;
     margin: 18.2% auto;
+  }
+
+  .reform-linkList--top {
+    margin: 0 auto 15.4%;
   }
 
   .reform-linkList li a {

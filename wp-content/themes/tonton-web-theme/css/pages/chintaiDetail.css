@@ -309,7 +309,8 @@
 
 .chintaiDetail-slider .swiper-fade .swiper-slide .slide img {
   width: 100%;
-  height: auto;
+  height: 370px;
+  object-fit: cover;
   border-radius: 0;
 }
 
@@ -330,7 +331,8 @@
 
 .chintaiDetail-slider .thumb-media img {
   width: 100%;
-  height: auto;
+  height: 84px;
+  object-fit: cover;
 }
 
 /* modal */
@@ -705,6 +707,14 @@
   .chintaiDetail-sliderModal .swiper-container.slider-thumbnail {
     width: 80%;
     height: 6vh;
+  }
+
+  .chintaiDetail-slider .swiper-fade .swiper-slide .slide img {
+    height: 240px;
+  }
+
+  .chintaiDetail-slider .thumb-media img {
+    height: 54px;
   }
 
   /* modal */

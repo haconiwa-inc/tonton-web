@@ -302,19 +302,6 @@ get_header();
                       <dd><?php echo $day_field; ?></dd>
                     <?php endif; ?>
                   </dl>
-                  <div class="chintaiDetail-map">
-                  <!-- TODO: jsいれないと表示されなさそう -->
-                    <?php
-                      if($map_field){
-                        $lat = $map_field['lat'];
-                        $lng = $map_field['lng'];
-                        echo '<div class="sale-map">';
-                        echo (do_shortcode('[map lat="'.$lat.'" lng="'.$lng.'" height="400px"][/map]'));
-                        echo '</div>';
-                      };
-                    ?>
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/map.png" alt="">
-                  </div>
                 </div>
               </div>
               <div class="chintaiDetail-buttonArea">
