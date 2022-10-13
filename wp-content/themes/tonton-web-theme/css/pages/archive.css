@@ -488,7 +488,7 @@
 }
 
 .archive-mySwiper2 {
-  height: 80%;
+  height: 500px;
   width: 100%;
 }
 
@@ -637,6 +637,10 @@
     height: 70px;
   }
 
+  .archive-mySwiper2 {
+    height: 360px;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     bottom: 30%;
@@ -664,6 +668,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .archive-mySwiper2 {
+    height: 360px;
+  }
+  
   .archive-detail-header-box {
     top: 30%;
   }

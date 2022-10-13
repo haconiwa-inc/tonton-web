@@ -190,6 +190,26 @@ function my_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'my_enqueue_styles');
 
+// お知らせ管理画面radioボタン
+add_action('admin_print_footer_scripts', 'my_print_footer_scripts');
+function my_print_footer_scripts() {
+  echo '<script type="text/javascript">
+    jQuery(document).ready(function($){
+      $(".categorychecklist input[type=checkbox]").each(function(){
+        $check = $(this);
+        var checked = $check.attr("checked") ? \' checked="checked"\' : \'\';
+        $(\'<input type="radio" id="\' + $check.attr("id")
+          + \'" name="\' + $check.attr("name") + \'"\'
+      + checked
+      + \' value="\' + $check.val()
+      + \'"/>\'
+        ).insertBefore($check);
+        $check.remove();
+      });
+    });
+    </script>';
+}
+
 // 売買物件・賃貸物件実装
 add_action( 'admin_print_footer_scripts', 'select_to_radio_genre' );
 function select_to_radio_genre() {
