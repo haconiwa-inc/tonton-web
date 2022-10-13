@@ -332,7 +332,7 @@
   border-radius: 0;
 }
 .lineup-sliderModal .swiper-container.slider-thumbnail {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   height: 11vh;
   min-height: 220px;
@@ -356,7 +356,7 @@
 /* prev nextカスタマイズ */
 .swiper-modal-prev {
   position: absolute;
-  bottom: 120px;
+  bottom: 100px;
   left: 30px;
   height: 32px;
   width: 32px;
