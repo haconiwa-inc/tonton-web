@@ -220,7 +220,6 @@ get_header();
               <div class="lineupDetail-points">
                 <span class="lineupDetail-pointLabel">Point</span>
                 <div class="lineupDetail-pointArea">
-                  <!-- TODO: foreach ul liで書き直したい -->
                   <p>
                     <?php
                       foreach((array)$point_obj_field['value'] as $point_field) :
@@ -303,19 +302,6 @@ get_header();
                       <dd><?php echo $load_field; ?></dd>
                     <?php endif; ?>
                   </dl>
-                  <div class="lineupDetail-map">
-                  <!-- TODO: jsいれないと表示されなさそう -->
-                    <?php
-                      if($map_field){
-                        $lat = $map_field['lat'];
-                        $lng = $map_field['lng'];
-                        echo '<div class="sale-map">';
-                        echo (do_shortcode('[map lat="'.$lat.'" lng="'.$lng.'" height="400px"][/map]'));
-                        echo '</div>';
-                      };
-                    ?>
-                    <img src="<?php echo get_template_directory_uri();?>/images/business/map.png" alt="">
-                  </div>
                 </div>
                 <ul class="lineupDetail-plan">
                   <?php if ( (!!(array)$reform_plan_obj_field['value']) ) : ?>
