@@ -493,7 +493,7 @@
 }
 
 .mySwiper2 {
-  height: 80%;
+  height: 500px;
   width: 100%;
 }
 
@@ -594,6 +594,10 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
+  .mySwiper2 {
+    height: 360px;
+  }
+
   .news-swiper-second .swiper-slide img {
     height: 70px;
   }
@@ -625,6 +629,10 @@
 }
 
 @media screen and (max-width: 767px) {
+  .mySwiper2 {
+    height: 360px;
+  }
+  
   .sold-detail-header-box {
     top: 30%;
   }

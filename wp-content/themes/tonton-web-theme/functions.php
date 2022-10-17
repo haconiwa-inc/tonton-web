@@ -190,6 +190,40 @@ function my_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'my_enqueue_styles');
 
+// 「新規カテゴリーを追加」と「よく使うもの」を非表示
+function hide_category_tabs_adder() {
+  global $pagenow;
+  global $post_type;
+  if ( is_admin() && ($pagenow=='post-new.php' || $pagenow=='post.php') ) {
+    echo '<style type="text/css">
+    #category-tabs, #category-adder {display:none;}
+    #post_tag-tabs, #post_tag-adder {display:none;}
+    .categorydiv .tabs-panel {padding: 0 !important; background: none; border: none !important;}
+    </style>';
+  }
+}
+add_action( 'admin_head', 'hide_category_tabs_adder' );
+
+// お知らせ管理画面radioボタン
+add_action('admin_print_footer_scripts', 'my_print_footer_scripts');
+function my_print_footer_scripts() {
+  echo '<script type="text/javascript">
+    jQuery(document).ready(function($){
+      $(".categorychecklist input[type=checkbox]").each(function(){
+        $check = $(this);
+        var checked = $check.attr("checked") ? \' checked="checked"\' : \'\';
+        $(\'<input type="radio" id="\' + $check.attr("id")
+          + \'" name="\' + $check.attr("name") + \'"\'
+      + checked
+      + \' value="\' + $check.val()
+      + \'"/>\'
+        ).insertBefore($check);
+        $check.remove();
+      });
+    });
+    </script>';
+}
+
 // 売買物件・賃貸物件実装
 add_action( 'admin_print_footer_scripts', 'select_to_radio_genre' );
 function select_to_radio_genre() {
