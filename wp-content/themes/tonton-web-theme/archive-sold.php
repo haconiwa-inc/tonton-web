@@ -157,8 +157,8 @@ get_header();
                 <a href="<?php the_permalink() ?>">
                   <div class="sold-item">
                     <?php
-                      $img_obj_field = get_field_object('estate-img');
-                      $image = $img_obj_field['value'][0]['estate-img-single'];
+                      $img_obj_field = get_field_object('sold-img');
+                      $image = $img_obj_field['value'][0]['sold-img-single'];
                       $size = 'full';
                     ?>
                     <?php echo wp_get_attachment_image( $image, $size ); ?>

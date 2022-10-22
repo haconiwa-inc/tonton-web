@@ -198,6 +198,9 @@ function hide_category_tabs_adder() {
     echo '<style type="text/css">
     #category-tabs, #category-adder {display:none;}
     #post_tag-tabs, #post_tag-adder {display:none;}
+    #sold_area-tabs, #sold_area-adder {display:none;}
+    #sold_type-tabs, #sold_typea-adder {display:none;}
+    #archive_type-tabs, #archive_type-adder {display:none;}
     .categorydiv .tabs-panel {padding: 0 !important; background: none; border: none !important;}
     </style>';
   }
