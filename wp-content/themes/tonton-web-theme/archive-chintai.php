@@ -68,29 +68,29 @@ get_header();
             while ( have_posts() ) :
               the_post();
 
-              $stage_field = get_field_object('estate-stage');
+              $stage_field = get_field_object('chintai-stage');
               $stage_value_field = $stage_field['value'];
               $stage_label_field = $stage_field['choices'][ $stage_value_field ];
-              $img_obj_field = get_field_object('estate-img');
+              $img_obj_field = get_field_object('chintai-img');
 
-              $price_field = get_field('estate-price');
-              $address_field = get_field('estate-address');
-              $traffic_field = get_field('estate-traffic');
+              $price_field = get_field('chintai-price');
+              $address_field = get_field('chintai-address');
+              $traffic_field = get_field('chintai-traffic');
 
               // その他まとめる
-              $madori_field = get_field('estate-madori');
-              $structure_field = get_field('estate-structure');
-              $area_building_field = get_field('estate-area-building');
-              $area_ground_field = get_field('estate-area-ground');
-              $age_field = get_field('estate-age');
-              $deposit_field = get_field('estate-deposit');
-              $reward_field = get_field('estate-reward');
+              $madori_field = get_field('chintai-madori');
+              $structure_field = get_field('chintai-structure');
+              $area_building_field = get_field('chintai-area-building');
+              $area_ground_field = get_field('chintai-area-ground');
+              $age_field = get_field('chintai-age');
+              $deposit_field = get_field('chintai-deposit');
+              $reward_field = get_field('chintai-reward');
             ?>
 
               <li class="chintai-item">
                 <div class="chintai-img">
                   <?php
-                    $image = $img_obj_field['value'][0]['estate-img-single'];
+                    $image = $img_obj_field['value'][0]['chintai-img-single'];
                     $size = 'full';
                     if( $image ) {
                       echo wp_get_attachment_image( $image, $size );
@@ -178,7 +178,7 @@ get_header();
                           <div class="swiper-wrapper">
                             <?php
                               foreach((array)$img_obj_field['value'] as $img_field) :
-                                $image = $img_field['estate-img-single'];
+                                $image = $img_field['chintai-img-single'];
                                 $size = 'full';
                                 if( $image ) {
                                   echo '<div class="swiper-slide">' .  wp_get_attachment_image( $image, $size ) . '</div>';
@@ -193,7 +193,7 @@ get_header();
                           <div class="swiper-wrapper">
                           <?php
                             foreach((array)$img_obj_field['value'] as $img_field) :
-                              $image = $img_field['estate-img-single'];
+                              $image = $img_field['chintai-img-single'];
                               $size = 'full';
                               if( $image ) {
                                 echo '<div class="swiper-slide">' .  wp_get_attachment_image( $image, $size ) . '</div>';
