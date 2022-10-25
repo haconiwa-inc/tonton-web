@@ -35,11 +35,11 @@ get_header();
           <div class="archive-detail-main-image">
             <div class="swiper archive-mySwiper2">
               <div class="swiper-wrapper">
-                <?php $img_obj_field = get_field_object('estate-img'); ?>
+                <?php $img_obj_field = get_field_object('archive-img'); ?>
                 <?php
                   foreach((array)$img_obj_field['value'] as $img_field):
                   $size = 'full';
-                  $image = $img_field['estate-img-single'];
+                  $image = $img_field['archive-img-single'];
                 ?>
                   <div class="swiper-slide">
                     <?php echo wp_get_attachment_image($image, $size); ?>
@@ -53,11 +53,11 @@ get_header();
             <div class="archive-swiper-second">
               <div thumbsSlider="" class="swiper archive-mySwiper">
                 <div class="swiper-wrapper">
-                  <?php $img_obj_field = get_field_object('estate-img'); ?>
+                  <?php $img_obj_field = get_field_object('archive-img'); ?>
                   <?php
                     foreach((array)$img_obj_field['value'] as $img_field):
                     $size = 'full';
-                    $image = $img_field['estate-img-single'];
+                    $image = $img_field['archive-img-single'];
                   ?>
                     <div class="swiper-slide">
                       <?php echo wp_get_attachment_image($image, $size); ?>
@@ -73,8 +73,8 @@ get_header();
             </div>
           </div>
 
-          <?php $reform_plan_obj_field = get_field_object('estate-reform-plan'); ?>
-          <?php $renovation_plan_obj_field = get_field_object('estate-renovation-plan'); ?>
+          <?php $reform_plan_obj_field = get_field_object('archive-reform-plan'); ?>
+          <?php $renovation_plan_obj_field = get_field_object('archive-renovation-plan'); ?>
           <?php if ( (!!(array)$reform_plan_obj_field['value']) ) : ?>
             <div class="archive-detail-box">
               <div class="archive-detail-item-title">
@@ -85,7 +85,7 @@ get_header();
                   <div class="archive-detail-item">
                     <div class="archive-detail-item-image">
                       <?php
-                        $reform_image = $reform_plan_field['estate-reform-plan-img'];
+                        $reform_image = $reform_plan_field['archive-reform-plan-img'];
 
                         $size = 'full';
                         if( $reform_image ) {
@@ -96,10 +96,10 @@ get_header();
                   </div>
                   <div class="archive-detail-item">
                     <div class="archive-detail-item-text">
-                      <?php echo $reform_plan_field['estate-reform-plan-title'] ?>
+                      <?php echo $reform_plan_field['archive-reform-plan-title'] ?>
                     </div>
                     <div class="archive-detail-item-description">
-                      <?php echo $reform_plan_field['estate-reform-plan-detail'] ?>
+                      <?php echo $reform_plan_field['archive-reform-plan-detail'] ?>
                     </div>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ get_header();
                   <div class="archive-detail-item">
                     <div class="archive-detail-item-image">
                       <?php
-                        $renovation_image = $renovation_plan_field['estate-renovation-plan-img'];
+                        $renovation_image = $renovation_plan_field['archive-renovation-plan-img'];
 
                         $size = 'full';
                         if( $renovation_image ) {
@@ -127,10 +127,10 @@ get_header();
                   </div>
                   <div class="archive-detail-item">
                     <div class="archive-detail-item-text">
-                      <?php echo $renovation_plan_field['estate-renovation-plan-title'] ?>
+                      <?php echo $renovation_plan_field['archive-renovation-plan-title'] ?>
                     </div>
                     <div class="archive-detail-item-description">
-                      <?php echo $renovation_plan_field['estate-renovation-plan-detail'] ?>
+                      <?php echo $renovation_plan_field['archive-renovation-plan-detail'] ?>
                     </div>
                   </div>
                 </div>
