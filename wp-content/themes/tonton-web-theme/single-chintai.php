@@ -45,9 +45,6 @@ get_header();
       <?php $state_field = get_field('chintai-state'); ?>
       <?php $transfer_field = get_field('chintai-transfer'); ?>
       <?php $day_field = get_field('chintai-day'); ?>
-      <?php
-        $map_field = get_field('chintai-map');
-      ?>
       <?php $deposit_field = get_field('chintai-deposit'); ?>
       <?php $reward_field = get_field('chintai-reward'); ?>
 

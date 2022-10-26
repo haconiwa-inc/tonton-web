@@ -54,7 +54,6 @@ get_header();
       <?php $other_laws_field = get_field('estate-other-Laws'); ?>
       <?php $load_field = get_field('estate-load'); ?>
       <?php $capacity_field = get_field('estate-capacity'); ?>
-      <?php $map_field = get_field('estate-map'); ?>
       <?php $reform_plan_obj_field = get_field_object('estate-reform-plan'); ?>
       <?php $renovation_plan_obj_field = get_field_object('estate-renovation-plan'); ?>
       <?php $recommend_plan_obj_field = get_field_object('estate-recommend-plan'); ?>
