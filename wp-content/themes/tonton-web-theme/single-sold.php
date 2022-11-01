@@ -34,11 +34,11 @@ get_header();
           <div class="sold-detail-main-image">
             <div class="swiper mySwiper2">
               <div class="swiper-wrapper">
-                <?php $img_obj_field = get_field_object('estate-img'); ?>
+                <?php $img_obj_field = get_field_object('sold-img'); ?>
                 <?php
                   foreach((array)$img_obj_field['value'] as $img_field):
                   $size = 'full';
-                  $image = $img_field['estate-img-single'];
+                  $image = $img_field['sold-img-single'];
                 ?>
                   <div class="swiper-slide">
                     <?php echo wp_get_attachment_image($image, $size); ?>
@@ -52,11 +52,11 @@ get_header();
             <div class="news-swiper-second">
               <div thumbsSlider="" class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <?php $img_obj_field = get_field_object('estate-img'); ?>
+                  <?php $img_obj_field = get_field_object('sold-img'); ?>
                   <?php
                     foreach((array)$img_obj_field['value'] as $img_field):
                     $size = 'full';
-                    $image = $img_field['estate-img-single'];
+                    $image = $img_field['sold-img-single'];
                   ?>
                     <div class="swiper-slide">
                       <?php echo wp_get_attachment_image($image, $size); ?>

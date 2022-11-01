@@ -22,34 +22,31 @@ get_header();
     <div class="wrapper-boxes">
 
       <!-- field情報 -->
-      <?php $chiikimei_field = get_field('estate-chiikimei'); ?>
-      <?php $price_field = get_field('estate-price'); ?>
-      <?php $img_obj_field = get_field_object('estate-img'); ?>
-      <?php $address_field = get_field('estate-address'); ?>
-      <?php $genre_field = get_field('estate-genre'); ?>
-      <?php $traffic_field = get_field('estate-traffic'); ?>
-      <?php $madori_field = get_field('estate-madori'); ?>
-      <?php $area_building_field = get_field('estate-area-building'); ?>
-      <?php $age_field = get_field('estate-age'); ?>
+      <?php $chiikimei_field = get_field('chintai-chiikimei'); ?>
+      <?php $price_field = get_field('chintai-price'); ?>
+      <?php $img_obj_field = get_field_object('chintai-img'); ?>
+      <?php $address_field = get_field('chintai-address'); ?>
+      <?php $genre_field = get_field('chintai-genre'); ?>
+      <?php $traffic_field = get_field('chintai-traffic'); ?>
+      <?php $madori_field = get_field('chintai-madori'); ?>
+      <?php $area_building_field = get_field('chintai-area-building'); ?>
+      <?php $age_field = get_field('chintai-age'); ?>
       <?php
-        $point_obj_field = get_field_object('estate-point');
+        $point_obj_field = get_field_object('chintai-point');
       ?>
-      <?php $structure_field = get_field('estate-structure'); ?>
-      <?php $floor_field = get_field('estate-floor'); ?>
-      <?php $parking_field = get_field('estate-parking'); ?>
-      <?php $facilities_field = get_field('estate-facilities'); ?>
-      <?php $term_field = get_field('estate-term'); ?>
-      <?php $conditions_field = get_field('estate-conditions'); ?>
-      <?php $others_field = get_field('estate-others'); ?>
-      <?php $school_field = get_field('estate-school'); ?>
-      <?php $state_field = get_field('estate-state'); ?>
-      <?php $transfer_field = get_field('estate-transfer'); ?>
-      <?php $day_field = get_field('estate-day'); ?>
-      <?php
-        $map_field = get_field('estate-map');
-      ?>
-      <?php $deposit_field = get_field('estate-deposit'); ?>
-      <?php $reward_field = get_field('estate-reward'); ?>
+      <?php $structure_field = get_field('chintai-structure'); ?>
+      <?php $floor_field = get_field('chintai-floor'); ?>
+      <?php $parking_field = get_field('chintai-parking'); ?>
+      <?php $facilities_field = get_field('chintai-facilities'); ?>
+      <?php $term_field = get_field('chintai-term'); ?>
+      <?php $conditions_field = get_field('chintai-conditions'); ?>
+      <?php $others_field = get_field('chintai-others'); ?>
+      <?php $school_field = get_field('chintai-school'); ?>
+      <?php $state_field = get_field('chintai-state'); ?>
+      <?php $transfer_field = get_field('chintai-transfer'); ?>
+      <?php $day_field = get_field('chintai-day'); ?>
+      <?php $deposit_field = get_field('chintai-deposit'); ?>
+      <?php $reward_field = get_field('chintai-reward'); ?>
 
 
       <div class="wrapper-boxes-inner">
@@ -125,7 +122,7 @@ get_header();
                     <div class="swiper-wrapper">
                       <?php
                         foreach((array)$img_obj_field['value'] as $img_field) :
-                          $image = $img_field['estate-img-single'];
+                          $image = $img_field['chintai-img-single'];
                           $size = 'full';
                           if( $image ) {
                             echo '<div class="swiper-slide"><figure class="slide"><div class="slide-media">' . wp_get_attachment_image( $image, $size ) . '</div></figure></div>';
@@ -143,7 +140,7 @@ get_header();
                   <div class="thumb-wrapper">
                     <?php
                       foreach((array)$img_obj_field['value'] as $img_field) :
-                        $image = $img_field['estate-img-single'];
+                        $image = $img_field['chintai-img-single'];
                         $size = 'full';
                         if( $image ) {
                           echo '<div class="thumb-media">' .  wp_get_attachment_image( $image, $size ) . '</div>';
@@ -186,7 +183,7 @@ get_header();
                           <div class="swiper-wrapper">
                             <?php
                               foreach((array)$img_obj_field['value'] as $img_field) :
-                                $image = $img_field['estate-img-single'];
+                                $image = $img_field['chintai-img-single'];
                                 $size = 'full';
                                 if( $image ) {
                                   echo '<div class="swiper-slide">' .  wp_get_attachment_image( $image, $size ) . '</div>';
@@ -201,7 +198,7 @@ get_header();
                           <div class="swiper-wrapper">
                           <?php
                             foreach((array)$img_obj_field['value'] as $img_field) :
-                              $image = $img_field['estate-img-single'];
+                              $image = $img_field['chintai-img-single'];
                               $size = 'full';
                               if( $image ) {
                                 echo '<div class="swiper-slide">' .  wp_get_attachment_image( $image, $size ) . '</div>';
@@ -229,11 +226,10 @@ get_header();
               <div class="chintaiDetail-points">
                 <span class="chintaiDetail-pointLabel">Point</span>
                 <div class="chintaiDetail-pointArea">
-                  <!-- TODO: foreach ul liで書き直したい -->
                   <p>
                     <?php
                       foreach((array)$point_obj_field['value'] as $point_field) :
-                        echo  '・' . $point_field['estate-point-single'] . '<br>';
+                        echo  '・' . $point_field['chintai-point-single'] . '<br>';
                       endforeach;
                     ?>
                   </p>
@@ -262,45 +258,27 @@ get_header();
                     <dt>建物構造</dt>
                     <dd><?php echo $structure_field; ?></dd>
                     <?php if (!!$floor_field) : ?>
-                      <dt>所在階	</dt>
+                      <dt>所在階</dt>
                       <dd><?php echo $floor_field; ?></dd>
                     <?php endif; ?>
-                    <?php if (!!$parking_field) : ?>
-                      <dt>駐車場</dt>
-                      <dd><?php echo $parking_field; ?></dd>
-                    <?php endif; ?>
-                    <?php if (!!$facilities_field) : ?>
-                      <dt>設備・仕様</dt>
-                      <dd><?php echo $facilities_field; ?></dd>
-                    <?php endif; ?>
-                    <?php if (!!$term_field) : ?>
-                      <dt>契約期間</dt>
-                      <dd><?php echo $term_field; ?></dd>
-                    <?php endif; ?>
-                    <?php if (!!$conditions_field) : ?>
-                      <dt>入居条件</dt>
-                      <dd><?php echo $conditions_field; ?></dd>
-                    <?php endif; ?>
-                    <?php if (!!$others_field) : ?>
-                      <dt>その他</dt>
-                      <dd><?php echo $others_field; ?></dd>
-                    <?php endif; ?>
-                    <?php if (!!$school_field) : ?>
-                      <dt>学校区</dt>
-                      <dd><?php echo $school_field; ?></dd>
-                    <?php endif; ?>
-                    <?php if (!!$state_field) : ?>
-                      <dt>現況</dt>
-                      <dd><?php echo $state_field; ?></dd>
-                    <?php endif; ?>
-                    <?php if (!!$transfer_field) : ?>
-                      <dt>引渡し</dt>
-                      <dd><?php echo $transfer_field; ?></dd>
-                    <?php endif; ?>
-                    <?php if (!!$day_field) : ?>
-                      <dt>情報登録日</dt>
-                      <dd><?php echo $day_field; ?></dd>
-                    <?php endif; ?>
+                    <dt>駐車場</dt>
+                    <dd><?php echo $parking_field; ?></dd>
+                    <dt>設備・仕様</dt>
+                    <dd><?php echo $facilities_field; ?></dd>
+                    <dt>契約期間</dt>
+                    <dd><?php echo $term_field; ?></dd>
+                    <dt>入居条件</dt>
+                    <dd><?php echo $conditions_field; ?></dd>
+                    <dt>その他</dt>
+                    <dd><?php echo $others_field; ?></dd>
+                    <dt>学校区</dt>
+                    <dd><?php echo $school_field; ?></dd>
+                    <dt>現況</dt>
+                    <dd><?php echo $state_field; ?></dd>
+                    <dt>引渡し</dt>
+                    <dd><?php echo $transfer_field; ?></dd>
+                    <dt>情報登録日</dt>
+                    <dd><?php echo $day_field; ?></dd>
                   </dl>
                 </div>
               </div>
