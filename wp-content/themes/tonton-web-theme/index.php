@@ -365,7 +365,7 @@ get_header();
               <a href="/business/">
                 <img src="wp-content/themes/tonton-web-theme/images/about_1.png" alt="">
                 <div class="top-about-box">
-                  <div class="top-about-box-text">事業案内</div>
+                  <div class="top-about-box-text">とんとんのお仕事</div>
                   <div class="top-about-arrorw">→</div>
                 </div>
               </a>

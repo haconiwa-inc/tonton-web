@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const infiniteSlider = new Swiper(".infinite-slider", {
     loop: true,
     slidesPerView: 3,
-    speed: 1500,
+    speed: 3000,
     autoplay: {
       delay: 0,
       disableOnInteraction: false,
