@@ -94,7 +94,7 @@
             </div>
             <div class="header-top-menu-item">
               <a href="/business/">
-                事業案内
+                とんとんのお仕事
               </a>
             </div>
             <div class="header-top-menu-item">
@@ -165,7 +165,7 @@
                         <div class="header-item-box">
                           <div class="header-nav-text">
                             <a href="/business/">
-                              事業案内
+                              とんとんのお仕事
                             </a>
                           </div>
                         </div>
