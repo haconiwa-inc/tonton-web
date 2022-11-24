@@ -42,7 +42,7 @@
                 </li>
                 <li>
                   <a href="/business/">
-                    事業案内
+                    とんとんのお仕事
                   </a>
                 </li>
                 <li>
@@ -121,7 +121,7 @@
               </li>
               <li>
                 <a href="/business/">
-                  事業案内
+                  とんとんのお仕事
                 </a>
               </li>
               <li>
